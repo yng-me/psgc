@@ -1,0 +1,212 @@
+---
+title: "Getting started with psgc"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting started with psgc}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>"
+)
+library(psgc)
+```
+
+## What is the PSGC?
+
+The **Philippine Standard Geographic Code (PSGC)** is the official list of
+every geographic area in the Philippines — from the broadest (regions) down to
+the most granular (barangays). It is published and maintained by the
+**Philippine Statistics Authority (PSA)**.
+
+Each area is identified by a unique **10-digit code** and a geographic level:
+
+| Level | Description | Example |
+|---|---|---|
+| `Reg` | Region | Region I – Ilocos Region |
+| `Prov` | Province | Ilocos Norte |
+| `City` | City | Laoag City |
+| `Mun` | Municipality | Bacarra |
+| `SubMun` | Sub-municipality | (Metro Manila component cities) |
+| `Bgy` | Barangay | Brgy. 1, Laoag City |
+
+The PSA releases updated PSGC files several times a year as new cities are
+chartered, barangays are created, or codes are renumbered. This package bundles
+**12 releases** from Q1 2023 through Q1 2026.
+
+---
+
+## Checking available releases
+
+```{r releases}
+list_releases()
+latest_release()
+```
+
+By default, every function in this package uses the latest release. You can
+always pass a specific release name to work with older data.
+
+---
+
+## Getting the full PSGC list
+
+`get_psgc()` returns the complete list of geographic areas for a given release.
+
+```{r get-psgc}
+ph <- get_psgc()
+nrow(ph)
+head(ph)
+```
+
+### Filter by geographic level
+
+You do not need to remember the exact code names — plain English works too:
+
+```{r filter-region}
+regions <- get_psgc(geographic_level = "Region")
+regions[, c("psgc_code", "area_name")]
+```
+
+```{r filter-province}
+provinces <- get_psgc(geographic_level = "Province")
+nrow(provinces)
+head(provinces[, c("psgc_code", "area_name")])
+```
+
+You can filter for multiple levels at once by passing a vector:
+
+```{r filter-multiple}
+city_mun <- get_psgc(geographic_level = c("City", "Municipality"))
+nrow(city_mun)
+```
+
+There is also a convenient shorthand, `"city_mun"`, that does the same thing:
+
+```{r filter-city-mun}
+nrow(get_psgc(geographic_level = "city_mun"))
+```
+
+### Using a specific release
+
+```{r older-release}
+ph_2023 <- get_psgc("Q1_2023")
+nrow(ph_2023)
+```
+
+---
+
+## Looking up a specific code
+
+If you already have a PSGC code and want its details, use `psgc_info()`.
+
+```{r psgc-info}
+psgc_info("0100000000") # Region I
+```
+
+You can look up multiple codes at once:
+
+```{r psgc-info-multi}
+psgc_info(c("0100000000", "0102800000"))
+```
+
+**Short codes are accepted** — the package pads the rest with trailing zeros,
+so you only need to provide enough digits to identify the area:
+
+```{r psgc-info-short}
+psgc_info("01")      # same as "0100000000" — Region I
+psgc_info("01028")  # same as "0102800000" — Ilocos Norte
+```
+
+---
+
+## Population data
+
+`get_population()` returns PSA census figures (2015, 2020, 2024) for all
+geographic areas in a release.
+
+```{r population-basic}
+pop <- get_population()
+head(pop)
+```
+
+### Add area names and geographic levels
+
+Set `details = TRUE` to include the area name and level alongside the numbers:
+
+```{r population-details}
+pop_detailed <- get_population(details = TRUE)
+head(pop_detailed)
+```
+
+### Filter by geographic level
+
+Same aliases as `get_psgc()` work here too:
+
+```{r population-filter}
+region_pop <- get_population(geographic_level = "Region", details = TRUE)
+region_pop
+```
+
+### Wide format — one row per area
+
+Set `wide = TRUE` to get each census year as its own column, making it easy to
+compare figures side by side or feed into a table or chart:
+
+```{r population-wide}
+region_pop_wide <- get_population(
+  geographic_level = "Region",
+  details          = TRUE,
+  wide             = TRUE
+)
+region_pop_wide
+```
+
+### Attach population data to the PSGC list
+
+If you want population figures alongside the main PSGC table (rather than as a
+separate data frame), use `include_population_data = TRUE` in `get_psgc()`.
+This adds a `population_data` list-column — each cell is a small data frame
+with `population` and `year`:
+
+```{r psgc-pop-nested}
+regions_with_pop <- get_psgc(
+  geographic_level       = "Region",
+  include_population_data = TRUE
+)
+
+# Inspect the population data for the first region
+regions_with_pop$population_data[[1]]
+```
+
+---
+
+## Tracking codes across releases
+
+The PSA occasionally renumbers or abolishes areas between releases. `map_psgc()`
+traces a code forward to any later release so you can keep longitudinal datasets
+consistent.
+
+```{r map-psgc}
+map_psgc("0100000000")  # forward to the latest release
+```
+
+```{r map-psgc-target}
+map_psgc("0100000000", to = "Q4_2023")
+```
+
+The `mapping_type` column tells you what happened to the code:
+
+| Type | Meaning |
+|---|---|
+| `direct` | Code is unchanged |
+| `renumbered` | Code was assigned a new number |
+| `split` | One area was divided into multiple areas |
+| `merged` | Multiple areas were merged into one |
+| `abolished` | Area no longer exists (`new_code` will be `NA`) |
+
+This is especially useful when joining PSGC-coded survey data from different
+years — use `map_psgc()` first to normalise all codes to a single release before
+merging.
