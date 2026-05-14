@@ -1,7 +1,7 @@
 Package: psgc
 Type: Package
 Title: Philippine Standard Geographic Code
-Version: 0.1.0
+Version: 0.1.1
 Description: Provides access to the Philippine Standard Geographic Code (PSGC),
     an official classification system for geographic areas in the Philippines
     published by the Philippine Statistics Authority (PSA). Includes area names,

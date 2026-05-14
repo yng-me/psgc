@@ -2,6 +2,7 @@
 
 export(get_population)
 export(get_psgc)
+export(get_psgc_wide)
 export(latest_release)
 export(list_releases)
 export(map_psgc)

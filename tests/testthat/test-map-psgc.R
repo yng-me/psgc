@@ -64,3 +64,41 @@ test_that("a renumbered code maps to its new code with mapping_type 'renumbered'
   expect_equal(result$new_code, "0402103076")
   expect_equal(result$mapping_type, "renumbered")
 })
+
+test_that("map_psgc() completes 500 codes in under 5 seconds", {
+  brgys <- get_psgc(geographic_level = "Bgy")
+  set.seed(42)
+  codes <- sample(brgys$psgc_code, 500)
+  elapsed <- system.time(map_psgc(codes))["elapsed"]
+  expect_lt(elapsed, 5)
+})
+
+# ── changes_only ──────────────────────────────────────────────────────────────
+
+test_that("map_psgc(changes_only=TRUE) excludes direct mappings", {
+  result <- map_psgc(c("0100000000", "0402103002"), from = "Q1_2023", to = "Q4_2023",
+                     changes_only = TRUE)
+  expect_false("direct" %in% result$mapping_type)
+})
+
+test_that("map_psgc(changes_only=TRUE) returns fewer rows than changes_only=FALSE", {
+  codes  <- get_psgc(geographic_level = "Bgy", release = "Q1_2023")$psgc_code
+  full   <- map_psgc(codes, from = "Q1_2023", to = "Q4_2023")
+  filtered <- map_psgc(codes, from = "Q1_2023", to = "Q4_2023", changes_only = TRUE)
+  expect_lt(nrow(filtered), nrow(full))
+  expect_true(nrow(filtered) > 0)
+})
+
+test_that("map_psgc(changes_only=TRUE) result contains only changed codes", {
+  codes  <- get_psgc(geographic_level = "Bgy", release = "Q1_2023")$psgc_code
+  result <- map_psgc(codes, from = "Q1_2023", to = "Q4_2023", changes_only = TRUE)
+  expect_true(all(result$mapping_type != "direct"))
+})
+
+test_that("map_psgc(changes_only=FALSE) is the default behaviour", {
+  codes <- c("0100000000", "0402103002")
+  expect_identical(
+    map_psgc(codes, from = "Q1_2023", to = "Q4_2023"),
+    map_psgc(codes, from = "Q1_2023", to = "Q4_2023", changes_only = FALSE)
+  )
+})
