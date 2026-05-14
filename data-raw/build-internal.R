@@ -45,6 +45,9 @@ load_release <- function(release) {
   df$correspondence_code <- ifelse(is.na(df$correspondence_code) | !nzchar(df$correspondence_code), NA_character_, df$correspondence_code)
   df$urban_rural <- ifelse(is.na(df$urban_rural) | !nzchar(df$urban_rural), NA_character_, df$urban_rural)
   df$island_region <- ifelse(is.na(df$island_region) | !nzchar(df$island_region), NA_character_, df$island_region)
+  full_to_abbr <- c(Luzon = "L", Visayas = "V", Mindanao = "M")
+  idx <- match(df$island_region, names(full_to_abbr))
+  df$island_region <- ifelse(!is.na(idx), full_to_abbr[idx], df$island_region)
   df$area_name <- trimws(df$area_name)
   rownames(df) <- NULL
   df
