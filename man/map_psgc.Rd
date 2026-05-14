@@ -4,7 +4,7 @@
 \alias{map_psgc}
 \title{Map PSGC codes to a target release}
 \usage{
-map_psgc(code, from = "auto", to = latest_release())
+map_psgc(code, from = "auto", to = latest_release(), changes_only = FALSE)
 }
 \arguments{
 \item{code}{A character vector of 10-digit PSGC codes.}
@@ -13,6 +13,10 @@ map_psgc(code, from = "auto", to = latest_release())
 automatically using the earliest release that contains each code.}
 
 \item{to}{Target release name. Defaults to [latest_release()].}
+
+\item{changes_only}{Logical. If `TRUE`, only rows where the code actually
+changed (i.e. `mapping_type` is not `"direct"`) are returned. Codes that
+remained unchanged across all hops are dropped. Defaults to `FALSE`.}
 }
 \value{
 A data frame with columns `old_code`, `new_code` (`NA` for
@@ -26,4 +30,6 @@ Map PSGC codes to a target release
 \examples{
 map_psgc("0100000000")
 map_psgc(c("0100000000", "0102800000"), to = "Q4_2023")
+map_psgc(get_psgc(geographic_level = "Bgy")$psgc_code,
+         from = "Q1_2023", to = "Q4_2023", changes_only = TRUE)
 }
