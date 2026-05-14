@@ -432,15 +432,15 @@ datasets consistent.
 ``` r
 
 map_psgc("0100000000")  # forward to the latest release
-#>              old_code   new_code mapping_type from_release to_release
-#> 0100000000 0100000000 0100000000       direct      Q1_2023    Q1_2026
+#>     old_code   new_code mapping_type from_release to_release
+#> 1 0100000000 0100000000       direct      Q1_2023    Q1_2026
 ```
 
 ``` r
 
 map_psgc("0100000000", to = "Q4_2023")
-#>              old_code   new_code mapping_type from_release to_release
-#> 0100000000 0100000000 0100000000       direct      Q1_2023    Q4_2023
+#>     old_code   new_code mapping_type from_release to_release
+#> 1 0100000000 0100000000       direct      Q1_2023    Q4_2023
 ```
 
 The `mapping_type` column tells you what happened to the code:

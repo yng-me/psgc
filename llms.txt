@@ -164,6 +164,8 @@ MIT © Bhas Abdulsamad
   : Get population data for a specific release
 - [`get_psgc()`](https://yng-me.github.io/psgc/reference/get_psgc.md) :
   Get PSGC data for a specific release
+- [`get_psgc_wide()`](https://yng-me.github.io/psgc/reference/get_psgc_wide.md)
+  : Get PSGC data in wide (denormalised) format
 - [`latest_release()`](https://yng-me.github.io/psgc/reference/latest_release.md)
   : The most recent bundled PSGC release
 - [`list_releases()`](https://yng-me.github.io/psgc/reference/list_releases.md)

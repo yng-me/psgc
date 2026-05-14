@@ -13,6 +13,13 @@
 <link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Getting started with psgc">
+<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-BNSSBECQVT"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BNSSBECQVT');
+</script>
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -22,7 +29,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">psgc</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -478,12 +485,12 @@ small data frame with <code>population</code> and <code>year</code>:</p>
 you can keep longitudinal datasets consistent.</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/map_psgc.html">map_psgc</a></span><span class="op">(</span><span class="st">"0100000000"</span><span class="op">)</span>  <span class="co"># forward to the latest release</span></span>
-<span><span class="co">#&gt;              old_code   new_code mapping_type from_release to_release</span></span>
-<span><span class="co">#&gt; 0100000000 0100000000 0100000000       direct      Q1_2023    Q1_2026</span></span></code></pre></div>
+<span><span class="co">#&gt;     old_code   new_code mapping_type from_release to_release</span></span>
+<span><span class="co">#&gt; 1 0100000000 0100000000       direct      Q1_2023    Q1_2026</span></span></code></pre></div>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/map_psgc.html">map_psgc</a></span><span class="op">(</span><span class="st">"0100000000"</span>, to <span class="op">=</span> <span class="st">"Q4_2023"</span><span class="op">)</span></span>
-<span><span class="co">#&gt;              old_code   new_code mapping_type from_release to_release</span></span>
-<span><span class="co">#&gt; 0100000000 0100000000 0100000000       direct      Q1_2023    Q4_2023</span></span></code></pre></div>
+<span><span class="co">#&gt;     old_code   new_code mapping_type from_release to_release</span></span>
+<span><span class="co">#&gt; 1 0100000000 0100000000       direct      Q1_2023    Q4_2023</span></span></code></pre></div>
 <p>The <code>mapping_type</code> column tells you what happened to the
 code:</p>
 <table class="table">
