@@ -1,5 +1,12 @@
 # psgc 0.1.1
 
+## Bug fixes
+
+* `island_region` values are now consistently abbreviated (`"L"`, `"V"`, `"M"`)
+  across all releases. Three older releases (Q4_2023, April_2024, Q2_2024) had
+  full spellings ("Luzon", "Visayas", "Mindanao") which are now recoded during
+  the data build step.
+
 ## New features
 
 * `get_psgc_wide()` returns a denormalised wide-format data frame with one row
