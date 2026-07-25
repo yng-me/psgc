@@ -17,3 +17,5 @@
 vignettes/*.html
 vignettes/*.R
 docs
+data-raw/fetcher.R
+.env
