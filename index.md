@@ -3,7 +3,7 @@
 `psgc` provides access to the **Philippine Standard Geographic Code
 (PSGC)** — the official classification system for geographic areas in
 the Philippines published by the **Philippine Statistics Authority
-(PSA)**. It bundles 12 releases (Q1 2023 – Q1 2026) and exposes them
+(PSA)**. It bundles 13 releases (Q1 2023 – Q2 2026) and exposes them
 through a small, consistent set of functions.
 
 ## Installation
@@ -149,7 +149,7 @@ be `NA`).
 list_releases()
 #>  [1] "Q1_2023"    "Q4_2023"    "April_2024" "Q2_2024"    "Q3_2024"
 #>  [6] "Q4_2024"    "Q1_2025"    "Q2_2025"    "July_2025"  "Q3_2025"
-#> [11] "Q4_2025"    "Q1_2026"
+#> [11] "Q4_2025"    "Q1_2026"    "Q2_2026"
 ```
 
 ## License

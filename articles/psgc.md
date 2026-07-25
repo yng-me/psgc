@@ -21,7 +21,7 @@ level:
 
 The PSA releases updated PSGC files several times a year as new cities
 are chartered, barangays are created, or codes are renumbered. This
-package bundles **12 releases** from Q1 2023 through Q1 2026.
+package bundles **13 releases** from Q1 2023 through Q2 2026.
 
 ------------------------------------------------------------------------
 
