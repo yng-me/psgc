@@ -15,6 +15,12 @@ knitr::opts_chunk$set(
 library(psgc)
 ```
 
+```{r, echo=FALSE}
+v_first <- paste0(unlist(strsplit(psgc::list_releases()[1], "_")), collapse = " ")
+v_latest <- paste0(unlist(strsplit(psgc::latest_release(), "_")), collapse = " ")
+```
+
+
 ## What is the PSGC?
 
 The **Philippine Standard Geographic Code (PSGC)** is the official list of
@@ -35,7 +41,7 @@ Each area is identified by a unique **10-digit code** and a geographic level:
 
 The PSA releases updated PSGC files several times a year as new cities are
 chartered, barangays are created, or codes are renumbered. This package bundles
-**12 releases** from Q1 2023 through Q1 2026.
+**`r length(psgc::list_releases())` releases** from `r v_first` through `r v_latest`.
 
 ---
 
