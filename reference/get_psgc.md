@@ -46,20 +46,20 @@ data.
 
 ``` r
 head(get_psgc())
-#>    psgc_code                area_name correspondence_code geographic_level
-#> 1 0100000000 Region I (Ilocos Region)           010000000              Reg
-#> 2 0102800000             Ilocos Norte           012800000             Prov
-#> 3 0102801000                    Adams           012801000              Mun
-#> 4 0102801001                    Adams           012801001              Bgy
-#> 5 0102802000                  Bacarra           012802000              Mun
-#> 6 0102802001                     Bani           012802001              Bgy
+#>    psgc_code                    area_name correspondence_code geographic_level
+#> 1 0100000000     Region I (Ilocos Region)           010000000              Reg
+#> 2 1000000000 Region X (Northern Mindanao)           100000000              Reg
+#> 3 1001300000                     Bukidnon           101300000             Prov
+#> 4 1001301000                      Baungon           101301000              Mun
+#> 5 1001301001                     Balintad           101301001              Bgy
+#> 6 1001301002                   Buenavista           101301002              Bgy
 #>   old_name city_class income_classification urban_rural island_region
 #> 1     <NA>       <NA>                  <NA>        <NA>             L
-#> 2     <NA>       <NA>                   1st        <NA>             L
-#> 3     <NA>       <NA>                   4th        <NA>             L
-#> 4     <NA>       <NA>                  <NA>           R             L
-#> 5     <NA>       <NA>                   2nd        <NA>             L
-#> 6     <NA>       <NA>                  <NA>           R             L
+#> 2     <NA>       <NA>                  <NA>        <NA>             M
+#> 3     <NA>       <NA>                   1st        <NA>             M
+#> 4     <NA>       <NA>                   1st        <NA>             M
+#> 5     <NA>       <NA>                  <NA>           R             M
+#> 6     <NA>       <NA>                  <NA>           R             M
 get_psgc("Q1_2023")
 #>        psgc_code                               area_name correspondence_code
 #> 1     0100000000                Region I (Ilocos Region)           010000000
@@ -33401,5821 +33401,5821 @@ get_psgc("Q1_2023")
 get_psgc(geographic_level = "Reg")
 #>        psgc_code                                               area_name
 #> 1     0100000000                                Region I (Ilocos Region)
-#> 3398  0200000000                              Region II (Cagayan Valley)
-#> 5808  0300000000                              Region III (Central Luzon)
-#> 9051  0400000000                                Region IV-A (CALABARZON)
-#> 13191 0500000000                                 Region V (Bicol Region)
-#> 16783 0600000000                             Region VI (Western Visayas)
-#> 20279 0700000000                            Region VII (Central Visayas)
-#> 22695 0800000000                           Region VIII (Eastern Visayas)
-#> 27210 0900000000                         Region IX (Zamboanga Peninsula)
-#> 29621 1000000000                            Region X (Northern Mindanao)
-#> 31742 1100000000                                Region XI (Davao Region)
-#> 32959 1200000000                               Region XII (SOCCSKSARGEN)
-#> 34110 1300000000                           National Capital Region (NCR)
-#> 35857 1400000000                  Cordillera Administrative Region (CAR)
-#> 37119 1600000000                                    Region XIII (Caraga)
-#> 38510 1700000000                                         MIMAROPA Region
-#> 40049 1800000000                              Negros Island Region (NIR)
-#> 41469 1900000000 Bangsamoro Autonomous Region In Muslim Mindanao (BARMM)
+#> 2     1000000000                            Region X (Northern Mindanao)
+#> 5519  1100000000                                Region XI (Davao Region)
+#> 6736  1200000000                               Region XII (SOCCSKSARGEN)
+#> 7887  1300000000                           National Capital Region (NCR)
+#> 9634  1400000000                  Cordillera Administrative Region (CAR)
+#> 10896 1600000000                                    Region XIII (Caraga)
+#> 12287 1700000000                                         MIMAROPA Region
+#> 13826 1800000000                              Negros Island Region (NIR)
+#> 15246 1900000000 Bangsamoro Autonomous Region In Muslim Mindanao (BARMM)
+#> 17546 0200000000                              Region II (Cagayan Valley)
+#> 19956 0300000000                              Region III (Central Luzon)
+#> 23199 0400000000                                Region IV-A (CALABARZON)
+#> 27339 0500000000                                 Region V (Bicol Region)
+#> 30931 0600000000                             Region VI (Western Visayas)
+#> 34427 0700000000                            Region VII (Central Visayas)
+#> 36843 0800000000                           Region VIII (Eastern Visayas)
+#> 41358 0900000000                         Region IX (Zamboanga Peninsula)
 #>       correspondence_code geographic_level old_name city_class
 #> 1               010000000              Reg     <NA>       <NA>
-#> 3398            020000000              Reg     <NA>       <NA>
-#> 5808            030000000              Reg     <NA>       <NA>
-#> 9051            040000000              Reg     <NA>       <NA>
-#> 13191           050000000              Reg     <NA>       <NA>
-#> 16783           060000000              Reg     <NA>       <NA>
-#> 20279           070000000              Reg     <NA>       <NA>
-#> 22695           080000000              Reg     <NA>       <NA>
-#> 27210           090000000              Reg     <NA>       <NA>
-#> 29621           100000000              Reg     <NA>       <NA>
-#> 31742           110000000              Reg     <NA>       <NA>
-#> 32959           120000000              Reg     <NA>       <NA>
-#> 34110           130000000              Reg     <NA>       <NA>
-#> 35857           140000000              Reg     <NA>       <NA>
-#> 37119           160000000              Reg     <NA>       <NA>
-#> 38510           170000000              Reg     <NA>       <NA>
-#> 40049                <NA>              Reg     <NA>       <NA>
-#> 41469           150000000              Reg     <NA>       <NA>
+#> 2               100000000              Reg     <NA>       <NA>
+#> 5519            110000000              Reg     <NA>       <NA>
+#> 6736            120000000              Reg     <NA>       <NA>
+#> 7887            130000000              Reg     <NA>       <NA>
+#> 9634            140000000              Reg     <NA>       <NA>
+#> 10896           160000000              Reg     <NA>       <NA>
+#> 12287           170000000              Reg     <NA>       <NA>
+#> 13826           000000000              Reg     <NA>       <NA>
+#> 15246           150000000              Reg     <NA>       <NA>
+#> 17546           020000000              Reg     <NA>       <NA>
+#> 19956           030000000              Reg     <NA>       <NA>
+#> 23199           040000000              Reg     <NA>       <NA>
+#> 27339           050000000              Reg     <NA>       <NA>
+#> 30931           060000000              Reg     <NA>       <NA>
+#> 34427           070000000              Reg     <NA>       <NA>
+#> 36843           080000000              Reg     <NA>       <NA>
+#> 41358           090000000              Reg     <NA>       <NA>
 #>       income_classification urban_rural island_region
 #> 1                      <NA>        <NA>             L
-#> 3398                   <NA>        <NA>             L
-#> 5808                   <NA>        <NA>             L
-#> 9051                   <NA>        <NA>             L
-#> 13191                  <NA>        <NA>             L
-#> 16783                  <NA>        <NA>             V
-#> 20279                  <NA>        <NA>             V
-#> 22695                  <NA>        <NA>             V
-#> 27210                  <NA>        <NA>             M
-#> 29621                  <NA>        <NA>             M
-#> 31742                  <NA>        <NA>             M
-#> 32959                  <NA>        <NA>             M
-#> 34110                  <NA>        <NA>             L
-#> 35857                  <NA>        <NA>             L
-#> 37119                  <NA>        <NA>             M
-#> 38510                  <NA>        <NA>             L
-#> 40049                  <NA>        <NA>             V
-#> 41469                  <NA>        <NA>             M
+#> 2                      <NA>        <NA>             M
+#> 5519                   <NA>        <NA>             M
+#> 6736                   <NA>        <NA>             M
+#> 7887                   <NA>        <NA>             L
+#> 9634                   <NA>        <NA>             L
+#> 10896                  <NA>        <NA>             M
+#> 12287                  <NA>        <NA>             L
+#> 13826                  <NA>        <NA>             V
+#> 15246                  <NA>        <NA>             M
+#> 17546                  <NA>        <NA>             L
+#> 19956                  <NA>        <NA>             L
+#> 23199                  <NA>        <NA>             L
+#> 27339                  <NA>        <NA>             L
+#> 30931                  <NA>        <NA>             V
+#> 34427                  <NA>        <NA>             V
+#> 36843                  <NA>        <NA>             V
+#> 41358                  <NA>        <NA>             M
 get_psgc(geographic_level = "Region")
 #>        psgc_code                                               area_name
 #> 1     0100000000                                Region I (Ilocos Region)
-#> 3398  0200000000                              Region II (Cagayan Valley)
-#> 5808  0300000000                              Region III (Central Luzon)
-#> 9051  0400000000                                Region IV-A (CALABARZON)
-#> 13191 0500000000                                 Region V (Bicol Region)
-#> 16783 0600000000                             Region VI (Western Visayas)
-#> 20279 0700000000                            Region VII (Central Visayas)
-#> 22695 0800000000                           Region VIII (Eastern Visayas)
-#> 27210 0900000000                         Region IX (Zamboanga Peninsula)
-#> 29621 1000000000                            Region X (Northern Mindanao)
-#> 31742 1100000000                                Region XI (Davao Region)
-#> 32959 1200000000                               Region XII (SOCCSKSARGEN)
-#> 34110 1300000000                           National Capital Region (NCR)
-#> 35857 1400000000                  Cordillera Administrative Region (CAR)
-#> 37119 1600000000                                    Region XIII (Caraga)
-#> 38510 1700000000                                         MIMAROPA Region
-#> 40049 1800000000                              Negros Island Region (NIR)
-#> 41469 1900000000 Bangsamoro Autonomous Region In Muslim Mindanao (BARMM)
+#> 2     1000000000                            Region X (Northern Mindanao)
+#> 5519  1100000000                                Region XI (Davao Region)
+#> 6736  1200000000                               Region XII (SOCCSKSARGEN)
+#> 7887  1300000000                           National Capital Region (NCR)
+#> 9634  1400000000                  Cordillera Administrative Region (CAR)
+#> 10896 1600000000                                    Region XIII (Caraga)
+#> 12287 1700000000                                         MIMAROPA Region
+#> 13826 1800000000                              Negros Island Region (NIR)
+#> 15246 1900000000 Bangsamoro Autonomous Region In Muslim Mindanao (BARMM)
+#> 17546 0200000000                              Region II (Cagayan Valley)
+#> 19956 0300000000                              Region III (Central Luzon)
+#> 23199 0400000000                                Region IV-A (CALABARZON)
+#> 27339 0500000000                                 Region V (Bicol Region)
+#> 30931 0600000000                             Region VI (Western Visayas)
+#> 34427 0700000000                            Region VII (Central Visayas)
+#> 36843 0800000000                           Region VIII (Eastern Visayas)
+#> 41358 0900000000                         Region IX (Zamboanga Peninsula)
 #>       correspondence_code geographic_level old_name city_class
 #> 1               010000000              Reg     <NA>       <NA>
-#> 3398            020000000              Reg     <NA>       <NA>
-#> 5808            030000000              Reg     <NA>       <NA>
-#> 9051            040000000              Reg     <NA>       <NA>
-#> 13191           050000000              Reg     <NA>       <NA>
-#> 16783           060000000              Reg     <NA>       <NA>
-#> 20279           070000000              Reg     <NA>       <NA>
-#> 22695           080000000              Reg     <NA>       <NA>
-#> 27210           090000000              Reg     <NA>       <NA>
-#> 29621           100000000              Reg     <NA>       <NA>
-#> 31742           110000000              Reg     <NA>       <NA>
-#> 32959           120000000              Reg     <NA>       <NA>
-#> 34110           130000000              Reg     <NA>       <NA>
-#> 35857           140000000              Reg     <NA>       <NA>
-#> 37119           160000000              Reg     <NA>       <NA>
-#> 38510           170000000              Reg     <NA>       <NA>
-#> 40049                <NA>              Reg     <NA>       <NA>
-#> 41469           150000000              Reg     <NA>       <NA>
+#> 2               100000000              Reg     <NA>       <NA>
+#> 5519            110000000              Reg     <NA>       <NA>
+#> 6736            120000000              Reg     <NA>       <NA>
+#> 7887            130000000              Reg     <NA>       <NA>
+#> 9634            140000000              Reg     <NA>       <NA>
+#> 10896           160000000              Reg     <NA>       <NA>
+#> 12287           170000000              Reg     <NA>       <NA>
+#> 13826           000000000              Reg     <NA>       <NA>
+#> 15246           150000000              Reg     <NA>       <NA>
+#> 17546           020000000              Reg     <NA>       <NA>
+#> 19956           030000000              Reg     <NA>       <NA>
+#> 23199           040000000              Reg     <NA>       <NA>
+#> 27339           050000000              Reg     <NA>       <NA>
+#> 30931           060000000              Reg     <NA>       <NA>
+#> 34427           070000000              Reg     <NA>       <NA>
+#> 36843           080000000              Reg     <NA>       <NA>
+#> 41358           090000000              Reg     <NA>       <NA>
 #>       income_classification urban_rural island_region
 #> 1                      <NA>        <NA>             L
-#> 3398                   <NA>        <NA>             L
-#> 5808                   <NA>        <NA>             L
-#> 9051                   <NA>        <NA>             L
-#> 13191                  <NA>        <NA>             L
-#> 16783                  <NA>        <NA>             V
-#> 20279                  <NA>        <NA>             V
-#> 22695                  <NA>        <NA>             V
-#> 27210                  <NA>        <NA>             M
-#> 29621                  <NA>        <NA>             M
-#> 31742                  <NA>        <NA>             M
-#> 32959                  <NA>        <NA>             M
-#> 34110                  <NA>        <NA>             L
-#> 35857                  <NA>        <NA>             L
-#> 37119                  <NA>        <NA>             M
-#> 38510                  <NA>        <NA>             L
-#> 40049                  <NA>        <NA>             V
-#> 41469                  <NA>        <NA>             M
+#> 2                      <NA>        <NA>             M
+#> 5519                   <NA>        <NA>             M
+#> 6736                   <NA>        <NA>             M
+#> 7887                   <NA>        <NA>             L
+#> 9634                   <NA>        <NA>             L
+#> 10896                  <NA>        <NA>             M
+#> 12287                  <NA>        <NA>             L
+#> 13826                  <NA>        <NA>             V
+#> 15246                  <NA>        <NA>             M
+#> 17546                  <NA>        <NA>             L
+#> 19956                  <NA>        <NA>             L
+#> 23199                  <NA>        <NA>             L
+#> 27339                  <NA>        <NA>             L
+#> 30931                  <NA>        <NA>             V
+#> 34427                  <NA>        <NA>             V
+#> 36843                  <NA>        <NA>             V
+#> 41358                  <NA>        <NA>             M
 get_psgc(geographic_level = "city_mun")
 #>        psgc_code                   area_name correspondence_code
-#> 3     0102801000                       Adams           012801000
-#> 5     0102802000                     Bacarra           012802000
-#> 49    0102803000                       Badoc           012803000
-#> 81    0102804000                      Bangui           012804000
-#> 96    0102805000               City of Batac           012805000
-#> 140   0102806000                      Burgos           012806000
-#> 152   0102807000                      Carasi           012807000
-#> 156   0102808000                    Currimao           012808000
-#> 180   0102809000                     Dingras           012809000
-#> 212   0102810000                    Dumalneg           012810000
-#> 217   0102811000                       Banna           012811000
-#> 238   0102812000               City of Laoag           012812000
-#> 319   0102813000                      Marcos           012813000
-#> 333   0102814000                   Nueva Era           012814000
-#> 345   0102815000                    Pagudpud           012815000
-#> 362   0102816000                       Paoay           012816000
-#> 394   0102817000                    Pasuquin           012817000
-#> 428   0102818000                      Piddig           012818000
-#> 452   0102819000                      Pinili           012819000
-#> 478   0102820000                 San Nicolas           012820000
-#> 503   0102821000                      Sarrat           012821000
-#> 528   0102822000                     Solsona           012822000
-#> 551   0102823000                      Vintar           012823000
-#> 586   0102901000                      Alilem           012901000
-#> 596   0102902000                    Banayoyo           012902000
-#> 611   0102903000                      Bantay           012903000
-#> 646   0102904000                      Burgos           012904000
-#> 673   0102905000                     Cabugao           012905000
-#> 707   0102906000              City of Candon           012906000
-#> 750   0102907000                     Caoayan           012907000
-#> 768   0102908000                   Cervantes           012908000
-#> 782   0102909000                   Galimuyod           012909000
-#> 807   0102910000          Gregorio del Pilar           012910000
-#> 815   0102911000                    Lidlidda           012911000
-#> 827   0102912000                   Magsingal           012912000
-#> 858   0102913000                    Nagbukel           012913000
-#> 871   0102914000                    Narvacan           012914000
-#> 906   0102915000                     Quirino           012915000
-#> 916   0102916000                     Salcedo           012916000
-#> 938   0102917000                  San Emilio           012917000
-#> 947   0102918000                 San Esteban           012918000
-#> 958   0102919000               San Ildefonso           012919000
-#> 974   0102920000                    San Juan           012920000
-#> 1007  0102921000                 San Vicente           012921000
-#> 1015  0102922000                       Santa           012922000
-#> 1042  0102923000              Santa Catalina           012923000
-#> 1052  0102924000                  Santa Cruz           012924000
-#> 1102  0102925000                 Santa Lucia           012925000
-#> 1139  0102926000                 Santa Maria           012926000
-#> 1173  0102927000                    Santiago           012927000
-#> 1198  0102928000               Santo Domingo           012928000
-#> 1235  0102929000                       Sigay           012929000
-#> 1243  0102930000                      Sinait           012930000
-#> 1288  0102931000                      Sugpon           012931000
-#> 1295  0102932000                        Suyo           012932000
-#> 1304  0102933000                     Tagudin           012933000
-#> 1348  0102934000               City of Vigan           012934000
-#> 1389  0103301000                        Agoo           013301000
-#> 1439  0103302000                     Aringay           013302000
-#> 1464  0103303000                    Bacnotan           013303000
-#> 1512  0103304000                     Bagulin           013304000
-#> 1523  0103305000                     Balaoan           013305000
-#> 1560  0103306000                      Bangar           013306000
-#> 1594  0103307000                      Bauang           013307000
-#> 1634  0103308000                      Burgos           013308000
-#> 1647  0103309000                        Caba           013309000
-#> 1665  0103310000                        Luna           013310000
-#> 1706  0103311000                   Naguilian           013311000
-#> 1744  0103312000                        Pugo           013312000
-#> 1759  0103313000                     Rosario           013313000
-#> 1793  0103314000        City of San Fernando           013314000
-#> 1853  0103315000                 San Gabriel           013315000
-#> 1869  0103316000                    San Juan           013316000
-#> 1911  0103317000                 Santo Tomas           013317000
-#> 1936  0103318000                      Santol           013318000
-#> 1948  0103319000                     Sudipen           013319000
-#> 1966  0103320000                       Tubao           013320000
-#> 1986  0105501000                        Agno           015501000
-#> 2004  0105502000                     Aguilar           015502000
-#> 2021  0105503000            City of Alaminos           015503000
-#> 2061  0105504000                      Alcala           015504000
-#> 2083  0105505000                        Anda           015505000
-#> 2102  0105506000                     Asingan           015506000
-#> 2124  0105507000                    Balungao           015507000
-#> 2145  0105508000                        Bani           015508000
-#> 2173  0105509000                     Basista           015509000
-#> 2187  0105510000                    Bautista           015510000
-#> 2206  0105511000                   Bayambang           015511000
-#> 2284  0105512000                   Binalonan           015512000
-#> 2309  0105513000                    Binmaley           015513000
-#> 2343  0105514000                     Bolinao           015514000
-#> 2374  0105515000                    Bugallon           015515000
-#> 2399  0105516000                      Burgos           015516000
-#> 2414  0105517000                    Calasiao           015517000
-#> 2439  0105518000             City of Dagupan           015518000
-#> 2471  0105519000                       Dasol           015519000
-#> 2490  0105520000                     Infanta           015520000
-#> 2504  0105521000                    Labrador           015521000
-#> 2515  0105522000                    Lingayen           015522000
-#> 2548  0105523000                      Mabini           015523000
-#> 2565  0105524000                   Malasiqui           015524000
-#> 2639  0105525000                     Manaoag           015525000
-#> 2666  0105526000                   Mangaldan           015526000
-#> 2697  0105527000                  Mangatarem           015527000
-#> 2780  0105528000                    Mapandan           015528000
-#> 2796  0105529000                   Natividad           015529000
-#> 2815  0105530000                  Pozorrubio           015530000
-#> 2850  0105531000                     Rosales           015531000
-#> 2888  0105532000          City of San Carlos           015532000
-#> 2975  0105533000                  San Fabian           015533000
-#> 3010  0105534000                 San Jacinto           015534000
-#> 3030  0105535000                  San Manuel           015535000
-#> 3045  0105536000                 San Nicolas           015536000
-#> 3079  0105537000                 San Quintin           015537000
-#> 3101  0105538000               Santa Barbara           015538000
-#> 3131  0105539000                 Santa Maria           015539000
-#> 3155  0105540000                 Santo Tomas           015540000
-#> 3166  0105541000                       Sison           015541000
-#> 3195  0105542000                        Sual           015542000
-#> 3215  0105543000                       Tayug           015543000
-#> 3237  0105544000                     Umingan           015544000
-#> 3296  0105545000                  Urbiztondo           015545000
-#> 3318  0105546000            City of Urdaneta           015546000
-#> 3353  0105547000                    Villasis           015547000
-#> 3375  0105548000                       Laoac           015548000
-#> 3400  0200901000                       Basco           020901000
-#> 3407  0200902000                     Itbayat           020902000
-#> 3413  0200903000                       Ivana           020903000
-#> 3418  0200904000                     Mahatao           020904000
-#> 3423  0200905000                     Sabtang           020905000
-#> 3430  0200906000                      Uyugan           020906000
-#> 3436  0201501000                      Abulug           021501000
-#> 3457  0201502000                      Alcala           021502000
-#> 3483  0201503000                   Allacapan           021503000
-#> 3511  0201504000                     Amulung           021504000
-#> 3559  0201505000                      Aparri           021505000
-#> 3602  0201506000                      Baggao           021506000
-#> 3651  0201507000                 Ballesteros           021507000
-#> 3671  0201508000                      Buguey           021508000
-#> 3702  0201509000                     Calayan           021509000
-#> 3715  0201510000                Camalaniugan           021510000
-#> 3744  0201511000                    Claveria           021511000
-#> 3786  0201512000                      Enrile           021512000
-#> 3809  0201513000                    Gattaran           021513000
-#> 3860  0201514000                     Gonzaga           021514000
-#> 3886  0201515000                       Iguig           021515000
-#> 3910  0201516000                      Lal-Lo           021516000
-#> 3946  0201517000                       Lasam           021517000
-#> 3977  0201518000                    Pamplona           021518000
-#> 3996  0201519000                  Peñablanca           021519000
-#> 4021  0201520000                        Piat           021520000
-#> 4040  0201521000                       Rizal           021521000
-#> 4070  0201522000                Sanchez Mira           021522000
-#> 4089  0201523000                   Santa Ana           021523000
-#> 4106  0201524000              Santa Praxedes           021524000
-#> 4117  0201525000              Santa Teresita           021525000
-#> 4131  0201526000                  Santo Niño           021526000
-#> 4163  0201527000                      Solana           021527000
-#> 4202  0201528000                        Tuao           021528000
-#> 4235  0201529000             Tuguegarao City           021529000
-#> 4286  0203101000                      Alicia           023101000
-#> 4321  0203102000                   Angadanan           023102000
-#> 4381  0203103000                      Aurora           023103000
-#> 4415  0203104000              Benito Soliven           023104000
-#> 4445  0203105000                      Burgos           023105000
-#> 4460  0203106000                     Cabagan           023106000
-#> 4487  0203107000                    Cabatuan           023107000
-#> 4510  0203108000             City of Cauayan           023108000
-#> 4576  0203109000                      Cordon           023109000
-#> 4603  0203110000                   Dinapigue           023110000
-#> 4610  0203111000                   Divilacan           023111000
-#> 4623  0203112000                     Echague           023112000
-#> 4688  0203113000                        Gamu           023113000
-#> 4705  0203114000              City of Ilagan           023114000
-#> 4797  0203115000                       Jones           023115000
-#> 4840  0203116000                        Luna           023116000
-#> 4860  0203117000                   Maconacon           023117000
-#> 4871  0203118000               Delfin Albano           023118000
-#> 4901  0203119000                      Mallig           023119000
-#> 4920  0203120000                   Naguilian           023120000
-#> 4946  0203121000                     Palanan           023121000
-#> 4964  0203122000                      Quezon           023122000
-#> 4980  0203123000                     Quirino           023123000
-#> 5002  0203124000                       Ramon           023124000
-#> 5022  0203125000              Reina Mercedes           023125000
-#> 5043  0203126000                       Roxas           023126000
-#> 5070  0203127000                 San Agustin           023127000
-#> 5094  0203128000               San Guillermo           023128000
-#> 5121  0203129000                  San Isidro           023129000
-#> 5135  0203130000                  San Manuel           023130000
-#> 5155  0203131000                 San Mariano           023131000
-#> 5192  0203132000                   San Mateo           023132000
-#> 5226  0203133000                   San Pablo           023133000
-#> 5244  0203134000                 Santa Maria           023134000
-#> 5265  0203135000            City of Santiago           023135000
-#> 5303  0203136000                 Santo Tomas           023136000
-#> 5331  0203137000                    Tumauini           023137000
-#> 5379  0205001000                    Ambaguio           025001000
-#> 5388  0205002000                      Aritao           025002000
-#> 5411  0205003000                     Bagabag           025003000
-#> 5429  0205004000                     Bambang           025004000
-#> 5455  0205005000                   Bayombong           025005000
-#> 5481  0205006000                       Diadi           025006000
-#> 5501  0205007000             Dupax del Norte           025007000
-#> 5517  0205008000               Dupax del Sur           025008000
-#> 5537  0205009000                      Kasibu           025009000
-#> 5568  0205010000                      Kayapa           025010000
-#> 5599  0205011000                      Quezon           025011000
-#> 5612  0205012000                    Santa Fe           025012000
-#> 5629  0205013000                      Solano           025013000
-#> 5652  0205014000                  Villaverde           025014000
-#> 5662  0205015000           Alfonso Castaneda           025015000
-#> 5670  0205701000                     Aglipay           025701000
-#> 5696  0205702000                 Cabarroguis           025702000
-#> 5714  0205703000                      Diffun           025703000
-#> 5748  0205704000                     Maddela           025704000
-#> 5781  0205705000                     Saguday           025705000
-#> 5791  0205706000                  Nagtipunan           025706000
-#> 5810  0300801000                      Abucay           030801000
-#> 5820  0300802000                       Bagac           030802000
-#> 5835  0300803000             City of Balanga           030803000
-#> 5861  0300804000                 Dinalupihan           030804000
-#> 5908  0300805000                     Hermosa           030805000
-#> 5932  0300806000                       Limay           030806000
-#> 5945  0300807000                   Mariveles           030807000
-#> 5964  0300808000                      Morong           030808000
-#> 5970  0300809000                       Orani           030809000
-#> 6000  0300810000                       Orion           030810000
-#> 6024  0300811000                       Pilar           030811000
-#> 6044  0300812000                       Samal           030812000
-#> 6060  0301401000                       Angat           031401000
-#> 6077  0301402000                    Balagtas           031402000
-#> 6087  0301403000             City of Baliwag           031403000
-#> 6115  0301404000                      Bocaue           031404000
-#> 6135  0301405000                     Bulacan           031405000
-#> 6150  0301406000                      Bustos           031406000
-#> 6165  0301407000                    Calumpit           031407000
-#> 6195  0301408000                   Guiguinto           031408000
-#> 6210  0301409000                     Hagonoy           031409000
-#> 6237  0301410000             City of Malolos           031410000
-#> 6289  0301411000                     Marilao           031411000
-#> 6306  0301412000          City of Meycauayan           031412000
-#> 6333  0301413000                  Norzagaray           031413000
-#> 6347  0301414000                      Obando           031414000
-#> 6359  0301415000                       Pandi           031415000
-#> 6382  0301416000                    Paombong           031416000
-#> 6397  0301417000                    Plaridel           031417000
-#> 6417  0301418000                     Pulilan           031418000
-#> 6437  0301419000               San Ildefonso           031419000
-#> 6474  0301420000  City of San Jose Del Monte           031420000
-#> 6537  0301421000                  San Miguel           031421000
-#> 6587  0301422000                  San Rafael           031422000
-#> 6622  0301423000                 Santa Maria           031423000
-#> 6647  0301424000      Doña Remedios Trinidad           031424000
-#> 6657  0304901000                      Aliaga           034901000
-#> 6684  0304902000                    Bongabon           034902000
-#> 6713  0304903000          City of Cabanatuan           034903000
-#> 6803  0304904000                      Cabiao           034904000
-#> 6827  0304905000                  Carranglan           034905000
-#> 6845  0304906000                      Cuyapo           034906000
-#> 6897  0304907000                    Gabaldon           034907000
-#> 6914  0304908000               City of Gapan           034908000
-#> 6938  0304909000   General Mamerto Natividad           034909000
-#> 6959  0304910000               General Tinio           034910000
-#> 6973  0304911000                      Guimba           034911000
-#> 7038  0304912000                        Jaen           034912000
-#> 7066  0304913000                        Laur           034913000
-#> 7084  0304914000                       Licab           034914000
-#> 7096  0304915000                     Llanera           034915000
-#> 7119  0304916000                       Lupao           034916000
-#> 7144  0304917000       Science City of Muñoz           034917000
-#> 7182  0304918000                   Nampicuan           034918000
-#> 7204  0304919000             City of Palayan           034919000
-#> 7224  0304920000                 Pantabangan           034920000
-#> 7239  0304921000                   Peñaranda           034921000
-#> 7250  0304922000                      Quezon           034922000
-#> 7267  0304923000                       Rizal           034923000
-#> 7294  0304924000                 San Antonio           034924000
-#> 7311  0304925000                  San Isidro           034925000
-#> 7321  0304926000               San Jose City           034926000
-#> 7360  0304927000                San Leonardo           034927000
-#> 7376  0304928000                  Santa Rosa           034928000
-#> 7410  0304929000               Santo Domingo           034929000
-#> 7435  0304930000                    Talavera           034930000
-#> 7489  0304931000                    Talugtug           034931000
-#> 7518  0304932000                    Zaragoza           034932000
-#> 7539  0305402000                      Apalit           035402000
-#> 7552  0305403000                      Arayat           035403000
-#> 7583  0305404000                     Bacolor           035404000
-#> 7605  0305405000                     Candaba           035405000
-#> 7639  0305406000               Floridablanca           035406000
-#> 7673  0305407000                      Guagua           035407000
-#> 7705  0305408000                       Lubao           035408000
-#> 7750  0305409000              Mabalacat City           035409000
-#> 7778  0305410000                    Macabebe           035410000
-#> 7804  0305411000                    Magalang           035411000
-#> 7832  0305412000                    Masantol           035412000
-#> 7859  0305413000                      Mexico           035413000
-#> 7903  0305414000                     Minalin           035414000
-#> 7919  0305415000                       Porac           035415000
-#> 7949  0305416000        City of San Fernando           035416000
-#> 7985  0305417000                    San Luis           035417000
-#> 8003  0305418000                   San Simon           035418000
-#> 8018  0305419000                   Santa Ana           035419000
-#> 8033  0305420000                  Santa Rita           035420000
-#> 8044  0305421000                  Sto. Tomas           035421000
-#> 8052  0305422000                     Sasmuan           035422000
-#> 8066  0306901000                        Anao           036901000
-#> 8085  0306902000                      Bamban           036902000
-#> 8101  0306903000                    Camiling           036903000
-#> 8163  0306904000                       Capas           036904000
-#> 8184  0306905000                  Concepcion           036905000
-#> 8230  0306906000                      Gerona           036906000
-#> 8275  0306907000                      La Paz           036907000
-#> 8297  0306908000                    Mayantoc           036908000
-#> 8322  0306909000                     Moncada           036909000
-#> 8360  0306910000                     Paniqui           036910000
-#> 8396  0306911000                        Pura           036911000
-#> 8413  0306912000                       Ramos           036912000
-#> 8423  0306913000                San Clemente           036913000
-#> 8436  0306914000                  San Manuel           036914000
-#> 8452  0306915000               Santa Ignacia           036915000
-#> 8477  0306916000              City of Tarlac           036916000
-#> 8554  0306917000                    Victoria           036917000
-#> 8581  0306918000                    San Jose           036918000
-#> 8596  0307101000                     Botolan           037101000
-#> 8628  0307102000                    Cabangan           037102000
-#> 8651  0307103000                  Candelaria           037103000
-#> 8668  0307104000                 Castillejos           037104000
-#> 8683  0307105000                         Iba           037105000
-#> 8698  0307106000                    Masinloc           037106000
-#> 8712  0307108000                     Palauig           037108000
-#> 8732  0307109000                 San Antonio           037109000
-#> 8747  0307110000                  San Felipe           037110000
-#> 8759  0307111000               San Marcelino           037111000
-#> 8778  0307112000                 San Narciso           037112000
-#> 8796  0307113000                  Santa Cruz           037113000
-#> 8822  0307114000                       Subic           037114000
-#> 8840  0307701000                       Baler           037701000
-#> 8854  0307702000                   Casiguran           037702000
-#> 8879  0307703000                     Dilasag           037703000
-#> 8891  0307704000                  Dinalungan           037704000
-#> 8901  0307705000                    Dingalan           037705000
-#> 8913  0307706000                   Dipaculao           037706000
-#> 8939  0307707000                Maria Aurora           037707000
-#> 8980  0307708000                    San Luis           037708000
-#> 8999  0330100000             City of Angeles           035401000
-#> 9033  0331400000            City of Olongapo           037107000
-#> 9053  0401001000                   Agoncillo           041001000
-#> 9075  0401002000                   Alitagtag           041002000
-#> 9095  0401003000                     Balayan           041003000
-#> 9144  0401004000                      Balete           041004000
-#> 9158  0401005000               Batangas City           041005000
-#> 9264  0401006000                       Bauan           041006000
-#> 9305  0401007000              City of Calaca           041007000
-#> 9345  0401008000                   Calatagan           041008000
-#> 9371  0401009000                      Cuenca           041009000
-#> 9393  0401010000                       Ibaan           041010000
-#> 9420  0401011000                      Laurel           041011000
-#> 9442  0401012000                      Lemery           041012000
-#> 9489  0401013000                        Lian           041013000
-#> 9509  0401014000                City of Lipa           041014000
-#> 9582  0401015000                        Lobo           041015000
-#> 9609  0401016000                      Mabini           041016000
-#> 9644  0401017000                      Malvar           041017000
-#> 9660  0401018000               Mataasnakahoy           041018000
-#> 9677  0401019000                     Nasugbu           041019000
-#> 9720  0401020000                Padre Garcia           041020000
-#> 9739  0401021000                     Rosario           041021000
-#> 9788  0401022000                    San Jose           041022000
-#> 9822  0401023000                    San Juan           041023000
-#> 9865  0401024000                    San Luis           041024000
-#> 9892  0401025000                 San Nicolas           041025000
-#> 9911  0401026000                 San Pascual           041026000
-#> 9941  0401027000              Santa Teresita           041027000
-#> 9959  0401028000          City of Sto. Tomas           041028000
-#> 9990  0401029000                        Taal           041029000
-#> 10033 0401030000                     Talisay           041030000
-#> 10055 0401031000             City of Tanauan           041031000
-#> 10104 0401032000                      Taysan           041032000
-#> 10125 0401033000                     Tingloy           041033000
-#> 10141 0401034000                         Tuy           041034000
-#> 10165 0402101000                     Alfonso           042101000
-#> 10198 0402102000                      Amadeo           042102000
-#> 10225 0402103000              City of Bacoor           042103000
-#> 10273 0402104000             City of Carmona           042104000
-#> 10288 0402105000              City of Cavite           042105000
-#> 10373 0402106000          City of Dasmariñas           042106000
-#> 10449 0402107000    General Emilio Aguinaldo           042107000
-#> 10464 0402108000       City of General Trias           042108000
-#> 10498 0402109000                City of Imus           042109000
-#> 10596 0402110000                      Indang           042110000
-#> 10633 0402111000                       Kawit           042111000
-#> 10657 0402112000                  Magallanes           042112000
-#> 10674 0402113000                  Maragondon           042113000
-#> 10702 0402114000                      Mendez           042114000
-#> 10727 0402115000                        Naic           042115000
-#> 10758 0402116000                    Noveleta           042116000
-#> 10775 0402117000                     Rosario           042117000
-#> 10796 0402118000                      Silang           042118000
-#> 10861 0402119000            City of Tagaytay           042119000
-#> 10896 0402120000                       Tanza           042120000
-#> 10938 0402121000                     Ternate           042121000
-#> 10949 0402122000      City of Trece Martires           042122000
-#> 10963 0402123000        Gen. Mariano Alvarez           042123000
-#> 10992 0403401000                    Alaminos           043401000
-#> 11008 0403402000                         Bay           043402000
-#> 11024 0403403000               City of Biñan           043403000
-#> 11049 0403404000             City of Cabuyao           043404000
-#> 11068 0403405000             City of Calamba           043405000
-#> 11123 0403406000                     Calauan           043406000
-#> 11141 0403407000                     Cavinti           043407000
-#> 11161 0403408000                        Famy           043408000
-#> 11182 0403409000                    Kalayaan           043409000
-#> 11186 0403410000                       Liliw           043410000
-#> 11220 0403411000                   Los Baños           043411000
-#> 11235 0403412000                    Luisiana           043412000
-#> 11259 0403413000                      Lumban           043413000
-#> 11276 0403414000                     Mabitac           043414000
-#> 11292 0403415000                   Magdalena           043415000
-#> 11317 0403416000                    Majayjay           043416000
-#> 11358 0403417000                   Nagcarlan           043417000
-#> 11411 0403418000                       Paete           043418000
-#> 11421 0403419000                   Pagsanjan           043419000
-#> 11438 0403420000                       Pakil           043420000
-#> 11452 0403421000                      Pangil           043421000
-#> 11461 0403422000                        Pila           043422000
-#> 11479 0403423000                       Rizal           043423000
-#> 11491 0403424000           City of San Pablo           043424000
-#> 11572 0403425000           City of San Pedro           043425000
-#> 11600 0403426000                  Santa Cruz           043426000
-#> 11627 0403427000                 Santa Maria           043427000
-#> 11653 0403428000          City of Santa Rosa           043428000
-#> 11672 0403429000                    Siniloan           043429000
-#> 11693 0403430000                    Victoria           043430000
-#> 11704 0405601000                    Agdangan           045601000
-#> 11717 0405602000                      Alabat           045602000
-#> 11737 0405603000                    Atimonan           045603000
-#> 11780 0405605000                  Buenavista           045605000
-#> 11818 0405606000                     Burdeos           045606000
-#> 11832 0405607000                     Calauag           045607000
-#> 11914 0405608000                  Candelaria           045608000
-#> 11940 0405610000                   Catanauan           045610000
-#> 11987 0405615000                     Dolores           045615000
-#> 12004 0405616000                General Luna           045616000
-#> 12032 0405617000               General Nakar           045617000
-#> 12052 0405618000                 Guinayangan           045618000
-#> 12107 0405619000                      Gumaca           045619000
-#> 12167 0405620000                     Infanta           045620000
-#> 12204 0405621000                     Jomalig           045621000
-#> 12210 0405622000                       Lopez           045622000
-#> 12306 0405623000                      Lucban           045623000
-#> 12339 0405625000                   Macalelon           045625000
-#> 12370 0405627000                      Mauban           045627000
-#> 12411 0405628000                     Mulanay           045628000
-#> 12440 0405629000                Padre Burgos           045629000
-#> 12463 0405630000                    Pagbilao           045630000
-#> 12491 0405631000                   Panukulan           045631000
-#> 12505 0405632000                 Patnanungan           045632000
-#> 12512 0405633000                       Perez           045633000
-#> 12527 0405634000                      Pitogo           045634000
-#> 12567 0405635000                    Plaridel           045635000
-#> 12577 0405636000                     Polillo           045636000
-#> 12598 0405637000                      Quezon           045637000
-#> 12623 0405638000                        Real           045638000
-#> 12641 0405639000                    Sampaloc           045639000
-#> 12656 0405640000                  San Andres           045640000
-#> 12664 0405641000                 San Antonio           045641000
-#> 12685 0405642000               San Francisco           045642000
-#> 12702 0405644000                 San Narciso           045644000
-#> 12727 0405645000                     Sariaya           045645000
-#> 12771 0405646000                  Tagkawayan           045646000
-#> 12817 0405647000             City of Tayabas           045647000
-#> 12884 0405648000                      Tiaong           045648000
-#> 12916 0405649000                      Unisan           045649000
-#> 12954 0405801000                      Angono           045801000
-#> 12965 0405802000            City of Antipolo           045802000
-#> 12982 0405803000                       Baras           045803000
-#> 12993 0405804000                  Binangonan           045804000
-#> 13034 0405805000                      Cainta           045805000
-#> 13042 0405806000                     Cardona           045806000
-#> 13061 0405807000                   Jala-Jala           045807000
-#> 13073 0405808000                   Rodriguez           045808000
-#> 13085 0405809000                      Morong           045809000
-#> 13094 0405810000                     Pililla           045810000
-#> 13104 0405811000                   San Mateo           045811000
-#> 13120 0405812000                       Tanay           045812000
-#> 13141 0405813000                      Taytay           045813000
-#> 13147 0405814000                      Teresa           045814000
-#> 13157 0431200000              City of Lucena           045624000
-#> 13193 0500501000                     Bacacay           050501000
-#> 13250 0500502000                     Camalig           050502000
-#> 13301 0500503000                      Daraga           050503000
-#> 13356 0500504000                  Guinobatan           050504000
-#> 13401 0500505000                    Jovellar           050505000
-#> 13425 0500506000             City of Legazpi           050506000
-#> 13496 0500507000                       Libon           050507000
-#> 13544 0500508000               City of Ligao           050508000
-#> 13600 0500509000                   Malilipot           050509000
-#> 13619 0500510000                     Malinao           050510000
-#> 13649 0500511000                      Manito           050511000
-#> 13665 0500512000                         Oas           050512000
-#> 13719 0500513000                   Pio Duran           050513000
-#> 13753 0500514000                    Polangui           050514000
-#> 13798 0500515000                   Rapu-Rapu           050515000
-#> 13833 0500516000               Santo Domingo           050516000
-#> 13857 0500517000              City of Tabaco           050517000
-#> 13905 0500518000                        Tiwi           050518000
-#> 13932 0501601000                       Basud           051601000
-#> 13962 0501602000                   Capalonga           051602000
-#> 13985 0501603000                        Daet           051603000
-#> 14011 0501604000            San Lorenzo Ruiz           051604000
-#> 14024 0501605000             Jose Panganiban           051605000
-#> 14052 0501606000                        Labo           051606000
-#> 14105 0501607000                    Mercedes           051607000
-#> 14132 0501608000                    Paracale           051608000
-#> 14160 0501609000                 San Vicente           051609000
-#> 14170 0501610000                 Santa Elena           051610000
-#> 14190 0501611000                     Talisay           051611000
-#> 14206 0501612000                     Vinzons           051612000
-#> 14227 0501701000                        Baao           051701000
-#> 14258 0501702000                     Balatan           051702000
-#> 14276 0501703000                        Bato           051703000
-#> 14310 0501704000                      Bombon           051704000
-#> 14319 0501705000                        Buhi           051705000
-#> 14358 0501706000                        Bula           051706000
-#> 14392 0501707000                     Cabusao           051707000
-#> 14402 0501708000                   Calabanga           051708000
-#> 14451 0501709000                   Camaligan           051709000
-#> 14465 0501710000                     Canaman           051710000
-#> 14490 0501711000                    Caramoan           051711000
-#> 14540 0501712000                 Del Gallego           051712000
-#> 14573 0501713000                      Gainza           051713000
-#> 14582 0501714000                Garchitorena           051714000
-#> 14606 0501715000                         Goa           051715000
-#> 14641 0501716000               City of Iriga           051716000
-#> 14678 0501717000                     Lagonoy           051717000
-#> 14717 0501718000                    Libmanan           051718000
-#> 14793 0501719000                        Lupi           051719000
-#> 14832 0501720000                     Magarao           051720000
-#> 14848 0501721000                      Milaor           051721000
-#> 14869 0501722000                   Minalabac           051722000
-#> 14895 0501723000                       Nabua           051723000
-#> 14938 0501724000                City of Naga           051724000
-#> 14966 0501725000                      Ocampo           051725000
-#> 14992 0501726000                    Pamplona           051726000
-#> 15010 0501727000                     Pasacao           051727000
-#> 15030 0501728000                        Pili           051728000
-#> 15057 0501729000                Presentacion           051729000
-#> 15076 0501730000                       Ragay           051730000
-#> 15115 0501731000                      Sagñay           051731000
-#> 15135 0501732000                San Fernando           051732000
-#> 15158 0501733000                    San Jose           051733000
-#> 15188 0501734000                     Sipocot           051734000
-#> 15235 0501735000                      Siruma           051735000
-#> 15258 0501736000                      Tigaon           051736000
-#> 15282 0501737000                    Tinambac           051737000
-#> 15328 0502001000                   Bagamanoc           052001000
-#> 15347 0502002000                       Baras           052002000
-#> 15377 0502003000                        Bato           052003000
-#> 15405 0502004000                   Caramoran           052004000
-#> 15433 0502005000                     Gigmoto           052005000
-#> 15443 0502006000                      Pandan           052006000
-#> 15470 0502007000                  Panganiban           052007000
-#> 15494 0502008000                  San Andres           052008000
-#> 15533 0502009000                  San Miguel           052009000
-#> 15558 0502010000                        Viga           052010000
-#> 15590 0502011000                       Virac           052011000
-#> 15655 0504101000                      Aroroy           054101000
-#> 15697 0504102000                      Baleno           054102000
-#> 15722 0504103000                       Balud           054103000
-#> 15755 0504104000                      Batuan           054104000
-#> 15770 0504105000                   Cataingan           054105000
-#> 15807 0504106000                     Cawayan           054106000
-#> 15845 0504107000                    Claveria           054107000
-#> 15868 0504108000                  Dimasalang           054108000
-#> 15889 0504109000                   Esperanza           054109000
-#> 15910 0504110000                     Mandaon           054110000
-#> 15937 0504111000             City of Masbate           054111000
-#> 15968 0504112000                    Milagros           054112000
-#> 15996 0504113000                        Mobo           054113000
-#> 16026 0504114000                     Monreal           054114000
-#> 16038 0504115000                     Palanas           054115000
-#> 16063 0504116000               Pio V. Corpus           054116000
-#> 16082 0504117000                      Placer           054117000
-#> 16118 0504118000                San Fernando           054118000
-#> 16145 0504119000                 San Jacinto           054119000
-#> 16167 0504120000                 San Pascual           054120000
-#> 16190 0504121000                        Uson           054121000
-#> 16227 0506202000                   Barcelona           056202000
-#> 16253 0506203000                       Bulan           056203000
-#> 16317 0506204000                     Bulusan           056204000
-#> 16342 0506205000                   Casiguran           056205000
-#> 16368 0506206000                    Castilla           056206000
-#> 16403 0506207000                      Donsol           056207000
-#> 16455 0506208000                       Gubat           056208000
-#> 16498 0506209000                      Irosin           056209000
-#> 16527 0506210000                       Juban           056210000
-#> 16553 0506211000                  Magallanes           056211000
-#> 16588 0506212000                      Matnog           056212000
-#> 16629 0506213000                       Pilar           056213000
-#> 16679 0506214000                 Prieto Diaz           056214000
-#> 16703 0506215000             Santa Magdalena           056215000
-#> 16718 0506216000            City of Sorsogon           056216000
-#> 16785 0600401000                     Altavas           060401000
-#> 16800 0600402000                      Balete           060402000
-#> 16811 0600403000                       Banga           060403000
-#> 16842 0600404000                       Batan           060404000
-#> 16863 0600405000                    Buruanga           060405000
-#> 16879 0600406000                      Ibajay           060406000
-#> 16915 0600407000                      Kalibo           060407000
-#> 16932 0600408000                        Lezo           060408000
-#> 16945 0600409000                     Libacao           060409000
-#> 16970 0600410000                     Madalag           060410000
-#> 16996 0600411000                      Makato           060411000
-#> 17015 0600412000                       Malay           060412000
-#> 17033 0600413000                     Malinao           060413000
-#> 17057 0600414000                       Nabas           060414000
-#> 17078 0600415000              New Washington           060415000
-#> 17095 0600416000                    Numancia           060416000
-#> 17113 0600417000                    Tangalan           060417000
-#> 17130 0600601000                     Anini-Y           060601000
-#> 17154 0600602000                     Barbaza           060602000
-#> 17194 0600603000                     Belison           060603000
-#> 17206 0600604000                    Bugasong           060604000
-#> 17234 0600605000                      Caluya           060605000
-#> 17253 0600606000                      Culasi           060606000
-#> 17298 0600607000              Tobias Fornier           060607000
-#> 17349 0600608000                      Hamtic           060608000
-#> 17397 0600609000                     Laua-An           060609000
-#> 17438 0600610000                    Libertad           060610000
-#> 17458 0600611000                      Pandan           060611000
-#> 17493 0600612000                   Patnongon           060612000
-#> 17530 0600613000                    San Jose           060613000
-#> 17559 0600614000                 San Remigio           060614000
-#> 17605 0600615000                     Sebaste           060615000
-#> 17616 0600616000                     Sibalom           060616000
-#> 17693 0600617000                      Tibiao           060617000
-#> 17715 0600618000                  Valderrama           060618000
-#> 17739 0601901000                    Cuartero           061901000
-#> 17762 0601902000                         Dao           061902000
-#> 17783 0601903000                     Dumalag           061903000
-#> 17803 0601904000                     Dumarao           061904000
-#> 17837 0601905000                      Ivisan           061905000
-#> 17853 0601906000                    Jamindan           061906000
-#> 17884 0601907000                     Ma-Ayon           061907000
-#> 17917 0601908000                    Mambusao           061908000
-#> 17944 0601909000                       Panay           061909000
-#> 17987 0601910000                     Panitan           061910000
-#> 18014 0601911000                       Pilar           061911000
-#> 18039 0601912000                  Pontevedra           061912000
-#> 18066 0601913000             President Roxas           061913000
-#> 18089 0601914000               City of Roxas           061914000
-#> 18137 0601915000                     Sapi-An           061915000
-#> 18148 0601916000                       Sigma           061916000
-#> 18170 0601917000                       Tapaz           061917000
-#> 18230 0603001000                        Ajuy           063001000
-#> 18265 0603002000                   Alimodian           063002000
-#> 18317 0603003000                      Anilao           063003000
-#> 18339 0603004000                   Badiangan           063004000
-#> 18371 0603005000                     Balasan           063005000
-#> 18395 0603006000                      Banate           063006000
-#> 18414 0603007000               Barotac Nuevo           063007000
-#> 18444 0603008000               Barotac Viejo           063008000
-#> 18471 0603009000                       Batad           063009000
-#> 18496 0603010000                    Bingawan           063010000
-#> 18511 0603012000                    Cabatuan           063012000
-#> 18580 0603013000                     Calinog           063013000
-#> 18640 0603014000                      Carles           063014000
-#> 18674 0603015000                  Concepcion           063015000
-#> 18700 0603016000                      Dingle           063016000
-#> 18734 0603017000                      Dueñas           063017000
-#> 18782 0603018000                    Dumangas           063018000
-#> 18828 0603019000                    Estancia           063019000
-#> 18854 0603020000                     Guimbal           063020000
-#> 18888 0603021000                     Igbaras           063021000
-#> 18935 0603023000                     Janiuay           063023000
-#> 18996 0603025000                    Lambunao           063025000
-#> 19070 0603026000                     Leganes           063026000
-#> 19089 0603027000                      Lemery           063027000
-#> 19121 0603028000                        Leon           063028000
-#> 19207 0603029000                      Maasin           063029000
-#> 19258 0603030000                      Miagao           063030000
-#> 19378 0603031000                        Mina           063031000
-#> 19401 0603032000                  New Lucena           063032000
-#> 19423 0603034000                        Oton           063034000
-#> 19461 0603035000               City of Passi           063035000
-#> 19513 0603036000                       Pavia           063036000
-#> 19532 0603037000                     Pototan           063037000
-#> 19583 0603038000                San Dionisio           063038000
-#> 19613 0603039000                 San Enrique           063039000
-#> 19642 0603040000                 San Joaquin           063040000
-#> 19728 0603041000                  San Miguel           063041000
-#> 19753 0603042000                  San Rafael           063042000
-#> 19763 0603043000               Santa Barbara           063043000
-#> 19824 0603044000                        Sara           063044000
-#> 19867 0603045000                    Tigbauan           063045000
-#> 19920 0603046000                    Tubungan           063046000
-#> 19969 0603047000                     Zarraga           063047000
-#> 19995 0607901000                  Buenavista           067901000
-#> 20032 0607902000                      Jordan           067902000
-#> 20047 0607903000              Nueva Valencia           067903000
-#> 20070 0607904000                 San Lorenzo           067904000
-#> 20083 0607905000                     Sibunag           067905000
-#> 20098 0631000000              City of Iloilo           063022000
-#> 20281 0701201000                Alburquerque           071201000
-#> 20293 0701202000                      Alicia           071202000
-#> 20309 0701203000                        Anda           071203000
-#> 20326 0701204000                   Antequera           071204000
-#> 20348 0701205000                    Baclayon           071205000
-#> 20366 0701206000                   Balilihan           071206000
-#> 20398 0701207000                      Batuan           071207000
-#> 20414 0701208000                       Bilar           071208000
-#> 20434 0701209000                  Buenavista           071209000
-#> 20470 0701210000                      Calape           071210000
-#> 20504 0701211000                    Candijay           071211000
-#> 20526 0701212000                      Carmen           071212000
-#> 20556 0701213000                   Catigbian           071213000
-#> 20579 0701214000                      Clarin           071214000
-#> 20604 0701215000                     Corella           071215000
-#> 20613 0701216000                      Cortes           071216000
-#> 20628 0701217000                     Dagohoy           071217000
-#> 20644 0701218000                       Danao           071218000
-#> 20662 0701219000                       Dauis           071219000
-#> 20675 0701220000                      Dimiao           071220000
-#> 20711 0701221000                       Duero           071221000
-#> 20733 0701222000            Garcia Hernandez           071222000
-#> 20764 0701223000                  Guindulman           071223000
-#> 20784 0701224000                    Inabanga           071224000
-#> 20835 0701225000                       Jagna           071225000
-#> 20869 0701226000                      Getafe           071226000
-#> 20894 0701227000                        Lila           071227000
-#> 20913 0701228000                        Loay           071228000
-#> 20938 0701229000                       Loboc           071229000
-#> 20967 0701230000                        Loon           071230000
-#> 21035 0701231000                      Mabini           071231000
-#> 21058 0701232000                   Maribojoc           071232000
-#> 21081 0701233000                     Panglao           071233000
-#> 21092 0701234000                       Pilar           071234000
-#> 21114 0701235000  President Carlos P. Garcia           071235000
-#> 21138 0701236000                    Sagbayan           071236000
-#> 21163 0701237000                  San Isidro           071237000
-#> 21176 0701238000                  San Miguel           071238000
-#> 21195 0701239000                     Sevilla           071239000
-#> 21209 0701240000             Sierra Bullones           071240000
-#> 21232 0701241000                    Sikatuna           071241000
-#> 21243 0701242000          City of Tagbilaran           071242000
-#> 21259 0701243000                     Talibon           071243000
-#> 21285 0701244000                    Trinidad           071244000
-#> 21306 0701245000                     Tubigon           071245000
-#> 21341 0701246000                        Ubay           071246000
-#> 21386 0701247000                    Valencia           071247000
-#> 21422 0701248000                  Bien Unido           071248000
-#> 21439 0702201000                   Alcantara           072201000
-#> 21449 0702202000                       Alcoy           072202000
-#> 21458 0702203000                     Alegria           072203000
-#> 21468 0702204000                  Aloguinsan           072204000
-#> 21484 0702205000                       Argao           072205000
-#> 21530 0702206000                    Asturias           072206000
-#> 21558 0702207000                      Badian           072207000
-#> 21588 0702208000                    Balamban           072208000
-#> 21617 0702209000                    Bantayan           072209000
-#> 21643 0702210000                      Barili           072210000
-#> 21686 0702211000                City of Bogo           072211000
-#> 21716 0702212000                     Boljoon           072212000
-#> 21728 0702213000                      Borbon           072213000
-#> 21748 0702214000              City of Carcar           072214000
-#> 21764 0702215000                      Carmen           072215000
-#> 21786 0702216000                      Catmon           072216000
-#> 21807 0702218000                  Compostela           072218000
-#> 21825 0702219000                 Consolacion           072219000
-#> 21847 0702220000                     Cordova           072220000
-#> 21861 0702221000                Daanbantayan           072221000
-#> 21882 0702222000                   Dalaguete           072222000
-#> 21916 0702223000                  Danao City           072223000
-#> 21959 0702224000                    Dumanjug           072224000
-#> 21997 0702225000                   Ginatilan           072225000
-#> 22012 0702227000                      Liloan           072227000
-#> 22027 0702228000                  Madridejos           072228000
-#> 22042 0702229000                   Malabuyoc           072229000
-#> 22057 0702231000                    Medellin           072231000
-#> 22077 0702232000                 Minglanilla           072232000
-#> 22097 0702233000                    Moalboal           072233000
-#> 22113 0702234000                City of Naga           072234000
-#> 22142 0702235000                       Oslob           072235000
-#> 22164 0702236000                       Pilar           072236000
-#> 22178 0702237000                Pinamungajan           072237000
-#> 22205 0702238000                        Poro           072238000
-#> 22223 0702239000                       Ronda           072239000
-#> 22238 0702240000                     Samboan           072240000
-#> 22254 0702241000                San Fernando           072241000
-#> 22276 0702242000               San Francisco           072242000
-#> 22292 0702243000                 San Remigio           072243000
-#> 22320 0702244000                    Santa Fe           072244000
-#> 22331 0702245000                   Santander           072245000
-#> 22342 0702246000                     Sibonga           072246000
-#> 22368 0702247000                       Sogod           072247000
-#> 22387 0702248000                     Tabogon           072248000
-#> 22413 0702249000                    Tabuelan           072249000
-#> 22426 0702250000             City of Talisay           072250000
-#> 22449 0702251000              City of Toledo           072251000
-#> 22488 0702252000                     Tuburan           072252000
-#> 22543 0702253000                      Tudela           072253000
-#> 22555 0730600000                City of Cebu           072217000
-#> 22636 0731100000           City of Lapu-Lapu           072226000
-#> 22667 0731300000             City of Mandaue           072230000
-#> 22697 0802601000                     Arteche           082601000
-#> 22718 0802602000                   Balangiga           082602000
-#> 22732 0802603000                 Balangkayan           082603000
-#> 22748 0802604000            City of Borongan           082604000
-#> 22810 0802605000                    Can-Avid           082605000
-#> 22839 0802606000                     Dolores           082606000
-#> 22886 0802607000           General Macarthur           082607000
-#> 22917 0802608000                    Giporlos           082608000
-#> 22936 0802609000                      Guiuan           082609000
-#> 22997 0802610000                     Hernani           082610000
-#> 23011 0802611000                     Jipapad           082611000
-#> 23025 0802612000                      Lawaan           082612000
-#> 23042 0802613000                    Llorente           082613000
-#> 23076 0802614000                      Maslog           082614000
-#> 23089 0802615000                   Maydolong           082615000
-#> 23110 0802616000                    Mercedes           082616000
-#> 23127 0802617000                        Oras           082617000
-#> 23170 0802618000                 Quinapondan           082618000
-#> 23196 0802619000                     Salcedo           082619000
-#> 23238 0802620000                  San Julian           082620000
-#> 23255 0802621000               San Policarpo           082621000
-#> 23273 0802622000                       Sulat           082622000
-#> 23292 0802623000                        Taft           082623000
-#> 23318 0803701000                      Abuyog           083701000
-#> 23382 0803702000                  Alangalang           083702000
-#> 23437 0803703000                     Albuera           083703000
-#> 23454 0803705000                   Babatngon           083705000
-#> 23480 0803706000                      Barugo           083706000
-#> 23518 0803707000                        Bato           083707000
-#> 23551 0803708000              City of Baybay           083708000
-#> 23644 0803710000                     Burauen           083710000
-#> 23722 0803713000                    Calubian           083713000
-#> 23776 0803714000                    Capoocan           083714000
-#> 23798 0803715000                    Carigara           083715000
-#> 23848 0803717000                      Dagami           083717000
-#> 23914 0803718000                       Dulag           083718000
-#> 23960 0803719000                    Hilongos           083719000
-#> 24012 0803720000                     Hindang           083720000
-#> 24033 0803721000                    Inopacan           083721000
-#> 24054 0803722000                      Isabel           083722000
-#> 24079 0803723000                        Jaro           083723000
-#> 24126 0803724000                      Javier           083724000
-#> 24155 0803725000                      Julita           083725000
-#> 24182 0803726000                     Kananga           083726000
-#> 24206 0803728000                      La Paz           083728000
-#> 24242 0803729000                       Leyte           083729000
-#> 24273 0803730000                   Macarthur           083730000
-#> 24305 0803731000                    Mahaplag           083731000
-#> 24334 0803733000                    Matag-Ob           083733000
-#> 24356 0803734000                     Matalom           083734000
-#> 24387 0803735000                     Mayorga           083735000
-#> 24404 0803736000                      Merida           083736000
-#> 24427 0803738000                  Ormoc City           083738000
-#> 24513 0803739000                        Palo           083739000
-#> 24547 0803740000                    Palompon           083740000
-#> 24598 0803741000                    Pastrana           083741000
-#> 24628 0803742000                  San Isidro           083742000
-#> 24648 0803743000                  San Miguel           083743000
-#> 24670 0803744000                    Santa Fe           083744000
-#> 24691 0803745000                     Tabango           083745000
-#> 24705 0803746000                  Tabontabon           083746000
-#> 24722 0803748000                     Tanauan           083748000
-#> 24777 0803749000                      Tolosa           083749000
-#> 24793 0803750000                       Tunga           083750000
-#> 24802 0803751000                     Villaba           083751000
-#> 24839 0804801000                       Allen           084801000
-#> 24860 0804802000                        Biri           084802000
-#> 24869 0804803000                       Bobon           084803000
-#> 24888 0804804000                       Capul           084804000
-#> 24901 0804805000                    Catarman           084805000
-#> 24957 0804806000                     Catubig           084806000
-#> 25005 0804807000                       Gamay           084807000
-#> 25032 0804808000                      Laoang           084808000
-#> 25089 0804809000                     Lapinig           084809000
-#> 25105 0804810000                   Las Navas           084810000
-#> 25159 0804811000                   Lavezares           084811000
-#> 25186 0804812000                     Mapanas           084812000
-#> 25200 0804813000                   Mondragon           084813000
-#> 25225 0804814000                     Palapag           084814000
-#> 25258 0804815000                    Pambujan           084815000
-#> 25285 0804816000                     Rosario           084816000
-#> 25297 0804817000                 San Antonio           084817000
-#> 25308 0804818000                  San Isidro           084818000
-#> 25323 0804819000                    San Jose           084819000
-#> 25340 0804820000                   San Roque           084820000
-#> 25357 0804821000                 San Vicente           084821000
-#> 25365 0804822000               Silvino Lobos           084822000
-#> 25392 0804823000                    Victoria           084823000
-#> 25409 0804824000                Lope De Vega           084824000
-#> 25433 0806001000                     Almagro           086001000
-#> 25457 0806002000                       Basey           086002000
-#> 25509 0806003000            City of Calbayog           086003000
-#> 25667 0806004000                     Calbiga           086004000
-#> 25709 0806005000          City of Catbalogan           086005000
-#> 25767 0806006000                       Daram           086006000
-#> 25826 0806007000                     Gandara           086007000
-#> 25896 0806008000                  Hinabangan           086008000
-#> 25918 0806009000                     Jiabong           086009000
-#> 25953 0806010000                     Marabut           086010000
-#> 25978 0806011000                  Matuguinao           086011000
-#> 25999 0806012000                     Motiong           086012000
-#> 26030 0806013000                  Pinabacdao           086013000
-#> 26055 0806014000            San Jose De Buan           086014000
-#> 26070 0806015000               San Sebastian           086015000
-#> 26085 0806016000             Santa Margarita           086016000
-#> 26122 0806017000                  Santa Rita           086017000
-#> 26161 0806018000                  Santo Niño           086018000
-#> 26175 0806019000                    Talalora           086019000
-#> 26187 0806020000                   Tarangnan           086020000
-#> 26229 0806021000                   Villareal           086021000
-#> 26268 0806022000                     Paranas           086022000
-#> 26313 0806023000                   Zumarraga           086023000
-#> 26339 0806024000                  Tagapul-An           086024000
-#> 26354 0806025000                   San Jorge           086025000
-#> 26396 0806026000                  Pagsanghan           086026000
-#> 26411 0806401000                    Anahawan           086401000
-#> 26426 0806402000                      Bontoc           086402000
-#> 26467 0806403000                  Hinunangan           086403000
-#> 26508 0806404000                  Hinundayan           086404000
-#> 26526 0806405000                     Libagon           086405000
-#> 26541 0806406000                      Liloan           086406000
-#> 26566 0806407000              City of Maasin           086407000
-#> 26637 0806408000                    Macrohon           086408000
-#> 26668 0806409000                    Malitbog           086409000
-#> 26706 0806410000                Padre Burgos           086410000
-#> 26718 0806411000                    Pintuyan           086411000
-#> 26742 0806412000               Saint Bernard           086412000
-#> 26773 0806413000               San Francisco           086413000
-#> 26796 0806414000                    San Juan           086414000
-#> 26815 0806415000                 San Ricardo           086415000
-#> 26831 0806416000                      Silago           086416000
-#> 26847 0806417000                       Sogod           086417000
-#> 26893 0806418000                 Tomas Oppus           086418000
-#> 26923 0806419000                    Limasawa           086419000
-#> 26931 0807801000                     Almeria           087801000
-#> 26945 0807802000                     Biliran           087802000
-#> 26957 0807803000                  Cabucgayan           087803000
-#> 26971 0807804000                    Caibiran           087804000
-#> 26989 0807805000                      Culaba           087805000
-#> 27007 0807806000                     Kawayan           087806000
-#> 27028 0807807000                    Maripipi           087807000
-#> 27044 0807808000                       Naval           087808000
-#> 27071 0831600000            City of Tacloban           083747000
-#> 27212 0906601000                     Indanan           156601000
-#> 27247 0906602000                        Jolo           156602000
-#> 27256 0906603000          Kalingalan Caluang           156603000
-#> 27266 0906604000                        Luuk           156604000
-#> 27279 0906605000                    Maimbung           156605000
-#> 27307 0906606000        Hadji Panglima Tahil           156606000
-#> 27313 0906607000                 Old Panamao           156607000
-#> 27345 0906608000                  Pangutaran           156608000
-#> 27362 0906609000                      Parang           156609000
-#> 27403 0906610000                        Pata           156610000
-#> 27418 0906611000                     Patikul           156611000
-#> 27449 0906612000                       Siasi           156612000
-#> 27500 0906613000                     Talipao           156613000
-#> 27553 0906614000                       Tapul           156614000
-#> 27569 0906615000                     Tongkil           156615000
-#> 27584 0906616000             Panglima Estino           156616000
-#> 27597 0906617000                       Lugus           156617000
-#> 27615 0906618000                     Pandami           156618000
-#> 27632 0906619000                        Omar           156619000
-#> 27642 0907201000             City of Dapitan           097201000
-#> 27693 0907202000             City of Dipolog           097202000
-#> 27715 0907203000                   Katipunan           097203000
-#> 27746 0907204000                 La Libertad           097204000
-#> 27760 0907205000                     Labason           097205000
-#> 27781 0907206000                       Liloy           097206000
-#> 27819 0907207000                     Manukan           097207000
-#> 27842 0907208000                       Mutia           097208000
-#> 27859 0907209000                       Piñan           097209000
-#> 27882 0907210000                     Polanco           097210000
-#> 27913 0907211000       Pres. Manuel A. Roxas           097211000
-#> 27945 0907212000                       Rizal           097212000
-#> 27968 0907213000                       Salug           097213000
-#> 27992 0907214000           Sergio Osmeña Sr.           097214000
-#> 28032 0907215000                      Siayan           097215000
-#> 28055 0907216000                      Sibuco           097216000
-#> 28084 0907217000                     Sibutad           097217000
-#> 28101 0907218000                   Sindangan           097218000
-#> 28154 0907219000                      Siocon           097219000
-#> 28181 0907220000                     Sirawai           097220000
-#> 28216 0907221000                  Tampilisan           097221000
-#> 28237 0907222000                 Jose Dalman           097222000
-#> 28256 0907223000                     Gutalac           097223000
-#> 28290 0907224000                   Baliguian           097224000
-#> 28308 0907225000                       Godod           097225000
-#> 28326 0907226000             Leon T. Postigo           097226000
-#> 28345 0907227000                     Kalawit           097227000
-#> 28361 0907302000                      Aurora           097302000
-#> 28406 0907303000                       Bayog           097303000
-#> 28435 0907305000                  Dimataling           097305000
-#> 28460 0907306000                       Dinas           097306000
-#> 28491 0907307000                   Dumalinao           097307000
-#> 28522 0907308000                    Dumingag           097308000
-#> 28567 0907311000                  Kumalarang           097311000
-#> 28586 0907312000                    Labangan           097312000
-#> 28612 0907313000                     Lapuyan           097313000
-#> 28639 0907315000                     Mahayag           097315000
-#> 28669 0907317000                Margosatubig           097317000
-#> 28687 0907318000                    Midsalip           097318000
-#> 28721 0907319000                      Molave           097319000
-#> 28747 0907322000            City of Pagadian           097322000
-#> 28802 0907323000             Ramon Magsaysay           097323000
-#> 28830 0907324000                  San Miguel           097324000
-#> 28849 0907325000                   San Pablo           097325000
-#> 28878 0907327000                      Tabina           097327000
-#> 28894 0907328000                    Tambulig           097328000
-#> 28926 0907330000                     Tukuran           097330000
-#> 28952 0907333000                    Lakewood           097333000
-#> 28967 0907337000                    Josefina           097337000
-#> 28982 0907338000                      Pitogo           097338000
-#> 28998 0907340000                     Sominot           097340000
-#> 29017 0907341000           Vincenzo A. Sagun           097341000
-#> 29032 0907343000                      Guipos           097343000
-#> 29050 0907344000                      Tigbao           097344000
-#> 29070 0908301000                      Alicia           098301000
-#> 29098 0908302000                        Buug           098302000
-#> 29126 0908303000                    Diplahan           098303000
-#> 29149 0908304000                      Imelda           098304000
-#> 29169 0908305000                        Ipil           098305000
-#> 29198 0908306000                   Kabasalan           098306000
-#> 29228 0908307000                     Mabuhay           098307000
-#> 29247 0908308000                    Malangas           098308000
-#> 29273 0908309000                        Naga           098309000
-#> 29297 0908310000                    Olutanga           098310000
-#> 29317 0908311000                       Payao           098311000
-#> 29346 0908312000                Roseller Lim           098312000
-#> 29373 0908313000                        Siay           098313000
-#> 29403 0908314000                     Talusan           098314000
-#> 29418 0908315000                       Titay           098315000
-#> 29449 0908316000                    Tungawan           098316000
-#> 29475 0931700000           City of Zamboanga           097332000
-#> 29575 0990101000             City of Isabela           099701000
-#> 29623 1001301000                     Baungon           101301000
-#> 29640 1001302000                     Damulog           101302000
-#> 29658 1001303000                   Dangcagan           101303000
-#> 29673 1001304000                  Don Carlos           101304000
-#> 29703 1001305000                 Impasug-ong           101305000
-#> 29717 1001306000                  Kadingilan           101306000
-#> 29735 1001307000                  Kalilangan           101307000
-#> 29750 1001308000                      Kibawe           101308000
-#> 29774 1001309000                    Kitaotao           101309000
-#> 29810 1001310000                    Lantapan           101310000
-#> 29825 1001311000                      Libona           101311000
-#> 29840 1001312000          City of Malaybalay           101312000
-#> 29887 1001313000                    Malitbog           101313000
-#> 29899 1001314000              Manolo Fortich           101314000
-#> 29922 1001315000                     Maramag           101315000
-#> 29943 1001316000                 Pangantucan           101316000
-#> 29963 1001317000                      Quezon           101317000
-#> 29995 1001318000                San Fernando           101318000
-#> 30020 1001319000                     Sumilao           101319000
-#> 30031 1001320000                     Talakag           101320000
-#> 30061 1001321000            City of Valencia           101321000
-#> 30093 1001322000                 Cabanglasan           101322000
-#> 30110 1001801000                    Catarman           101801000
-#> 30125 1001802000                 Guinsiliban           101802000
-#> 30133 1001803000                     Mahinog           101803000
-#> 30147 1001804000                    Mambajao           101804000
-#> 30163 1001805000                       Sagay           101805000
-#> 30174 1003501000                     Bacolod           103501000
-#> 30191 1003502000                       Baloi           103502000
-#> 30213 1003503000                       Baroy           103503000
-#> 30237 1003505000                   Kapatagan           103505000
-#> 30271 1003506000        Sultan Naga Dimaporo           103506000
-#> 30309 1003507000                   Kauswagan           103507000
-#> 30323 1003508000                  Kolambugan           103508000
-#> 30350 1003509000                        Lala           103509000
-#> 30378 1003510000                     Linamon           103510000
-#> 30387 1003511000                   Magsaysay           103511000
-#> 30412 1003512000                       Maigo           103512000
-#> 30426 1003513000                    Matungao           103513000
-#> 30439 1003514000                       Munai           103514000
-#> 30466 1003515000                    Nunungan           103515000
-#> 30492 1003516000                Pantao Ragat           103516000
-#> 30513 1003517000               Poona Piagapo           103517000
-#> 30540 1003518000                    Salvador           103518000
-#> 30566 1003519000                       Sapad           103519000
-#> 30584 1003520000                    Tagoloan           103520000
-#> 30592 1003521000                     Tangcal           103521000
-#> 30611 1003522000                       Tubod           103522000
-#> 30636 1003523000                      Pantar           103523000
-#> 30659 1004201000                      Aloran           104201000
-#> 30698 1004202000                   Baliangao           104202000
-#> 30714 1004203000                   Bonifacio           104203000
-#> 30743 1004204000                     Calamba           104204000
-#> 30763 1004205000                      Clarin           104205000
-#> 30793 1004206000                  Concepcion           104206000
-#> 30812 1004207000                     Jimenez           104207000
-#> 30837 1004208000                 Lopez Jaena           104208000
-#> 30866 1004209000           City of Oroquieta           104209000
-#> 30914 1004210000              City of Ozamiz           104210000
-#> 30966 1004211000                      Panaon           104211000
-#> 30983 1004212000                    Plaridel           104212000
-#> 31017 1004213000               Sapang Dalaga           104213000
-#> 31046 1004214000                   Sinacaban           104214000
-#> 31064 1004215000              City of Tangub           104215000
-#> 31120 1004216000                      Tudela           104216000
-#> 31154 1004217000   Don Victoriano Chiongbian           104217000
-#> 31167 1004301000                    Alubijid           104301000
-#> 31184 1004302000                  Balingasag           104302000
-#> 31215 1004303000                   Balingoan           104303000
-#> 31225 1004304000                   Binuangan           104304000
-#> 31234 1004306000                    Claveria           104306000
-#> 31259 1004307000         City of El Salvador           104307000
-#> 31275 1004308000             City of Gingoog           104308000
-#> 31355 1004309000                     Gitagum           104309000
-#> 31367 1004310000                      Initao           104310000
-#> 31384 1004311000                      Jasaan           104311000
-#> 31400 1004312000                  Kinoguitan           104312000
-#> 31416 1004313000                  Lagonglong           104313000
-#> 31427 1004314000                Laguindingan           104314000
-#> 31439 1004315000                    Libertad           104315000
-#> 31449 1004316000                      Lugait           104316000
-#> 31458 1004317000                   Magsaysay           104317000
-#> 31484 1004318000                    Manticao           104318000
-#> 31498 1004319000                      Medina           104319000
-#> 31518 1004320000                      Naawan           104320000
-#> 31529 1004321000                        Opol           104321000
-#> 31544 1004322000                       Salay           104322000
-#> 31563 1004323000                Sugbongcogon           104323000
-#> 31574 1004324000                    Tagoloan           104324000
-#> 31585 1004325000                   Talisayan           104325000
-#> 31604 1004326000                  Villanueva           104326000
-#> 31616 1030500000      City of Cagayan De Oro           104305000
-#> 31697 1030900000              City of Iligan           103504000
-#> 31744 1102301000                    Asuncion           112301000
-#> 31765 1102303000                      Carmen           112303000
-#> 31786 1102305000                    Kapalong           112305000
-#> 31801 1102314000                 New Corella           112314000
-#> 31822 1102315000              City of Panabo           112315000
-#> 31863 1102317000 Island Garden City of Samal           112317000
-#> 31910 1102318000                 Santo Tomas           112318000
-#> 31930 1102319000               City of Tagum           112319000
-#> 31954 1102322000                   Talaingod           112322000
-#> 31958 1102323000           Braulio E. Dujali           112323000
-#> 31964 1102324000                  San Isidro           112324000
-#> 31979 1102401000                    Bansalan           112401000
-#> 32005 1102403000               City of Digos           112403000
-#> 32032 1102404000                     Hagonoy           112404000
-#> 32054 1102406000                    Kiblawan           112406000
-#> 32085 1102407000                   Magsaysay           112407000
-#> 32108 1102408000                     Malalag           112408000
-#> 32124 1102410000                     Matanao           112410000
-#> 32158 1102411000                      Padada           112411000
-#> 32176 1102412000                  Santa Cruz           112412000
-#> 32195 1102414000                       Sulop           112414000
-#> 32222 1102501000                     Baganga           112501000
-#> 32241 1102502000                  Banaybanay           112502000
-#> 32256 1102503000                      Boston           112503000
-#> 32265 1102504000                      Caraga           112504000
-#> 32283 1102505000                      Cateel           112505000
-#> 32300 1102506000           Governor Generoso           112506000
-#> 32321 1102507000                       Lupon           112507000
-#> 32343 1102508000                       Manay           112508000
-#> 32361 1102509000                City of Mati           112509000
-#> 32388 1102510000                  San Isidro           112510000
-#> 32405 1102511000                   Tarragona           112511000
-#> 32417 1108201000                  Compostela           118201000
-#> 32434 1108202000                        Laak           118202000
-#> 32475 1108203000                      Mabini           118203000
-#> 32487 1108204000                        Maco           118204000
-#> 32525 1108205000                   Maragusan           118205000
-#> 32550 1108206000                       Mawab           118206000
-#> 32562 1108207000                     Monkayo           118207000
-#> 32584 1108208000                  Montevista           118208000
-#> 32605 1108209000                  Nabunturan           118209000
-#> 32634 1108210000                  New Bataan           118210000
-#> 32651 1108211000                    Pantukan           118211000
-#> 32666 1108601000               Don Marcelino           118601000
-#> 32682 1108602000            Jose Abad Santos           118602000
-#> 32709 1108603000                      Malita           118603000
-#> 32740 1108604000                 Santa Maria           118604000
-#> 32763 1108605000                   Sarangani           118605000
-#> 32776 1130700000               City of Davao           112402000
-#> 32961 1204701000                     Alamada           124701000
-#> 32979 1204702000                      Carmen           124702000
-#> 33001 1204703000                     Kabacan           124703000
-#> 33019 1204704000           City of Kidapawan           124704000
-#> 33060 1204705000                    Libungan           124705000
-#> 33081 1204706000                      Magpet           124706000
-#> 33114 1204707000                    Makilala           124707000
-#> 33153 1204708000                     Matalam           124708000
-#> 33188 1204709000                    Midsayap           124709000
-#> 33233 1204710000                      M'Lang           124710000
-#> 33271 1204711000                  Pigkawayan           124711000
-#> 33300 1204712000                       Pikit           124712000
-#> 33321 1204713000             President Roxas           124713000
-#> 33347 1204714000                     Tulunan           124714000
-#> 33377 1204715000                     Antipas           124715000
-#> 33391 1204716000                   Banisilan           124716000
-#> 33412 1204717000                     Aleosan           124717000
-#> 33430 1204718000                      Arakan           124718000
-#> 33460 1206302000                       Banga           126302000
-#> 33483 1206306000           City of Koronadal           126306000
-#> 33511 1206311000                      Norala           126311000
-#> 33526 1206312000                   Polomolok           126312000
-#> 33550 1206313000                    Surallah           126313000
-#> 33568 1206314000                    Tampakan           126314000
-#> 33583 1206315000                   Tantangan           126315000
-#> 33597 1206316000                      T'Boli           126316000
-#> 33623 1206317000                        Tupi           126317000
-#> 33640 1206318000                  Santo Niño           126318000
-#> 33651 1206319000                   Lake Sebu           126319000
-#> 33672 1206501000                  Bagumbayan           126501000
-#> 33692 1206502000                    Columbio           126502000
-#> 33709 1206503000                   Esperanza           126503000
-#> 33729 1206504000                      Isulan           126504000
-#> 33747 1206505000                  Kalamansig           126505000
-#> 33763 1206506000                       Lebak           126506000
-#> 33791 1206507000                     Lutayan           126507000
-#> 33803 1206508000                   Lambayong           126508000
-#> 33830 1206509000                   Palimbang           126509000
-#> 33871 1206510000           President Quirino           126510000
-#> 33891 1206511000            City of Tacurong           126511000
-#> 33912 1206512000           Sen. Ninoy Aquino           126512000
-#> 33934 1208001000                      Alabel           128001000
-#> 33949 1208002000                        Glan           128002000
-#> 33981 1208003000                      Kiamba           128003000
-#> 34001 1208004000                      Maasim           128004000
-#> 34018 1208005000                      Maitum           128005000
-#> 34038 1208006000                   Malapatan           128006000
-#> 34051 1208007000                    Malungon           128007000
-#> 34083 1230800000      City of General Santos           126303000
-#> 34111 1380100000            City of Caloocan           137501000
-#> 34305 1380200000           City of Las Piñas           137601000
-#> 34326 1380300000              City of Makati           137602000
-#> 34350 1380400000             City of Malabon           137502000
-#> 34372 1380500000         City of Mandaluyong           137401000
-#> 34400 1380600000              City of Manila           133900000
-#> 35312 1380700000            City of Marikina           137402000
-#> 35329 1380800000          City of Muntinlupa           137603000
-#> 35339 1380900000             City of Navotas           137503000
-#> 35358 1381000000           City of Parañaque           137604000
-#> 35375 1381100000                  Pasay City           137605000
-#> 35577 1381200000               City of Pasig           137403000
-#> 35608 1381300000                 Quezon City           137404000
-#> 35751 1381400000            City of San Juan           137405000
-#> 35773 1381500000              City of Taguig           137607000
-#> 35812 1381600000          City of Valenzuela           137504000
-#> 35846 1381701000                     Pateros           137606000
-#> 35859 1400101000                     Bangued           140101000
-#> 35891 1400102000                     Boliney           140102000
-#> 35900 1400103000                       Bucay           140103000
-#> 35922 1400104000                      Bucloc           140104000
-#> 35927 1400105000                   Daguioman           140105000
-#> 35932 1400106000                     Danglas           140106000
-#> 35940 1400107000                     Dolores           140107000
-#> 35956 1400108000                      La Paz           140108000
-#> 35969 1400109000                       Lacub           140109000
-#> 35976 1400110000                 Lagangilang           140110000
-#> 35994 1400111000                     Lagayan           140111000
-#> 36000 1400112000                    Langiden           140112000
-#> 36007 1400113000                 Licuan-Baay           140113000
-#> 36019 1400114000                        Luba           140114000
-#> 36028 1400115000                   Malibcong           140115000
-#> 36041 1400116000                      Manabo           140116000
-#> 36053 1400117000                  Peñarrubia           140117000
-#> 36063 1400118000                     Pidigan           140118000
-#> 36079 1400119000                       Pilar           140119000
-#> 36099 1400120000                  Sallapadan           140120000
-#> 36109 1400121000                  San Isidro           140121000
-#> 36119 1400122000                    San Juan           140122000
-#> 36139 1400123000                 San Quintin           140123000
-#> 36146 1400124000                       Tayum           140124000
-#> 36158 1400125000                       Tineg           140125000
-#> 36169 1400126000                        Tubo           140126000
-#> 36180 1400127000                Villaviciosa           140127000
-#> 36190 1401101000                        Atok           141101000
-#> 36199 1401103000                       Bakun           141103000
-#> 36207 1401104000                       Bokod           141104000
-#> 36218 1401105000                     Buguias           141105000
-#> 36233 1401106000                      Itogon           141106000
-#> 36243 1401107000                     Kabayan           141107000
-#> 36257 1401108000                    Kapangan           141108000
-#> 36273 1401109000                    Kibungan           141109000
-#> 36281 1401110000                 La Trinidad           141110000
-#> 36298 1401111000                    Mankayan           141111000
-#> 36311 1401112000                      Sablan           141112000
-#> 36320 1401113000                        Tuba           141113000
-#> 36334 1401114000                      Tublay           141114000
-#> 36344 1402701000                      Banaue           142701000
-#> 36363 1402702000                    Hungduan           142702000
-#> 36373 1402703000                     Kiangan           142703000
-#> 36388 1402704000                      Lagawe           142704000
-#> 36409 1402705000                       Lamut           142705000
-#> 36428 1402706000                     Mayoyao           142706000
-#> 36456 1402707000               Alfonso Lista           142707000
-#> 36477 1402708000                   Aguinaldo           142708000
-#> 36494 1402709000                     Hingyon           142709000
-#> 36507 1402710000                       Tinoc           142710000
-#> 36520 1402711000                     Asipulo           142711000
-#> 36532 1403201000                    Balbalan           143201000
-#> 36547 1403206000                    Lubuagan           143206000
-#> 36557 1403208000                       Pasil           143208000
-#> 36572 1403209000                    Pinukpuk           143209000
-#> 36596 1403211000                       Rizal           143211000
-#> 36611 1403213000               City of Tabuk           143213000
-#> 36655 1403214000                     Tanudan           143214000
-#> 36672 1403215000                   Tinglayan           143215000
-#> 36694 1404401000                      Barlig           144401000
-#> 36706 1404402000                       Bauko           144402000
-#> 36729 1404403000                       Besao           144403000
-#> 36744 1404404000                      Bontoc           144404000
-#> 36761 1404405000                     Natonin           144405000
-#> 36773 1404406000                   Paracelis           144406000
-#> 36783 1404407000                    Sabangan           144407000
-#> 36799 1404408000                     Sadanga           144408000
-#> 36808 1404409000                      Sagada           144409000
-#> 36828 1404410000                      Tadian           144410000
-#> 36849 1408101000                   Calanasan           148101000
-#> 36868 1408102000                      Conner           148102000
-#> 36890 1408103000                       Flora           148103000
-#> 36907 1408104000                     Kabugao           148104000
-#> 36929 1408105000                        Luna           148105000
-#> 36952 1408106000                      Pudtol           148106000
-#> 36975 1408107000               Santa Marcela           148107000
-#> 36989 1430300000              City of Baguio           141102000
-#> 37121 1600201000                  Buenavista           160201000
-#> 37147 1600203000          City of Cabadbaran           160203000
-#> 37179 1600204000                      Carmen           160204000
-#> 37188 1600205000                     Jabonga           160205000
-#> 37204 1600206000                   Kitcharao           160206000
-#> 37216 1600207000                  Las Nieves           160207000
-#> 37237 1600208000                  Magallanes           160208000
-#> 37246 1600209000                     Nasipit           160209000
-#> 37266 1600210000                    Santiago           160210000
-#> 37276 1600211000                       Tubay           160211000
-#> 37290 1600212000       Remedios T. Romualdez           160212000
-#> 37300 1600301000             City of Bayugan           160301000
-#> 37344 1600302000                     Bunawan           160302000
-#> 37355 1600303000                   Esperanza           160303000
-#> 37403 1600304000                      La Paz           160304000
-#> 37419 1600305000                      Loreto           160305000
-#> 37437 1600306000                 Prosperidad           160306000
-#> 37470 1600307000                     Rosario           160307000
-#> 37482 1600308000               San Francisco           160308000
-#> 37510 1600309000                    San Luis           160309000
-#> 37536 1600310000                Santa Josefa           160310000
-#> 37548 1600311000                   Talacogon           160311000
-#> 37565 1600312000                      Trento           160312000
-#> 37582 1600313000                     Veruela           160313000
-#> 37603 1600314000                     Sibagat           160314000
-#> 37629 1606701000                     Alegria           166701000
-#> 37642 1606702000                      Bacuag           166702000
-#> 37652 1606704000                      Burgos           166704000
-#> 37659 1606706000                      Claver           166706000
-#> 37674 1606707000                        Dapa           166707000
-#> 37704 1606708000                  Del Carmen           166708000
-#> 37725 1606710000                General Luna           166710000
-#> 37745 1606711000                    Gigaquit           166711000
-#> 37759 1606714000                      Mainit           166714000
-#> 37781 1606715000                    Malimono           166715000
-#> 37796 1606716000                       Pilar           166716000
-#> 37812 1606717000                      Placer           166717000
-#> 37833 1606718000                  San Benito           166718000
-#> 37840 1606719000               San Francisco           166719000
-#> 37852 1606720000                  San Isidro           166720000
-#> 37865 1606721000                Santa Monica           166721000
-#> 37877 1606722000                       Sison           166722000
-#> 37890 1606723000                     Socorro           166723000
-#> 37905 1606724000             City of Surigao           166724000
-#> 37960 1606725000                   Tagana-An           166725000
-#> 37975 1606727000                       Tubod           166727000
-#> 37986 1606801000                      Barobo           166801000
-#> 38009 1606802000                     Bayabas           166802000
-#> 38017 1606803000              City of Bislig           166803000
-#> 38042 1606804000                     Cagwait           166804000
-#> 38054 1606805000                    Cantilan           166805000
-#> 38072 1606806000                      Carmen           166806000
-#> 38081 1606807000                   Carrascal           166807000
-#> 38096 1606808000                      Cortes           166808000
-#> 38109 1606809000                    Hinatuan           166809000
-#> 38134 1606810000                      Lanuza           166810000
-#> 38148 1606811000                      Lianga           166811000
-#> 38162 1606812000                      Lingig           166812000
-#> 38181 1606813000                      Madrid           166813000
-#> 38196 1606814000                   Marihatag           166814000
-#> 38209 1606815000                 San Agustin           166815000
-#> 38223 1606816000                  San Miguel           166816000
-#> 38242 1606817000                     Tagbina           166817000
-#> 38268 1606818000                        Tago           166818000
-#> 38293 1606819000              City of Tandag           166819000
-#> 38316 1608501000                    Basilisa           168501000
-#> 38344 1608502000                   Cagdianao           168502000
-#> 38359 1608503000                     Dinagat           168503000
-#> 38372 1608504000                       Libjo           168504000
-#> 38389 1608505000                      Loreto           168505000
-#> 38400 1608506000                    San Jose           168506000
-#> 38413 1608507000                     Tubajon           168507000
-#> 38423 1630400000              City of Butuan           160202000
-#> 38512 1704001000                        Boac           174001000
-#> 38574 1704002000                  Buenavista           174002000
-#> 38590 1704003000                       Gasan           174003000
-#> 38616 1704004000                      Mogpog           174004000
-#> 38654 1704005000                  Santa Cruz           174005000
-#> 38710 1704006000                    Torrijos           174006000
-#> 38737 1705101000                Abra De Ilog           175101000
-#> 38748 1705102000                   Calintaan           175102000
-#> 38756 1705103000                        Looc           175103000
-#> 38766 1705104000                      Lubang           175104000
-#> 38783 1705105000                   Magsaysay           175105000
-#> 38796 1705106000                    Mamburao           175106000
-#> 38812 1705107000                      Paluan           175107000
-#> 38825 1705108000                       Rizal           175108000
-#> 38837 1705109000                    Sablayan           175109000
-#> 38860 1705110000                    San Jose           175110000
-#> 38900 1705111000                  Santa Cruz           175111000
-#> 38913 1705201000                        Baco           175201000
-#> 38941 1705202000                      Bansud           175202000
-#> 38955 1705203000                   Bongabong           175203000
-#> 38992 1705204000                   Bulalacao           175204000
-#> 39008 1705205000             City of Calapan           175205000
-#> 39071 1705206000                      Gloria           175206000
-#> 39099 1705207000                    Mansalay           175207000
-#> 39117 1705208000                      Naujan           175208000
-#> 39188 1705209000                 Pinamalayan           175209000
-#> 39226 1705210000                        Pola           175210000
-#> 39250 1705211000               Puerto Galera           175211000
-#> 39264 1705212000                       Roxas           175212000
-#> 39285 1705213000                 San Teodoro           175213000
-#> 39294 1705214000                     Socorro           175214000
-#> 39321 1705215000                    Victoria           175215000
-#> 39355 1705301000                     Aborlan           175301000
-#> 39375 1705302000                     Agutaya           175302000
-#> 39386 1705303000                     Araceli           175303000
-#> 39400 1705304000                     Balabac           175304000
-#> 39421 1705305000                    Bataraza           175305000
-#> 39444 1705306000              Brooke's Point           175306000
-#> 39463 1705307000                    Busuanga           175307000
-#> 39478 1705308000                Cagayancillo           175308000
-#> 39491 1705309000                       Coron           175309000
-#> 39515 1705310000                        Cuyo           175310000
-#> 39533 1705311000                     Dumaran           175311000
-#> 39550 1705312000                     El Nido           175312000
-#> 39569 1705313000                   Linapacan           175313000
-#> 39580 1705314000                   Magsaysay           175314000
-#> 39592 1705315000                       Narra           175315000
-#> 39616 1705317000                      Quezon           175317000
-#> 39631 1705318000                       Roxas           175318000
-#> 39663 1705319000                 San Vicente           175319000
-#> 39674 1705320000                      Taytay           175320000
-#> 39706 1705321000                    Kalayaan           175321000
-#> 39708 1705322000                      Culion           175322000
-#> 39723 1705323000           Dr. Jose P. Rizal           175323000
-#> 39735 1705324000           Sofronio Española           175324000
-#> 39746 1705901000                   Alcantara           175901000
-#> 39759 1705902000                      Banton           175902000
-#> 39777 1705903000                  Cajidiocan           175903000
-#> 39792 1705904000                   Calatrava           175904000
-#> 39800 1705905000                  Concepcion           175905000
-#> 39810 1705906000                    Corcuera           175906000
-#> 39826 1705907000                        Looc           175907000
-#> 39839 1705908000                   Magdiwang           175908000
-#> 39849 1705909000                    Odiongan           175909000
-#> 39875 1705910000                     Romblon           175910000
-#> 39907 1705911000                 San Agustin           175911000
-#> 39923 1705912000                  San Andres           175912000
-#> 39937 1705913000                San Fernando           175913000
-#> 39950 1705914000                    San Jose           175914000
-#> 39956 1705915000                    Santa Fe           175915000
-#> 39968 1705916000                      Ferrol           175916000
-#> 39975 1705917000                 Santa Maria           175917000
-#> 39982 1731500000     City of Puerto Princesa           175316000
-#> 40051 1804502000                City of Bago           064502000
-#> 40076 1804503000                  Binalbagan           064503000
-#> 40093 1804504000               City of Cadiz           064504000
-#> 40116 1804505000                   Calatrava           064505000
-#> 40157 1804506000                     Candoni           064506000
-#> 40167 1804507000                     Cauayan           064507000
-#> 40193 1804508000         Enrique B. Magalona           064508000
-#> 40217 1804509000           City of Escalante           064509000
-#> 40239 1804510000          City of Himamaylan           064510000
-#> 40259 1804511000                   Hinigaran           064511000
-#> 40284 1804512000                   Hinoba-an           064512000
-#> 40298 1804513000                        Ilog           064513000
-#> 40314 1804514000                     Isabela           064514000
-#> 40345 1804515000          City of Kabankalan           064515000
-#> 40378 1804516000          City of La Carlota           064516000
-#> 40393 1804517000               La Castellana           064517000
-#> 40407 1804518000                     Manapla           064518000
-#> 40420 1804519000              Moises Padilla           064519000
-#> 40436 1804520000                      Murcia           064520000
-#> 40460 1804521000                  Pontevedra           064521000
-#> 40481 1804522000                  Pulupandan           064522000
-#> 40502 1804523000               City of Sagay           064523000
-#> 40528 1804524000          City of San Carlos           064524000
-#> 40547 1804525000                 San Enrique           064525000
-#> 40558 1804526000               City of Silay           064526000
-#> 40575 1804527000             City of Sipalay           064527000
-#> 40593 1804528000             City of Talisay           064528000
-#> 40621 1804529000                      Toboso           064529000
-#> 40631 1804530000                  Valladolid           064530000
-#> 40648 1804531000           City of Victorias           064531000
-#> 40675 1804532000          Salvador Benedicto           064532000
-#> 40684 1804601000                       Amlan           074601000
-#> 40693 1804602000                     Ayungon           074602000
-#> 40718 1804603000                      Bacong           074603000
-#> 40741 1804604000                City of Bais           074604000
-#> 40777 1804605000                       Basay           074605000
-#> 40788 1804606000             City of Bayawan           074606000
-#> 40817 1804607000                      Bindoy           074607000
-#> 40840 1804608000             City of Canlaon           074608000
-#> 40853 1804609000                       Dauin           074609000
-#> 40877 1804610000           City of Dumaguete           074610000
-#> 40908 1804611000          City of Guihulngan           074611000
-#> 40942 1804612000                   Jimalalud           074612000
-#> 40971 1804613000                 La Libertad           074613000
-#> 41001 1804614000                     Mabinay           074614000
-#> 41034 1804615000                    Manjuyod           074615000
-#> 41062 1804616000                    Pamplona           074616000
-#> 41079 1804617000                    San Jose           074617000
-#> 41094 1804618000              Santa Catalina           074618000
-#> 41117 1804619000                      Siaton           074619000
-#> 41144 1804620000                     Sibulan           074620000
-#> 41160 1804621000              City of Tanjay           074621000
-#> 41185 1804622000                     Tayasan           074622000
-#> 41214 1804623000                    Valencia           074623000
-#> 41239 1804624000                Vallehermoso           074624000
-#> 41255 1804625000                Zamboanguita           074625000
-#> 41267 1806101000          Enrique Villanueva           076101000
-#> 41282 1806102000                      Larena           076102000
-#> 41306 1806103000                        Lazi           076103000
-#> 41325 1806104000                       Maria           076104000
-#> 41348 1806105000                    San Juan           076105000
-#> 41364 1806106000                    Siquijor           076106000
-#> 41407 1830200000             City of Bacolod           064501000
-#> 41471 1900702000             City of Lamitan           150702000
-#> 41517 1900703000                    Lantawan           150703000
-#> 41543 1900704000                      Maluso           150704000
-#> 41564 1900705000                     Sumisip           150705000
-#> 41594 1900706000                   Tipo-Tipo           150706000
-#> 41606 1900707000                     Tuburan           150707000
-#> 41617 1900708000                       Akbar           150708000
-#> 41627 1900709000                    Al-Barka           150709000
-#> 41644 1900710000         Hadji Mohammad Ajul           150710000
-#> 41656 1900711000               Ungkaya Pukan           150711000
-#> 41669 1900712000              Hadji Muhtamad           150712000
-#> 41680 1900713000                 Tabuan-Lasa           150713000
-#> 41694 1903601000              Bacolod-Kalawi           153601000
-#> 41721 1903602000                   Balabagan           153602000
-#> 41749 1903603000                   Balindong           153603000
-#> 41788 1903604000                      Bayang           153604000
-#> 41838 1903605000                   Binidayan           153605000
-#> 41865 1903606000                      Bubong           153606000
-#> 41902 1903607000                       Butig           153607000
-#> 41919 1903609000                     Ganassi           153609000
-#> 41952 1903610000                       Kapai           153610000
-#> 41973 1903611000               Lumba-Bayabao           153611000
-#> 42012 1903612000                    Lumbatan           153612000
-#> 42034 1903613000                     Madalum           153613000
-#> 42072 1903614000                     Madamba           153614000
-#> 42097 1903615000                    Malabang           153615000
-#> 42135 1903616000                    Marantao           153616000
-#> 42170 1903617000              City of Marawi           153617000
-#> 42272 1903618000                       Masiu           153618000
-#> 42308 1903619000                     Mulondo           153619000
-#> 42335 1903620000                   Pagayawan           153620000
-#> 42354 1903621000                     Piagapo           153621000
-#> 42392 1903622000               Poona Bayabao           153622000
-#> 42418 1903623000                      Pualas           153623000
-#> 42442 1903624000              Ditsaan-Ramain           153624000
-#> 42478 1903625000                   Saguiaran           153625000
-#> 42509 1903626000                    Tamparan           153626000
-#> 42554 1903627000                      Taraka           153627000
-#> 42598 1903628000                     Tubaran           153628000
-#> 42620 1903629000                      Tugaya           153629000
-#> 42644 1903630000                         Wao           153630000
-#> 42671 1903631000                    Marogong           153631000
-#> 42696 1903632000                   Calanogas           153632000
-#> 42714 1903633000           Buadiposo-Buntong           153633000
-#> 42748 1903634000                     Maguing           153634000
-#> 42783 1903635000                      Picong           153635000
-#> 42803 1903636000                Lumbayanague           153636000
-#> 42826 1903637000             Amai Manabilang           153637000
-#> 42844 1903638000                 Tagoloan II           153638000
-#> 42864 1903639000                   Kapatagan           153639000
-#> 42880 1903640000          Sultan Dumalondong           153640000
-#> 42888 1903641000              Lumbaca-Unayan           153641000
-#> 42899 1907001000             Panglima Sugala           157001000
-#> 42917 1907002000                      Bongao           157002000
-#> 42953 1907003000                       Mapun           157003000
-#> 42969 1907004000                     Simunul           157004000
-#> 42985 1907005000                   Sitangkai           157005000
-#> 42995 1907006000                 South Ubian           157006000
-#> 43027 1907007000                    Tandubas           157007000
-#> 43048 1907008000              Turtle Islands           157008000
-#> 43051 1907009000                    Languyan           157009000
-#> 43072 1907010000                   Sapa-Sapa           157010000
-#> 43096 1907011000                      Sibutu           157011000
-#> 43114 1908701000                      Barira           153818000
-#> 43129 1908702000                      Buldon           153802000
-#> 43145 1908703000            City of Cotabato           129804000
-#> 43183 1908704000        Datu Blah T. Sinsuat           153830000
-#> 43197 1908705000           Datu Odin Sinsuat           153807000
-#> 43232 1908706000                  Kabuntalan           153814000
-#> 43250 1908707000                     Matanog           153809000
-#> 43259 1908708000         Northern Kabuntalan           153834000
-#> 43271 1908709000                      Parang           153811000
-#> 43297 1908710000              Sultan Kudarat           153812000
-#> 43337 1908711000              Sultan Mastura           153824000
-#> 43351 1908712000                     Talitay           153821000
-#> 43361 1908713000                         Upi           153815000
-#> 43386 1908801000                    Ampatuan           153801000
-#> 43398 1908802000                      Buluan           153803000
-#> 43406 1908803000        Datu Abdullah Sangki           153828000
-#> 43417 1908804000      Datu Anggal Midtimbang           153831000
-#> 43425 1908805000        Datu Hoffer Ampatuan           153835000
-#> 43437 1908806000                 Datu Paglas           153805000
-#> 43461 1908807000                  Datu Piang           153806000
-#> 43478 1908808000                 Datu Salibo           153836000
-#> 43496 1908809000         Datu Saudi Ampatuan           153826000
-#> 43505 1908810000                  Datu Unsay           153827000
-#> 43514 1908811000          Gen. S.K. Pendatun           153819000
-#> 43534 1908812000                Guindulungan           153825000
-#> 43546 1908813000                  Mamasapano           153820000
-#> 43561 1908814000                 Mangudadatu           153832000
-#> 43570 1908815000                   Pagagawan           153822000
-#> 43582 1908816000                  Pagalungan           153810000
-#> 43595 1908817000                      Paglat           153823000
-#> 43604 1908818000                      Pandag           153833000
-#> 43613 1908819000                Rajah Buayan           153829000
-#> 43625 1908820000               Shariff Aguak           153808000
-#> 43639 1908821000    Shariff Saydona Mustapha           153837000
-#> 43656 1908822000                   South Upi           153817000
-#> 43668 1908823000          Sultan Sa Barongis           153813000
-#> 43681 1908824000                     Talayan           153816000
-#> 43698 1999901000                   Kapalawan                <NA>
-#> 43706 1999902000                Old Kaabakan                <NA>
-#> 43714 1999903000                  Kadayangan                <NA>
-#> 43722 1999904000                   Nabalawag                <NA>
-#> 43730 1999905000                  Pahamuddin                <NA>
-#> 43743 1999906000                   Malidegao                <NA>
-#> 43751 1999907000                   Ligawasan                <NA>
-#> 43759 1999908000                     Tugunan                <NA>
+#> 4     1001301000                     Baungon           101301000
+#> 21    1001302000                     Damulog           101302000
+#> 39    1001303000                   Dangcagan           101303000
+#> 54    1001304000                  Don Carlos           101304000
+#> 84    1001305000                 Impasug-ong           101305000
+#> 98    1001306000                  Kadingilan           101306000
+#> 116   1001307000                  Kalilangan           101307000
+#> 131   1001308000                      Kibawe           101308000
+#> 155   1001309000                    Kitaotao           101309000
+#> 191   1001310000                    Lantapan           101310000
+#> 206   1001311000                      Libona           101311000
+#> 221   1001312000          City of Malaybalay           101312000
+#> 268   1001313000                    Malitbog           101313000
+#> 280   1001314000              Manolo Fortich           101314000
+#> 303   1001315000                     Maramag           101315000
+#> 324   1001316000                 Pangantucan           101316000
+#> 344   1001317000                      Quezon           101317000
+#> 376   1001318000                San Fernando           101318000
+#> 401   1001319000                     Sumilao           101319000
+#> 412   1001320000                     Talakag           101320000
+#> 442   1001321000            City of Valencia           101321000
+#> 474   1001322000                 Cabanglasan           101322000
+#> 491   1001801000                    Catarman           101801000
+#> 506   1001802000                 Guinsiliban           101802000
+#> 514   1001803000                     Mahinog           101803000
+#> 528   1001804000                    Mambajao           101804000
+#> 544   1001805000                       Sagay           101805000
+#> 555   1003501000                     Bacolod           103501000
+#> 572   1003502000                       Baloi           103502000
+#> 594   1003503000                       Baroy           103503000
+#> 618   1003505000                   Kapatagan           103505000
+#> 652   1003506000        Sultan Naga Dimaporo           103506000
+#> 690   1003507000                   Kauswagan           103507000
+#> 704   1003508000                  Kolambugan           103508000
+#> 731   1003509000                        Lala           103509000
+#> 759   1003510000                     Linamon           103510000
+#> 768   1003511000                   Magsaysay           103511000
+#> 793   1003512000                       Maigo           103512000
+#> 807   1003513000                    Matungao           103513000
+#> 820   1003514000                       Munai           103514000
+#> 847   1003515000                    Nunungan           103515000
+#> 873   1003516000                Pantao Ragat           103516000
+#> 894   1003517000               Poona Piagapo           103517000
+#> 921   1003518000                    Salvador           103518000
+#> 947   1003519000                       Sapad           103519000
+#> 965   1003520000                    Tagoloan           103520000
+#> 973   1003521000                     Tangcal           103521000
+#> 992   1003522000                       Tubod           103522000
+#> 1017  1003523000                      Pantar           103523000
+#> 1040  1004201000                      Aloran           104201000
+#> 1079  1004202000                   Baliangao           104202000
+#> 1095  1004203000                   Bonifacio           104203000
+#> 1124  1004204000                     Calamba           104204000
+#> 1144  1004205000                      Clarin           104205000
+#> 1174  1004206000                  Concepcion           104206000
+#> 1193  1004207000                     Jimenez           104207000
+#> 1218  1004208000                 Lopez Jaena           104208000
+#> 1247  1004209000           City of Oroquieta           104209000
+#> 1295  1004210000              City of Ozamiz           104210000
+#> 1347  1004211000                      Panaon           104211000
+#> 1364  1004212000                    Plaridel           104212000
+#> 1398  1004213000               Sapang Dalaga           104213000
+#> 1427  1004214000                   Sinacaban           104214000
+#> 1445  1004215000              City of Tangub           104215000
+#> 1501  1004216000                      Tudela           104216000
+#> 1535  1004217000              Don Victoriano           104217000
+#> 1548  1004301000                    Alubijid           104301000
+#> 1565  1004302000                  Balingasag           104302000
+#> 1596  1004303000                   Balingoan           104303000
+#> 1606  1004304000                   Binuangan           104304000
+#> 1615  1004306000                    Claveria           104306000
+#> 1640  1004307000         City of El Salvador           104307000
+#> 1656  1004308000             City of Gingoog           104308000
+#> 1736  1004309000                     Gitagum           104309000
+#> 1748  1004310000                      Initao           104310000
+#> 1765  1004311000                      Jasaan           104311000
+#> 1781  1004312000                  Kinoguitan           104312000
+#> 1797  1004313000                  Lagonglong           104313000
+#> 1808  1004314000                Laguindingan           104314000
+#> 1820  1004315000                    Libertad           104315000
+#> 1830  1004316000                      Lugait           104316000
+#> 1839  1004317000                   Magsaysay           104317000
+#> 1865  1004318000                    Manticao           104318000
+#> 1879  1004319000                      Medina           104319000
+#> 1899  1004320000                      Naawan           104320000
+#> 1910  1004321000                        Opol           104321000
+#> 1925  1004322000                       Salay           104322000
+#> 1944  1004323000                Sugbongcogon           104323000
+#> 1955  1004324000                    Tagoloan           104324000
+#> 1966  1004325000                   Talisayan           104325000
+#> 1985  1004326000                  Villanueva           104326000
+#> 1998  0102801000                       Adams           012801000
+#> 2000  0102802000                     Bacarra           012802000
+#> 2044  0102803000                       Badoc           012803000
+#> 2076  0102804000                      Bangui           012804000
+#> 2091  0102805000               City of Batac           012805000
+#> 2135  0102806000                      Burgos           012806000
+#> 2147  0102807000                      Carasi           012807000
+#> 2151  0102808000                    Currimao           012808000
+#> 2175  0102809000                     Dingras           012809000
+#> 2207  0102810000                    Dumalneg           012810000
+#> 2212  0102811000                       Banna           012811000
+#> 2233  0102812000               City of Laoag           012812000
+#> 2314  0102813000                      Marcos           012813000
+#> 2328  0102814000                   Nueva Era           012814000
+#> 2340  0102815000                    Pagudpud           012815000
+#> 2357  0102816000                       Paoay           012816000
+#> 2389  0102817000                    Pasuquin           012817000
+#> 2423  0102818000                      Piddig           012818000
+#> 2447  0102819000                      Pinili           012819000
+#> 2473  0102820000                 San Nicolas           012820000
+#> 2498  0102821000                      Sarrat           012821000
+#> 2523  0102822000                     Solsona           012822000
+#> 2546  0102823000                      Vintar           012823000
+#> 2581  0102901000                      Alilem           012901000
+#> 2591  0102902000                    Banayoyo           012902000
+#> 2606  0102903000                      Bantay           012903000
+#> 2641  0102904000                      Burgos           012904000
+#> 2668  0102905000                     Cabugao           012905000
+#> 2702  0102906000              City of Candon           012906000
+#> 2745  0102907000                     Caoayan           012907000
+#> 2763  0102908000                   Cervantes           012908000
+#> 2777  0102909000                   Galimuyod           012909000
+#> 2802  0102910000          Gregorio del Pilar           012910000
+#> 2810  0102911000                    Lidlidda           012911000
+#> 2822  0102912000                   Magsingal           012912000
+#> 2853  0102913000                    Nagbukel           012913000
+#> 2866  0102914000                    Narvacan           012914000
+#> 2901  0102915000                     Quirino           012915000
+#> 2911  0102916000                     Salcedo           012916000
+#> 2933  0102917000                  San Emilio           012917000
+#> 2942  0102918000                 San Esteban           012918000
+#> 2953  0102919000               San Ildefonso           012919000
+#> 2969  0102920000                    San Juan           012920000
+#> 3002  0102921000                 San Vicente           012921000
+#> 3010  0102922000                       Santa           012922000
+#> 3037  0102923000              Santa Catalina           012923000
+#> 3047  0102924000                  Santa Cruz           012924000
+#> 3097  0102925000                 Santa Lucia           012925000
+#> 3134  0102926000                 Santa Maria           012926000
+#> 3168  0102927000                    Santiago           012927000
+#> 3193  0102928000               Santo Domingo           012928000
+#> 3230  0102929000                       Sigay           012929000
+#> 3238  0102930000                      Sinait           012930000
+#> 3283  0102931000                      Sugpon           012931000
+#> 3290  0102932000                        Suyo           012932000
+#> 3299  0102933000                     Tagudin           012933000
+#> 3343  0102934000               City of Vigan           012934000
+#> 3383  1030500000      City of Cagayan De Oro           104305000
+#> 3464  1030900000              City of Iligan           103504000
+#> 3510  0103301000                        Agoo           013301000
+#> 3560  0103302000                     Aringay           013302000
+#> 3585  0103303000                    Bacnotan           013303000
+#> 3633  0103304000                     Bagulin           013304000
+#> 3644  0103305000                     Balaoan           013305000
+#> 3681  0103306000                      Bangar           013306000
+#> 3715  0103307000                      Bauang           013307000
+#> 3755  0103308000                      Burgos           013308000
+#> 3768  0103309000                        Caba           013309000
+#> 3786  0103310000                        Luna           013310000
+#> 3827  0103311000                   Naguilian           013311000
+#> 3865  0103312000                        Pugo           013312000
+#> 3880  0103313000                     Rosario           013313000
+#> 3914  0103314000        City of San Fernando           013314000
+#> 3974  0103315000                 San Gabriel           013315000
+#> 3990  0103316000                    San Juan           013316000
+#> 4032  0103317000                 Santo Tomas           013317000
+#> 4057  0103318000                      Santol           013318000
+#> 4069  0103319000                     Sudipen           013319000
+#> 4087  0103320000                       Tubao           013320000
+#> 4107  0105501000                        Agno           015501000
+#> 4125  0105502000                     Aguilar           015502000
+#> 4142  0105503000            City of Alaminos           015503000
+#> 4182  0105504000                      Alcala           015504000
+#> 4204  0105505000                        Anda           015505000
+#> 4223  0105506000                     Asingan           015506000
+#> 4245  0105507000                    Balungao           015507000
+#> 4266  0105508000                        Bani           015508000
+#> 4294  0105509000                     Basista           015509000
+#> 4308  0105510000                    Bautista           015510000
+#> 4327  0105511000                   Bayambang           015511000
+#> 4405  0105512000                   Binalonan           015512000
+#> 4430  0105513000                    Binmaley           015513000
+#> 4464  0105514000                     Bolinao           015514000
+#> 4495  0105515000                    Bugallon           015515000
+#> 4520  0105516000                      Burgos           015516000
+#> 4535  0105517000                    Calasiao           015517000
+#> 4560  0105518000             City of Dagupan           015518000
+#> 4592  0105519000                       Dasol           015519000
+#> 4611  0105520000                     Infanta           015520000
+#> 4625  0105521000                    Labrador           015521000
+#> 4636  0105522000                    Lingayen           015522000
+#> 4669  0105523000                      Mabini           015523000
+#> 4686  0105524000                   Malasiqui           015524000
+#> 4760  0105525000                     Manaoag           015525000
+#> 4787  0105526000                   Mangaldan           015526000
+#> 4818  0105527000                  Mangatarem           015527000
+#> 4901  0105528000                    Mapandan           015528000
+#> 4917  0105529000                   Natividad           015529000
+#> 4936  0105530000                  Pozorrubio           015530000
+#> 4971  0105531000                     Rosales           015531000
+#> 5009  0105532000          City of San Carlos           015532000
+#> 5096  0105533000                  San Fabian           015533000
+#> 5131  0105534000                 San Jacinto           015534000
+#> 5151  0105535000                  San Manuel           015535000
+#> 5166  0105536000                 San Nicolas           015536000
+#> 5200  0105537000                 San Quintin           015537000
+#> 5222  0105538000               Santa Barbara           015538000
+#> 5252  0105539000                 Santa Maria           015539000
+#> 5276  0105540000                 Santo Tomas           015540000
+#> 5287  0105541000                       Sison           015541000
+#> 5316  0105542000                        Sual           015542000
+#> 5336  0105543000                       Tayug           015543000
+#> 5358  0105544000                     Umingan           015544000
+#> 5417  0105545000                  Urbiztondo           015545000
+#> 5439  0105546000            City of Urdaneta           015546000
+#> 5474  0105547000                    Villasis           015547000
+#> 5496  0105548000                       Laoac           015548000
+#> 5521  1102301000                    Asuncion           112301000
+#> 5542  1102303000                      Carmen           112303000
+#> 5563  1102305000                    Kapalong           112305000
+#> 5578  1102314000                 New Corella           112314000
+#> 5599  1102315000              City of Panabo           112315000
+#> 5640  1102317000 Island Garden City of Samal           112317000
+#> 5687  1102318000                 Santo Tomas           112318000
+#> 5707  1102319000               City of Tagum           112319000
+#> 5731  1102322000                   Talaingod           112322000
+#> 5735  1102323000           Braulio E. Dujali           112323000
+#> 5741  1102324000                      Sawata           112324000
+#> 5756  1102401000                    Bansalan           112401000
+#> 5782  1102403000               City of Digos           112403000
+#> 5809  1102404000                     Hagonoy           112404000
+#> 5831  1102406000                    Kiblawan           112406000
+#> 5862  1102407000                   Magsaysay           112407000
+#> 5885  1102408000                     Malalag           112408000
+#> 5901  1102410000                     Matanao           112410000
+#> 5935  1102411000                      Padada           112411000
+#> 5953  1102412000                  Santa Cruz           112412000
+#> 5972  1102414000                       Sulop           112414000
+#> 5999  1102501000                     Baganga           112501000
+#> 6018  1102502000                  Banaybanay           112502000
+#> 6033  1102503000                      Boston           112503000
+#> 6042  1102504000                      Caraga           112504000
+#> 6060  1102505000                      Cateel           112505000
+#> 6077  1102506000           Governor Generoso           112506000
+#> 6098  1102507000                       Lupon           112507000
+#> 6120  1102508000                       Manay           112508000
+#> 6138  1102509000                City of Mati           112509000
+#> 6165  1102510000                  San Isidro           112510000
+#> 6182  1102511000                   Tarragona           112511000
+#> 6194  1108201000                  Compostela           118201000
+#> 6211  1108202000                        Laak           118202000
+#> 6252  1108203000                      Mabini           118203000
+#> 6264  1108204000                        Maco           118204000
+#> 6302  1108205000                   Maragusan           118205000
+#> 6327  1108206000                       Mawab           118206000
+#> 6339  1108207000                     Monkayo           118207000
+#> 6361  1108208000                  Montevista           118208000
+#> 6382  1108209000                  Nabunturan           118209000
+#> 6411  1108210000                  New Bataan           118210000
+#> 6428  1108211000                    Pantukan           118211000
+#> 6443  1108601000               Don Marcelino           118601000
+#> 6459  1108602000            Jose Abad Santos           118602000
+#> 6486  1108603000                      Malita           118603000
+#> 6517  1108604000                 Santa Maria           118604000
+#> 6540  1108605000                   Sarangani           118605000
+#> 6553  1130700000               City of Davao           112402000
+#> 6738  1204701000                     Alamada           124701000
+#> 6756  1204702000                      Carmen           124702000
+#> 6778  1204703000                     Kabacan           124703000
+#> 6796  1204704000           City of Kidapawan           124704000
+#> 6837  1204705000                    Libungan           124705000
+#> 6858  1204706000                      Magpet           124706000
+#> 6891  1204707000                    Makilala           124707000
+#> 6930  1204708000                     Matalam           124708000
+#> 6965  1204709000                    Midsayap           124709000
+#> 7010  1204710000                      M'Lang           124710000
+#> 7048  1204711000                  Pigkawayan           124711000
+#> 7077  1204712000                       Pikit           124712000
+#> 7098  1204713000             President Roxas           124713000
+#> 7124  1204714000                     Tulunan           124714000
+#> 7154  1204715000                     Antipas           124715000
+#> 7168  1204716000                   Banisilan           124716000
+#> 7189  1204717000                     Aleosan           124717000
+#> 7207  1204718000                      Arakan           124718000
+#> 7237  1206302000                       Banga           126302000
+#> 7260  1206306000           City of Koronadal           126306000
+#> 7288  1206311000                      Norala           126311000
+#> 7303  1206312000                   Polomolok           126312000
+#> 7327  1206313000                    Surallah           126313000
+#> 7345  1206314000                    Tampakan           126314000
+#> 7360  1206315000                   Tantangan           126315000
+#> 7374  1206316000                      T'Boli           126316000
+#> 7400  1206317000                        Tupi           126317000
+#> 7417  1206318000                  Santo Niño           126318000
+#> 7428  1206319000                   Lake Sebu           126319000
+#> 7449  1206501000                  Bagumbayan           126501000
+#> 7469  1206502000                    Columbio           126502000
+#> 7486  1206503000                   Esperanza           126503000
+#> 7506  1206504000                      Isulan           126504000
+#> 7524  1206505000                  Kalamansig           126505000
+#> 7540  1206506000                       Lebak           126506000
+#> 7568  1206507000                     Lutayan           126507000
+#> 7580  1206508000                   Lambayong           126508000
+#> 7607  1206509000                   Palimbang           126509000
+#> 7648  1206510000           President Quirino           126510000
+#> 7668  1206511000            City of Tacurong           126511000
+#> 7689  1206512000           Sen. Ninoy Aquino           126512000
+#> 7711  1208001000                      Alabel           128001000
+#> 7726  1208002000                        Glan           128002000
+#> 7758  1208003000                      Kiamba           128003000
+#> 7778  1208004000                      Maasim           128004000
+#> 7795  1208005000                      Maitum           128005000
+#> 7815  1208006000                   Malapatan           128006000
+#> 7828  1208007000                    Malungon           128007000
+#> 7860  1230800000      City of General Santos           126303000
+#> 7888  1380100000            City of Caloocan           137501000
+#> 8082  1380200000           City of Las Piñas           137601000
+#> 8103  1380300000              City of Makati           137602000
+#> 8127  1380400000             City of Malabon           137502000
+#> 8149  1380500000         City of Mandaluyong           137401000
+#> 8177  1380600000              City of Manila           133900000
+#> 9089  1380700000            City of Marikina           137402000
+#> 9106  1380800000          City of Muntinlupa           137603000
+#> 9116  1380900000             City of Navotas           137503000
+#> 9135  1381000000           City of Parañaque           137604000
+#> 9152  1381100000                  Pasay City           137605000
+#> 9354  1381200000               City of Pasig           137403000
+#> 9385  1381300000                 Quezon City           137404000
+#> 9528  1381400000            City of San Juan           137405000
+#> 9550  1381500000              City of Taguig           137607000
+#> 9589  1381600000          City of Valenzuela           137504000
+#> 9623  1381701000                     Pateros           137606000
+#> 9636  1400101000                     Bangued           140101000
+#> 9668  1400102000                     Boliney           140102000
+#> 9677  1400103000                       Bucay           140103000
+#> 9699  1400104000                      Bucloc           140104000
+#> 9704  1400105000                   Daguioman           140105000
+#> 9709  1400106000                     Danglas           140106000
+#> 9717  1400107000                     Dolores           140107000
+#> 9733  1400108000                      La Paz           140108000
+#> 9746  1400109000                       Lacub           140109000
+#> 9753  1400110000                 Lagangilang           140110000
+#> 9771  1400111000                     Lagayan           140111000
+#> 9777  1400112000                    Langiden           140112000
+#> 9784  1400113000                 Licuan-Baay           140113000
+#> 9796  1400114000                        Luba           140114000
+#> 9805  1400115000                   Malibcong           140115000
+#> 9818  1400116000                      Manabo           140116000
+#> 9830  1400117000                  Peñarrubia           140117000
+#> 9840  1400118000                     Pidigan           140118000
+#> 9856  1400119000                       Pilar           140119000
+#> 9876  1400120000                  Sallapadan           140120000
+#> 9886  1400121000                  San Isidro           140121000
+#> 9896  1400122000                    San Juan           140122000
+#> 9916  1400123000                 San Quintin           140123000
+#> 9923  1400124000                       Tayum           140124000
+#> 9935  1400125000                       Tineg           140125000
+#> 9946  1400126000                        Tubo           140126000
+#> 9957  1400127000                Villaviciosa           140127000
+#> 9967  1401101000                        Atok           141101000
+#> 9976  1401103000                       Bakun           141103000
+#> 9984  1401104000                       Bokod           141104000
+#> 9995  1401105000                     Buguias           141105000
+#> 10010 1401106000                      Itogon           141106000
+#> 10020 1401107000                     Kabayan           141107000
+#> 10034 1401108000                    Kapangan           141108000
+#> 10050 1401109000                    Kibungan           141109000
+#> 10058 1401110000                 La Trinidad           141110000
+#> 10075 1401111000                    Mankayan           141111000
+#> 10088 1401112000                      Sablan           141112000
+#> 10097 1401113000                        Tuba           141113000
+#> 10111 1401114000                      Tublay           141114000
+#> 10121 1402701000                      Banaue           142701000
+#> 10140 1402702000                    Hungduan           142702000
+#> 10150 1402703000                     Kiangan           142703000
+#> 10165 1402704000                      Lagawe           142704000
+#> 10186 1402705000                       Lamut           142705000
+#> 10205 1402706000                     Mayoyao           142706000
+#> 10233 1402707000               Alfonso Lista           142707000
+#> 10254 1402708000                   Aguinaldo           142708000
+#> 10271 1402709000                     Hingyon           142709000
+#> 10284 1402710000                       Tinoc           142710000
+#> 10297 1402711000                     Asipulo           142711000
+#> 10309 1403201000                    Balbalan           143201000
+#> 10324 1403206000                    Lubuagan           143206000
+#> 10334 1403208000                       Pasil           143208000
+#> 10349 1403209000                    Pinukpuk           143209000
+#> 10373 1403211000                       Rizal           143211000
+#> 10388 1403213000               City of Tabuk           143213000
+#> 10432 1403214000                     Tanudan           143214000
+#> 10449 1403215000                   Tinglayan           143215000
+#> 10471 1404401000                      Barlig           144401000
+#> 10483 1404402000                       Bauko           144402000
+#> 10506 1404403000                       Besao           144403000
+#> 10521 1404404000                      Bontoc           144404000
+#> 10538 1404405000                     Natonin           144405000
+#> 10550 1404406000                   Paracelis           144406000
+#> 10560 1404407000                    Sabangan           144407000
+#> 10576 1404408000                     Sadanga           144408000
+#> 10585 1404409000                      Sagada           144409000
+#> 10605 1404410000                      Tadian           144410000
+#> 10626 1408101000                   Calanasan           148101000
+#> 10645 1408102000                      Conner           148102000
+#> 10667 1408103000                       Flora           148103000
+#> 10684 1408104000                     Kabugao           148104000
+#> 10706 1408105000                        Luna           148105000
+#> 10729 1408106000                      Pudtol           148106000
+#> 10752 1408107000               Santa Marcela           148107000
+#> 10766 1430300000              City of Baguio           141102000
+#> 10898 1600201000                  Buenavista           160201000
+#> 10924 1600203000          City of Cabadbaran           160203000
+#> 10956 1600204000                      Carmen           160204000
+#> 10965 1600205000                     Jabonga           160205000
+#> 10981 1600206000                   Kitcharao           160206000
+#> 10993 1600207000                  Las Nieves           160207000
+#> 11014 1600208000                  Magallanes           160208000
+#> 11023 1600209000                     Nasipit           160209000
+#> 11043 1600210000                    Santiago           160210000
+#> 11053 1600211000                       Tubay           160211000
+#> 11067 1600212000       Remedios T. Romualdez           160212000
+#> 11077 1600301000             City of Bayugan           160301000
+#> 11121 1600302000                     Bunawan           160302000
+#> 11132 1600303000                   Esperanza           160303000
+#> 11180 1600304000                      La Paz           160304000
+#> 11196 1600305000                      Loreto           160305000
+#> 11214 1600306000                 Prosperidad           160306000
+#> 11247 1600307000                     Rosario           160307000
+#> 11259 1600308000               San Francisco           160308000
+#> 11287 1600309000                    San Luis           160309000
+#> 11313 1600310000                Santa Josefa           160310000
+#> 11325 1600311000                   Talacogon           160311000
+#> 11342 1600312000                      Trento           160312000
+#> 11359 1600313000                     Veruela           160313000
+#> 11380 1600314000                     Sibagat           160314000
+#> 11406 1606701000                     Alegria           166701000
+#> 11419 1606702000                      Bacuag           166702000
+#> 11429 1606704000                      Burgos           166704000
+#> 11436 1606706000                      Claver           166706000
+#> 11451 1606707000                        Dapa           166707000
+#> 11481 1606708000                  Del Carmen           166708000
+#> 11502 1606710000                General Luna           166710000
+#> 11522 1606711000                    Gigaquit           166711000
+#> 11536 1606714000                      Mainit           166714000
+#> 11558 1606715000                    Malimono           166715000
+#> 11573 1606716000                       Pilar           166716000
+#> 11589 1606717000                      Placer           166717000
+#> 11610 1606718000                  San Benito           166718000
+#> 11617 1606719000               San Francisco           166719000
+#> 11629 1606720000                  San Isidro           166720000
+#> 11642 1606721000                Santa Monica           166721000
+#> 11654 1606722000                       Sison           166722000
+#> 11667 1606723000                     Socorro           166723000
+#> 11682 1606724000             City of Surigao           166724000
+#> 11737 1606725000                   Tagana-An           166725000
+#> 11752 1606727000                       Tubod           166727000
+#> 11763 1606801000                      Barobo           166801000
+#> 11786 1606802000                     Bayabas           166802000
+#> 11794 1606803000              City of Bislig           166803000
+#> 11819 1606804000                     Cagwait           166804000
+#> 11831 1606805000                    Cantilan           166805000
+#> 11849 1606806000                      Carmen           166806000
+#> 11858 1606807000                   Carrascal           166807000
+#> 11873 1606808000                      Cortes           166808000
+#> 11886 1606809000                    Hinatuan           166809000
+#> 11911 1606810000                      Lanuza           166810000
+#> 11925 1606811000                      Lianga           166811000
+#> 11939 1606812000                      Lingig           166812000
+#> 11958 1606813000                      Madrid           166813000
+#> 11973 1606814000                   Marihatag           166814000
+#> 11986 1606815000                 San Agustin           166815000
+#> 12000 1606816000                  San Miguel           166816000
+#> 12019 1606817000                     Tagbina           166817000
+#> 12045 1606818000                        Tago           166818000
+#> 12070 1606819000              City of Tandag           166819000
+#> 12093 1608501000                    Basilisa           168501000
+#> 12121 1608502000                   Cagdianao           168502000
+#> 12136 1608503000                     Dinagat           168503000
+#> 12149 1608504000                       Libjo           168504000
+#> 12166 1608505000                      Loreto           168505000
+#> 12177 1608506000                    San Jose           168506000
+#> 12190 1608507000                     Tubajon           168507000
+#> 12200 1630400000              City of Butuan           160202000
+#> 12289 1704001000                        Boac           174001000
+#> 12351 1704002000                  Buenavista           174002000
+#> 12367 1704003000                       Gasan           174003000
+#> 12393 1704004000                      Mogpog           174004000
+#> 12431 1704005000                  Santa Cruz           174005000
+#> 12487 1704006000                    Torrijos           174006000
+#> 12514 1705101000                Abra De Ilog           175101000
+#> 12525 1705102000                   Calintaan           175102000
+#> 12533 1705103000                        Looc           175103000
+#> 12543 1705104000                      Lubang           175104000
+#> 12560 1705105000                   Magsaysay           175105000
+#> 12573 1705106000                    Mamburao           175106000
+#> 12589 1705107000                      Paluan           175107000
+#> 12602 1705108000                       Rizal           175108000
+#> 12614 1705109000                    Sablayan           175109000
+#> 12637 1705110000                    San Jose           175110000
+#> 12677 1705111000                  Santa Cruz           175111000
+#> 12690 1705201000                        Baco           175201000
+#> 12718 1705202000                      Bansud           175202000
+#> 12732 1705203000                   Bongabong           175203000
+#> 12769 1705204000                   Bulalacao           175204000
+#> 12785 1705205000             City of Calapan           175205000
+#> 12848 1705206000                      Gloria           175206000
+#> 12876 1705207000                    Mansalay           175207000
+#> 12894 1705208000                      Naujan           175208000
+#> 12965 1705209000                 Pinamalayan           175209000
+#> 13003 1705210000                        Pola           175210000
+#> 13027 1705211000               Puerto Galera           175211000
+#> 13041 1705212000                       Roxas           175212000
+#> 13062 1705213000                 San Teodoro           175213000
+#> 13071 1705214000                     Socorro           175214000
+#> 13098 1705215000                    Victoria           175215000
+#> 13132 1705301000                     Aborlan           175301000
+#> 13152 1705302000                     Agutaya           175302000
+#> 13163 1705303000                     Araceli           175303000
+#> 13177 1705304000                     Balabac           175304000
+#> 13198 1705305000                    Bataraza           175305000
+#> 13221 1705306000              Brooke's Point           175306000
+#> 13240 1705307000                    Busuanga           175307000
+#> 13255 1705308000                Cagayancillo           175308000
+#> 13268 1705309000                       Coron           175309000
+#> 13292 1705310000                        Cuyo           175310000
+#> 13310 1705311000                     Dumaran           175311000
+#> 13327 1705312000                     El Nido           175312000
+#> 13346 1705313000                   Linapacan           175313000
+#> 13357 1705314000                   Magsaysay           175314000
+#> 13369 1705315000                       Narra           175315000
+#> 13393 1705317000                      Quezon           175317000
+#> 13408 1705318000                       Roxas           175318000
+#> 13440 1705319000                 San Vicente           175319000
+#> 13451 1705320000                      Taytay           175320000
+#> 13483 1705321000                    Kalayaan           175321000
+#> 13485 1705322000                      Culion           175322000
+#> 13500 1705323000           Dr. Jose P. Rizal           175323000
+#> 13512 1705324000           Sofronio Española           175324000
+#> 13523 1705901000                   Alcantara           175901000
+#> 13536 1705902000                      Banton           175902000
+#> 13554 1705903000                  Cajidiocan           175903000
+#> 13569 1705904000                   Calatrava           175904000
+#> 13577 1705905000                  Concepcion           175905000
+#> 13587 1705906000                    Corcuera           175906000
+#> 13603 1705907000                        Looc           175907000
+#> 13616 1705908000                   Magdiwang           175908000
+#> 13626 1705909000                    Odiongan           175909000
+#> 13652 1705910000                     Romblon           175910000
+#> 13684 1705911000                 San Agustin           175911000
+#> 13700 1705912000                  San Andres           175912000
+#> 13714 1705913000                San Fernando           175913000
+#> 13727 1705914000                    San Jose           175914000
+#> 13733 1705915000                    Santa Fe           175915000
+#> 13745 1705916000                      Ferrol           175916000
+#> 13752 1705917000                 Santa Maria           175917000
+#> 13759 1731500000     City of Puerto Princesa           175316000
+#> 13828 1804502000                City of Bago           064502000
+#> 13853 1804503000                  Binalbagan           064503000
+#> 13870 1804504000               City of Cadiz           064504000
+#> 13893 1804505000                   Calatrava           064505000
+#> 13934 1804506000                     Candoni           064506000
+#> 13944 1804507000                     Cauayan           064507000
+#> 13970 1804508000         Enrique B. Magalona           064508000
+#> 13994 1804509000           City of Escalante           064509000
+#> 14016 1804510000          City of Himamaylan           064510000
+#> 14036 1804511000                   Hinigaran           064511000
+#> 14061 1804512000                   Hinoba-an           064512000
+#> 14075 1804513000                        Ilog           064513000
+#> 14091 1804514000                     Isabela           064514000
+#> 14122 1804515000          City of Kabankalan           064515000
+#> 14155 1804516000          City of La Carlota           064516000
+#> 14170 1804517000               La Castellana           064517000
+#> 14184 1804518000                     Manapla           064518000
+#> 14197 1804519000              Moises Padilla           064519000
+#> 14213 1804520000                      Murcia           064520000
+#> 14237 1804521000                  Pontevedra           064521000
+#> 14258 1804522000                  Pulupandan           064522000
+#> 14279 1804523000               City of Sagay           064523000
+#> 14305 1804524000          City of San Carlos           064524000
+#> 14324 1804525000                 San Enrique           064525000
+#> 14335 1804526000               City of Silay           064526000
+#> 14352 1804527000             City of Sipalay           064527000
+#> 14370 1804528000             City of Talisay           064528000
+#> 14398 1804529000                      Toboso           064529000
+#> 14408 1804530000                  Valladolid           064530000
+#> 14425 1804531000           City of Victorias           064531000
+#> 14452 1804532000          Salvador Benedicto           064532000
+#> 14461 1804601000                       Amlan           074601000
+#> 14470 1804602000                     Ayungon           074602000
+#> 14495 1804603000                      Bacong           074603000
+#> 14518 1804604000                City of Bais           074604000
+#> 14554 1804605000                       Basay           074605000
+#> 14565 1804606000             City of Bayawan           074606000
+#> 14594 1804607000                      Bindoy           074607000
+#> 14617 1804608000             City of Canlaon           074608000
+#> 14630 1804609000                       Dauin           074609000
+#> 14654 1804610000           City of Dumaguete           074610000
+#> 14685 1804611000          City of Guihulngan           074611000
+#> 14719 1804612000                   Jimalalud           074612000
+#> 14748 1804613000                 La Libertad           074613000
+#> 14778 1804614000                     Mabinay           074614000
+#> 14811 1804615000                    Manjuyod           074615000
+#> 14839 1804616000                    Pamplona           074616000
+#> 14856 1804617000                    San Jose           074617000
+#> 14871 1804618000              Santa Catalina           074618000
+#> 14894 1804619000                      Siaton           074619000
+#> 14921 1804620000                     Sibulan           074620000
+#> 14937 1804621000              City of Tanjay           074621000
+#> 14962 1804622000                     Tayasan           074622000
+#> 14991 1804623000                    Valencia           074623000
+#> 15016 1804624000                Vallehermoso           074624000
+#> 15032 1804625000                Zamboanguita           074625000
+#> 15044 1806101000          Enrique Villanueva           076101000
+#> 15059 1806102000                      Larena           076102000
+#> 15083 1806103000                        Lazi           076103000
+#> 15102 1806104000                       Maria           076104000
+#> 15125 1806105000                    San Juan           076105000
+#> 15141 1806106000                    Siquijor           076106000
+#> 15184 1830200000             City of Bacolod           064501000
+#> 15248 1900702000             City of Lamitan           150702000
+#> 15294 1900703000                    Lantawan           150703000
+#> 15320 1900704000                      Maluso           150704000
+#> 15341 1900705000                     Sumisip           150705000
+#> 15371 1900706000                   Tipo-Tipo           150706000
+#> 15383 1900707000                     Tuburan           150707000
+#> 15394 1900708000                       Akbar           150708000
+#> 15404 1900709000                    Al-Barka           150709000
+#> 15421 1900710000         Hadji Mohammad Ajul           150710000
+#> 15433 1900711000               Ungkaya Pukan           150711000
+#> 15446 1900712000              Hadji Muhtamad           150712000
+#> 15457 1900713000                 Tabuan-Lasa           150713000
+#> 15471 1903601000              Bacolod-Kalawi           153601000
+#> 15498 1903602000                   Balabagan           153602000
+#> 15526 1903603000                   Balindong           153603000
+#> 15565 1903604000                      Bayang           153604000
+#> 15615 1903605000                   Binidayan           153605000
+#> 15642 1903606000                      Bubong           153606000
+#> 15679 1903607000                       Butig           153607000
+#> 15696 1903609000                     Ganassi           153609000
+#> 15729 1903610000                       Kapai           153610000
+#> 15750 1903611000               Lumba-Bayabao           153611000
+#> 15789 1903612000                    Lumbatan           153612000
+#> 15811 1903613000                     Madalum           153613000
+#> 15849 1903614000                     Madamba           153614000
+#> 15874 1903615000                    Malabang           153615000
+#> 15912 1903616000                    Marantao           153616000
+#> 15947 1903617000              City of Marawi           153617000
+#> 16049 1903618000                       Masiu           153618000
+#> 16085 1903619000                     Mulondo           153619000
+#> 16112 1903620000                   Pagayawan           153620000
+#> 16131 1903621000                     Piagapo           153621000
+#> 16169 1903622000               Poona Bayabao           153622000
+#> 16195 1903623000                      Pualas           153623000
+#> 16219 1903624000              Ditsaan-Ramain           153624000
+#> 16255 1903625000                   Saguiaran           153625000
+#> 16286 1903626000                    Tamparan           153626000
+#> 16331 1903627000                      Taraka           153627000
+#> 16375 1903628000                     Tubaran           153628000
+#> 16397 1903629000                      Tugaya           153629000
+#> 16421 1903630000                         Wao           153630000
+#> 16448 1903631000                    Marogong           153631000
+#> 16473 1903632000                   Calanogas           153632000
+#> 16491 1903633000           Buadiposo-Buntong           153633000
+#> 16525 1903634000                     Maguing           153634000
+#> 16560 1903635000                      Picong           153635000
+#> 16580 1903636000                Lumbayanague           153636000
+#> 16603 1903637000             Amai Manabilang           153637000
+#> 16621 1903638000                 Tagoloan II           153638000
+#> 16641 1903639000                   Kapatagan           153639000
+#> 16657 1903640000          Sultan Dumalondong           153640000
+#> 16665 1903641000              Lumbaca-Unayan           153641000
+#> 16676 1907001000             Panglima Sugala           157001000
+#> 16694 1907002000                      Bongao           157002000
+#> 16730 1907003000                       Mapun           157003000
+#> 16746 1907004000                     Simunul           157004000
+#> 16762 1907005000                   Sitangkai           157005000
+#> 16772 1907006000                 South Ubian           157006000
+#> 16804 1907007000                    Tandubas           157007000
+#> 16825 1907008000              Turtle Islands           157008000
+#> 16828 1907009000                    Languyan           157009000
+#> 16849 1907010000                   Sapa-Sapa           157010000
+#> 16873 1907011000                      Sibutu           157011000
+#> 16891 1908701000                      Barira           153818000
+#> 16906 1908702000                      Buldon           153802000
+#> 16922 1908703000            City of Cotabato           129804000
+#> 16960 1908704000        Datu Blah T. Sinsuat           153830000
+#> 16974 1908705000           Datu Odin Sinsuat           153807000
+#> 17009 1908706000                  Kabuntalan           153814000
+#> 17027 1908707000                     Matanog           153809000
+#> 17036 1908708000         Northern Kabuntalan           153834000
+#> 17048 1908709000                      Parang           153811000
+#> 17074 1908710000              Sultan Kudarat           153812000
+#> 17114 1908711000              Sultan Mastura           153824000
+#> 17128 1908712000                     Talitay           153821000
+#> 17138 1908713000                         Upi           153815000
+#> 17163 1908801000                    Ampatuan           153801000
+#> 17175 1908802000                      Buluan           153803000
+#> 17183 1908803000        Datu Abdullah Sangki           153828000
+#> 17194 1908804000      Datu Anggal Midtimbang           153831000
+#> 17202 1908805000        Datu Hoffer Ampatuan           153835000
+#> 17214 1908806000                 Datu Paglas           153805000
+#> 17238 1908807000                  Datu Piang           153806000
+#> 17255 1908808000                 Datu Salibo           153836000
+#> 17273 1908809000         Datu Saudi Ampatuan           153826000
+#> 17282 1908810000                  Datu Unsay           153827000
+#> 17291 1908811000          Gen. S.K. Pendatun           153819000
+#> 17311 1908812000                Guindulungan           153825000
+#> 17323 1908813000                  Mamasapano           153820000
+#> 17338 1908814000                 Mangudadatu           153832000
+#> 17347 1908815000                   Pagagawan           153822000
+#> 17359 1908816000                  Pagalungan           153810000
+#> 17372 1908817000                      Paglat           153823000
+#> 17381 1908818000                      Pandag           153833000
+#> 17390 1908819000                Rajah Buayan           153829000
+#> 17402 1908820000               Shariff Aguak           153808000
+#> 17416 1908821000    Shariff Saydona Mustapha           153837000
+#> 17433 1908822000                   South Upi           153817000
+#> 17445 1908823000          Sultan Sa Barongis           153813000
+#> 17458 1908824000                     Talayan           153816000
+#> 17475 1999901000                   Kapalawan           000000000
+#> 17483 1999902000                Old Kaabakan           000000000
+#> 17491 1999903000                  Kadayangan           000000000
+#> 17499 1999904000                   Nabalawag           000000000
+#> 17507 1999905000                  Pahamuddin           000000000
+#> 17520 1999906000                   Malidegao           000000000
+#> 17528 1999907000                   Ligawasan           000000000
+#> 17536 1999908000                     Tugunan           000000000
+#> 17548 0200901000                       Basco           020901000
+#> 17555 0200902000                     Itbayat           020902000
+#> 17561 0200903000                       Ivana           020903000
+#> 17566 0200904000                     Mahatao           020904000
+#> 17571 0200905000                     Sabtang           020905000
+#> 17578 0200906000                      Uyugan           020906000
+#> 17584 0201501000                      Abulug           021501000
+#> 17605 0201502000                      Alcala           021502000
+#> 17631 0201503000                   Allacapan           021503000
+#> 17659 0201504000                     Amulung           021504000
+#> 17707 0201505000                      Aparri           021505000
+#> 17750 0201506000                      Baggao           021506000
+#> 17799 0201507000                 Ballesteros           021507000
+#> 17819 0201508000                      Buguey           021508000
+#> 17850 0201509000                     Calayan           021509000
+#> 17863 0201510000                Camalaniugan           021510000
+#> 17892 0201511000                    Claveria           021511000
+#> 17934 0201512000                      Enrile           021512000
+#> 17957 0201513000                    Gattaran           021513000
+#> 18008 0201514000                     Gonzaga           021514000
+#> 18034 0201515000                       Iguig           021515000
+#> 18058 0201516000                      Lal-Lo           021516000
+#> 18094 0201517000                       Lasam           021517000
+#> 18125 0201518000                    Pamplona           021518000
+#> 18144 0201519000                  Peñablanca           021519000
+#> 18169 0201520000                        Piat           021520000
+#> 18188 0201521000                       Rizal           021521000
+#> 18218 0201522000                Sanchez Mira           021522000
+#> 18237 0201523000                   Santa Ana           021523000
+#> 18254 0201524000              Santa Praxedes           021524000
+#> 18265 0201525000              Santa Teresita           021525000
+#> 18279 0201526000                  Santo Niño           021526000
+#> 18311 0201527000                      Solana           021527000
+#> 18350 0201528000                        Tuao           021528000
+#> 18383 0201529000             Tuguegarao City           021529000
+#> 18434 0203101000                      Alicia           023101000
+#> 18469 0203102000                   Angadanan           023102000
+#> 18529 0203103000                      Aurora           023103000
+#> 18563 0203104000              Benito Soliven           023104000
+#> 18593 0203105000                      Burgos           023105000
+#> 18608 0203106000                     Cabagan           023106000
+#> 18635 0203107000                    Cabatuan           023107000
+#> 18658 0203108000             City of Cauayan           023108000
+#> 18724 0203109000                      Cordon           023109000
+#> 18751 0203110000                   Dinapigue           023110000
+#> 18758 0203111000                   Divilacan           023111000
+#> 18771 0203112000                     Echague           023112000
+#> 18836 0203113000                        Gamu           023113000
+#> 18853 0203114000              City of Ilagan           023114000
+#> 18945 0203115000                       Jones           023115000
+#> 18988 0203116000                        Luna           023116000
+#> 19008 0203117000                   Maconacon           023117000
+#> 19019 0203118000               Delfin Albano           023118000
+#> 19049 0203119000                      Mallig           023119000
+#> 19068 0203120000                   Naguilian           023120000
+#> 19094 0203121000                     Palanan           023121000
+#> 19112 0203122000                      Quezon           023122000
+#> 19128 0203123000                     Quirino           023123000
+#> 19150 0203124000                       Ramon           023124000
+#> 19170 0203125000              Reina Mercedes           023125000
+#> 19191 0203126000                       Roxas           023126000
+#> 19218 0203127000                 San Agustin           023127000
+#> 19242 0203128000               San Guillermo           023128000
+#> 19269 0203129000                  San Isidro           023129000
+#> 19283 0203130000                  San Manuel           023130000
+#> 19303 0203131000                 San Mariano           023131000
+#> 19340 0203132000                   San Mateo           023132000
+#> 19374 0203133000                   San Pablo           023133000
+#> 19392 0203134000                 Santa Maria           023134000
+#> 19413 0203135000            City of Santiago           023135000
+#> 19451 0203136000                 Santo Tomas           023136000
+#> 19479 0203137000                    Tumauini           023137000
+#> 19527 0205001000                    Ambaguio           025001000
+#> 19536 0205002000                      Aritao           025002000
+#> 19559 0205003000                     Bagabag           025003000
+#> 19577 0205004000                     Bambang           025004000
+#> 19603 0205005000                   Bayombong           025005000
+#> 19629 0205006000                       Diadi           025006000
+#> 19649 0205007000             Dupax del Norte           025007000
+#> 19665 0205008000               Dupax del Sur           025008000
+#> 19685 0205009000                      Kasibu           025009000
+#> 19716 0205010000                      Kayapa           025010000
+#> 19747 0205011000                      Quezon           025011000
+#> 19760 0205012000                    Santa Fe           025012000
+#> 19777 0205013000                      Solano           025013000
+#> 19800 0205014000                  Villaverde           025014000
+#> 19810 0205015000           Alfonso Castaneda           025015000
+#> 19818 0205701000                     Aglipay           025701000
+#> 19844 0205702000                 Cabarroguis           025702000
+#> 19862 0205703000                      Diffun           025703000
+#> 19896 0205704000                     Maddela           025704000
+#> 19929 0205705000                     Saguday           025705000
+#> 19939 0205706000                  Nagtipunan           025706000
+#> 19958 0300801000                      Abucay           030801000
+#> 19968 0300802000                       Bagac           030802000
+#> 19983 0300803000             City of Balanga           030803000
+#> 20009 0300804000                 Dinalupihan           030804000
+#> 20056 0300805000                     Hermosa           030805000
+#> 20080 0300806000                       Limay           030806000
+#> 20093 0300807000                   Mariveles           030807000
+#> 20112 0300808000                      Morong           030808000
+#> 20118 0300809000                       Orani           030809000
+#> 20148 0300810000                       Orion           030810000
+#> 20172 0300811000                       Pilar           030811000
+#> 20192 0300812000                       Samal           030812000
+#> 20208 0301401000                       Angat           031401000
+#> 20225 0301402000                    Balagtas           031402000
+#> 20235 0301403000             City of Baliwag           031403000
+#> 20263 0301404000                      Bocaue           031404000
+#> 20283 0301405000                     Bulacan           031405000
+#> 20298 0301406000                      Bustos           031406000
+#> 20313 0301407000                    Calumpit           031407000
+#> 20343 0301408000                   Guiguinto           031408000
+#> 20358 0301409000                     Hagonoy           031409000
+#> 20385 0301410000             City of Malolos           031410000
+#> 20437 0301411000                     Marilao           031411000
+#> 20454 0301412000          City of Meycauayan           031412000
+#> 20481 0301413000                  Norzagaray           031413000
+#> 20495 0301414000                      Obando           031414000
+#> 20507 0301415000                       Pandi           031415000
+#> 20530 0301416000                    Paombong           031416000
+#> 20545 0301417000                    Plaridel           031417000
+#> 20565 0301418000                     Pulilan           031418000
+#> 20585 0301419000               San Ildefonso           031419000
+#> 20622 0301420000  City of San Jose Del Monte           031420000
+#> 20685 0301421000                  San Miguel           031421000
+#> 20735 0301422000                  San Rafael           031422000
+#> 20770 0301423000                 Santa Maria           031423000
+#> 20795 0301424000      Doña Remedios Trinidad           031424000
+#> 20805 0304901000                      Aliaga           034901000
+#> 20832 0304902000                    Bongabon           034902000
+#> 20861 0304903000          City of Cabanatuan           034903000
+#> 20951 0304904000                      Cabiao           034904000
+#> 20975 0304905000                  Carranglan           034905000
+#> 20993 0304906000                      Cuyapo           034906000
+#> 21045 0304907000                    Gabaldon           034907000
+#> 21062 0304908000               City of Gapan           034908000
+#> 21086 0304909000   General Mamerto Natividad           034909000
+#> 21107 0304910000               General Tinio           034910000
+#> 21121 0304911000                      Guimba           034911000
+#> 21186 0304912000                        Jaen           034912000
+#> 21214 0304913000                        Laur           034913000
+#> 21232 0304914000                       Licab           034914000
+#> 21244 0304915000                     Llanera           034915000
+#> 21267 0304916000                       Lupao           034916000
+#> 21292 0304917000       Science City of Muñoz           034917000
+#> 21330 0304918000                   Nampicuan           034918000
+#> 21352 0304919000             City of Palayan           034919000
+#> 21372 0304920000                 Pantabangan           034920000
+#> 21387 0304921000                   Peñaranda           034921000
+#> 21398 0304922000                      Quezon           034922000
+#> 21415 0304923000                       Rizal           034923000
+#> 21442 0304924000                 San Antonio           034924000
+#> 21459 0304925000                  San Isidro           034925000
+#> 21469 0304926000               San Jose City           034926000
+#> 21508 0304927000                San Leonardo           034927000
+#> 21524 0304928000                  Santa Rosa           034928000
+#> 21558 0304929000               Santo Domingo           034929000
+#> 21583 0304930000                    Talavera           034930000
+#> 21637 0304931000                    Talugtug           034931000
+#> 21666 0304932000                    Zaragoza           034932000
+#> 21687 0305402000                      Apalit           035402000
+#> 21700 0305403000                      Arayat           035403000
+#> 21731 0305404000                     Bacolor           035404000
+#> 21753 0305405000                     Candaba           035405000
+#> 21787 0305406000               Floridablanca           035406000
+#> 21821 0305407000                      Guagua           035407000
+#> 21853 0305408000                       Lubao           035408000
+#> 21898 0305409000              Mabalacat City           035409000
+#> 21926 0305410000                    Macabebe           035410000
+#> 21952 0305411000                    Magalang           035411000
+#> 21980 0305412000                    Masantol           035412000
+#> 22007 0305413000                      Mexico           035413000
+#> 22051 0305414000                     Minalin           035414000
+#> 22067 0305415000                       Porac           035415000
+#> 22097 0305416000        City of San Fernando           035416000
+#> 22133 0305417000                    San Luis           035417000
+#> 22151 0305418000                   San Simon           035418000
+#> 22166 0305419000                   Santa Ana           035419000
+#> 22181 0305420000                  Santa Rita           035420000
+#> 22192 0305421000                  Sto. Tomas           035421000
+#> 22200 0305422000                     Sasmuan           035422000
+#> 22214 0306901000                        Anao           036901000
+#> 22233 0306902000                      Bamban           036902000
+#> 22249 0306903000                    Camiling           036903000
+#> 22311 0306904000                       Capas           036904000
+#> 22332 0306905000                  Concepcion           036905000
+#> 22378 0306906000                      Gerona           036906000
+#> 22423 0306907000                      La Paz           036907000
+#> 22445 0306908000                    Mayantoc           036908000
+#> 22470 0306909000                     Moncada           036909000
+#> 22508 0306910000                     Paniqui           036910000
+#> 22544 0306911000                        Pura           036911000
+#> 22561 0306912000                       Ramos           036912000
+#> 22571 0306913000                San Clemente           036913000
+#> 22584 0306914000                  San Manuel           036914000
+#> 22600 0306915000               Santa Ignacia           036915000
+#> 22625 0306916000              City of Tarlac           036916000
+#> 22702 0306917000                    Victoria           036917000
+#> 22729 0306918000                    San Jose           036918000
+#> 22744 0307101000                     Botolan           037101000
+#> 22776 0307102000                    Cabangan           037102000
+#> 22799 0307103000                  Candelaria           037103000
+#> 22816 0307104000                 Castillejos           037104000
+#> 22831 0307105000                         Iba           037105000
+#> 22846 0307106000                    Masinloc           037106000
+#> 22860 0307108000                     Palauig           037108000
+#> 22880 0307109000                 San Antonio           037109000
+#> 22895 0307110000                  San Felipe           037110000
+#> 22907 0307111000               San Marcelino           037111000
+#> 22926 0307112000                 San Narciso           037112000
+#> 22944 0307113000                  Santa Cruz           037113000
+#> 22970 0307114000                       Subic           037114000
+#> 22988 0307701000                       Baler           037701000
+#> 23002 0307702000                   Casiguran           037702000
+#> 23027 0307703000                     Dilasag           037703000
+#> 23039 0307704000                  Dinalungan           037704000
+#> 23049 0307705000                    Dingalan           037705000
+#> 23061 0307706000                   Dipaculao           037706000
+#> 23087 0307707000                Maria Aurora           037707000
+#> 23128 0307708000                    San Luis           037708000
+#> 23147 0330100000             City of Angeles           035401000
+#> 23181 0331400000            City of Olongapo           037107000
+#> 23201 0401001000                   Agoncillo           041001000
+#> 23223 0401002000                   Alitagtag           041002000
+#> 23243 0401003000                     Balayan           041003000
+#> 23292 0401004000                      Balete           041004000
+#> 23306 0401005000               Batangas City           041005000
+#> 23412 0401006000                       Bauan           041006000
+#> 23453 0401007000              City of Calaca           041007000
+#> 23493 0401008000                   Calatagan           041008000
+#> 23519 0401009000                      Cuenca           041009000
+#> 23541 0401010000                       Ibaan           041010000
+#> 23568 0401011000                      Laurel           041011000
+#> 23590 0401012000                      Lemery           041012000
+#> 23637 0401013000                        Lian           041013000
+#> 23657 0401014000                City of Lipa           041014000
+#> 23730 0401015000                        Lobo           041015000
+#> 23757 0401016000                      Mabini           041016000
+#> 23792 0401017000                      Malvar           041017000
+#> 23808 0401018000               Mataasnakahoy           041018000
+#> 23825 0401019000                     Nasugbu           041019000
+#> 23868 0401020000                Padre Garcia           041020000
+#> 23887 0401021000                     Rosario           041021000
+#> 23936 0401022000                    San Jose           041022000
+#> 23970 0401023000                    San Juan           041023000
+#> 24013 0401024000                    San Luis           041024000
+#> 24040 0401025000                 San Nicolas           041025000
+#> 24059 0401026000                 San Pascual           041026000
+#> 24089 0401027000              Santa Teresita           041027000
+#> 24107 0401028000          City of Sto. Tomas           041028000
+#> 24138 0401029000                        Taal           041029000
+#> 24181 0401030000                     Talisay           041030000
+#> 24203 0401031000             City of Tanauan           041031000
+#> 24252 0401032000                      Taysan           041032000
+#> 24273 0401033000                     Tingloy           041033000
+#> 24289 0401034000                         Tuy           041034000
+#> 24313 0402101000                     Alfonso           042101000
+#> 24346 0402102000                      Amadeo           042102000
+#> 24373 0402103000              City of Bacoor           042103000
+#> 24421 0402104000             City of Carmona           042104000
+#> 24436 0402105000              City of Cavite           042105000
+#> 24521 0402106000          City of Dasmariñas           042106000
+#> 24597 0402107000    General Emilio Aguinaldo           042107000
+#> 24612 0402108000       City of General Trias           042108000
+#> 24646 0402109000                City of Imus           042109000
+#> 24744 0402110000                      Indang           042110000
+#> 24781 0402111000                       Kawit           042111000
+#> 24805 0402112000                  Magallanes           042112000
+#> 24822 0402113000                  Maragondon           042113000
+#> 24850 0402114000                      Mendez           042114000
+#> 24875 0402115000                        Naic           042115000
+#> 24906 0402116000                    Noveleta           042116000
+#> 24923 0402117000                     Rosario           042117000
+#> 24944 0402118000                      Silang           042118000
+#> 25009 0402119000            City of Tagaytay           042119000
+#> 25044 0402120000                       Tanza           042120000
+#> 25086 0402121000                     Ternate           042121000
+#> 25097 0402122000      City of Trece Martires           042122000
+#> 25111 0402123000        Gen. Mariano Alvarez           042123000
+#> 25140 0403401000                    Alaminos           043401000
+#> 25156 0403402000                         Bay           043402000
+#> 25172 0403403000               City of Biñan           043403000
+#> 25197 0403404000             City of Cabuyao           043404000
+#> 25216 0403405000             City of Calamba           043405000
+#> 25271 0403406000                     Calauan           043406000
+#> 25289 0403407000                     Cavinti           043407000
+#> 25309 0403408000                        Famy           043408000
+#> 25330 0403409000                    Kalayaan           043409000
+#> 25334 0403410000                       Liliw           043410000
+#> 25368 0403411000                   Los Baños           043411000
+#> 25383 0403412000                    Luisiana           043412000
+#> 25407 0403413000                      Lumban           043413000
+#> 25424 0403414000                     Mabitac           043414000
+#> 25440 0403415000                   Magdalena           043415000
+#> 25465 0403416000                    Majayjay           043416000
+#> 25506 0403417000                   Nagcarlan           043417000
+#> 25559 0403418000                       Paete           043418000
+#> 25569 0403419000                   Pagsanjan           043419000
+#> 25586 0403420000                       Pakil           043420000
+#> 25600 0403421000                      Pangil           043421000
+#> 25609 0403422000                        Pila           043422000
+#> 25627 0403423000                       Rizal           043423000
+#> 25639 0403424000           City of San Pablo           043424000
+#> 25720 0403425000           City of San Pedro           043425000
+#> 25748 0403426000                  Santa Cruz           043426000
+#> 25775 0403427000                 Santa Maria           043427000
+#> 25801 0403428000          City of Santa Rosa           043428000
+#> 25820 0403429000                    Siniloan           043429000
+#> 25841 0403430000                    Victoria           043430000
+#> 25852 0405601000                    Agdangan           045601000
+#> 25865 0405602000                      Alabat           045602000
+#> 25885 0405603000                    Atimonan           045603000
+#> 25928 0405605000                  Buenavista           045605000
+#> 25966 0405606000                     Burdeos           045606000
+#> 25980 0405607000                     Calauag           045607000
+#> 26062 0405608000                  Candelaria           045608000
+#> 26088 0405610000                   Catanauan           045610000
+#> 26135 0405615000                     Dolores           045615000
+#> 26152 0405616000                General Luna           045616000
+#> 26180 0405617000               General Nakar           045617000
+#> 26200 0405618000                 Guinayangan           045618000
+#> 26255 0405619000                      Gumaca           045619000
+#> 26315 0405620000                     Infanta           045620000
+#> 26352 0405621000                     Jomalig           045621000
+#> 26358 0405622000                       Lopez           045622000
+#> 26454 0405623000                      Lucban           045623000
+#> 26487 0405625000                   Macalelon           045625000
+#> 26518 0405627000                      Mauban           045627000
+#> 26559 0405628000                     Mulanay           045628000
+#> 26588 0405629000                Padre Burgos           045629000
+#> 26611 0405630000                    Pagbilao           045630000
+#> 26639 0405631000                   Panukulan           045631000
+#> 26653 0405632000                 Patnanungan           045632000
+#> 26660 0405633000                       Perez           045633000
+#> 26675 0405634000                      Pitogo           045634000
+#> 26715 0405635000                    Plaridel           045635000
+#> 26725 0405636000                     Polillo           045636000
+#> 26746 0405637000                      Quezon           045637000
+#> 26771 0405638000                        Real           045638000
+#> 26789 0405639000                    Sampaloc           045639000
+#> 26804 0405640000                  San Andres           045640000
+#> 26812 0405641000                 San Antonio           045641000
+#> 26833 0405642000               San Francisco           045642000
+#> 26850 0405644000                 San Narciso           045644000
+#> 26875 0405645000                     Sariaya           045645000
+#> 26919 0405646000                  Tagkawayan           045646000
+#> 26965 0405647000             City of Tayabas           045647000
+#> 27032 0405648000                      Tiaong           045648000
+#> 27064 0405649000                      Unisan           045649000
+#> 27102 0405801000                      Angono           045801000
+#> 27113 0405802000            City of Antipolo           045802000
+#> 27130 0405803000                       Baras           045803000
+#> 27141 0405804000                  Binangonan           045804000
+#> 27182 0405805000                      Cainta           045805000
+#> 27190 0405806000                     Cardona           045806000
+#> 27209 0405807000                   Jala-Jala           045807000
+#> 27221 0405808000                   Rodriguez           045808000
+#> 27233 0405809000                      Morong           045809000
+#> 27242 0405810000                     Pililla           045810000
+#> 27252 0405811000                   San Mateo           045811000
+#> 27268 0405812000                       Tanay           045812000
+#> 27289 0405813000                      Taytay           045813000
+#> 27295 0405814000                      Teresa           045814000
+#> 27305 0431200000              City of Lucena           045624000
+#> 27341 0500501000                     Bacacay           050501000
+#> 27398 0500502000                     Camalig           050502000
+#> 27449 0500503000                      Daraga           050503000
+#> 27504 0500504000                  Guinobatan           050504000
+#> 27549 0500505000                    Jovellar           050505000
+#> 27573 0500506000             City of Legazpi           050506000
+#> 27644 0500507000                       Libon           050507000
+#> 27692 0500508000               City of Ligao           050508000
+#> 27748 0500509000                   Malilipot           050509000
+#> 27767 0500510000                     Malinao           050510000
+#> 27797 0500511000                      Manito           050511000
+#> 27813 0500512000                         Oas           050512000
+#> 27867 0500513000                   Pio Duran           050513000
+#> 27901 0500514000                    Polangui           050514000
+#> 27946 0500515000                   Rapu-Rapu           050515000
+#> 27981 0500516000               Santo Domingo           050516000
+#> 28005 0500517000              City of Tabaco           050517000
+#> 28053 0500518000                        Tiwi           050518000
+#> 28080 0501601000                       Basud           051601000
+#> 28110 0501602000                   Capalonga           051602000
+#> 28133 0501603000                        Daet           051603000
+#> 28159 0501604000            San Lorenzo Ruiz           051604000
+#> 28172 0501605000             Jose Panganiban           051605000
+#> 28200 0501606000                        Labo           051606000
+#> 28253 0501607000                    Mercedes           051607000
+#> 28280 0501608000                    Paracale           051608000
+#> 28308 0501609000                 San Vicente           051609000
+#> 28318 0501610000                 Santa Elena           051610000
+#> 28338 0501611000                     Talisay           051611000
+#> 28354 0501612000                     Vinzons           051612000
+#> 28375 0501701000                        Baao           051701000
+#> 28406 0501702000                     Balatan           051702000
+#> 28424 0501703000                        Bato           051703000
+#> 28458 0501704000                      Bombon           051704000
+#> 28467 0501705000                        Buhi           051705000
+#> 28506 0501706000                        Bula           051706000
+#> 28540 0501707000                     Cabusao           051707000
+#> 28550 0501708000                   Calabanga           051708000
+#> 28599 0501709000                   Camaligan           051709000
+#> 28613 0501710000                     Canaman           051710000
+#> 28638 0501711000                    Caramoan           051711000
+#> 28688 0501712000                 Del Gallego           051712000
+#> 28721 0501713000                      Gainza           051713000
+#> 28730 0501714000                Garchitorena           051714000
+#> 28754 0501715000                         Goa           051715000
+#> 28789 0501716000               City of Iriga           051716000
+#> 28826 0501717000                     Lagonoy           051717000
+#> 28865 0501718000                    Libmanan           051718000
+#> 28941 0501719000                        Lupi           051719000
+#> 28980 0501720000                     Magarao           051720000
+#> 28996 0501721000                      Milaor           051721000
+#> 29017 0501722000                   Minalabac           051722000
+#> 29043 0501723000                       Nabua           051723000
+#> 29086 0501724000                City of Naga           051724000
+#> 29114 0501725000                      Ocampo           051725000
+#> 29140 0501726000                    Pamplona           051726000
+#> 29158 0501727000                     Pasacao           051727000
+#> 29178 0501728000                        Pili           051728000
+#> 29205 0501729000                Presentacion           051729000
+#> 29224 0501730000                       Ragay           051730000
+#> 29263 0501731000                      Sagñay           051731000
+#> 29283 0501732000                San Fernando           051732000
+#> 29306 0501733000                    San Jose           051733000
+#> 29336 0501734000                     Sipocot           051734000
+#> 29383 0501735000                      Siruma           051735000
+#> 29406 0501736000                      Tigaon           051736000
+#> 29430 0501737000                    Tinambac           051737000
+#> 29476 0502001000                   Bagamanoc           052001000
+#> 29495 0502002000                       Baras           052002000
+#> 29525 0502003000                        Bato           052003000
+#> 29553 0502004000                   Caramoran           052004000
+#> 29581 0502005000                     Gigmoto           052005000
+#> 29591 0502006000                      Pandan           052006000
+#> 29618 0502007000                  Panganiban           052007000
+#> 29642 0502008000                  San Andres           052008000
+#> 29681 0502009000                  San Miguel           052009000
+#> 29706 0502010000                        Viga           052010000
+#> 29738 0502011000                       Virac           052011000
+#> 29803 0504101000                      Aroroy           054101000
+#> 29845 0504102000                      Baleno           054102000
+#> 29870 0504103000                       Balud           054103000
+#> 29903 0504104000                      Batuan           054104000
+#> 29918 0504105000                   Cataingan           054105000
+#> 29955 0504106000                     Cawayan           054106000
+#> 29993 0504107000                    Claveria           054107000
+#> 30016 0504108000                  Dimasalang           054108000
+#> 30037 0504109000                   Esperanza           054109000
+#> 30058 0504110000                     Mandaon           054110000
+#> 30085 0504111000             City of Masbate           054111000
+#> 30116 0504112000                    Milagros           054112000
+#> 30144 0504113000                        Mobo           054113000
+#> 30174 0504114000                     Monreal           054114000
+#> 30186 0504115000                     Palanas           054115000
+#> 30211 0504116000               Pio V. Corpus           054116000
+#> 30230 0504117000                      Placer           054117000
+#> 30266 0504118000                San Fernando           054118000
+#> 30293 0504119000                 San Jacinto           054119000
+#> 30315 0504120000                 San Pascual           054120000
+#> 30338 0504121000                        Uson           054121000
+#> 30375 0506202000                   Barcelona           056202000
+#> 30401 0506203000                       Bulan           056203000
+#> 30465 0506204000                     Bulusan           056204000
+#> 30490 0506205000                   Casiguran           056205000
+#> 30516 0506206000                    Castilla           056206000
+#> 30551 0506207000                      Donsol           056207000
+#> 30603 0506208000                       Gubat           056208000
+#> 30646 0506209000                      Irosin           056209000
+#> 30675 0506210000                       Juban           056210000
+#> 30701 0506211000                  Magallanes           056211000
+#> 30736 0506212000                      Matnog           056212000
+#> 30777 0506213000                       Pilar           056213000
+#> 30827 0506214000                 Prieto Diaz           056214000
+#> 30851 0506215000             Santa Magdalena           056215000
+#> 30866 0506216000            City of Sorsogon           056216000
+#> 30933 0600401000                     Altavas           060401000
+#> 30948 0600402000                      Balete           060402000
+#> 30959 0600403000                       Banga           060403000
+#> 30990 0600404000                       Batan           060404000
+#> 31011 0600405000                    Buruanga           060405000
+#> 31027 0600406000                      Ibajay           060406000
+#> 31063 0600407000                      Kalibo           060407000
+#> 31080 0600408000                        Lezo           060408000
+#> 31093 0600409000                     Libacao           060409000
+#> 31118 0600410000                     Madalag           060410000
+#> 31144 0600411000                      Makato           060411000
+#> 31163 0600412000                       Malay           060412000
+#> 31181 0600413000                     Malinao           060413000
+#> 31205 0600414000                       Nabas           060414000
+#> 31226 0600415000              New Washington           060415000
+#> 31243 0600416000                    Numancia           060416000
+#> 31261 0600417000                    Tangalan           060417000
+#> 31278 0600601000                     Anini-Y           060601000
+#> 31302 0600602000                     Barbaza           060602000
+#> 31342 0600603000                     Belison           060603000
+#> 31354 0600604000                    Bugasong           060604000
+#> 31382 0600605000                      Caluya           060605000
+#> 31401 0600606000                      Culasi           060606000
+#> 31446 0600607000              Tobias Fornier           060607000
+#> 31497 0600608000                      Hamtic           060608000
+#> 31545 0600609000                     Laua-An           060609000
+#> 31586 0600610000                    Libertad           060610000
+#> 31606 0600611000                      Pandan           060611000
+#> 31641 0600612000                   Patnongon           060612000
+#> 31678 0600613000                    San Jose           060613000
+#> 31707 0600614000                 San Remigio           060614000
+#> 31753 0600615000                     Sebaste           060615000
+#> 31764 0600616000                     Sibalom           060616000
+#> 31841 0600617000                      Tibiao           060617000
+#> 31863 0600618000                  Valderrama           060618000
+#> 31887 0601901000                    Cuartero           061901000
+#> 31910 0601902000                         Dao           061902000
+#> 31931 0601903000                     Dumalag           061903000
+#> 31951 0601904000                     Dumarao           061904000
+#> 31985 0601905000                      Ivisan           061905000
+#> 32001 0601906000                    Jamindan           061906000
+#> 32032 0601907000                     Ma-Ayon           061907000
+#> 32065 0601908000                    Mambusao           061908000
+#> 32092 0601909000                       Panay           061909000
+#> 32135 0601910000                     Panitan           061910000
+#> 32162 0601911000                       Pilar           061911000
+#> 32187 0601912000                  Pontevedra           061912000
+#> 32214 0601913000             President Roxas           061913000
+#> 32237 0601914000               City of Roxas           061914000
+#> 32285 0601915000                     Sapi-An           061915000
+#> 32296 0601916000                       Sigma           061916000
+#> 32318 0601917000                       Tapaz           061917000
+#> 32378 0603001000                        Ajuy           063001000
+#> 32413 0603002000                   Alimodian           063002000
+#> 32465 0603003000                      Anilao           063003000
+#> 32487 0603004000                   Badiangan           063004000
+#> 32519 0603005000                     Balasan           063005000
+#> 32543 0603006000                      Banate           063006000
+#> 32562 0603007000               Barotac Nuevo           063007000
+#> 32592 0603008000               Barotac Viejo           063008000
+#> 32619 0603009000                       Batad           063009000
+#> 32644 0603010000                    Bingawan           063010000
+#> 32659 0603012000                    Cabatuan           063012000
+#> 32728 0603013000                     Calinog           063013000
+#> 32788 0603014000                      Carles           063014000
+#> 32822 0603015000                  Concepcion           063015000
+#> 32848 0603016000                      Dingle           063016000
+#> 32882 0603017000                      Dueñas           063017000
+#> 32930 0603018000                    Dumangas           063018000
+#> 32976 0603019000                    Estancia           063019000
+#> 33002 0603020000                     Guimbal           063020000
+#> 33036 0603021000                     Igbaras           063021000
+#> 33083 0603023000                     Janiuay           063023000
+#> 33144 0603025000                    Lambunao           063025000
+#> 33218 0603026000                     Leganes           063026000
+#> 33237 0603027000                      Lemery           063027000
+#> 33269 0603028000                        Leon           063028000
+#> 33355 0603029000                      Maasin           063029000
+#> 33406 0603030000                      Miagao           063030000
+#> 33526 0603031000                        Mina           063031000
+#> 33549 0603032000                  New Lucena           063032000
+#> 33571 0603034000                        Oton           063034000
+#> 33609 0603035000               City of Passi           063035000
+#> 33661 0603036000                       Pavia           063036000
+#> 33680 0603037000                     Pototan           063037000
+#> 33731 0603038000                San Dionisio           063038000
+#> 33761 0603039000                 San Enrique           063039000
+#> 33790 0603040000                 San Joaquin           063040000
+#> 33876 0603041000                  San Miguel           063041000
+#> 33901 0603042000                  San Rafael           063042000
+#> 33911 0603043000               Santa Barbara           063043000
+#> 33972 0603044000                        Sara           063044000
+#> 34015 0603045000                    Tigbauan           063045000
+#> 34068 0603046000                    Tubungan           063046000
+#> 34117 0603047000                     Zarraga           063047000
+#> 34143 0607901000                  Buenavista           067901000
+#> 34180 0607902000                      Jordan           067902000
+#> 34195 0607903000              Nueva Valencia           067903000
+#> 34218 0607904000                 San Lorenzo           067904000
+#> 34231 0607905000                     Sibunag           067905000
+#> 34246 0631000000              City of Iloilo           063022000
+#> 34429 0701201000                Alburquerque           071201000
+#> 34441 0701202000                      Alicia           071202000
+#> 34457 0701203000                        Anda           071203000
+#> 34474 0701204000                   Antequera           071204000
+#> 34496 0701205000                    Baclayon           071205000
+#> 34514 0701206000                   Balilihan           071206000
+#> 34546 0701207000                      Batuan           071207000
+#> 34562 0701208000                       Bilar           071208000
+#> 34582 0701209000                  Buenavista           071209000
+#> 34618 0701210000                      Calape           071210000
+#> 34652 0701211000                    Candijay           071211000
+#> 34674 0701212000                      Carmen           071212000
+#> 34704 0701213000                   Catigbian           071213000
+#> 34727 0701214000                      Clarin           071214000
+#> 34752 0701215000                     Corella           071215000
+#> 34761 0701216000                      Cortes           071216000
+#> 34776 0701217000                     Dagohoy           071217000
+#> 34792 0701218000                       Danao           071218000
+#> 34810 0701219000                       Dauis           071219000
+#> 34823 0701220000                      Dimiao           071220000
+#> 34859 0701221000                       Duero           071221000
+#> 34881 0701222000            Garcia Hernandez           071222000
+#> 34912 0701223000                  Guindulman           071223000
+#> 34932 0701224000                    Inabanga           071224000
+#> 34983 0701225000                       Jagna           071225000
+#> 35017 0701226000                      Getafe           071226000
+#> 35042 0701227000                        Lila           071227000
+#> 35061 0701228000                        Loay           071228000
+#> 35086 0701229000                       Loboc           071229000
+#> 35115 0701230000                        Loon           071230000
+#> 35183 0701231000                      Mabini           071231000
+#> 35206 0701232000                   Maribojoc           071232000
+#> 35229 0701233000                     Panglao           071233000
+#> 35240 0701234000                       Pilar           071234000
+#> 35262 0701235000  President Carlos P. Garcia           071235000
+#> 35286 0701236000                    Sagbayan           071236000
+#> 35311 0701237000                  San Isidro           071237000
+#> 35324 0701238000                  San Miguel           071238000
+#> 35343 0701239000                     Sevilla           071239000
+#> 35357 0701240000             Sierra Bullones           071240000
+#> 35380 0701241000                    Sikatuna           071241000
+#> 35391 0701242000          City of Tagbilaran           071242000
+#> 35407 0701243000                     Talibon           071243000
+#> 35433 0701244000                    Trinidad           071244000
+#> 35454 0701245000                     Tubigon           071245000
+#> 35489 0701246000                        Ubay           071246000
+#> 35534 0701247000                    Valencia           071247000
+#> 35570 0701248000                  Bien Unido           071248000
+#> 35587 0702201000                   Alcantara           072201000
+#> 35597 0702202000                       Alcoy           072202000
+#> 35606 0702203000                     Alegria           072203000
+#> 35616 0702204000                  Aloguinsan           072204000
+#> 35632 0702205000                       Argao           072205000
+#> 35678 0702206000                    Asturias           072206000
+#> 35706 0702207000                      Badian           072207000
+#> 35736 0702208000                    Balamban           072208000
+#> 35765 0702209000                    Bantayan           072209000
+#> 35791 0702210000                      Barili           072210000
+#> 35834 0702211000                City of Bogo           072211000
+#> 35864 0702212000                     Boljoon           072212000
+#> 35876 0702213000                      Borbon           072213000
+#> 35896 0702214000              City of Carcar           072214000
+#> 35912 0702215000                      Carmen           072215000
+#> 35934 0702216000                      Catmon           072216000
+#> 35955 0702218000                  Compostela           072218000
+#> 35973 0702219000                 Consolacion           072219000
+#> 35995 0702220000                     Cordova           072220000
+#> 36009 0702221000                Daanbantayan           072221000
+#> 36030 0702222000                   Dalaguete           072222000
+#> 36064 0702223000                  Danao City           072223000
+#> 36107 0702224000                    Dumanjug           072224000
+#> 36145 0702225000                   Ginatilan           072225000
+#> 36160 0702227000                      Liloan           072227000
+#> 36175 0702228000                  Madridejos           072228000
+#> 36190 0702229000                   Malabuyoc           072229000
+#> 36205 0702231000                    Medellin           072231000
+#> 36225 0702232000                 Minglanilla           072232000
+#> 36245 0702233000                    Moalboal           072233000
+#> 36261 0702234000                City of Naga           072234000
+#> 36290 0702235000                       Oslob           072235000
+#> 36312 0702236000                       Pilar           072236000
+#> 36326 0702237000                Pinamungajan           072237000
+#> 36353 0702238000                        Poro           072238000
+#> 36371 0702239000                       Ronda           072239000
+#> 36386 0702240000                     Samboan           072240000
+#> 36402 0702241000                San Fernando           072241000
+#> 36424 0702242000               San Francisco           072242000
+#> 36440 0702243000                 San Remigio           072243000
+#> 36468 0702244000                    Santa Fe           072244000
+#> 36479 0702245000                   Santander           072245000
+#> 36490 0702246000                     Sibonga           072246000
+#> 36516 0702247000                       Sogod           072247000
+#> 36535 0702248000                     Tabogon           072248000
+#> 36561 0702249000                    Tabuelan           072249000
+#> 36574 0702250000             City of Talisay           072250000
+#> 36597 0702251000              City of Toledo           072251000
+#> 36636 0702252000                     Tuburan           072252000
+#> 36691 0702253000                      Tudela           072253000
+#> 36703 0730600000                City of Cebu           072217000
+#> 36784 0731100000           City of Lapu-Lapu           072226000
+#> 36815 0731300000             City of Mandaue           072230000
+#> 36845 0802601000                     Arteche           082601000
+#> 36866 0802602000                   Balangiga           082602000
+#> 36880 0802603000                 Balangkayan           082603000
+#> 36896 0802604000            City of Borongan           082604000
+#> 36958 0802605000                    Can-Avid           082605000
+#> 36987 0802606000                     Dolores           082606000
+#> 37034 0802607000           General Macarthur           082607000
+#> 37065 0802608000                    Giporlos           082608000
+#> 37084 0802609000                      Guiuan           082609000
+#> 37145 0802610000                     Hernani           082610000
+#> 37159 0802611000                     Jipapad           082611000
+#> 37173 0802612000                      Lawaan           082612000
+#> 37190 0802613000                    Llorente           082613000
+#> 37224 0802614000                      Maslog           082614000
+#> 37237 0802615000                   Maydolong           082615000
+#> 37258 0802616000                    Mercedes           082616000
+#> 37275 0802617000                        Oras           082617000
+#> 37318 0802618000                 Quinapondan           082618000
+#> 37344 0802619000                     Salcedo           082619000
+#> 37386 0802620000                  San Julian           082620000
+#> 37403 0802621000               San Policarpo           082621000
+#> 37421 0802622000                       Sulat           082622000
+#> 37440 0802623000                        Taft           082623000
+#> 37466 0803701000                      Abuyog           083701000
+#> 37530 0803702000                  Alangalang           083702000
+#> 37585 0803703000                     Albuera           083703000
+#> 37602 0803705000                   Babatngon           083705000
+#> 37628 0803706000                      Barugo           083706000
+#> 37666 0803707000                        Bato           083707000
+#> 37699 0803708000              City of Baybay           083708000
+#> 37792 0803710000                     Burauen           083710000
+#> 37870 0803713000                    Calubian           083713000
+#> 37924 0803714000                    Capoocan           083714000
+#> 37946 0803715000                    Carigara           083715000
+#> 37996 0803717000                      Dagami           083717000
+#> 38062 0803718000                       Dulag           083718000
+#> 38108 0803719000                    Hilongos           083719000
+#> 38160 0803720000                     Hindang           083720000
+#> 38181 0803721000                    Inopacan           083721000
+#> 38202 0803722000                      Isabel           083722000
+#> 38227 0803723000                        Jaro           083723000
+#> 38274 0803724000                      Javier           083724000
+#> 38303 0803725000                      Julita           083725000
+#> 38330 0803726000                     Kananga           083726000
+#> 38354 0803728000                      La Paz           083728000
+#> 38390 0803729000                       Leyte           083729000
+#> 38421 0803730000                   Macarthur           083730000
+#> 38453 0803731000                    Mahaplag           083731000
+#> 38482 0803733000                    Matag-Ob           083733000
+#> 38504 0803734000                     Matalom           083734000
+#> 38535 0803735000                     Mayorga           083735000
+#> 38552 0803736000                      Merida           083736000
+#> 38575 0803738000                  Ormoc City           083738000
+#> 38661 0803739000                        Palo           083739000
+#> 38695 0803740000                    Palompon           083740000
+#> 38746 0803741000                    Pastrana           083741000
+#> 38776 0803742000                  San Isidro           083742000
+#> 38796 0803743000                  San Miguel           083743000
+#> 38818 0803744000                    Santa Fe           083744000
+#> 38839 0803745000                     Tabango           083745000
+#> 38853 0803746000                  Tabontabon           083746000
+#> 38870 0803748000                     Tanauan           083748000
+#> 38925 0803749000                      Tolosa           083749000
+#> 38941 0803750000                       Tunga           083750000
+#> 38950 0803751000                     Villaba           083751000
+#> 38987 0804801000                       Allen           084801000
+#> 39008 0804802000                        Biri           084802000
+#> 39017 0804803000                       Bobon           084803000
+#> 39036 0804804000                       Capul           084804000
+#> 39049 0804805000                    Catarman           084805000
+#> 39105 0804806000                     Catubig           084806000
+#> 39153 0804807000                       Gamay           084807000
+#> 39180 0804808000                      Laoang           084808000
+#> 39237 0804809000                     Lapinig           084809000
+#> 39253 0804810000                   Las Navas           084810000
+#> 39307 0804811000                   Lavezares           084811000
+#> 39334 0804812000                     Mapanas           084812000
+#> 39348 0804813000                   Mondragon           084813000
+#> 39373 0804814000                     Palapag           084814000
+#> 39406 0804815000                    Pambujan           084815000
+#> 39433 0804816000                     Rosario           084816000
+#> 39445 0804817000                 San Antonio           084817000
+#> 39456 0804818000                  San Isidro           084818000
+#> 39471 0804819000                    San Jose           084819000
+#> 39488 0804820000                   San Roque           084820000
+#> 39505 0804821000                 San Vicente           084821000
+#> 39513 0804822000               Silvino Lobos           084822000
+#> 39540 0804823000                    Victoria           084823000
+#> 39557 0804824000                Lope De Vega           084824000
+#> 39581 0806001000                     Almagro           086001000
+#> 39605 0806002000                       Basey           086002000
+#> 39657 0806003000            City of Calbayog           086003000
+#> 39815 0806004000                     Calbiga           086004000
+#> 39857 0806005000          City of Catbalogan           086005000
+#> 39915 0806006000                       Daram           086006000
+#> 39974 0806007000                     Gandara           086007000
+#> 40044 0806008000                  Hinabangan           086008000
+#> 40066 0806009000                     Jiabong           086009000
+#> 40101 0806010000                     Marabut           086010000
+#> 40126 0806011000                  Matuguinao           086011000
+#> 40147 0806012000                     Motiong           086012000
+#> 40178 0806013000                  Pinabacdao           086013000
+#> 40203 0806014000            San Jose De Buan           086014000
+#> 40218 0806015000               San Sebastian           086015000
+#> 40233 0806016000             Santa Margarita           086016000
+#> 40270 0806017000                  Santa Rita           086017000
+#> 40309 0806018000                  Santo Niño           086018000
+#> 40323 0806019000                    Talalora           086019000
+#> 40335 0806020000                   Tarangnan           086020000
+#> 40377 0806021000                   Villareal           086021000
+#> 40416 0806022000                     Paranas           086022000
+#> 40461 0806023000                   Zumarraga           086023000
+#> 40487 0806024000                  Tagapul-An           086024000
+#> 40502 0806025000                   San Jorge           086025000
+#> 40544 0806026000                  Pagsanghan           086026000
+#> 40559 0806401000                    Anahawan           086401000
+#> 40574 0806402000                      Bontoc           086402000
+#> 40615 0806403000                  Hinunangan           086403000
+#> 40656 0806404000                  Hinundayan           086404000
+#> 40674 0806405000                     Libagon           086405000
+#> 40689 0806406000                      Liloan           086406000
+#> 40714 0806407000              City of Maasin           086407000
+#> 40785 0806408000                    Macrohon           086408000
+#> 40816 0806409000                    Malitbog           086409000
+#> 40854 0806410000                Padre Burgos           086410000
+#> 40866 0806411000                    Pintuyan           086411000
+#> 40890 0806412000               Saint Bernard           086412000
+#> 40921 0806413000               San Francisco           086413000
+#> 40944 0806414000                    San Juan           086414000
+#> 40963 0806415000                 San Ricardo           086415000
+#> 40979 0806416000                      Silago           086416000
+#> 40995 0806417000                       Sogod           086417000
+#> 41041 0806418000                 Tomas Oppus           086418000
+#> 41071 0806419000                    Limasawa           086419000
+#> 41079 0807801000                     Almeria           087801000
+#> 41093 0807802000                     Biliran           087802000
+#> 41105 0807803000                  Cabucgayan           087803000
+#> 41119 0807804000                    Caibiran           087804000
+#> 41137 0807805000                      Culaba           087805000
+#> 41155 0807806000                     Kawayan           087806000
+#> 41176 0807807000                    Maripipi           087807000
+#> 41192 0807808000                       Naval           087808000
+#> 41219 0831600000            City of Tacloban           083747000
+#> 41360 0906601000                     Indanan           156601000
+#> 41395 0906602000                        Jolo           156602000
+#> 41404 0906603000          Kalingalan Caluang           156603000
+#> 41414 0906604000                        Luuk           156604000
+#> 41427 0906605000                    Maimbung           156605000
+#> 41455 0906606000        Hadji Panglima Tahil           156606000
+#> 41461 0906607000                 Old Panamao           156607000
+#> 41493 0906608000                  Pangutaran           156608000
+#> 41510 0906609000                      Parang           156609000
+#> 41551 0906610000                        Pata           156610000
+#> 41566 0906611000                     Patikul           156611000
+#> 41597 0906612000                       Siasi           156612000
+#> 41648 0906613000                     Talipao           156613000
+#> 41701 0906614000                       Tapul           156614000
+#> 41717 0906615000                     Tongkil           156615000
+#> 41732 0906616000             Panglima Estino           156616000
+#> 41745 0906617000                       Lugus           156617000
+#> 41763 0906618000                     Pandami           156618000
+#> 41780 0906619000                        Omar           156619000
+#> 41790 0907201000             City of Dapitan           097201000
+#> 41841 0907202000             City of Dipolog           097202000
+#> 41863 0907203000                   Katipunan           097203000
+#> 41894 0907204000                 La Libertad           097204000
+#> 41908 0907205000                     Labason           097205000
+#> 41929 0907206000                       Liloy           097206000
+#> 41967 0907207000                     Manukan           097207000
+#> 41990 0907208000                       Mutia           097208000
+#> 42007 0907209000                       Piñan           097209000
+#> 42030 0907210000                     Polanco           097210000
+#> 42061 0907211000       Pres. Manuel A. Roxas           097211000
+#> 42093 0907212000                       Rizal           097212000
+#> 42116 0907213000                       Salug           097213000
+#> 42140 0907214000           Sergio Osmeña Sr.           097214000
+#> 42180 0907215000                      Siayan           097215000
+#> 42203 0907216000                      Sibuco           097216000
+#> 42232 0907217000                     Sibutad           097217000
+#> 42249 0907218000                   Sindangan           097218000
+#> 42302 0907219000                      Siocon           097219000
+#> 42329 0907220000                     Sirawai           097220000
+#> 42364 0907221000                  Tampilisan           097221000
+#> 42385 0907222000                 Jose Dalman           097222000
+#> 42404 0907223000                     Gutalac           097223000
+#> 42438 0907224000                   Baliguian           097224000
+#> 42456 0907225000                       Godod           097225000
+#> 42474 0907226000             Leon T. Postigo           097226000
+#> 42493 0907227000                     Kalawit           097227000
+#> 42509 0907302000                      Aurora           097302000
+#> 42554 0907303000                       Bayog           097303000
+#> 42583 0907305000                  Dimataling           097305000
+#> 42608 0907306000                       Dinas           097306000
+#> 42639 0907307000                   Dumalinao           097307000
+#> 42670 0907308000                    Dumingag           097308000
+#> 42715 0907311000                  Kumalarang           097311000
+#> 42734 0907312000                    Labangan           097312000
+#> 42760 0907313000                     Lapuyan           097313000
+#> 42787 0907315000                     Mahayag           097315000
+#> 42817 0907317000                Margosatubig           097317000
+#> 42835 0907318000                    Midsalip           097318000
+#> 42869 0907319000                      Molave           097319000
+#> 42895 0907322000            City of Pagadian           097322000
+#> 42950 0907323000             Ramon Magsaysay           097323000
+#> 42978 0907324000                  San Miguel           097324000
+#> 42997 0907325000                   San Pablo           097325000
+#> 43026 0907327000                      Tabina           097327000
+#> 43042 0907328000                    Tambulig           097328000
+#> 43074 0907330000                     Tukuran           097330000
+#> 43100 0907333000                    Lakewood           097333000
+#> 43115 0907337000                    Josefina           097337000
+#> 43130 0907338000                      Pitogo           097338000
+#> 43146 0907340000                     Sominot           097340000
+#> 43165 0907341000           Vincenzo A. Sagun           097341000
+#> 43180 0907343000                      Guipos           097343000
+#> 43198 0907344000                      Tigbao           097344000
+#> 43218 0908301000                      Alicia           098301000
+#> 43246 0908302000                        Buug           098302000
+#> 43274 0908303000                    Diplahan           098303000
+#> 43297 0908304000                      Imelda           098304000
+#> 43317 0908305000                        Ipil           098305000
+#> 43346 0908306000                   Kabasalan           098306000
+#> 43376 0908307000                     Mabuhay           098307000
+#> 43395 0908308000                    Malangas           098308000
+#> 43421 0908309000                        Naga           098309000
+#> 43445 0908310000                    Olutanga           098310000
+#> 43465 0908311000                       Payao           098311000
+#> 43494 0908312000                Roseller Lim           098312000
+#> 43521 0908313000                        Siay           098313000
+#> 43551 0908314000                     Talusan           098314000
+#> 43566 0908315000                       Titay           098315000
+#> 43597 0908316000                    Tungawan           098316000
+#> 43623 0931700000           City of Zamboanga           097332000
+#> 43723 0990101000             City of Isabela           099701000
 #>       geographic_level             old_name city_class income_classification
-#> 3                  Mun                 <NA>       <NA>                   4th
-#> 5                  Mun                 <NA>       <NA>                   2nd
-#> 49                 Mun                 <NA>       <NA>                   1st
-#> 81                 Mun                 <NA>       <NA>                   2nd
-#> 96                City                 <NA>         CC                   3rd
-#> 140                Mun                 <NA>       <NA>                   3rd
-#> 152                Mun                 <NA>       <NA>                   5th
-#> 156                Mun                 <NA>       <NA>                   3rd
-#> 180                Mun                 <NA>       <NA>                   1st
-#> 212                Mun                 <NA>       <NA>                   4th
-#> 217                Mun             Espiritu       <NA>                   1st
-#> 238               City                 <NA>         CC                   3rd
-#> 319                Mun                 <NA>       <NA>                   2nd
-#> 333                Mun                 <NA>       <NA>                   1st
-#> 345                Mun                 <NA>       <NA>                   1st
-#> 362                Mun                 <NA>       <NA>                   2nd
-#> 394                Mun                 <NA>       <NA>                   1st
-#> 428                Mun                 <NA>       <NA>                   1st
-#> 452                Mun                 <NA>       <NA>                   1st
-#> 478                Mun                 <NA>       <NA>                   1st
-#> 503                Mun                 <NA>       <NA>                   2nd
+#> 4                  Mun                 <NA>       <NA>                   1st
+#> 21                 Mun                 <NA>       <NA>                   2nd
+#> 39                 Mun                 <NA>       <NA>                   1st
+#> 54                 Mun                 <NA>       <NA>                   1st
+#> 84                 Mun                 <NA>       <NA>                   1st
+#> 98                 Mun                 <NA>       <NA>                   2nd
+#> 116                Mun                 <NA>       <NA>                   1st
+#> 131                Mun                 <NA>       <NA>                   1st
+#> 155                Mun                 <NA>       <NA>                   1st
+#> 191                Mun                 <NA>       <NA>                   1st
+#> 206                Mun                 <NA>       <NA>                   1st
+#> 221               City                 <NA>         CC                   1st
+#> 268                Mun                 <NA>       <NA>                   1st
+#> 280                Mun                 <NA>       <NA>                   1st
+#> 303                Mun                 <NA>       <NA>                   1st
+#> 324                Mun                 <NA>       <NA>                   1st
+#> 344                Mun                 <NA>       <NA>                   1st
+#> 376                Mun                 <NA>       <NA>                   1st
+#> 401                Mun                 <NA>       <NA>                   2nd
+#> 412                Mun                 <NA>       <NA>                   1st
+#> 442               City                 <NA>         CC                   1st
+#> 474                Mun                 <NA>       <NA>                   2nd
+#> 491                Mun                 <NA>       <NA>                   4th
+#> 506                Mun                 <NA>       <NA>                   5th
+#> 514                Mun                 <NA>       <NA>                   4th
 #> 528                Mun                 <NA>       <NA>                   2nd
-#> 551                Mun                 <NA>       <NA>                   1st
-#> 586                Mun                 <NA>       <NA>                   1st
-#> 596                Mun                 <NA>       <NA>                   1st
-#> 611                Mun                 <NA>       <NA>                   1st
-#> 646                Mun                 <NA>       <NA>                   1st
-#> 673                Mun                 <NA>       <NA>                   1st
-#> 707               City                 <NA>         CC                   1st
-#> 750                Mun                 <NA>       <NA>                   2nd
-#> 768                Mun                 <NA>       <NA>                   1st
-#> 782                Mun                 <NA>       <NA>                   1st
-#> 807                Mun           Concepcion       <NA>                   1st
-#> 815                Mun                 <NA>       <NA>                   1st
-#> 827                Mun                 <NA>       <NA>                   1st
-#> 858                Mun                 <NA>       <NA>                   1st
-#> 871                Mun                 <NA>       <NA>                   1st
-#> 906                Mun              Angkaki       <NA>                   1st
-#> 916                Mun               Baugen       <NA>                   1st
-#> 938                Mun                 <NA>       <NA>                   1st
-#> 947                Mun                 <NA>       <NA>                   1st
-#> 958                Mun                 <NA>       <NA>                   2nd
-#> 974                Mun                Lapog       <NA>                   1st
-#> 1007               Mun                 <NA>       <NA>                   3rd
-#> 1015               Mun                 <NA>       <NA>                   2nd
-#> 1042               Mun                 <NA>       <NA>                   2nd
-#> 1052               Mun                 <NA>       <NA>                   1st
-#> 1102               Mun                 <NA>       <NA>                   1st
-#> 1139               Mun                 <NA>       <NA>                   1st
-#> 1173               Mun                 <NA>       <NA>                   1st
-#> 1198               Mun                 <NA>       <NA>                   1st
-#> 1235               Mun                 <NA>       <NA>                   1st
-#> 1243               Mun                 <NA>       <NA>                   1st
-#> 1288               Mun                 <NA>       <NA>                   3rd
-#> 1295               Mun                 <NA>       <NA>                   1st
-#> 1304               Mun                 <NA>       <NA>                   1st
-#> 1348              City                 <NA>         CC                   4th
-#> 1389               Mun                 <NA>       <NA>                   1st
-#> 1439               Mun                 <NA>       <NA>                   1st
-#> 1464               Mun                 <NA>       <NA>                   1st
-#> 1512               Mun                 <NA>       <NA>                   4th
-#> 1523               Mun                 <NA>       <NA>                   1st
-#> 1560               Mun                 <NA>       <NA>                   1st
-#> 1594               Mun                 <NA>       <NA>                   1st
-#> 1634               Mun                 <NA>       <NA>                   4th
-#> 1647               Mun                 <NA>       <NA>                   1st
-#> 1665               Mun                 <NA>       <NA>                   2nd
-#> 1706               Mun                 <NA>       <NA>                   1st
-#> 1744               Mun                 <NA>       <NA>                   3rd
-#> 1759               Mun                 <NA>       <NA>                   1st
-#> 1793              City                 <NA>         CC                   2nd
-#> 1853               Mun                 <NA>       <NA>                   3rd
-#> 1869               Mun                 <NA>       <NA>                   1st
-#> 1911               Mun                 <NA>       <NA>                   1st
-#> 1936               Mun                 <NA>       <NA>                   1st
-#> 1948               Mun                 <NA>       <NA>                   1st
-#> 1966               Mun                 <NA>       <NA>                   2nd
-#> 1986               Mun                 <NA>       <NA>                   2nd
-#> 2004               Mun                 <NA>       <NA>                   1st
-#> 2021              City                 <NA>         CC                   3rd
-#> 2061               Mun                 <NA>       <NA>                   1st
-#> 2083               Mun                 <NA>       <NA>                   2nd
-#> 2102               Mun                 <NA>       <NA>                   1st
-#> 2124               Mun                 <NA>       <NA>                   1st
-#> 2145               Mun                 <NA>       <NA>                   1st
-#> 2173               Mun                 <NA>       <NA>                   3rd
-#> 2187               Mun                 <NA>       <NA>                   3rd
-#> 2206               Mun                 <NA>       <NA>                   1st
-#> 2284               Mun                 <NA>       <NA>                   1st
-#> 2309               Mun                 <NA>       <NA>                   1st
-#> 2343               Mun                 <NA>       <NA>                   1st
-#> 2374               Mun                 <NA>       <NA>                   1st
-#> 2399               Mun                 <NA>       <NA>                   3rd
-#> 2414               Mun                 <NA>       <NA>                   1st
-#> 2439              City                 <NA>        ICC                   2nd
-#> 2471               Mun                 <NA>       <NA>                   2nd
-#> 2490               Mun                 <NA>       <NA>                   2nd
-#> 2504               Mun                 <NA>       <NA>                   3rd
-#> 2515               Mun                 <NA>       <NA>                   1st
-#> 2548               Mun                 <NA>       <NA>                   2nd
-#> 2565               Mun                 <NA>       <NA>                   1st
-#> 2639               Mun                 <NA>       <NA>                   1st
-#> 2666               Mun                 <NA>       <NA>                   1st
-#> 2697               Mun                 <NA>       <NA>                   1st
-#> 2780               Mun                 <NA>       <NA>                   3rd
-#> 2796               Mun                 <NA>       <NA>                   3rd
-#> 2815               Mun                 <NA>       <NA>                   1st
-#> 2850               Mun                 <NA>       <NA>                   1st
-#> 2888              City                 <NA>         CC                   2nd
-#> 2975               Mun                 <NA>       <NA>                   1st
-#> 3010               Mun                 <NA>       <NA>                   1st
-#> 3030               Mun                 <NA>       <NA>                   1st
-#> 3045               Mun                 <NA>       <NA>                   1st
-#> 3079               Mun                 <NA>       <NA>                   2nd
-#> 3101               Mun                 <NA>       <NA>                   1st
-#> 3131               Mun                 <NA>       <NA>                   2nd
-#> 3155               Mun                 <NA>       <NA>                   4th
-#> 3166               Mun                 <NA>       <NA>                   1st
-#> 3195               Mun                 <NA>       <NA>                   1st
-#> 3215               Mun                 <NA>       <NA>                   1st
-#> 3237               Mun                 <NA>       <NA>                   1st
-#> 3296               Mun                 <NA>       <NA>                   1st
-#> 3318              City                 <NA>         CC                   1st
-#> 3353               Mun                 <NA>       <NA>                   1st
-#> 3375               Mun                 <NA>       <NA>                   2nd
-#> 3400               Mun                 <NA>       <NA>                   4th
-#> 3407               Mun                 <NA>       <NA>                   5th
-#> 3413               Mun                 <NA>       <NA>                   5th
-#> 3418               Mun                 <NA>       <NA>                   5th
-#> 3423               Mun                 <NA>       <NA>                   5th
-#> 3430               Mun                 <NA>       <NA>                   5th
-#> 3436               Mun                 <NA>       <NA>                   2nd
-#> 3457               Mun                 <NA>       <NA>                   1st
-#> 3483               Mun                 <NA>       <NA>                   1st
-#> 3511               Mun                 <NA>       <NA>                   1st
-#> 3559               Mun                 <NA>       <NA>                   1st
-#> 3602               Mun                 <NA>       <NA>                   1st
-#> 3651               Mun                 <NA>       <NA>                   2nd
-#> 3671               Mun                 <NA>       <NA>                   2nd
-#> 3702               Mun                 <NA>       <NA>                   1st
-#> 3715               Mun                 <NA>       <NA>                   3rd
-#> 3744               Mun                 <NA>       <NA>                   2nd
-#> 3786               Mun                 <NA>       <NA>                   1st
-#> 3809               Mun                 <NA>       <NA>                   1st
-#> 3860               Mun                 <NA>       <NA>                   1st
-#> 3886               Mun                 <NA>       <NA>                   2nd
-#> 3910               Mun                 <NA>       <NA>                   1st
-#> 3946               Mun                 <NA>       <NA>                   1st
-#> 3977               Mun                 <NA>       <NA>                   3rd
-#> 3996               Mun                 <NA>       <NA>                   1st
-#> 4021               Mun                 <NA>       <NA>                   3rd
-#> 4040               Mun                 <NA>       <NA>                   4th
-#> 4070               Mun                 <NA>       <NA>                   2nd
-#> 4089               Mun                 <NA>       <NA>                   1st
-#> 4106               Mun                 <NA>       <NA>                   5th
-#> 4117               Mun                 <NA>       <NA>                   3rd
-#> 4131               Mun                Faire       <NA>                   1st
-#> 4163               Mun                 <NA>       <NA>                   1st
-#> 4202               Mun                 <NA>       <NA>                   1st
-#> 4235              City                 <NA>         CC                   2nd
-#> 4286               Mun                 <NA>       <NA>                   1st
-#> 4321               Mun                 <NA>       <NA>                   1st
-#> 4381               Mun                 <NA>       <NA>                   1st
-#> 4415               Mun                 <NA>       <NA>                   2nd
-#> 4445               Mun                 <NA>       <NA>                   3rd
-#> 4460               Mun                 <NA>       <NA>                   1st
-#> 4487               Mun                 <NA>       <NA>                   1st
-#> 4510              City                 <NA>         CC                   2nd
-#> 4576               Mun                 <NA>       <NA>                   1st
-#> 4603               Mun                 <NA>       <NA>                   1st
-#> 4610               Mun                 <NA>       <NA>                   1st
-#> 4623               Mun                 <NA>       <NA>                   1st
-#> 4688               Mun                 <NA>       <NA>                   2nd
-#> 4705              City                 <NA>         CC                   1st
-#> 4797               Mun                 <NA>       <NA>                   1st
-#> 4840               Mun                 <NA>       <NA>                   1st
-#> 4860               Mun                 <NA>       <NA>                   2nd
-#> 4871               Mun            Magsaysay       <NA>                   1st
-#> 4901               Mun                 <NA>       <NA>                   1st
-#> 4920               Mun                 <NA>       <NA>                   1st
-#> 4946               Mun                 <NA>       <NA>                   1st
-#> 4964               Mun                 <NA>       <NA>                   1st
-#> 4980               Mun                 <NA>       <NA>                   1st
-#> 5002               Mun                 <NA>       <NA>                   1st
-#> 5022               Mun                 <NA>       <NA>                   1st
-#> 5043               Mun                 <NA>       <NA>                   1st
-#> 5070               Mun                 <NA>       <NA>                   2nd
-#> 5094               Mun                 <NA>       <NA>                   2nd
-#> 5121               Mun                 <NA>       <NA>                   3rd
-#> 5135               Mun                 <NA>       <NA>                   2nd
-#> 5155               Mun                 <NA>       <NA>                   1st
-#> 5192               Mun                 <NA>       <NA>                   1st
-#> 5226               Mun                 <NA>       <NA>                   1st
-#> 5244               Mun                 <NA>       <NA>                   3rd
-#> 5265              City                 <NA>        ICC                   1st
-#> 5303               Mun                 <NA>       <NA>                   3rd
-#> 5331               Mun                 <NA>       <NA>                   1st
-#> 5379               Mun                 <NA>       <NA>                   4th
-#> 5388               Mun                 <NA>       <NA>                   1st
-#> 5411               Mun                 <NA>       <NA>                   1st
-#> 5429               Mun                 <NA>       <NA>                   1st
-#> 5455               Mun                 <NA>       <NA>                   1st
-#> 5481               Mun                 <NA>       <NA>                   3rd
-#> 5501               Mun                 <NA>       <NA>                   1st
-#> 5517               Mun                 <NA>       <NA>                   1st
-#> 5537               Mun                 <NA>       <NA>                   1st
-#> 5568               Mun                 <NA>       <NA>                   1st
-#> 5599               Mun                 <NA>       <NA>                   1st
-#> 5612               Mun                 <NA>       <NA>                   2nd
-#> 5629               Mun                 <NA>       <NA>                   1st
-#> 5652               Mun                 <NA>       <NA>                   4th
-#> 5662               Mun                 <NA>       <NA>                  2nd*
-#> 5670               Mun                 <NA>       <NA>                   2nd
-#> 5696               Mun                 <NA>       <NA>                   1st
-#> 5714               Mun                 <NA>       <NA>                   1st
-#> 5748               Mun                 <NA>       <NA>                   1st
-#> 5781               Mun                 <NA>       <NA>                   4th
-#> 5791               Mun                 <NA>       <NA>                   1st
-#> 5810               Mun                 <NA>       <NA>                   2nd
-#> 5820               Mun                 <NA>       <NA>                   2nd
-#> 5835              City                 <NA>         CC                   2nd
-#> 5861               Mun                 <NA>       <NA>                   1st
-#> 5908               Mun                 <NA>       <NA>                   1st
-#> 5932               Mun                 <NA>       <NA>                   1st
-#> 5945               Mun                 <NA>       <NA>                   1st
-#> 5964               Mun                 <NA>       <NA>                   1st
-#> 5970               Mun                 <NA>       <NA>                   1st
-#> 6000               Mun                 <NA>       <NA>                   1st
-#> 6024               Mun                 <NA>       <NA>                   2nd
-#> 6044               Mun                 <NA>       <NA>                   2nd
+#> 544                Mun                 <NA>       <NA>                   5th
+#> 555                Mun                 <NA>       <NA>                   3rd
+#> 572                Mun                 <NA>       <NA>                   1st
+#> 594                Mun                 <NA>       <NA>                   4th
+#> 618                Mun                 <NA>       <NA>                   1st
+#> 652                Mun            Karomatan       <NA>                   1st
+#> 690                Mun                 <NA>       <NA>                   1st
+#> 704                Mun                 <NA>       <NA>                   3rd
+#> 731                Mun                 <NA>       <NA>                   1st
+#> 759                Mun                 <NA>       <NA>                   4th
+#> 768                Mun                 <NA>       <NA>                   3rd
+#> 793                Mun                 <NA>       <NA>                   3rd
+#> 807                Mun                 <NA>       <NA>                   4th
+#> 820                Mun                 <NA>       <NA>                   2nd
+#> 847                Mun                 <NA>       <NA>                   1st
+#> 873                Mun                 <NA>       <NA>                   3rd
+#> 894                Mun                 <NA>       <NA>                   2nd
+#> 921                Mun                 <NA>       <NA>                   3rd
+#> 947                Mun                 <NA>       <NA>                   4th
+#> 965                Mun                 <NA>       <NA>                   4th
+#> 973                Mun                 <NA>       <NA>                   4th
+#> 992                Mun                 <NA>       <NA>                   1st
+#> 1017               Mun                 <NA>       <NA>                   4th
+#> 1040               Mun                 <NA>       <NA>                   3rd
+#> 1079               Mun                 <NA>       <NA>                   4th
+#> 1095               Mun                 <NA>       <NA>                   2nd
+#> 1124               Mun                 <NA>       <NA>                   3rd
+#> 1144               Mun                 <NA>       <NA>                   2nd
+#> 1174               Mun                 <NA>       <NA>                   5th
+#> 1193               Mun                 <NA>       <NA>                   2nd
+#> 1218               Mun                 <NA>       <NA>                   3rd
+#> 1247              City                 <NA>         CC                   3rd
+#> 1295              City                 <NA>         CC                   2nd
+#> 1347               Mun                 <NA>       <NA>                   4th
+#> 1364               Mun                 <NA>       <NA>                   1st
+#> 1398               Mun                 <NA>       <NA>                   4th
+#> 1427               Mun                 <NA>       <NA>                   4th
+#> 1445              City                 <NA>         CC                   3rd
+#> 1501               Mun                 <NA>       <NA>                   3rd
+#> 1535               Mun   Don Mariano Marcos       <NA>                   3rd
+#> 1548               Mun                 <NA>       <NA>                   1st
+#> 1565               Mun                 <NA>       <NA>                   1st
+#> 1596               Mun                 <NA>       <NA>                   4th
+#> 1606               Mun                 <NA>       <NA>                   5th
+#> 1615               Mun                 <NA>       <NA>                   1st
+#> 1640              City                 <NA>         CC                   4th
+#> 1656              City                 <NA>         CC                   1st
+#> 1736               Mun                 <NA>       <NA>                   2nd
+#> 1748               Mun                 <NA>       <NA>                   1st
+#> 1765               Mun                 <NA>       <NA>                   1st
+#> 1781               Mun                 <NA>       <NA>                   4th
+#> 1797               Mun                 <NA>       <NA>                   4th
+#> 1808               Mun                 <NA>       <NA>                   2nd
+#> 1820               Mun                 <NA>       <NA>                   4th
+#> 1830               Mun                 <NA>       <NA>                  3rd*
+#> 1839               Mun              Linugos       <NA>                   2nd
+#> 1865               Mun                 <NA>       <NA>                   2nd
+#> 1879               Mun                 <NA>       <NA>                   2nd
+#> 1899               Mun                 <NA>       <NA>                   3rd
+#> 1910               Mun                 <NA>       <NA>                   1st
+#> 1925               Mun                 <NA>       <NA>                   2nd
+#> 1944               Mun                 <NA>       <NA>                   5th
+#> 1955               Mun                 <NA>       <NA>                   1st
+#> 1966               Mun                 <NA>       <NA>                   3rd
+#> 1985               Mun                 <NA>       <NA>                   1st
+#> 1998               Mun                 <NA>       <NA>                   4th
+#> 2000               Mun                 <NA>       <NA>                   2nd
+#> 2044               Mun                 <NA>       <NA>                   1st
+#> 2076               Mun                 <NA>       <NA>                   2nd
+#> 2091              City                 <NA>         CC                   3rd
+#> 2135               Mun                 <NA>       <NA>                   3rd
+#> 2147               Mun                 <NA>       <NA>                   5th
+#> 2151               Mun                 <NA>       <NA>                   3rd
+#> 2175               Mun                 <NA>       <NA>                   1st
+#> 2207               Mun                 <NA>       <NA>                   4th
+#> 2212               Mun             Espiritu       <NA>                   1st
+#> 2233              City                 <NA>         CC                   3rd
+#> 2314               Mun                 <NA>       <NA>                   2nd
+#> 2328               Mun                 <NA>       <NA>                   1st
+#> 2340               Mun                 <NA>       <NA>                   1st
+#> 2357               Mun                 <NA>       <NA>                   2nd
+#> 2389               Mun                 <NA>       <NA>                   1st
+#> 2423               Mun                 <NA>       <NA>                   1st
+#> 2447               Mun                 <NA>       <NA>                   1st
+#> 2473               Mun                 <NA>       <NA>                   1st
+#> 2498               Mun                 <NA>       <NA>                   2nd
+#> 2523               Mun                 <NA>       <NA>                   2nd
+#> 2546               Mun                 <NA>       <NA>                   1st
+#> 2581               Mun                 <NA>       <NA>                   1st
+#> 2591               Mun                 <NA>       <NA>                   1st
+#> 2606               Mun                 <NA>       <NA>                   1st
+#> 2641               Mun                 <NA>       <NA>                   1st
+#> 2668               Mun                 <NA>       <NA>                   1st
+#> 2702              City                 <NA>         CC                   1st
+#> 2745               Mun                 <NA>       <NA>                   2nd
+#> 2763               Mun                 <NA>       <NA>                   1st
+#> 2777               Mun                 <NA>       <NA>                   1st
+#> 2802               Mun           Concepcion       <NA>                   1st
+#> 2810               Mun                 <NA>       <NA>                   1st
+#> 2822               Mun                 <NA>       <NA>                   1st
+#> 2853               Mun                 <NA>       <NA>                   1st
+#> 2866               Mun                 <NA>       <NA>                   1st
+#> 2901               Mun              Angkaki       <NA>                   1st
+#> 2911               Mun               Baugen       <NA>                   1st
+#> 2933               Mun                 <NA>       <NA>                   1st
+#> 2942               Mun                 <NA>       <NA>                   1st
+#> 2953               Mun                 <NA>       <NA>                   2nd
+#> 2969               Mun                Lapog       <NA>                   1st
+#> 3002               Mun                 <NA>       <NA>                   3rd
+#> 3010               Mun                 <NA>       <NA>                   2nd
+#> 3037               Mun                 <NA>       <NA>                   2nd
+#> 3047               Mun                 <NA>       <NA>                   1st
+#> 3097               Mun                 <NA>       <NA>                   1st
+#> 3134               Mun                 <NA>       <NA>                   1st
+#> 3168               Mun                 <NA>       <NA>                   1st
+#> 3193               Mun                 <NA>       <NA>                   1st
+#> 3230               Mun                 <NA>       <NA>                   1st
+#> 3238               Mun                 <NA>       <NA>                   1st
+#> 3283               Mun                 <NA>       <NA>                   3rd
+#> 3290               Mun                 <NA>       <NA>                   1st
+#> 3299               Mun                 <NA>       <NA>                   1st
+#> 3343              City                 <NA>         CC                   4th
+#> 3383              City                 <NA>        HUC                   1st
+#> 3464              City                 <NA>        HUC                   1st
+#> 3510               Mun                 <NA>       <NA>                   1st
+#> 3560               Mun                 <NA>       <NA>                   1st
+#> 3585               Mun                 <NA>       <NA>                   1st
+#> 3633               Mun                 <NA>       <NA>                   4th
+#> 3644               Mun                 <NA>       <NA>                   1st
+#> 3681               Mun                 <NA>       <NA>                   1st
+#> 3715               Mun                 <NA>       <NA>                   1st
+#> 3755               Mun                 <NA>       <NA>                   4th
+#> 3768               Mun                 <NA>       <NA>                   1st
+#> 3786               Mun                 <NA>       <NA>                   2nd
+#> 3827               Mun                 <NA>       <NA>                   1st
+#> 3865               Mun                 <NA>       <NA>                   3rd
+#> 3880               Mun                 <NA>       <NA>                   1st
+#> 3914              City                 <NA>         CC                   2nd
+#> 3974               Mun                 <NA>       <NA>                   3rd
+#> 3990               Mun                 <NA>       <NA>                   1st
+#> 4032               Mun                 <NA>       <NA>                   1st
+#> 4057               Mun                 <NA>       <NA>                   1st
+#> 4069               Mun                 <NA>       <NA>                   1st
+#> 4087               Mun                 <NA>       <NA>                   2nd
+#> 4107               Mun                 <NA>       <NA>                   2nd
+#> 4125               Mun                 <NA>       <NA>                   1st
+#> 4142              City                 <NA>         CC                   3rd
+#> 4182               Mun                 <NA>       <NA>                   1st
+#> 4204               Mun                 <NA>       <NA>                   2nd
+#> 4223               Mun                 <NA>       <NA>                   1st
+#> 4245               Mun                 <NA>       <NA>                   1st
+#> 4266               Mun                 <NA>       <NA>                   1st
+#> 4294               Mun                 <NA>       <NA>                   3rd
+#> 4308               Mun                 <NA>       <NA>                   3rd
+#> 4327               Mun                 <NA>       <NA>                   1st
+#> 4405               Mun                 <NA>       <NA>                   1st
+#> 4430               Mun                 <NA>       <NA>                   1st
+#> 4464               Mun                 <NA>       <NA>                   1st
+#> 4495               Mun                 <NA>       <NA>                   1st
+#> 4520               Mun                 <NA>       <NA>                   3rd
+#> 4535               Mun                 <NA>       <NA>                   1st
+#> 4560              City                 <NA>        ICC                   2nd
+#> 4592               Mun                 <NA>       <NA>                   2nd
+#> 4611               Mun                 <NA>       <NA>                   2nd
+#> 4625               Mun                 <NA>       <NA>                   3rd
+#> 4636               Mun                 <NA>       <NA>                   1st
+#> 4669               Mun                 <NA>       <NA>                   2nd
+#> 4686               Mun                 <NA>       <NA>                   1st
+#> 4760               Mun                 <NA>       <NA>                   1st
+#> 4787               Mun                 <NA>       <NA>                   1st
+#> 4818               Mun                 <NA>       <NA>                   1st
+#> 4901               Mun                 <NA>       <NA>                   3rd
+#> 4917               Mun                 <NA>       <NA>                   3rd
+#> 4936               Mun                 <NA>       <NA>                   1st
+#> 4971               Mun                 <NA>       <NA>                   1st
+#> 5009              City                 <NA>         CC                   2nd
+#> 5096               Mun                 <NA>       <NA>                   1st
+#> 5131               Mun                 <NA>       <NA>                   1st
+#> 5151               Mun                 <NA>       <NA>                   1st
+#> 5166               Mun                 <NA>       <NA>                   1st
+#> 5200               Mun                 <NA>       <NA>                   2nd
+#> 5222               Mun                 <NA>       <NA>                   1st
+#> 5252               Mun                 <NA>       <NA>                   2nd
+#> 5276               Mun                 <NA>       <NA>                   4th
+#> 5287               Mun                 <NA>       <NA>                   1st
+#> 5316               Mun                 <NA>       <NA>                   1st
+#> 5336               Mun                 <NA>       <NA>                   1st
+#> 5358               Mun                 <NA>       <NA>                   1st
+#> 5417               Mun                 <NA>       <NA>                   1st
+#> 5439              City                 <NA>         CC                   1st
+#> 5474               Mun                 <NA>       <NA>                   1st
+#> 5496               Mun                 <NA>       <NA>                   2nd
+#> 5521               Mun                 Saug       <NA>                   1st
+#> 5542               Mun                 <NA>       <NA>                   1st
+#> 5563               Mun                 <NA>       <NA>                   1st
+#> 5578               Mun                 <NA>       <NA>                   1st
+#> 5599              City                 <NA>         CC                   1st
+#> 5640              City                 <NA>         CC                   2nd
+#> 5687               Mun                 <NA>       <NA>                   1st
+#> 5707              City                 <NA>         CC                   1st
+#> 5731               Mun                 <NA>       <NA>                   1st
+#> 5735               Mun                 <NA>       <NA>                   3rd
+#> 5741               Mun                 <NA>       <NA>                   3rd
+#> 5756               Mun                 <NA>       <NA>                   1st
+#> 5782              City                 <NA>         CC                   1st
+#> 5809               Mun                 <NA>       <NA>                   1st
+#> 5831               Mun                 <NA>       <NA>                   1st
+#> 5862               Mun                 <NA>       <NA>                   1st
+#> 5885               Mun                 <NA>       <NA>                   1st
+#> 5901               Mun                 <NA>       <NA>                   1st
+#> 5935               Mun                 <NA>       <NA>                   2nd
+#> 5953               Mun                 <NA>       <NA>                   1st
+#> 5972               Mun                 <NA>       <NA>                   2nd
+#> 5999               Mun                 <NA>       <NA>                   1st
+#> 6018               Mun                 <NA>       <NA>                   1st
+#> 6033               Mun                 <NA>       <NA>                   2nd
+#> 6042               Mun                 <NA>       <NA>                   1st
 #> 6060               Mun                 <NA>       <NA>                   1st
-#> 6077               Mun                Bigaa       <NA>                   1st
-#> 6087              City                 <NA>         CC                   3rd
-#> 6115               Mun                 <NA>       <NA>                   1st
-#> 6135               Mun                 <NA>       <NA>                   1st
-#> 6150               Mun                 <NA>       <NA>                   1st
-#> 6165               Mun                 <NA>       <NA>                   1st
-#> 6195               Mun                 <NA>       <NA>                   1st
-#> 6210               Mun                 <NA>       <NA>                   1st
-#> 6237              City                 <NA>         CC                   1st
-#> 6289               Mun                 <NA>       <NA>                   1st
-#> 6306              City                 <NA>         CC                   1st
-#> 6333               Mun                 <NA>       <NA>                   1st
-#> 6347               Mun                 <NA>       <NA>                   1st
-#> 6359               Mun                 <NA>       <NA>                   1st
-#> 6382               Mun                 <NA>       <NA>                   2nd
-#> 6397               Mun                 <NA>       <NA>                   1st
-#> 6417               Mun                 <NA>       <NA>                   1st
-#> 6437               Mun                 <NA>       <NA>                   1st
-#> 6474              City                 <NA>         CC                   1st
-#> 6537               Mun                 <NA>       <NA>                   1st
-#> 6587               Mun                 <NA>       <NA>                   1st
-#> 6622               Mun                 <NA>       <NA>                   1st
-#> 6647               Mun                 <NA>       <NA>                   1st
-#> 6657               Mun                 <NA>       <NA>                   1st
-#> 6684               Mun                 <NA>       <NA>                   1st
-#> 6713              City                 <NA>         CC                   1st
-#> 6803               Mun                 <NA>       <NA>                   1st
-#> 6827               Mun                 <NA>       <NA>                   1st
-#> 6845               Mun                 <NA>       <NA>                   1st
-#> 6897               Mun     Bitulok & Sabani       <NA>                   1st
-#> 6914              City                 <NA>         CC                   3rd
-#> 6938               Mun                 <NA>       <NA>                   2nd
-#> 6959               Mun               Papaya       <NA>                   1st
-#> 6973               Mun                 <NA>       <NA>                   1st
-#> 7038               Mun                 <NA>       <NA>                   1st
-#> 7066               Mun                 <NA>       <NA>                   1st
-#> 7084               Mun                 <NA>       <NA>                   3rd
-#> 7096               Mun                 <NA>       <NA>                   2nd
-#> 7119               Mun                 <NA>       <NA>                   2nd
-#> 7144              City                 <NA>         CC                   4th
-#> 7182               Mun                 <NA>       <NA>                   4th
-#> 7204              City                 <NA>         CC                   4th
-#> 7224               Mun                 <NA>       <NA>                   1st
-#> 7239               Mun                 <NA>       <NA>                   2nd
-#> 7250               Mun                 <NA>       <NA>                   2nd
-#> 7267               Mun                 <NA>       <NA>                   1st
-#> 7294               Mun                 <NA>       <NA>                   1st
-#> 7311               Mun                 <NA>       <NA>                   1st
-#> 7321              City                 <NA>         CC                   2nd
-#> 7360               Mun                 <NA>       <NA>                   1st
-#> 7376               Mun                 <NA>       <NA>                   1st
-#> 7410               Mun                 <NA>       <NA>                   1st
-#> 7435               Mun                 <NA>       <NA>                   1st
-#> 7489               Mun                 <NA>       <NA>                   3rd
-#> 7518               Mun                 <NA>       <NA>                   1st
-#> 7539               Mun                 <NA>       <NA>                   1st
-#> 7552               Mun                 <NA>       <NA>                   1st
-#> 7583               Mun                 <NA>       <NA>                   1st
-#> 7605               Mun                 <NA>       <NA>                   1st
-#> 7639               Mun                 <NA>       <NA>                   1st
-#> 7673               Mun                 <NA>       <NA>                   1st
-#> 7705               Mun                 <NA>       <NA>                   1st
-#> 7750              City                 <NA>         CC                   1st
+#> 6077               Mun                 <NA>       <NA>                   1st
+#> 6098               Mun                 <NA>       <NA>                   1st
+#> 6120               Mun                 <NA>       <NA>                   1st
+#> 6138              City                 <NA>         CC                   1st
+#> 6165               Mun                 <NA>       <NA>                   2nd
+#> 6182               Mun                 <NA>       <NA>                   2nd
+#> 6194               Mun                 <NA>       <NA>                   1st
+#> 6211               Mun          San Vicente       <NA>                   1st
+#> 6252               Mun          Doña Alicia       <NA>                   1st
+#> 6264               Mun                 <NA>       <NA>                   1st
+#> 6302               Mun          San Mariano       <NA>                   1st
+#> 6327               Mun                 <NA>       <NA>                   1st
+#> 6339               Mun                 <NA>       <NA>                   1st
+#> 6361               Mun                 <NA>       <NA>                   1st
+#> 6382               Mun                 <NA>       <NA>                   1st
+#> 6411               Mun                 <NA>       <NA>                   1st
+#> 6428               Mun                 <NA>       <NA>                   1st
+#> 6443               Mun                 <NA>       <NA>                   1st
+#> 6459               Mun             Trinidad       <NA>                   1st
+#> 6486               Mun                 <NA>       <NA>                   1st
+#> 6517               Mun                 <NA>       <NA>                   1st
+#> 6540               Mun                 <NA>       <NA>                   4th
+#> 6553              City                 <NA>        HUC                   1st
+#> 6738               Mun                 <NA>       <NA>                   1st
+#> 6756               Mun                 <NA>       <NA>                   1st
+#> 6778               Mun                 <NA>       <NA>                   1st
+#> 6796              City                 <NA>         CC                   1st
+#> 6837               Mun                 <NA>       <NA>                   1st
+#> 6858               Mun                 <NA>       <NA>                   1st
+#> 6891               Mun                 <NA>       <NA>                   1st
+#> 6930               Mun                 <NA>       <NA>                   1st
+#> 6965               Mun                 <NA>       <NA>                   1st
+#> 7010               Mun                 <NA>       <NA>                   1st
+#> 7048               Mun                 <NA>       <NA>                   1st
+#> 7077               Mun                 <NA>       <NA>                   1st
+#> 7098               Mun                 <NA>       <NA>                   1st
+#> 7124               Mun                 <NA>       <NA>                   1st
+#> 7154               Mun                 <NA>       <NA>                   1st
+#> 7168               Mun                 <NA>       <NA>                   1st
+#> 7189               Mun                 <NA>       <NA>                   1st
+#> 7207               Mun                 <NA>       <NA>                   1st
+#> 7237               Mun                 <NA>       <NA>                   1st
+#> 7260              City                 <NA>         CC                   1st
+#> 7288               Mun                 <NA>       <NA>                   2nd
+#> 7303               Mun                 <NA>       <NA>                   1st
+#> 7327               Mun                 <NA>       <NA>                   1st
+#> 7345               Mun                 <NA>       <NA>                   1st
+#> 7360               Mun                 <NA>       <NA>                   2nd
+#> 7374               Mun                 <NA>       <NA>                   1st
+#> 7400               Mun                 <NA>       <NA>                   1st
+#> 7417               Mun                 <NA>       <NA>                   2nd
+#> 7428               Mun                 <NA>       <NA>                   1st
+#> 7449               Mun                 <NA>       <NA>                   1st
+#> 7469               Mun                 <NA>       <NA>                   1st
+#> 7486               Mun                 <NA>       <NA>                   1st
+#> 7506               Mun                 <NA>       <NA>                   1st
+#> 7524               Mun                 <NA>       <NA>                   1st
+#> 7540               Mun                 <NA>       <NA>                   1st
+#> 7568               Mun                 <NA>       <NA>                   1st
+#> 7580               Mun       Mariano Marcos       <NA>                   1st
+#> 7607               Mun                 <NA>       <NA>                   1st
+#> 7648               Mun                 <NA>       <NA>                   2nd
+#> 7668              City                 <NA>         CC                   3rd
+#> 7689               Mun                 <NA>       <NA>                   1st
+#> 7711               Mun                 <NA>       <NA>                   1st
+#> 7726               Mun                 <NA>       <NA>                   1st
+#> 7758               Mun                 <NA>       <NA>                   1st
 #> 7778               Mun                 <NA>       <NA>                   1st
-#> 7804               Mun                 <NA>       <NA>                   1st
-#> 7832               Mun                 <NA>       <NA>                   1st
-#> 7859               Mun                 <NA>       <NA>                   1st
-#> 7903               Mun                 <NA>       <NA>                   2nd
-#> 7919               Mun                 <NA>       <NA>                   1st
-#> 7949              City                 <NA>         CC                   1st
-#> 7985               Mun                 <NA>       <NA>                   2nd
-#> 8003               Mun                 <NA>       <NA>                   1st
-#> 8018               Mun                 <NA>       <NA>                   1st
-#> 8033               Mun                 <NA>       <NA>                   2nd
-#> 8044               Mun                 <NA>       <NA>                   2nd
-#> 8052               Mun              Sexmoan       <NA>                   3rd
-#> 8066               Mun                 <NA>       <NA>                   4th
-#> 8085               Mun                 <NA>       <NA>                   1st
-#> 8101               Mun                 <NA>       <NA>                   1st
-#> 8163               Mun                 <NA>       <NA>                   1st
-#> 8184               Mun                 <NA>       <NA>                   1st
-#> 8230               Mun                 <NA>       <NA>                   1st
-#> 8275               Mun                 <NA>       <NA>                   1st
-#> 8297               Mun                 <NA>       <NA>                   1st
-#> 8322               Mun                 <NA>       <NA>                   1st
-#> 8360               Mun                 <NA>       <NA>                   1st
-#> 8396               Mun                 <NA>       <NA>                   3rd
-#> 8413               Mun                 <NA>       <NA>                   4th
-#> 8423               Mun                 <NA>       <NA>                   4th
-#> 8436               Mun                 <NA>       <NA>                   1st
-#> 8452               Mun                 <NA>       <NA>                   1st
-#> 8477              City                 <NA>         CC                   1st
-#> 8554               Mun                 <NA>       <NA>                   1st
-#> 8581               Mun                 <NA>       <NA>                   1st
-#> 8596               Mun                 <NA>       <NA>                   1st
-#> 8628               Mun                 <NA>       <NA>                   2nd
-#> 8651               Mun                 <NA>       <NA>                   1st
-#> 8668               Mun                 <NA>       <NA>                   1st
-#> 8683               Mun                 <NA>       <NA>                   1st
-#> 8698               Mun                 <NA>       <NA>                   1st
-#> 8712               Mun                 <NA>       <NA>                   1st
-#> 8732               Mun                 <NA>       <NA>                   1st
-#> 8747               Mun                 <NA>       <NA>                   3rd
-#> 8759               Mun                 <NA>       <NA>                   1st
-#> 8778               Mun                 <NA>       <NA>                   3rd
-#> 8796               Mun                 <NA>       <NA>                   1st
-#> 8822               Mun                 <NA>       <NA>                   1st
-#> 8840               Mun                 <NA>       <NA>                   1st
-#> 8854               Mun                 <NA>       <NA>                   1st
-#> 8879               Mun                 <NA>       <NA>                   2nd
-#> 8891               Mun                 <NA>       <NA>                   3rd
-#> 8901               Mun                 <NA>       <NA>                   2nd
-#> 8913               Mun                 <NA>       <NA>                   1st
-#> 8939               Mun                 <NA>       <NA>                   1st
-#> 8980               Mun                 <NA>       <NA>                   1st
-#> 8999              City                 <NA>        HUC                   1st
-#> 9033              City                 <NA>        HUC                   1st
-#> 9053               Mun                 <NA>       <NA>                   2nd
-#> 9075               Mun                 <NA>       <NA>                   4th
-#> 9095               Mun                 <NA>       <NA>                   1st
-#> 9144               Mun                 <NA>       <NA>                   4th
-#> 9158              City                 <NA>         CC                   1st
-#> 9264               Mun                 <NA>       <NA>                   1st
-#> 9305              City                 <NA>         CC                   3rd
-#> 9345               Mun                 <NA>       <NA>                   1st
-#> 9371               Mun                 <NA>       <NA>                   2nd
-#> 9393               Mun                 <NA>       <NA>                   1st
-#> 9420               Mun                 <NA>       <NA>                   2nd
-#> 9442               Mun                 <NA>       <NA>                   1st
-#> 9489               Mun                 <NA>       <NA>                   1st
-#> 9509              City                 <NA>         CC                   1st
-#> 9582               Mun                 <NA>       <NA>                   1st
-#> 9609               Mun                 <NA>       <NA>                   1st
-#> 9644               Mun                 <NA>       <NA>                   1st
-#> 9660               Mun                 <NA>       <NA>                   3rd
-#> 9677               Mun                 <NA>       <NA>                   1st
-#> 9720               Mun                 <NA>       <NA>                   1st
-#> 9739               Mun                 <NA>       <NA>                   1st
-#> 9788               Mun                 <NA>       <NA>                   1st
-#> 9822               Mun                 <NA>       <NA>                   1st
-#> 9865               Mun                 <NA>       <NA>                   3rd
-#> 9892               Mun                 <NA>       <NA>                   4th
-#> 9911               Mun                 <NA>       <NA>                   1st
-#> 9941               Mun                 <NA>       <NA>                   4th
-#> 9959              City                 <NA>         CC                   1st
-#> 9990               Mun                 <NA>       <NA>                   1st
-#> 10033              Mun                 <NA>       <NA>                   1st
-#> 10055             City                 <NA>         CC                   1st
-#> 10104              Mun                 <NA>       <NA>                   1st
-#> 10125              Mun                 <NA>       <NA>                   4th
-#> 10141              Mun                 <NA>       <NA>                   2nd
-#> 10165              Mun                 <NA>       <NA>                   1st
-#> 10198              Mun                 <NA>       <NA>                   2nd
-#> 10225             City                 <NA>         CC                   1st
-#> 10273             City                 <NA>         CC                   2nd
-#> 10288             City                 <NA>         CC                   4th
-#> 10373             City                 <NA>         CC                   1st
-#> 10449              Mun                 <NA>       <NA>                   4th
-#> 10464             City                 <NA>         CC                   1st
-#> 10498             City                 <NA>         CC                   1st
-#> 10596              Mun                 <NA>       <NA>                   1st
-#> 10633              Mun                 <NA>       <NA>                   1st
-#> 10657              Mun                 <NA>       <NA>                   3rd
-#> 10674              Mun                 <NA>       <NA>                   2nd
-#> 10702              Mun         Mendez-Nuñez       <NA>                   2nd
-#> 10727              Mun                 <NA>       <NA>                   1st
-#> 10758              Mun                 <NA>       <NA>                   1st
-#> 10775              Mun                 <NA>       <NA>                   1st
-#> 10796              Mun                 <NA>       <NA>                   1st
-#> 10861             City                 <NA>         CC                   1st
-#> 10896              Mun                 <NA>       <NA>                   1st
-#> 10938              Mun                 <NA>       <NA>                   3rd
-#> 10949             City                 <NA>         CC                   2nd
-#> 10963              Mun                 <NA>       <NA>                   1st
-#> 10992              Mun                 <NA>       <NA>                   1st
-#> 11008              Mun                 <NA>       <NA>                   1st
-#> 11024             City                 <NA>         CC                   1st
-#> 11049             City                 <NA>         CC                   1st
-#> 11068             City                 <NA>         CC                   1st
-#> 11123              Mun                 <NA>       <NA>                   1st
-#> 11141              Mun                 <NA>       <NA>                   2nd
-#> 11161              Mun                 <NA>       <NA>                   4th
-#> 11182              Mun                 <NA>       <NA>                   3rd
-#> 11186              Mun                 <NA>       <NA>                   3rd
-#> 11220              Mun                 <NA>       <NA>                   1st
-#> 11235              Mun                 <NA>       <NA>                   4th
-#> 11259              Mun                 <NA>       <NA>                   3rd
-#> 11276              Mun                 <NA>       <NA>                   4th
-#> 11292              Mun                 <NA>       <NA>                   3rd
-#> 11317              Mun                 <NA>       <NA>                   3rd
-#> 11358              Mun                 <NA>       <NA>                   1st
-#> 11411              Mun                 <NA>       <NA>                   4th
-#> 11421              Mun                 <NA>       <NA>                   2nd
-#> 11438              Mun                 <NA>       <NA>                   3rd
-#> 11452              Mun                 <NA>       <NA>                   3rd
-#> 11461              Mun                 <NA>       <NA>                   1st
-#> 11479              Mun                 <NA>       <NA>                   4th
-#> 11491             City                 <NA>         CC                   1st
-#> 11572             City                 <NA>         CC                   1st
-#> 11600              Mun                 <NA>       <NA>                   1st
-#> 11627              Mun                 <NA>       <NA>                   2nd
-#> 11653             City                 <NA>         CC                   1st
-#> 11672              Mun                 <NA>       <NA>                   1st
-#> 11693              Mun                 <NA>       <NA>                   2nd
-#> 11704              Mun                 <NA>       <NA>                   5th
-#> 11717              Mun                 <NA>       <NA>                   4th
-#> 11737              Mun                 <NA>       <NA>                   1st
-#> 11780              Mun                 <NA>       <NA>                   2nd
-#> 11818              Mun                 <NA>       <NA>                   3rd
-#> 11832              Mun                 <NA>       <NA>                   1st
-#> 11914              Mun                 <NA>       <NA>                   1st
-#> 11940              Mun                 <NA>       <NA>                   1st
-#> 11987              Mun                 <NA>       <NA>                   3rd
-#> 12004              Mun                 <NA>       <NA>                   3rd
-#> 12032              Mun                 <NA>       <NA>                   1st
-#> 12052              Mun                 <NA>       <NA>                   1st
-#> 12107              Mun                 <NA>       <NA>                   1st
-#> 12167              Mun                 <NA>       <NA>                   1st
-#> 12204              Mun                 <NA>       <NA>                   5th
-#> 12210              Mun                 <NA>       <NA>                   1st
-#> 12306              Mun                 <NA>       <NA>                   1st
-#> 12339              Mun                 <NA>       <NA>                   3rd
-#> 12370              Mun                 <NA>       <NA>                   1st
-#> 12411              Mun                 <NA>       <NA>                   1st
-#> 12440              Mun                 <NA>       <NA>                   4th
-#> 12463              Mun                 <NA>       <NA>                   1st
-#> 12491              Mun                 <NA>       <NA>                   3rd
-#> 12505              Mun                 <NA>       <NA>                   4th
-#> 12512              Mun                 <NA>       <NA>                   4th
-#> 12527              Mun                 <NA>       <NA>                   4th
-#> 12567              Mun                 <NA>       <NA>                   5th
-#> 12577              Mun                 <NA>       <NA>                   1st
-#> 12598              Mun                 <NA>       <NA>                   4th
-#> 12623              Mun                 <NA>       <NA>                   1st
-#> 12641              Mun                 <NA>       <NA>                   4th
-#> 12656              Mun                 <NA>       <NA>                   2nd
-#> 12664              Mun                 <NA>       <NA>                   3rd
-#> 12685              Mun               Aurora       <NA>                   1st
-#> 12702              Mun                 <NA>       <NA>                   1st
-#> 12727              Mun                 <NA>       <NA>                   1st
-#> 12771              Mun                 <NA>       <NA>                   1st
-#> 12817             City                 <NA>         CC                   3rd
-#> 12884              Mun                 <NA>       <NA>                   1st
-#> 12916              Mun                 <NA>       <NA>                   3rd
-#> 12954              Mun                 <NA>       <NA>                   1st
-#> 12965             City                 <NA>         CC                   1st
-#> 12982              Mun                 <NA>       <NA>                   1st
-#> 12993              Mun                 <NA>       <NA>                   1st
-#> 13034              Mun                 <NA>       <NA>                   1st
-#> 13042              Mun                 <NA>       <NA>                   2nd
-#> 13061              Mun                 <NA>       <NA>                   3rd
-#> 13073              Mun            Montalban       <NA>                   1st
-#> 13085              Mun                 <NA>       <NA>                   1st
-#> 13094              Mun                 <NA>       <NA>                   1st
-#> 13104              Mun                 <NA>       <NA>                   1st
-#> 13120              Mun                 <NA>       <NA>                   1st
-#> 13141              Mun                 <NA>       <NA>                   1st
-#> 13147              Mun                 <NA>       <NA>                   1st
-#> 13157             City                 <NA>        HUC                   1st
-#> 13193              Mun                 <NA>       <NA>                   1st
-#> 13250              Mun                 <NA>       <NA>                   1st
-#> 13301              Mun               Locsin       <NA>                   1st
-#> 13356              Mun                 <NA>       <NA>                   1st
-#> 13401              Mun                 <NA>       <NA>                   4th
-#> 13425             City                 <NA>         CC                   1st
-#> 13496              Mun                 <NA>       <NA>                   1st
-#> 13544             City                 <NA>         CC                   3rd
-#> 13600              Mun                 <NA>       <NA>                   1st
-#> 13619              Mun                 <NA>       <NA>                   2nd
-#> 13649              Mun                 <NA>       <NA>                   2nd
-#> 13665              Mun                 <NA>       <NA>                   1st
-#> 13719              Mun                 <NA>       <NA>                   1st
-#> 13753              Mun                 <NA>       <NA>                   1st
-#> 13798              Mun                 <NA>       <NA>                   2nd
-#> 13833              Mun                Libog       <NA>                   2nd
-#> 13857             City                 <NA>         CC                   3rd
-#> 13905              Mun                 <NA>       <NA>                   1st
-#> 13932              Mun                 <NA>       <NA>                   1st
-#> 13962              Mun                 <NA>       <NA>                   1st
-#> 13985              Mun                 <NA>       <NA>                   1st
-#> 14011              Mun               Imelda       <NA>                   5th
-#> 14024              Mun                 <NA>       <NA>                   1st
-#> 14052              Mun                 <NA>       <NA>                   1st
-#> 14105              Mun                 <NA>       <NA>                   1st
-#> 14132              Mun                 <NA>       <NA>                   1st
-#> 14160              Mun                 <NA>       <NA>                   4th
+#> 7795               Mun                 <NA>       <NA>                   1st
+#> 7815               Mun                 <NA>       <NA>                   1st
+#> 7828               Mun                 <NA>       <NA>                   1st
+#> 7860              City            Dadiangas        HUC                   1st
+#> 7888              City                 <NA>        HUC                   1st
+#> 8082              City                 <NA>        HUC                   1st
+#> 8103              City                 <NA>        HUC                   1st
+#> 8127              City                 <NA>        HUC                   1st
+#> 8149              City                 <NA>        HUC                   1st
+#> 8177              City                 <NA>        HUC                   1st
+#> 9089              City                 <NA>        HUC                   1st
+#> 9106              City                 <NA>        HUC                   1st
+#> 9116              City                 <NA>        HUC                   1st
+#> 9135              City                 <NA>        HUC                   1st
+#> 9152              City                 <NA>        HUC                   1st
+#> 9354              City                 <NA>        HUC                   1st
+#> 9385              City                 <NA>        HUC                   1st
+#> 9528              City                 <NA>        HUC                   1st
+#> 9550              City                 <NA>        HUC                   1st
+#> 9589              City                 <NA>        HUC                   1st
+#> 9623               Mun                 <NA>       <NA>                   1st
+#> 9636               Mun                 <NA>       <NA>                   1st
+#> 9668               Mun                 <NA>       <NA>                   3rd
+#> 9677               Mun                 <NA>       <NA>                   3rd
+#> 9699               Mun                 <NA>       <NA>                   4th
+#> 9704               Mun                 <NA>       <NA>                   4th
+#> 9709               Mun                 <NA>       <NA>                   3rd
+#> 9717               Mun                 <NA>       <NA>                   3rd
+#> 9733               Mun                 <NA>       <NA>                   4th
+#> 9746               Mun                 <NA>       <NA>                   2nd
+#> 9753               Mun                 <NA>       <NA>                   3rd
+#> 9771               Mun                 <NA>       <NA>                   4th
+#> 9777               Mun                 <NA>       <NA>                   4th
+#> 9784               Mun               Licuan       <NA>                   3rd
+#> 9796               Mun                 <NA>       <NA>                   1st
+#> 9805               Mun                 <NA>       <NA>                   3rd
+#> 9818               Mun                 <NA>       <NA>                   3rd
+#> 9830               Mun                 <NA>       <NA>                   4th
+#> 9840               Mun                 <NA>       <NA>                   3rd
+#> 9856               Mun                 <NA>       <NA>                   1st
+#> 9876               Mun                 <NA>       <NA>                   4th
+#> 9886               Mun                 <NA>       <NA>                   2nd
+#> 9896               Mun                 <NA>       <NA>                   4th
+#> 9916               Mun                 <NA>       <NA>                   3rd
+#> 9923               Mun                 <NA>       <NA>                   1st
+#> 9935               Mun                 <NA>       <NA>                   1st
+#> 9946               Mun                 <NA>       <NA>                   2nd
+#> 9957               Mun                 <NA>       <NA>                   1st
+#> 9967               Mun                 <NA>       <NA>                   3rd
+#> 9976               Mun                 <NA>       <NA>                   3rd
+#> 9984               Mun                 <NA>       <NA>                   2nd
+#> 9995               Mun                 <NA>       <NA>                   1st
+#> 10010              Mun                 <NA>       <NA>                   1st
+#> 10020              Mun                 <NA>       <NA>                   3rd
+#> 10034              Mun                 <NA>       <NA>                   3rd
+#> 10050              Mun                 <NA>       <NA>                   3rd
+#> 10058              Mun                 <NA>       <NA>                   1st
+#> 10075              Mun                 <NA>       <NA>                  2nd*
+#> 10088              Mun                 <NA>       <NA>                   4th
+#> 10097              Mun                 <NA>       <NA>                   1st
+#> 10111              Mun                 <NA>       <NA>                   4th
+#> 10121              Mun                 <NA>       <NA>                   3rd
+#> 10140              Mun                 <NA>       <NA>                   3rd
+#> 10150              Mun                 <NA>       <NA>                   3rd
+#> 10165              Mun                 <NA>       <NA>                   3rd
+#> 10186              Mun                 <NA>       <NA>                   2nd
+#> 10205              Mun                 <NA>       <NA>                   3rd
+#> 10233              Mun                Potia       <NA>                   1st
+#> 10254              Mun                 <NA>       <NA>                   1st
+#> 10271              Mun                 <NA>       <NA>                   5th
+#> 10284              Mun                 <NA>       <NA>                   3rd
+#> 10297              Mun                 <NA>       <NA>                   4th
+#> 10309              Mun                 <NA>       <NA>                   1st
+#> 10324              Mun                 <NA>       <NA>                   4th
+#> 10334              Mun                 <NA>       <NA>                   4th
+#> 10349              Mun                 <NA>       <NA>                   1st
+#> 10373              Mun                Liwan       <NA>                   3rd
+#> 10388             City                 <NA>         CC                   1st
+#> 10432              Mun                 <NA>       <NA>                   3rd
+#> 10449              Mun                 <NA>       <NA>                   3rd
+#> 10471              Mun                 <NA>       <NA>                   4th
+#> 10483              Mun                 <NA>       <NA>                   2nd
+#> 10506              Mun                 <NA>       <NA>                   4th
+#> 10521              Mun                 <NA>       <NA>                   1st
+#> 10538              Mun                 <NA>       <NA>                   3rd
+#> 10550              Mun                 <NA>       <NA>                   1st
+#> 10560              Mun                 <NA>       <NA>                   4th
+#> 10576              Mun                 <NA>       <NA>                   5th
+#> 10585              Mun                 <NA>       <NA>                   4th
+#> 10605              Mun                 <NA>       <NA>                   3rd
+#> 10626              Mun                Bayag       <NA>                   1st
+#> 10645              Mun                 <NA>       <NA>                   1st
+#> 10667              Mun                 <NA>       <NA>                   2nd
+#> 10684              Mun                 <NA>       <NA>                   1st
+#> 10706              Mun                 <NA>       <NA>                   1st
+#> 10729              Mun                 <NA>       <NA>                   2nd
+#> 10752              Mun                 <NA>       <NA>                   4th
+#> 10766             City                 <NA>        HUC                   1st
+#> 10898              Mun                 <NA>       <NA>                   1st
+#> 10924             City                 <NA>         CC                   3rd
+#> 10956              Mun                 <NA>       <NA>                   3rd
+#> 10965              Mun                 <NA>       <NA>                   2nd
+#> 10981              Mun                 <NA>       <NA>                   3rd
+#> 10993              Mun                 <NA>       <NA>                   1st
+#> 11014              Mun                 <NA>       <NA>                   4th
+#> 11023              Mun                 <NA>       <NA>                   1st
+#> 11043              Mun                 <NA>       <NA>                   1st
+#> 11053              Mun                 <NA>       <NA>                   1st
+#> 11067              Mun                 <NA>       <NA>                   4th
+#> 11077             City                 <NA>         CC                   1st
+#> 11121              Mun                 <NA>       <NA>                   1st
+#> 11132              Mun                 <NA>       <NA>                   1st
+#> 11180              Mun                 <NA>       <NA>                   1st
+#> 11196              Mun                 <NA>       <NA>                   1st
+#> 11214              Mun                 <NA>       <NA>                   1st
+#> 11247              Mun                 <NA>       <NA>                   1st
+#> 11259              Mun                 <NA>       <NA>                   1st
+#> 11287              Mun                 <NA>       <NA>                   1st
+#> 11313              Mun                 <NA>       <NA>                   1st
+#> 11325              Mun                 <NA>       <NA>                   1st
+#> 11342              Mun                 <NA>       <NA>                   1st
+#> 11359              Mun                 <NA>       <NA>                   1st
+#> 11380              Mun                 <NA>       <NA>                   1st
+#> 11406              Mun                 <NA>       <NA>                   4th
+#> 11419              Mun                 <NA>       <NA>                   4th
+#> 11429              Mun                 <NA>       <NA>                   5th
+#> 11436              Mun                 <NA>       <NA>                   1st
+#> 11451              Mun                 <NA>       <NA>                   2nd
+#> 11481              Mun                 <NA>       <NA>                   3rd
+#> 11502              Mun                 <NA>       <NA>                   3rd
+#> 11522              Mun                 <NA>       <NA>                   3rd
+#> 11536              Mun                 <NA>       <NA>                   3rd
+#> 11558              Mun                 <NA>       <NA>                   4th
+#> 11573              Mun                 <NA>       <NA>                   4th
+#> 11589              Mun                 <NA>       <NA>                   3rd
+#> 11610              Mun                 <NA>       <NA>                   5th
+#> 11617              Mun             Anao-aon       <NA>                   4th
+#> 11629              Mun                 <NA>       <NA>                   5th
+#> 11642              Mun                Sapao       <NA>                   5th
+#> 11654              Mun                 <NA>       <NA>                   4th
+#> 11667              Mun                 <NA>       <NA>                   3rd
+#> 11682             City                 <NA>         CC                   2nd
+#> 11737              Mun                 <NA>       <NA>                   3rd
+#> 11752              Mun                 <NA>       <NA>                   4th
+#> 11763              Mun                 <NA>       <NA>                   1st
+#> 11786              Mun                 <NA>       <NA>                   4th
+#> 11794             City                 <NA>         CC                   2nd
+#> 11819              Mun                 <NA>       <NA>                   2nd
+#> 11831              Mun                 <NA>       <NA>                   1st
+#> 11849              Mun                 <NA>       <NA>                   4th
+#> 11858              Mun                 <NA>       <NA>                   1st
+#> 11873              Mun                 <NA>       <NA>                   4th
+#> 11886              Mun                 <NA>       <NA>                   1st
+#> 11911              Mun                 <NA>       <NA>                   3rd
+#> 11925              Mun                 <NA>       <NA>                   2nd
+#> 11939              Mun                 <NA>       <NA>                   1st
+#> 11958              Mun                 <NA>       <NA>                   3rd
+#> 11973              Mun                 <NA>       <NA>                   2nd
+#> 11986              Mun                 <NA>       <NA>                   2nd
+#> 12000              Mun                 <NA>       <NA>                   1st
+#> 12019              Mun                 <NA>       <NA>                   1st
+#> 12045              Mun                 <NA>       <NA>                   1st
+#> 12070             City                 <NA>         CC                   3rd
+#> 12093              Mun                Rizal       <NA>                   3rd
+#> 12121              Mun                 <NA>       <NA>                   1st
+#> 12136              Mun                 <NA>       <NA>                   4th
+#> 12149              Mun                Albor       <NA>                   3rd
+#> 12166              Mun                 <NA>       <NA>                   2nd
+#> 12177              Mun                 <NA>       <NA>                   4th
+#> 12190              Mun                 <NA>       <NA>                   4th
+#> 12200             City                 <NA>        HUC                   1st
+#> 12289              Mun                 <NA>       <NA>                   1st
+#> 12351              Mun                 <NA>       <NA>                   4th
+#> 12367              Mun                 <NA>       <NA>                   2nd
+#> 12393              Mun                 <NA>       <NA>                   2nd
+#> 12431              Mun                 <NA>       <NA>                   1st
+#> 12487              Mun                 <NA>       <NA>                   2nd
+#> 12514              Mun                 <NA>       <NA>                   1st
+#> 12525              Mun                 <NA>       <NA>                   1st
+#> 12533              Mun                 <NA>       <NA>                   4th
+#> 12543              Mun                 <NA>       <NA>                   4th
+#> 12560              Mun                 <NA>       <NA>                   1st
+#> 12573              Mun                 <NA>       <NA>                   1st
+#> 12589              Mun                 <NA>       <NA>                   1st
+#> 12602              Mun                 <NA>       <NA>                   2nd
+#> 12614              Mun                 <NA>       <NA>                   1st
+#> 12637              Mun                 <NA>       <NA>                   1st
+#> 12677              Mun                 <NA>       <NA>                   1st
+#> 12690              Mun                 <NA>       <NA>                   1st
+#> 12718              Mun                 <NA>       <NA>                   1st
+#> 12732              Mun                 <NA>       <NA>                   1st
+#> 12769              Mun            San Pedro       <NA>                   1st
+#> 12785             City                 <NA>         CC                   2nd
+#> 12848              Mun                 <NA>       <NA>                   1st
+#> 12876              Mun                 <NA>       <NA>                   1st
+#> 12894              Mun                 <NA>       <NA>                   1st
+#> 12965              Mun                 <NA>       <NA>                   1st
+#> 13003              Mun                 <NA>       <NA>                   2nd
+#> 13027              Mun                 <NA>       <NA>                   1st
+#> 13041              Mun                 <NA>       <NA>                   1st
+#> 13062              Mun                 <NA>       <NA>                   2nd
+#> 13071              Mun                 <NA>       <NA>                   2nd
+#> 13098              Mun                 <NA>       <NA>                   1st
+#> 13132              Mun                 <NA>       <NA>                   1st
+#> 13152              Mun                 <NA>       <NA>                   5th
+#> 13163              Mun                 <NA>       <NA>                   3rd
+#> 13177              Mun                 <NA>       <NA>                   1st
+#> 13198              Mun                 <NA>       <NA>                   1st
+#> 13221              Mun                 <NA>       <NA>                   1st
+#> 13240              Mun                 <NA>       <NA>                   1st
+#> 13255              Mun                 <NA>       <NA>                   5th
+#> 13268              Mun                 <NA>       <NA>                   1st
+#> 13292              Mun                 <NA>       <NA>                   3rd
+#> 13310              Mun                 <NA>       <NA>                   1st
+#> 13327              Mun               Bacuit       <NA>                   1st
+#> 13346              Mun                 <NA>       <NA>                   3rd
+#> 13357              Mun                 <NA>       <NA>                   4th
+#> 13369              Mun                 <NA>       <NA>                   1st
+#> 13393              Mun                 <NA>       <NA>                   1st
+#> 13408              Mun                 <NA>       <NA>                   1st
+#> 13440              Mun                 <NA>       <NA>                   1st
+#> 13451              Mun                 <NA>       <NA>                   1st
+#> 13483              Mun                 <NA>       <NA>                   4th
+#> 13485              Mun                 <NA>       <NA>                   1st
+#> 13500              Mun               Marcos       <NA>                   1st
+#> 13512              Mun                 <NA>       <NA>                   1st
+#> 13523              Mun                 <NA>       <NA>                   4th
+#> 13536              Mun                 <NA>       <NA>                   5th
+#> 13554              Mun                 <NA>       <NA>                   3rd
+#> 13569              Mun                 <NA>       <NA>                   4th
+#> 13577              Mun                 <NA>       <NA>                   5th
+#> 13587              Mun                 <NA>       <NA>                   5th
+#> 13603              Mun                 <NA>       <NA>                   3rd
+#> 13616              Mun                 <NA>       <NA>                   4th
+#> 13626              Mun                 <NA>       <NA>                   1st
+#> 13652              Mun                 <NA>       <NA>                   2nd
+#> 13684              Mun                 <NA>       <NA>                   3rd
+#> 13700              Mun                 <NA>       <NA>                   4th
+#> 13714              Mun                 <NA>       <NA>                   3rd
+#> 13727              Mun                 <NA>       <NA>                   5th
+#> 13733              Mun                 <NA>       <NA>                   4th
+#> 13745              Mun                 <NA>       <NA>                   5th
+#> 13752              Mun               Imelda       <NA>                   5th
+#> 13759             City                 <NA>        HUC                   1st
+#> 13828             City                 <NA>         CC                   1st
+#> 13853              Mun                 <NA>       <NA>                   1st
+#> 13870             City                 <NA>         CC                   1st
+#> 13893              Mun                 <NA>       <NA>                   1st
+#> 13934              Mun                 <NA>       <NA>                   3rd
+#> 13944              Mun                 <NA>       <NA>                   1st
+#> 13970              Mun              Saravia       <NA>                   1st
+#> 13994             City                 <NA>         CC                   3rd
+#> 14016             City                 <NA>         CC                   2nd
+#> 14036              Mun                 <NA>       <NA>                   1st
+#> 14061              Mun                 Asia       <NA>                   1st
+#> 14075              Mun                 <NA>       <NA>                   1st
+#> 14091              Mun                 <NA>       <NA>                   1st
+#> 14122             City                 <NA>         CC                   1st
+#> 14155             City                 <NA>         CC                   4th
 #> 14170              Mun                 <NA>       <NA>                   1st
-#> 14190              Mun                 <NA>       <NA>                   4th
-#> 14206              Mun                 <NA>       <NA>                   2nd
-#> 14227              Mun                 <NA>       <NA>                   1st
+#> 14184              Mun                 <NA>       <NA>                   1st
+#> 14197              Mun             Magallon       <NA>                   2nd
+#> 14213              Mun                 <NA>       <NA>                   1st
+#> 14237              Mun                 <NA>       <NA>                   1st
 #> 14258              Mun                 <NA>       <NA>                   3rd
-#> 14276              Mun                 <NA>       <NA>                   2nd
-#> 14310              Mun                 <NA>       <NA>                   4th
-#> 14319              Mun                 <NA>       <NA>                   1st
-#> 14358              Mun                 <NA>       <NA>                   1st
-#> 14392              Mun                 <NA>       <NA>                   4th
-#> 14402              Mun                 <NA>       <NA>                   1st
-#> 14451              Mun                 <NA>       <NA>                   4th
-#> 14465              Mun                 <NA>       <NA>                   3rd
-#> 14490              Mun                 <NA>       <NA>                   1st
-#> 14540              Mun                 <NA>       <NA>                   3rd
-#> 14573              Mun                 <NA>       <NA>                   5th
-#> 14582              Mun                 <NA>       <NA>                   2nd
-#> 14606              Mun                 <NA>       <NA>                   1st
-#> 14641             City                 <NA>         CC                   3rd
-#> 14678              Mun                 <NA>       <NA>                   1st
-#> 14717              Mun                 <NA>       <NA>                   1st
-#> 14793              Mun                 <NA>       <NA>                   2nd
-#> 14832              Mun                 <NA>       <NA>                   4th
-#> 14848              Mun                 <NA>       <NA>                   3rd
-#> 14869              Mun                 <NA>       <NA>                   1st
-#> 14895              Mun                 <NA>       <NA>                   1st
-#> 14938             City                 <NA>        ICC                   1st
-#> 14966              Mun                 <NA>       <NA>                   2nd
-#> 14992              Mun                 <NA>       <NA>                   3rd
-#> 15010              Mun                 <NA>       <NA>                   1st
-#> 15030              Mun                 <NA>       <NA>                   1st
-#> 15057              Mun             Parubcan       <NA>                   3rd
-#> 15076              Mun                 <NA>       <NA>                   1st
-#> 15115              Mun                 <NA>       <NA>                   2nd
-#> 15135              Mun                 <NA>       <NA>                   2nd
-#> 15158              Mun                 <NA>       <NA>                   3rd
-#> 15188              Mun                 <NA>       <NA>                   1st
-#> 15235              Mun                 <NA>       <NA>                   4th
-#> 15258              Mun                 <NA>       <NA>                   1st
-#> 15282              Mun                 <NA>       <NA>                   1st
-#> 15328              Mun                 <NA>       <NA>                   4th
-#> 15347              Mun                 <NA>       <NA>                   4th
-#> 15377              Mun                 <NA>       <NA>                   4th
-#> 15405              Mun                 <NA>       <NA>                   2nd
+#> 14279             City                 <NA>         CC                   2nd
+#> 14305             City                 <NA>         CC                   1st
+#> 14324              Mun                 <NA>       <NA>                   4th
+#> 14335             City                 <NA>         CC                   3rd
+#> 14352             City                 <NA>         CC                   3rd
+#> 14370             City                 <NA>         CC                   3rd
+#> 14398              Mun                 <NA>       <NA>                   2nd
+#> 14408              Mun                 <NA>       <NA>                   2nd
+#> 14425             City                 <NA>         CC                   4th
+#> 14452              Mun                 <NA>       <NA>                   3rd
+#> 14461              Mun            Ayuquitan       <NA>                   3rd
+#> 14470              Mun                 <NA>       <NA>                   1st
+#> 14495              Mun                 <NA>       <NA>                   2nd
+#> 14518             City                 <NA>         CC                   3rd
+#> 14554              Mun                 <NA>       <NA>                   3rd
+#> 14565             City               Tulong         CC                   1st
+#> 14594              Mun              Payabon       <NA>                   2nd
+#> 14617             City                 <NA>         CC                   4th
+#> 14630              Mun                 <NA>       <NA>                   2nd
+#> 14654             City                 <NA>         CC                   2nd
+#> 14685             City                 <NA>         CC                   2nd
+#> 14719              Mun                 <NA>       <NA>                   3rd
+#> 14748              Mun                 <NA>       <NA>                   2nd
+#> 14778              Mun                 <NA>       <NA>                   1st
+#> 14811              Mun                 <NA>       <NA>                   1st
+#> 14839              Mun                 <NA>       <NA>                   2nd
+#> 14856              Mun                 <NA>       <NA>                   4th
+#> 14871              Mun                 <NA>       <NA>                   1st
+#> 14894              Mun                 <NA>       <NA>                   1st
+#> 14921              Mun                 <NA>       <NA>                   1st
+#> 14937             City                 <NA>         CC                   3rd
+#> 14962              Mun                 <NA>       <NA>                   2nd
+#> 14991              Mun           Luzurriaga       <NA>                   1st
+#> 15016              Mun                 <NA>       <NA>                   2nd
+#> 15032              Mun                 <NA>       <NA>                   3rd
+#> 15044              Mun                 <NA>       <NA>                   5th
+#> 15059              Mun                 <NA>       <NA>                   4th
+#> 15083              Mun                 <NA>       <NA>                   4th
+#> 15102              Mun                 <NA>       <NA>                   4th
+#> 15125              Mun                 <NA>       <NA>                   4th
+#> 15141              Mun                 <NA>       <NA>                   3rd
+#> 15184             City                 <NA>        HUC                   1st
+#> 15248             City                 <NA>         CC                   3rd
+#> 15294              Mun                 <NA>       <NA>                   2nd
+#> 15320              Mun                 <NA>       <NA>                   2nd
+#> 15341              Mun                 <NA>       <NA>                   1st
+#> 15371              Mun                 <NA>       <NA>                  4th*
+#> 15383              Mun                 <NA>       <NA>                   2nd
+#> 15394              Mun                 <NA>       <NA>                   4th
+#> 15404              Mun                 <NA>       <NA>                   4th
+#> 15421              Mun                 <NA>       <NA>                   4th
 #> 15433              Mun                 <NA>       <NA>                   4th
-#> 15443              Mun                 <NA>       <NA>                   4th
-#> 15470              Mun                 Payo       <NA>                   4th
-#> 15494              Mun             Calolbon       <NA>                   2nd
-#> 15533              Mun                 <NA>       <NA>                   4th
-#> 15558              Mun                 <NA>       <NA>                   3rd
-#> 15590              Mun                 <NA>       <NA>                   1st
-#> 15655              Mun                 <NA>       <NA>                   1st
-#> 15697              Mun                 <NA>       <NA>                   2nd
-#> 15722              Mun                 <NA>       <NA>                   2nd
-#> 15755              Mun                 <NA>       <NA>                   4th
-#> 15770              Mun                 <NA>       <NA>                   1st
-#> 15807              Mun                 <NA>       <NA>                   1st
-#> 15845              Mun                 <NA>       <NA>                   1st
-#> 15868              Mun                 <NA>       <NA>                   3rd
-#> 15889              Mun                 <NA>       <NA>                   4th
-#> 15910              Mun                 <NA>       <NA>                   1st
-#> 15937             City                 <NA>         CC                   3rd
-#> 15968              Mun                 <NA>       <NA>                   1st
-#> 15996              Mun                 <NA>       <NA>                   2nd
-#> 16026              Mun                 <NA>       <NA>                   3rd
-#> 16038              Mun                 <NA>       <NA>                   3rd
-#> 16063              Mun             Limbuhan       <NA>                   4th
-#> 16082              Mun                 <NA>       <NA>                   1st
-#> 16118              Mun                 <NA>       <NA>                   4th
-#> 16145              Mun                 <NA>       <NA>                   3rd
-#> 16167              Mun                 <NA>       <NA>                   1st
-#> 16190              Mun                 <NA>       <NA>                   1st
-#> 16227              Mun                 <NA>       <NA>                   4th
-#> 16253              Mun                 <NA>       <NA>                   1st
-#> 16317              Mun                 <NA>       <NA>                   3rd
-#> 16342              Mun                 <NA>       <NA>                   3rd
-#> 16368              Mun                 <NA>       <NA>                   1st
-#> 16403              Mun                 <NA>       <NA>                   1st
-#> 16455              Mun                 <NA>       <NA>                   1st
-#> 16498              Mun                 <NA>       <NA>                   1st
-#> 16527              Mun                 <NA>       <NA>                   2nd
-#> 16553              Mun                 <NA>       <NA>                   2nd
-#> 16588              Mun                 <NA>       <NA>                   1st
-#> 16629              Mun                 <NA>       <NA>                   1st
-#> 16679              Mun                 <NA>       <NA>                   4th
-#> 16703              Mun                 <NA>       <NA>                   4th
-#> 16718             City                 <NA>         CC                   2nd
-#> 16785              Mun                 <NA>       <NA>                   3rd
-#> 16800              Mun                 <NA>       <NA>                   3rd
-#> 16811              Mun                 <NA>       <NA>                   2nd
-#> 16842              Mun                 <NA>       <NA>                   3rd
-#> 16863              Mun                 <NA>       <NA>                   4th
-#> 16879              Mun                 <NA>       <NA>                   1st
-#> 16915              Mun                 <NA>       <NA>                   1st
-#> 16932              Mun                 <NA>       <NA>                   4th
-#> 16945              Mun                 <NA>       <NA>                   2nd
-#> 16970              Mun                 <NA>       <NA>                   3rd
-#> 16996              Mun                 <NA>       <NA>                   3rd
-#> 17015              Mun                 <NA>       <NA>                   1st
-#> 17033              Mun                 <NA>       <NA>                   3rd
-#> 17057              Mun                 <NA>       <NA>                   2nd
-#> 17078              Mun                 <NA>       <NA>                   2nd
-#> 17095              Mun                 <NA>       <NA>                   3rd
-#> 17113              Mun                 <NA>       <NA>                   4th
-#> 17130              Mun                 <NA>       <NA>                   4th
-#> 17154              Mun                 <NA>       <NA>                   3rd
-#> 17194              Mun                 <NA>       <NA>                   5th
-#> 17206              Mun                 <NA>       <NA>                   2nd
-#> 17234              Mun                 <NA>       <NA>                   1st
-#> 17253              Mun                 <NA>       <NA>                   1st
-#> 17298              Mun                  Dao       <NA>                   3rd
-#> 17349              Mun                 <NA>       <NA>                   2nd
-#> 17397              Mun                 <NA>       <NA>                   3rd
-#> 17438              Mun                 <NA>       <NA>                   4th
-#> 17458              Mun                 <NA>       <NA>                   2nd
-#> 17493              Mun                 <NA>       <NA>                   2nd
-#> 17530              Mun                 <NA>       <NA>                   1st
-#> 17559              Mun                 <NA>       <NA>                   1st
-#> 17605              Mun                 <NA>       <NA>                   3rd
-#> 17616              Mun                 <NA>       <NA>                   1st
-#> 17693              Mun                 <NA>       <NA>                   2nd
-#> 17715              Mun                 <NA>       <NA>                   2nd
-#> 17739              Mun                 <NA>       <NA>                   3rd
-#> 17762              Mun                 <NA>       <NA>                   3rd
-#> 17783              Mun                 <NA>       <NA>                   3rd
-#> 17803              Mun                 <NA>       <NA>                   1st
-#> 17837              Mun                 <NA>       <NA>                   3rd
-#> 17853              Mun                 <NA>       <NA>                   1st
-#> 17884              Mun                 <NA>       <NA>                   2nd
-#> 17917              Mun                 <NA>       <NA>                   2nd
-#> 17944              Mun                 <NA>       <NA>                   2nd
-#> 17987              Mun                 <NA>       <NA>                   2nd
-#> 18014              Mun                 <NA>       <NA>                   2nd
-#> 18039              Mun                 <NA>       <NA>                   1st
-#> 18066              Mun                 <NA>       <NA>                   3rd
-#> 18089             City                 <NA>         CC                   2nd
-#> 18137              Mun                 <NA>       <NA>                   3rd
-#> 18148              Mun                 <NA>       <NA>                   3rd
-#> 18170              Mun                 <NA>       <NA>                   1st
-#> 18230              Mun                 <NA>       <NA>                   1st
-#> 18265              Mun                 <NA>       <NA>                   2nd
-#> 18317              Mun                 <NA>       <NA>                   3rd
-#> 18339              Mun                 <NA>       <NA>                   4th
-#> 18371              Mun                 <NA>       <NA>                   2nd
-#> 18395              Mun                 <NA>       <NA>                   2nd
-#> 18414              Mun                 <NA>       <NA>                   1st
-#> 18444              Mun                 <NA>       <NA>                   1st
-#> 18471              Mun                 <NA>       <NA>                   4th
-#> 18496              Mun                 <NA>       <NA>                   4th
-#> 18511              Mun                 <NA>       <NA>                   1st
-#> 18580              Mun                 <NA>       <NA>                   1st
-#> 18640              Mun                 <NA>       <NA>                   1st
-#> 18674              Mun                 <NA>       <NA>                   1st
-#> 18700              Mun                 <NA>       <NA>                   1st
-#> 18734              Mun                 <NA>       <NA>                   3rd
-#> 18782              Mun                 <NA>       <NA>                   1st
-#> 18828              Mun                 <NA>       <NA>                   1st
-#> 18854              Mun                 <NA>       <NA>                   3rd
-#> 18888              Mun                 <NA>       <NA>                   2nd
-#> 18935              Mun                 <NA>       <NA>                   1st
-#> 18996              Mun                 <NA>       <NA>                   1st
-#> 19070              Mun                 <NA>       <NA>                   2nd
-#> 19089              Mun                 <NA>       <NA>                   3rd
-#> 19121              Mun                 <NA>       <NA>                   1st
-#> 19207              Mun                 <NA>       <NA>                   2nd
-#> 19258              Mun                 <NA>       <NA>                   1st
-#> 19378              Mun                 <NA>       <NA>                   4th
-#> 19401              Mun                 <NA>       <NA>                   4th
-#> 19423              Mun                 <NA>       <NA>                   1st
-#> 19461             City                 <NA>         CC                   3rd
-#> 19513              Mun                 <NA>       <NA>                   1st
-#> 19532              Mun                 <NA>       <NA>                   1st
-#> 19583              Mun                 <NA>       <NA>                   2nd
-#> 19613              Mun                 <NA>       <NA>                   2nd
-#> 19642              Mun                 <NA>       <NA>                   1st
-#> 19728              Mun                 <NA>       <NA>                   3rd
-#> 19753              Mun                 <NA>       <NA>                   4th
-#> 19763              Mun                 <NA>       <NA>                   1st
-#> 19824              Mun                 <NA>       <NA>                   1st
-#> 19867              Mun                 <NA>       <NA>                   1st
-#> 19920              Mun                 <NA>       <NA>                   4th
-#> 19969              Mun                 <NA>       <NA>                   3rd
-#> 19995              Mun                 <NA>       <NA>                   1st
-#> 20032              Mun                 <NA>       <NA>                   2nd
-#> 20047              Mun                 <NA>       <NA>                   2nd
-#> 20070              Mun                 <NA>       <NA>                   3rd
-#> 20083              Mun                 <NA>       <NA>                   3rd
-#> 20098             City                 <NA>        HUC                   1st
-#> 20281              Mun                 <NA>       <NA>                   4th
-#> 20293              Mun                 <NA>       <NA>                   3rd
-#> 20309              Mun                 <NA>       <NA>                   4th
-#> 20326              Mun                 <NA>       <NA>                   4th
-#> 20348              Mun                 <NA>       <NA>                   4th
-#> 20366              Mun                 <NA>       <NA>                   3rd
-#> 20398              Mun                 <NA>       <NA>                   4th
-#> 20414              Mun                 <NA>       <NA>                   4th
-#> 20434              Mun                 <NA>       <NA>                   1st
-#> 20470              Mun                 <NA>       <NA>                   2nd
-#> 20504              Mun                 <NA>       <NA>                   3rd
-#> 20526              Mun                 <NA>       <NA>                   1st
-#> 20556              Mun                 <NA>       <NA>                   3rd
-#> 20579              Mun                 <NA>       <NA>                   4th
-#> 20604              Mun                 <NA>       <NA>                   4th
-#> 20613              Mun                 <NA>       <NA>                   4th
-#> 20628              Mun                 <NA>       <NA>                   4th
-#> 20644              Mun                 <NA>       <NA>                   3rd
-#> 20662              Mun                 <NA>       <NA>                   1st
-#> 20675              Mun                 <NA>       <NA>                   4th
-#> 20711              Mun                 <NA>       <NA>                   4th
-#> 20733              Mun                 <NA>       <NA>                   3rd
-#> 20764              Mun                 <NA>       <NA>                   2nd
-#> 20784              Mun                 <NA>       <NA>                   1st
-#> 20835              Mun                 <NA>       <NA>                   2nd
-#> 20869              Mun                 <NA>       <NA>                   2nd
-#> 20894              Mun                 <NA>       <NA>                   4th
-#> 20913              Mun                 <NA>       <NA>                   4th
-#> 20938              Mun                 <NA>       <NA>                   3rd
-#> 20967              Mun                 <NA>       <NA>                   1st
-#> 21035              Mun                 <NA>       <NA>                   3rd
-#> 21058              Mun                 <NA>       <NA>                   3rd
-#> 21081              Mun                 <NA>       <NA>                   1st
-#> 21092              Mun                 <NA>       <NA>                   3rd
-#> 21114              Mun               Pitogo       <NA>                   3rd
-#> 21138              Mun                Borja       <NA>                   3rd
-#> 21163              Mun                 <NA>       <NA>                   5th
-#> 21176              Mun                 <NA>       <NA>                   2nd
-#> 21195              Mun                 <NA>       <NA>                   4th
-#> 21209              Mun                 <NA>       <NA>                   2nd
-#> 21232              Mun                 <NA>       <NA>                   5th
-#> 21243             City                 <NA>         CC                   2nd
-#> 21259              Mun                 <NA>       <NA>                   1st
-#> 21285              Mun                 <NA>       <NA>                   1st
-#> 21306              Mun                 <NA>       <NA>                   1st
-#> 21341              Mun                 <NA>       <NA>                   1st
-#> 21386              Mun                 <NA>       <NA>                   3rd
-#> 21422              Mun                 <NA>       <NA>                   4th
-#> 21439              Mun                 <NA>       <NA>                   4th
-#> 21449              Mun                 <NA>       <NA>                   4th
-#> 21458              Mun                 <NA>       <NA>                   3rd
-#> 21468              Mun                 <NA>       <NA>                   3rd
-#> 21484              Mun                 <NA>       <NA>                   1st
-#> 21530              Mun                 <NA>       <NA>                   1st
+#> 15446              Mun                 <NA>       <NA>                   5th
+#> 15457              Mun                 <NA>       <NA>                   4th
+#> 15471              Mun       Bacolod Grande       <NA>                   1st
+#> 15498              Mun                 <NA>       <NA>                   2nd
+#> 15526              Mun                 Watu       <NA>                   2nd
+#> 15565              Mun                 <NA>       <NA>                   3rd
+#> 15615              Mun                 <NA>       <NA>                   3rd
+#> 15642              Mun                 <NA>       <NA>                   1st
+#> 15679              Mun                 <NA>       <NA>                   2nd
+#> 15696              Mun                 <NA>       <NA>                   2nd
+#> 15729              Mun                 <NA>       <NA>                   2nd
+#> 15750              Mun              Maguing       <NA>                   1st
+#> 15789              Mun                 <NA>       <NA>                   4th
+#> 15811              Mun                 <NA>       <NA>                   1st
+#> 15849              Mun                 <NA>       <NA>                   3rd
+#> 15874              Mun                 <NA>       <NA>                   1st
+#> 15912              Mun                 <NA>       <NA>                   1st
+#> 15947             City                 <NA>         CC                   3rd
+#> 16049              Mun                 <NA>       <NA>                   3rd
+#> 16085              Mun                 <NA>       <NA>                   2nd
+#> 16112              Mun            Tatarikan       <NA>                   3rd
+#> 16131              Mun                 <NA>       <NA>                   2nd
+#> 16169              Mun                 Gata       <NA>                   2nd
+#> 16195              Mun                 <NA>       <NA>                   3rd
+#> 16219              Mun                 <NA>       <NA>                   2nd
+#> 16255              Mun                 <NA>       <NA>                   3rd
+#> 16286              Mun                 <NA>       <NA>                   3rd
+#> 16331              Mun                 <NA>       <NA>                   2nd
+#> 16375              Mun                 <NA>       <NA>                   2nd
+#> 16397              Mun                 <NA>       <NA>                   3rd
+#> 16421              Mun                 <NA>       <NA>                   1st
+#> 16448              Mun                 <NA>       <NA>                   2nd
+#> 16473              Mun                 <NA>       <NA>                   4th
+#> 16491              Mun                 <NA>       <NA>                   3rd
+#> 16525              Mun                 <NA>       <NA>                   1st
+#> 16560              Mun      Sultan Gumander       <NA>                   3rd
+#> 16580              Mun                 <NA>       <NA>                   3rd
+#> 16603              Mun             Bumbaran       <NA>                   1st
+#> 16621              Mun                 <NA>       <NA>                   3rd
+#> 16641              Mun                 <NA>       <NA>                   2nd
+#> 16657              Mun                 <NA>       <NA>                   5th
+#> 16665              Mun                 <NA>       <NA>                   5th
+#> 16676              Mun            Balimbing       <NA>                   1st
+#> 16694              Mun                 <NA>       <NA>                   1st
+#> 16730              Mun Cagayan de Tawi-Tawi       <NA>                   3rd
+#> 16746              Mun                 <NA>       <NA>                   2nd
+#> 16762              Mun                 <NA>       <NA>                   1st
+#> 16772              Mun                 <NA>       <NA>                   2nd
+#> 16804              Mun                 <NA>       <NA>                   1st
+#> 16825              Mun                 <NA>       <NA>                   5th
+#> 16828              Mun                 <NA>       <NA>                   1st
+#> 16849              Mun                 <NA>       <NA>                   2nd
+#> 16873              Mun                 <NA>       <NA>                   3rd
+#> 16891              Mun                 <NA>       <NA>                   2nd
+#> 16906              Mun                 <NA>       <NA>                   1st
+#> 16922             City                 <NA>        ICC                   1st
+#> 16960              Mun                 <NA>       <NA>                   3rd
+#> 16974              Mun               Dinaig       <NA>                   1st
+#> 17009              Mun               Tumbao       <NA>                   4th
+#> 17027              Mun                 <NA>       <NA>                   3rd
+#> 17036              Mun                 <NA>       <NA>                   4th
+#> 17048              Mun                 <NA>       <NA>                   1st
+#> 17074              Mun               Nuling       <NA>                   1st
+#> 17114              Mun                 <NA>       <NA>                   3rd
+#> 17128              Mun                 <NA>       <NA>                   4th
+#> 17138              Mun                 <NA>       <NA>                   1st
+#> 17163              Mun                 <NA>       <NA>                   2nd
+#> 17175              Mun                 <NA>       <NA>                   1st
+#> 17183              Mun                 <NA>       <NA>                   2nd
+#> 17194              Mun                 <NA>       <NA>                   4th
+#> 17202              Mun                 <NA>       <NA>                   4th
+#> 17214              Mun                 <NA>       <NA>                   3rd
+#> 17238              Mun                 <NA>       <NA>                   2nd
+#> 17255              Mun                 <NA>       <NA>                   4th
+#> 17273              Mun                 <NA>       <NA>                   4th
+#> 17282              Mun                 <NA>       <NA>                   4th
+#> 17291              Mun                 <NA>       <NA>                   2nd
+#> 17311              Mun                 <NA>       <NA>                   4th
+#> 17323              Mun                 <NA>       <NA>                   4th
+#> 17338              Mun                 <NA>       <NA>                   3rd
+#> 17347              Mun                 <NA>       <NA>                   2nd
+#> 17359              Mun                 <NA>       <NA>                   1st
+#> 17372              Mun                 <NA>       <NA>                   4th
+#> 17381              Mun                 <NA>       <NA>                   4th
+#> 17390              Mun                 <NA>       <NA>                   4th
+#> 17402              Mun              Maganoy       <NA>                   2nd
+#> 17416              Mun                 <NA>       <NA>                   4th
+#> 17433              Mun                 <NA>       <NA>                   2nd
+#> 17445              Mun            Lambayong       <NA>                  3rd*
+#> 17458              Mun                 <NA>       <NA>                   3rd
+#> 17475              Mun                 <NA>       <NA>                  <NA>
+#> 17483              Mun                 <NA>       <NA>                  <NA>
+#> 17491              Mun                 <NA>       <NA>                  <NA>
+#> 17499              Mun                 <NA>       <NA>                  <NA>
+#> 17507              Mun                 <NA>       <NA>                  <NA>
+#> 17520              Mun                 <NA>       <NA>                  <NA>
+#> 17528              Mun                 <NA>       <NA>                  <NA>
+#> 17536              Mun                 <NA>       <NA>                  <NA>
+#> 17548              Mun                 <NA>       <NA>                   4th
+#> 17555              Mun                 <NA>       <NA>                   5th
+#> 17561              Mun                 <NA>       <NA>                   5th
+#> 17566              Mun                 <NA>       <NA>                   5th
+#> 17571              Mun                 <NA>       <NA>                   5th
+#> 17578              Mun                 <NA>       <NA>                   5th
+#> 17584              Mun                 <NA>       <NA>                   2nd
+#> 17605              Mun                 <NA>       <NA>                   1st
+#> 17631              Mun                 <NA>       <NA>                   1st
+#> 17659              Mun                 <NA>       <NA>                   1st
+#> 17707              Mun                 <NA>       <NA>                   1st
+#> 17750              Mun                 <NA>       <NA>                   1st
+#> 17799              Mun                 <NA>       <NA>                   2nd
+#> 17819              Mun                 <NA>       <NA>                   2nd
+#> 17850              Mun                 <NA>       <NA>                   1st
+#> 17863              Mun                 <NA>       <NA>                   3rd
+#> 17892              Mun                 <NA>       <NA>                   2nd
+#> 17934              Mun                 <NA>       <NA>                   1st
+#> 17957              Mun                 <NA>       <NA>                   1st
+#> 18008              Mun                 <NA>       <NA>                   1st
+#> 18034              Mun                 <NA>       <NA>                   2nd
+#> 18058              Mun                 <NA>       <NA>                   1st
+#> 18094              Mun                 <NA>       <NA>                   1st
+#> 18125              Mun                 <NA>       <NA>                   3rd
+#> 18144              Mun                 <NA>       <NA>                   1st
+#> 18169              Mun                 <NA>       <NA>                   3rd
+#> 18188              Mun                 <NA>       <NA>                   4th
+#> 18218              Mun                 <NA>       <NA>                   2nd
+#> 18237              Mun                 <NA>       <NA>                   1st
+#> 18254              Mun                 <NA>       <NA>                   5th
+#> 18265              Mun                 <NA>       <NA>                   3rd
+#> 18279              Mun                Faire       <NA>                   1st
+#> 18311              Mun                 <NA>       <NA>                   1st
+#> 18350              Mun                 <NA>       <NA>                   1st
+#> 18383             City                 <NA>         CC                   2nd
+#> 18434              Mun                 <NA>       <NA>                   1st
+#> 18469              Mun                 <NA>       <NA>                   1st
+#> 18529              Mun                 <NA>       <NA>                   1st
+#> 18563              Mun                 <NA>       <NA>                   2nd
+#> 18593              Mun                 <NA>       <NA>                   3rd
+#> 18608              Mun                 <NA>       <NA>                   1st
+#> 18635              Mun                 <NA>       <NA>                   1st
+#> 18658             City                 <NA>         CC                   2nd
+#> 18724              Mun                 <NA>       <NA>                   1st
+#> 18751              Mun                 <NA>       <NA>                   1st
+#> 18758              Mun                 <NA>       <NA>                   1st
+#> 18771              Mun                 <NA>       <NA>                   1st
+#> 18836              Mun                 <NA>       <NA>                   2nd
+#> 18853             City                 <NA>         CC                   1st
+#> 18945              Mun                 <NA>       <NA>                   1st
+#> 18988              Mun                 <NA>       <NA>                   1st
+#> 19008              Mun                 <NA>       <NA>                   2nd
+#> 19019              Mun            Magsaysay       <NA>                   1st
+#> 19049              Mun                 <NA>       <NA>                   1st
+#> 19068              Mun                 <NA>       <NA>                   1st
+#> 19094              Mun                 <NA>       <NA>                   1st
+#> 19112              Mun                 <NA>       <NA>                   1st
+#> 19128              Mun                 <NA>       <NA>                   1st
+#> 19150              Mun                 <NA>       <NA>                   1st
+#> 19170              Mun                 <NA>       <NA>                   1st
+#> 19191              Mun                 <NA>       <NA>                   1st
+#> 19218              Mun                 <NA>       <NA>                   2nd
+#> 19242              Mun                 <NA>       <NA>                   2nd
+#> 19269              Mun                 <NA>       <NA>                   3rd
+#> 19283              Mun                 <NA>       <NA>                   2nd
+#> 19303              Mun                 <NA>       <NA>                   1st
+#> 19340              Mun                 <NA>       <NA>                   1st
+#> 19374              Mun                 <NA>       <NA>                   1st
+#> 19392              Mun                 <NA>       <NA>                   3rd
+#> 19413             City                 <NA>        ICC                   1st
+#> 19451              Mun                 <NA>       <NA>                   3rd
+#> 19479              Mun                 <NA>       <NA>                   1st
+#> 19527              Mun                 <NA>       <NA>                   4th
+#> 19536              Mun                 <NA>       <NA>                   1st
+#> 19559              Mun                 <NA>       <NA>                   1st
+#> 19577              Mun                 <NA>       <NA>                   1st
+#> 19603              Mun                 <NA>       <NA>                   1st
+#> 19629              Mun                 <NA>       <NA>                   3rd
+#> 19649              Mun                 <NA>       <NA>                   1st
+#> 19665              Mun                 <NA>       <NA>                   1st
+#> 19685              Mun                 <NA>       <NA>                   1st
+#> 19716              Mun                 <NA>       <NA>                   1st
+#> 19747              Mun                 <NA>       <NA>                   1st
+#> 19760              Mun                 <NA>       <NA>                   2nd
+#> 19777              Mun                 <NA>       <NA>                   1st
+#> 19800              Mun                 <NA>       <NA>                   4th
+#> 19810              Mun                 <NA>       <NA>                  2nd*
+#> 19818              Mun                 <NA>       <NA>                   2nd
+#> 19844              Mun                 <NA>       <NA>                   1st
+#> 19862              Mun                 <NA>       <NA>                   1st
+#> 19896              Mun                 <NA>       <NA>                   1st
+#> 19929              Mun                 <NA>       <NA>                   4th
+#> 19939              Mun                 <NA>       <NA>                   1st
+#> 19958              Mun                 <NA>       <NA>                   2nd
+#> 19968              Mun                 <NA>       <NA>                   2nd
+#> 19983             City                 <NA>         CC                   2nd
+#> 20009              Mun                 <NA>       <NA>                   1st
+#> 20056              Mun                 <NA>       <NA>                   1st
+#> 20080              Mun                 <NA>       <NA>                   1st
+#> 20093              Mun                 <NA>       <NA>                   1st
+#> 20112              Mun                 <NA>       <NA>                   1st
+#> 20118              Mun                 <NA>       <NA>                   1st
+#> 20148              Mun                 <NA>       <NA>                   1st
+#> 20172              Mun                 <NA>       <NA>                   2nd
+#> 20192              Mun                 <NA>       <NA>                   2nd
+#> 20208              Mun                 <NA>       <NA>                   1st
+#> 20225              Mun                Bigaa       <NA>                   1st
+#> 20235             City                 <NA>         CC                   3rd
+#> 20263              Mun                 <NA>       <NA>                   1st
+#> 20283              Mun                 <NA>       <NA>                   1st
+#> 20298              Mun                 <NA>       <NA>                   1st
+#> 20313              Mun                 <NA>       <NA>                   1st
+#> 20343              Mun                 <NA>       <NA>                   1st
+#> 20358              Mun                 <NA>       <NA>                   1st
+#> 20385             City                 <NA>         CC                   1st
+#> 20437              Mun                 <NA>       <NA>                   1st
+#> 20454             City                 <NA>         CC                   1st
+#> 20481              Mun                 <NA>       <NA>                   1st
+#> 20495              Mun                 <NA>       <NA>                   1st
+#> 20507              Mun                 <NA>       <NA>                   1st
+#> 20530              Mun                 <NA>       <NA>                   2nd
+#> 20545              Mun                 <NA>       <NA>                   1st
+#> 20565              Mun                 <NA>       <NA>                   1st
+#> 20585              Mun                 <NA>       <NA>                   1st
+#> 20622             City                 <NA>         CC                   1st
+#> 20685              Mun                 <NA>       <NA>                   1st
+#> 20735              Mun                 <NA>       <NA>                   1st
+#> 20770              Mun                 <NA>       <NA>                   1st
+#> 20795              Mun                 <NA>       <NA>                   1st
+#> 20805              Mun                 <NA>       <NA>                   1st
+#> 20832              Mun                 <NA>       <NA>                   1st
+#> 20861             City                 <NA>         CC                   1st
+#> 20951              Mun                 <NA>       <NA>                   1st
+#> 20975              Mun                 <NA>       <NA>                   1st
+#> 20993              Mun                 <NA>       <NA>                   1st
+#> 21045              Mun     Bitulok & Sabani       <NA>                   1st
+#> 21062             City                 <NA>         CC                   3rd
+#> 21086              Mun                 <NA>       <NA>                   2nd
+#> 21107              Mun               Papaya       <NA>                   1st
+#> 21121              Mun                 <NA>       <NA>                   1st
+#> 21186              Mun                 <NA>       <NA>                   1st
+#> 21214              Mun                 <NA>       <NA>                   1st
+#> 21232              Mun                 <NA>       <NA>                   3rd
+#> 21244              Mun                 <NA>       <NA>                   2nd
+#> 21267              Mun                 <NA>       <NA>                   2nd
+#> 21292             City                 <NA>         CC                   4th
+#> 21330              Mun                 <NA>       <NA>                   4th
+#> 21352             City                 <NA>         CC                   4th
+#> 21372              Mun                 <NA>       <NA>                   1st
+#> 21387              Mun                 <NA>       <NA>                   2nd
+#> 21398              Mun                 <NA>       <NA>                   2nd
+#> 21415              Mun                 <NA>       <NA>                   1st
+#> 21442              Mun                 <NA>       <NA>                   1st
+#> 21459              Mun                 <NA>       <NA>                   1st
+#> 21469             City                 <NA>         CC                   2nd
+#> 21508              Mun                 <NA>       <NA>                   1st
+#> 21524              Mun                 <NA>       <NA>                   1st
 #> 21558              Mun                 <NA>       <NA>                   1st
-#> 21588              Mun                 <NA>       <NA>                   1st
-#> 21617              Mun                 <NA>       <NA>                   1st
-#> 21643              Mun                 <NA>       <NA>                   1st
-#> 21686             City                 <NA>         CC                   4th
-#> 21716              Mun                 <NA>       <NA>                   4th
-#> 21728              Mun                 <NA>       <NA>                   2nd
-#> 21748             City                 <NA>         CC                   3rd
-#> 21764              Mun                 <NA>       <NA>                   1st
-#> 21786              Mun                 <NA>       <NA>                   2nd
-#> 21807              Mun                 <NA>       <NA>                   1st
-#> 21825              Mun                 <NA>       <NA>                   1st
-#> 21847              Mun                 <NA>       <NA>                   1st
-#> 21861              Mun                 <NA>       <NA>                   1st
-#> 21882              Mun                 <NA>       <NA>                   1st
-#> 21916             City                 <NA>         CC                   2nd
-#> 21959              Mun                 <NA>       <NA>                   1st
-#> 21997              Mun                 <NA>       <NA>                   4th
-#> 22012              Mun                 <NA>       <NA>                   1st
-#> 22027              Mun                 <NA>       <NA>                   1st
-#> 22042              Mun                 <NA>       <NA>                   4th
-#> 22057              Mun                 <NA>       <NA>                   1st
-#> 22077              Mun                 <NA>       <NA>                   1st
-#> 22097              Mun                 <NA>       <NA>                   1st
-#> 22113             City                 <NA>         CC                   3rd
-#> 22142              Mun                 <NA>       <NA>                   1st
-#> 22164              Mun                 <NA>       <NA>                   5th
-#> 22178              Mun                 <NA>       <NA>                   1st
-#> 22205              Mun                 <NA>       <NA>                   3rd
-#> 22223              Mun                 <NA>       <NA>                   4th
-#> 22238              Mun                 <NA>       <NA>                   4th
-#> 22254              Mun                 <NA>       <NA>                   1st
-#> 22276              Mun                 <NA>       <NA>                   1st
-#> 22292              Mun                 <NA>       <NA>                   1st
-#> 22320              Mun                 <NA>       <NA>                   3rd
-#> 22331              Mun                 <NA>       <NA>                   4th
-#> 22342              Mun                 <NA>       <NA>                   1st
-#> 22368              Mun                 <NA>       <NA>                   2nd
-#> 22387              Mun                 <NA>       <NA>                   2nd
-#> 22413              Mun                 <NA>       <NA>                   2nd
-#> 22426             City                 <NA>         CC                   1st
-#> 22449             City                 <NA>         CC                   1st
-#> 22488              Mun                 <NA>       <NA>                   1st
-#> 22543              Mun                 <NA>       <NA>                   4th
-#> 22555             City                 <NA>        HUC                   1st
-#> 22636             City                 Opon        HUC                   1st
-#> 22667             City                 <NA>        HUC                   1st
-#> 22697              Mun                 <NA>       <NA>                  4th*
-#> 22718              Mun                 <NA>       <NA>                   3rd
-#> 22732              Mun                 <NA>       <NA>                   4th
-#> 22748             City                 <NA>         CC                   2nd
-#> 22810              Mun                 <NA>       <NA>                   2nd
-#> 22839              Mun                 <NA>       <NA>                   1st
-#> 22886              Mun                 <NA>       <NA>                   4th
-#> 22917              Mun                 <NA>       <NA>                   4th
-#> 22936              Mun                 <NA>       <NA>                   1st
-#> 22997              Mun                 <NA>       <NA>                   5th
-#> 23011              Mun                 <NA>       <NA>                   4th
-#> 23025              Mun                 <NA>       <NA>                   4th
-#> 23042              Mun                 <NA>       <NA>                   1st
-#> 23076              Mun                 <NA>       <NA>                   4th
-#> 23089              Mun                 <NA>       <NA>                   2nd
-#> 23110              Mun                 <NA>       <NA>                   5th
-#> 23127              Mun                 <NA>       <NA>                   2nd
-#> 23170              Mun                 <NA>       <NA>                   4th
-#> 23196              Mun                 <NA>       <NA>                   3rd
-#> 23238              Mun                 <NA>       <NA>                   4th
-#> 23255              Mun                 <NA>       <NA>                   4th
-#> 23273              Mun                 <NA>       <NA>                   4th
-#> 23292              Mun                 <NA>       <NA>                   3rd
-#> 23318              Mun                 <NA>       <NA>                   1st
-#> 23382              Mun                 <NA>       <NA>                   1st
-#> 23437              Mun                 <NA>       <NA>                   1st
-#> 23454              Mun                 <NA>       <NA>                   3rd
-#> 23480              Mun                 <NA>       <NA>                   3rd
-#> 23518              Mun                 <NA>       <NA>                   2nd
-#> 23551             City                 <NA>         CC                   1st
-#> 23644              Mun                 <NA>       <NA>                   1st
-#> 23722              Mun                 <NA>       <NA>                   3rd
-#> 23776              Mun                 <NA>       <NA>                   2nd
-#> 23798              Mun                 <NA>       <NA>                   1st
-#> 23848              Mun                 <NA>       <NA>                   2nd
-#> 23914              Mun                 <NA>       <NA>                   2nd
-#> 23960              Mun                 <NA>       <NA>                   1st
-#> 24012              Mun                 <NA>       <NA>                   4th
-#> 24033              Mun                 <NA>       <NA>                   4th
-#> 24054              Mun                 <NA>       <NA>                   1st
-#> 24079              Mun                 <NA>       <NA>                   1st
-#> 24126              Mun                Bugho       <NA>                   3rd
-#> 24155              Mun                 <NA>       <NA>                   4th
-#> 24182              Mun                 <NA>       <NA>                   1st
-#> 24206              Mun                 <NA>       <NA>                   4th
-#> 24242              Mun                 <NA>       <NA>                   2nd
+#> 21583              Mun                 <NA>       <NA>                   1st
+#> 21637              Mun                 <NA>       <NA>                   3rd
+#> 21666              Mun                 <NA>       <NA>                   1st
+#> 21687              Mun                 <NA>       <NA>                   1st
+#> 21700              Mun                 <NA>       <NA>                   1st
+#> 21731              Mun                 <NA>       <NA>                   1st
+#> 21753              Mun                 <NA>       <NA>                   1st
+#> 21787              Mun                 <NA>       <NA>                   1st
+#> 21821              Mun                 <NA>       <NA>                   1st
+#> 21853              Mun                 <NA>       <NA>                   1st
+#> 21898             City                 <NA>         CC                   1st
+#> 21926              Mun                 <NA>       <NA>                   1st
+#> 21952              Mun                 <NA>       <NA>                   1st
+#> 21980              Mun                 <NA>       <NA>                   1st
+#> 22007              Mun                 <NA>       <NA>                   1st
+#> 22051              Mun                 <NA>       <NA>                   2nd
+#> 22067              Mun                 <NA>       <NA>                   1st
+#> 22097             City                 <NA>         CC                   1st
+#> 22133              Mun                 <NA>       <NA>                   2nd
+#> 22151              Mun                 <NA>       <NA>                   1st
+#> 22166              Mun                 <NA>       <NA>                   1st
+#> 22181              Mun                 <NA>       <NA>                   2nd
+#> 22192              Mun                 <NA>       <NA>                   2nd
+#> 22200              Mun              Sexmoan       <NA>                   3rd
+#> 22214              Mun                 <NA>       <NA>                   4th
+#> 22233              Mun                 <NA>       <NA>                   1st
+#> 22249              Mun                 <NA>       <NA>                   1st
+#> 22311              Mun                 <NA>       <NA>                   1st
+#> 22332              Mun                 <NA>       <NA>                   1st
+#> 22378              Mun                 <NA>       <NA>                   1st
+#> 22423              Mun                 <NA>       <NA>                   1st
+#> 22445              Mun                 <NA>       <NA>                   1st
+#> 22470              Mun                 <NA>       <NA>                   1st
+#> 22508              Mun                 <NA>       <NA>                   1st
+#> 22544              Mun                 <NA>       <NA>                   3rd
+#> 22561              Mun                 <NA>       <NA>                   4th
+#> 22571              Mun                 <NA>       <NA>                   4th
+#> 22584              Mun                 <NA>       <NA>                   1st
+#> 22600              Mun                 <NA>       <NA>                   1st
+#> 22625             City                 <NA>         CC                   1st
+#> 22702              Mun                 <NA>       <NA>                   1st
+#> 22729              Mun                 <NA>       <NA>                   1st
+#> 22744              Mun                 <NA>       <NA>                   1st
+#> 22776              Mun                 <NA>       <NA>                   2nd
+#> 22799              Mun                 <NA>       <NA>                   1st
+#> 22816              Mun                 <NA>       <NA>                   1st
+#> 22831              Mun                 <NA>       <NA>                   1st
+#> 22846              Mun                 <NA>       <NA>                   1st
+#> 22860              Mun                 <NA>       <NA>                   1st
+#> 22880              Mun                 <NA>       <NA>                   1st
+#> 22895              Mun                 <NA>       <NA>                   3rd
+#> 22907              Mun                 <NA>       <NA>                   1st
+#> 22926              Mun                 <NA>       <NA>                   3rd
+#> 22944              Mun                 <NA>       <NA>                   1st
+#> 22970              Mun                 <NA>       <NA>                   1st
+#> 22988              Mun                 <NA>       <NA>                   1st
+#> 23002              Mun                 <NA>       <NA>                   1st
+#> 23027              Mun                 <NA>       <NA>                   2nd
+#> 23039              Mun                 <NA>       <NA>                   3rd
+#> 23049              Mun                 <NA>       <NA>                   2nd
+#> 23061              Mun                 <NA>       <NA>                   1st
+#> 23087              Mun                 <NA>       <NA>                   1st
+#> 23128              Mun                 <NA>       <NA>                   1st
+#> 23147             City                 <NA>        HUC                   1st
+#> 23181             City                 <NA>        HUC                   1st
+#> 23201              Mun                 <NA>       <NA>                   2nd
+#> 23223              Mun                 <NA>       <NA>                   4th
+#> 23243              Mun                 <NA>       <NA>                   1st
+#> 23292              Mun                 <NA>       <NA>                   4th
+#> 23306             City                 <NA>         CC                   1st
+#> 23412              Mun                 <NA>       <NA>                   1st
+#> 23453             City                 <NA>         CC                   3rd
+#> 23493              Mun                 <NA>       <NA>                   1st
+#> 23519              Mun                 <NA>       <NA>                   2nd
+#> 23541              Mun                 <NA>       <NA>                   1st
+#> 23568              Mun                 <NA>       <NA>                   2nd
+#> 23590              Mun                 <NA>       <NA>                   1st
+#> 23637              Mun                 <NA>       <NA>                   1st
+#> 23657             City                 <NA>         CC                   1st
+#> 23730              Mun                 <NA>       <NA>                   1st
+#> 23757              Mun                 <NA>       <NA>                   1st
+#> 23792              Mun                 <NA>       <NA>                   1st
+#> 23808              Mun                 <NA>       <NA>                   3rd
+#> 23825              Mun                 <NA>       <NA>                   1st
+#> 23868              Mun                 <NA>       <NA>                   1st
+#> 23887              Mun                 <NA>       <NA>                   1st
+#> 23936              Mun                 <NA>       <NA>                   1st
+#> 23970              Mun                 <NA>       <NA>                   1st
+#> 24013              Mun                 <NA>       <NA>                   3rd
+#> 24040              Mun                 <NA>       <NA>                   4th
+#> 24059              Mun                 <NA>       <NA>                   1st
+#> 24089              Mun                 <NA>       <NA>                   4th
+#> 24107             City                 <NA>         CC                   1st
+#> 24138              Mun                 <NA>       <NA>                   1st
+#> 24181              Mun                 <NA>       <NA>                   1st
+#> 24203             City                 <NA>         CC                   1st
+#> 24252              Mun                 <NA>       <NA>                   1st
 #> 24273              Mun                 <NA>       <NA>                   4th
-#> 24305              Mun                 <NA>       <NA>                   3rd
-#> 24334              Mun                 <NA>       <NA>                   4th
-#> 24356              Mun                 <NA>       <NA>                   2nd
-#> 24387              Mun                 <NA>       <NA>                   4th
-#> 24404              Mun                 <NA>       <NA>                   3rd
-#> 24427             City                 <NA>        ICC                   1st
-#> 24513              Mun                 <NA>       <NA>                   1st
-#> 24547              Mun                 <NA>       <NA>                   1st
-#> 24598              Mun                 <NA>       <NA>                   4th
-#> 24628              Mun                 <NA>       <NA>                   3rd
-#> 24648              Mun                 <NA>       <NA>                   3rd
-#> 24670              Mun                 <NA>       <NA>                   4th
-#> 24691              Mun                 <NA>       <NA>                   3rd
-#> 24705              Mun                 <NA>       <NA>                   5th
-#> 24722              Mun                 <NA>       <NA>                   1st
-#> 24777              Mun                 <NA>       <NA>                   4th
-#> 24793              Mun                 <NA>       <NA>                   5th
-#> 24802              Mun                 <NA>       <NA>                   2nd
-#> 24839              Mun                 <NA>       <NA>                   4th
-#> 24860              Mun                 <NA>       <NA>                   5th
-#> 24869              Mun                 <NA>       <NA>                   3rd
-#> 24888              Mun                 <NA>       <NA>                   5th
-#> 24901              Mun                 <NA>       <NA>                   1st
-#> 24957              Mun                 <NA>       <NA>                   2nd
-#> 25005              Mun                 <NA>       <NA>                   3rd
-#> 25032              Mun                 <NA>       <NA>                   1st
-#> 25089              Mun                 <NA>       <NA>                   5th
-#> 25105              Mun                 <NA>       <NA>                   2nd
-#> 25159              Mun                 <NA>       <NA>                   3rd
-#> 25186              Mun                 <NA>       <NA>                   4th
-#> 25200              Mun                 <NA>       <NA>                   1st
-#> 25225              Mun                 <NA>       <NA>                   2nd
-#> 25258              Mun                 <NA>       <NA>                   2nd
-#> 25285              Mun                 <NA>       <NA>                   5th
-#> 25297              Mun                 <NA>       <NA>                   5th
-#> 25308              Mun                 <NA>       <NA>                   2nd
-#> 25323              Mun                 <NA>       <NA>                   4th
-#> 25340              Mun                 <NA>       <NA>                   3rd
-#> 25357              Mun                 <NA>       <NA>                   5th
-#> 25365              Mun                 <NA>       <NA>                   3rd
-#> 25392              Mun                 <NA>       <NA>                   4th
-#> 25409              Mun                 <NA>       <NA>                   3rd
-#> 25433              Mun                 <NA>       <NA>                   5th
-#> 25457              Mun                 <NA>       <NA>                   1st
-#> 25509             City                 <NA>         CC                   1st
-#> 25667              Mun                 <NA>       <NA>                   2nd
-#> 25709             City                 <NA>         CC                   3rd
-#> 25767              Mun                 <NA>       <NA>                   2nd
-#> 25826              Mun                 <NA>       <NA>                   1st
-#> 25896              Mun                 <NA>       <NA>                   2nd
-#> 25918              Mun                 <NA>       <NA>                   4th
-#> 25953              Mun                 <NA>       <NA>                   4th
-#> 25978              Mun                 <NA>       <NA>                   4th
-#> 25999              Mun                 <NA>       <NA>                   4th
-#> 26030              Mun                 <NA>       <NA>                   3rd
-#> 26055              Mun                 <NA>       <NA>                   3rd
-#> 26070              Mun                 <NA>       <NA>                   5th
-#> 26085              Mun                 <NA>       <NA>                   3rd
-#> 26122              Mun                 <NA>       <NA>                   1st
-#> 26161              Mun                 <NA>       <NA>                   5th
-#> 26175              Mun                 <NA>       <NA>                   5th
-#> 26187              Mun                 <NA>       <NA>                   3rd
-#> 26229              Mun                 <NA>       <NA>                   3rd
-#> 26268              Mun               Wright       <NA>                   1st
-#> 26313              Mun                 <NA>       <NA>                   4th
-#> 26339              Mun                 <NA>       <NA>                   5th
-#> 26354              Mun                 <NA>       <NA>                   3rd
-#> 26396              Mun                 <NA>       <NA>                   5th
-#> 26411              Mun                 <NA>       <NA>                   5th
-#> 26426              Mun                 <NA>       <NA>                   3rd
-#> 26467              Mun                 <NA>       <NA>                   2nd
-#> 26508              Mun                 <NA>       <NA>                   4th
-#> 26526              Mun                 <NA>       <NA>                   4th
-#> 26541              Mun                 <NA>       <NA>                   3rd
-#> 26566             City                 <NA>         CC                   3rd
-#> 26637              Mun                 <NA>       <NA>                   3rd
-#> 26668              Mun                 <NA>       <NA>                   4th
-#> 26706              Mun                 <NA>       <NA>                   5th
-#> 26718              Mun                 <NA>       <NA>                   5th
-#> 26742              Mun                 <NA>       <NA>                   3rd
-#> 26773              Mun                 <NA>       <NA>                   4th
-#> 26796              Mun             Cabalian       <NA>                   4th
-#> 26815              Mun                 <NA>       <NA>                   5th
-#> 26831              Mun                 <NA>       <NA>                   4th
-#> 26847              Mun                 <NA>       <NA>                   1st
-#> 26893              Mun                 <NA>       <NA>                   4th
-#> 26923              Mun                 <NA>       <NA>                   5th
-#> 26931              Mun                 <NA>       <NA>                   4th
-#> 26945              Mun                 <NA>       <NA>                   4th
-#> 26957              Mun                 <NA>       <NA>                   4th
-#> 26971              Mun                 <NA>       <NA>                   4th
-#> 26989              Mun                 <NA>       <NA>                   4th
-#> 27007              Mun                 <NA>       <NA>                   4th
-#> 27028              Mun                 <NA>       <NA>                   5th
-#> 27044              Mun                 <NA>       <NA>                   1st
-#> 27071             City                 <NA>        HUC                   1st
-#> 27212              Mun                 <NA>       <NA>                   1st
-#> 27247              Mun                 <NA>       <NA>                   1st
-#> 27256              Mun                 <NA>       <NA>                   3rd
-#> 27266              Mun                 <NA>       <NA>                   3rd
-#> 27279              Mun                 <NA>       <NA>                   2nd
-#> 27307              Mun            Marunggas       <NA>                   5th
-#> 27313              Mun                 <NA>       <NA>                   2nd
-#> 27345              Mun                 <NA>       <NA>                   2nd
-#> 27362              Mun                 <NA>       <NA>                   1st
-#> 27403              Mun                 <NA>       <NA>                   4th
-#> 27418              Mun                 <NA>       <NA>                   1st
-#> 27449              Mun                 <NA>       <NA>                   1st
-#> 27500              Mun                 <NA>       <NA>                   1st
-#> 27553              Mun                 <NA>       <NA>                   4th
-#> 27569              Mun                 <NA>       <NA>                   2nd
-#> 27584              Mun          New Panamao       <NA>                   3rd
-#> 27597              Mun                 <NA>       <NA>                   4th
-#> 27615              Mun                 <NA>       <NA>                   3rd
-#> 27632              Mun                 <NA>       <NA>                   4th
-#> 27642             City                 <NA>         CC                   2nd
-#> 27693             City                 <NA>         CC                   2nd
-#> 27715              Mun                 <NA>       <NA>                   1st
-#> 27746              Mun                 <NA>       <NA>                   5th
-#> 27760              Mun                 <NA>       <NA>                   2nd
-#> 27781              Mun                 <NA>       <NA>                   2nd
-#> 27819              Mun                 <NA>       <NA>                   1st
-#> 27842              Mun                 <NA>       <NA>                   4th
-#> 27859              Mun            New Piñan       <NA>                   3rd
-#> 27882              Mun                 <NA>       <NA>                   1st
-#> 27913              Mun                 <NA>       <NA>                   1st
-#> 27945              Mun                 <NA>       <NA>                   4th
-#> 27968              Mun                 <NA>       <NA>                   2nd
-#> 27992              Mun                 <NA>       <NA>                   1st
-#> 28032              Mun                 <NA>       <NA>                   1st
-#> 28055              Mun                 <NA>       <NA>                   1st
-#> 28084              Mun                 <NA>       <NA>                   4th
-#> 28101              Mun                 <NA>       <NA>                   1st
-#> 28154              Mun                 <NA>       <NA>                   1st
-#> 28181              Mun                 <NA>       <NA>                   2nd
-#> 28216              Mun                 <NA>       <NA>                   3rd
-#> 28237              Mun                Ponot       <NA>                   3rd
-#> 28256              Mun                 <NA>       <NA>                   1st
-#> 28290              Mun                 <NA>       <NA>                   1st
-#> 28308              Mun                 <NA>       <NA>                   3rd
-#> 28326              Mun             Bacungan       <NA>                   2nd
-#> 28345              Mun                 <NA>       <NA>                   3rd
-#> 28361              Mun                 <NA>       <NA>                   1st
-#> 28406              Mun                 <NA>       <NA>                   1st
-#> 28435              Mun                 <NA>       <NA>                   3rd
-#> 28460              Mun                 <NA>       <NA>                   2nd
-#> 28491              Mun                 <NA>       <NA>                   2nd
-#> 28522              Mun                 <NA>       <NA>                   1st
-#> 28567              Mun                 <NA>       <NA>                   2nd
-#> 28586              Mun                 <NA>       <NA>                   2nd
-#> 28612              Mun                 <NA>       <NA>                   2nd
-#> 28639              Mun                 <NA>       <NA>                   1st
-#> 28669              Mun                 <NA>       <NA>                   2nd
-#> 28687              Mun                 <NA>       <NA>                   2nd
-#> 28721              Mun                 <NA>       <NA>                   1st
-#> 28747             City                 <NA>         CC                   1st
-#> 28802              Mun               Liargo       <NA>                   3rd
-#> 28830              Mun                 <NA>       <NA>                   3rd
-#> 28849              Mun                 <NA>       <NA>                   3rd
-#> 28878              Mun                 <NA>       <NA>                   3rd
-#> 28894              Mun                 <NA>       <NA>                   2nd
-#> 28926              Mun                 <NA>       <NA>                   2nd
-#> 28952              Mun                 <NA>       <NA>                   3rd
-#> 28967              Mun                 <NA>       <NA>                   4th
-#> 28982              Mun                 <NA>       <NA>                   3rd
-#> 28998              Mun   Don Mariano Marcos       <NA>                   4th
-#> 29017              Mun                 <NA>       <NA>                   4th
-#> 29032              Mun                 <NA>       <NA>                   4th
-#> 29050              Mun                 <NA>       <NA>                   4th
-#> 29070              Mun                 <NA>       <NA>                   2nd
-#> 29098              Mun                 <NA>       <NA>                   2nd
-#> 29126              Mun                 <NA>       <NA>                   1st
-#> 29149              Mun                 <NA>       <NA>                   3rd
-#> 29169              Mun                 <NA>       <NA>                   1st
-#> 29198              Mun                 <NA>       <NA>                   1st
-#> 29228              Mun                 <NA>       <NA>                   3rd
-#> 29247              Mun                 <NA>       <NA>                   1st
-#> 29273              Mun                 <NA>       <NA>                   1st
-#> 29297              Mun                 <NA>       <NA>                   2nd
-#> 29317              Mun                 <NA>       <NA>                   2nd
-#> 29346              Mun                 <NA>       <NA>                   1st
-#> 29373              Mun                 <NA>       <NA>                   1st
-#> 29403              Mun                 <NA>       <NA>                   4th
-#> 29418              Mun                 <NA>       <NA>                   1st
-#> 29449              Mun                 <NA>       <NA>                   1st
-#> 29475             City                 <NA>        HUC                   1st
-#> 29575             City                 <NA>         CC                   3rd
-#> 29623              Mun                 <NA>       <NA>                   1st
-#> 29640              Mun                 <NA>       <NA>                   2nd
-#> 29658              Mun                 <NA>       <NA>                   1st
-#> 29673              Mun                 <NA>       <NA>                   1st
-#> 29703              Mun                 <NA>       <NA>                   1st
-#> 29717              Mun                 <NA>       <NA>                   2nd
-#> 29735              Mun                 <NA>       <NA>                   1st
-#> 29750              Mun                 <NA>       <NA>                   1st
-#> 29774              Mun                 <NA>       <NA>                   1st
-#> 29810              Mun                 <NA>       <NA>                   1st
-#> 29825              Mun                 <NA>       <NA>                   1st
-#> 29840             City                 <NA>         CC                   1st
-#> 29887              Mun                 <NA>       <NA>                   1st
-#> 29899              Mun                 <NA>       <NA>                   1st
-#> 29922              Mun                 <NA>       <NA>                   1st
-#> 29943              Mun                 <NA>       <NA>                   1st
-#> 29963              Mun                 <NA>       <NA>                   1st
-#> 29995              Mun                 <NA>       <NA>                   1st
-#> 30020              Mun                 <NA>       <NA>                   2nd
-#> 30031              Mun                 <NA>       <NA>                   1st
-#> 30061             City                 <NA>         CC                   1st
-#> 30093              Mun                 <NA>       <NA>                   2nd
-#> 30110              Mun                 <NA>       <NA>                   4th
-#> 30125              Mun                 <NA>       <NA>                   5th
-#> 30133              Mun                 <NA>       <NA>                   4th
-#> 30147              Mun                 <NA>       <NA>                   2nd
-#> 30163              Mun                 <NA>       <NA>                   5th
+#> 24289              Mun                 <NA>       <NA>                   2nd
+#> 24313              Mun                 <NA>       <NA>                   1st
+#> 24346              Mun                 <NA>       <NA>                   2nd
+#> 24373             City                 <NA>         CC                   1st
+#> 24421             City                 <NA>         CC                   2nd
+#> 24436             City                 <NA>         CC                   4th
+#> 24521             City                 <NA>         CC                   1st
+#> 24597              Mun                 <NA>       <NA>                   4th
+#> 24612             City                 <NA>         CC                   1st
+#> 24646             City                 <NA>         CC                   1st
+#> 24744              Mun                 <NA>       <NA>                   1st
+#> 24781              Mun                 <NA>       <NA>                   1st
+#> 24805              Mun                 <NA>       <NA>                   3rd
+#> 24822              Mun                 <NA>       <NA>                   2nd
+#> 24850              Mun         Mendez-Nuñez       <NA>                   2nd
+#> 24875              Mun                 <NA>       <NA>                   1st
+#> 24906              Mun                 <NA>       <NA>                   1st
+#> 24923              Mun                 <NA>       <NA>                   1st
+#> 24944              Mun                 <NA>       <NA>                   1st
+#> 25009             City                 <NA>         CC                   1st
+#> 25044              Mun                 <NA>       <NA>                   1st
+#> 25086              Mun                 <NA>       <NA>                   3rd
+#> 25097             City                 <NA>         CC                   2nd
+#> 25111              Mun                 <NA>       <NA>                   1st
+#> 25140              Mun                 <NA>       <NA>                   1st
+#> 25156              Mun                 <NA>       <NA>                   1st
+#> 25172             City                 <NA>         CC                   1st
+#> 25197             City                 <NA>         CC                   1st
+#> 25216             City                 <NA>         CC                   1st
+#> 25271              Mun                 <NA>       <NA>                   1st
+#> 25289              Mun                 <NA>       <NA>                   2nd
+#> 25309              Mun                 <NA>       <NA>                   4th
+#> 25330              Mun                 <NA>       <NA>                   3rd
+#> 25334              Mun                 <NA>       <NA>                   3rd
+#> 25368              Mun                 <NA>       <NA>                   1st
+#> 25383              Mun                 <NA>       <NA>                   4th
+#> 25407              Mun                 <NA>       <NA>                   3rd
+#> 25424              Mun                 <NA>       <NA>                   4th
+#> 25440              Mun                 <NA>       <NA>                   3rd
+#> 25465              Mun                 <NA>       <NA>                   3rd
+#> 25506              Mun                 <NA>       <NA>                   1st
+#> 25559              Mun                 <NA>       <NA>                   4th
+#> 25569              Mun                 <NA>       <NA>                   2nd
+#> 25586              Mun                 <NA>       <NA>                   3rd
+#> 25600              Mun                 <NA>       <NA>                   3rd
+#> 25609              Mun                 <NA>       <NA>                   1st
+#> 25627              Mun                 <NA>       <NA>                   4th
+#> 25639             City                 <NA>         CC                   1st
+#> 25720             City                 <NA>         CC                   1st
+#> 25748              Mun                 <NA>       <NA>                   1st
+#> 25775              Mun                 <NA>       <NA>                   2nd
+#> 25801             City                 <NA>         CC                   1st
+#> 25820              Mun                 <NA>       <NA>                   1st
+#> 25841              Mun                 <NA>       <NA>                   2nd
+#> 25852              Mun                 <NA>       <NA>                   5th
+#> 25865              Mun                 <NA>       <NA>                   4th
+#> 25885              Mun                 <NA>       <NA>                   1st
+#> 25928              Mun                 <NA>       <NA>                   2nd
+#> 25966              Mun                 <NA>       <NA>                   3rd
+#> 25980              Mun                 <NA>       <NA>                   1st
+#> 26062              Mun                 <NA>       <NA>                   1st
+#> 26088              Mun                 <NA>       <NA>                   1st
+#> 26135              Mun                 <NA>       <NA>                   3rd
+#> 26152              Mun                 <NA>       <NA>                   3rd
+#> 26180              Mun                 <NA>       <NA>                   1st
+#> 26200              Mun                 <NA>       <NA>                   1st
+#> 26255              Mun                 <NA>       <NA>                   1st
+#> 26315              Mun                 <NA>       <NA>                   1st
+#> 26352              Mun                 <NA>       <NA>                   5th
+#> 26358              Mun                 <NA>       <NA>                   1st
+#> 26454              Mun                 <NA>       <NA>                   1st
+#> 26487              Mun                 <NA>       <NA>                   3rd
+#> 26518              Mun                 <NA>       <NA>                   1st
+#> 26559              Mun                 <NA>       <NA>                   1st
+#> 26588              Mun                 <NA>       <NA>                   4th
+#> 26611              Mun                 <NA>       <NA>                   1st
+#> 26639              Mun                 <NA>       <NA>                   3rd
+#> 26653              Mun                 <NA>       <NA>                   4th
+#> 26660              Mun                 <NA>       <NA>                   4th
+#> 26675              Mun                 <NA>       <NA>                   4th
+#> 26715              Mun                 <NA>       <NA>                   5th
+#> 26725              Mun                 <NA>       <NA>                   1st
+#> 26746              Mun                 <NA>       <NA>                   4th
+#> 26771              Mun                 <NA>       <NA>                   1st
+#> 26789              Mun                 <NA>       <NA>                   4th
+#> 26804              Mun                 <NA>       <NA>                   2nd
+#> 26812              Mun                 <NA>       <NA>                   3rd
+#> 26833              Mun               Aurora       <NA>                   1st
+#> 26850              Mun                 <NA>       <NA>                   1st
+#> 26875              Mun                 <NA>       <NA>                   1st
+#> 26919              Mun                 <NA>       <NA>                   1st
+#> 26965             City                 <NA>         CC                   3rd
+#> 27032              Mun                 <NA>       <NA>                   1st
+#> 27064              Mun                 <NA>       <NA>                   3rd
+#> 27102              Mun                 <NA>       <NA>                   1st
+#> 27113             City                 <NA>         CC                   1st
+#> 27130              Mun                 <NA>       <NA>                   1st
+#> 27141              Mun                 <NA>       <NA>                   1st
+#> 27182              Mun                 <NA>       <NA>                   1st
+#> 27190              Mun                 <NA>       <NA>                   2nd
+#> 27209              Mun                 <NA>       <NA>                   3rd
+#> 27221              Mun            Montalban       <NA>                   1st
+#> 27233              Mun                 <NA>       <NA>                   1st
+#> 27242              Mun                 <NA>       <NA>                   1st
+#> 27252              Mun                 <NA>       <NA>                   1st
+#> 27268              Mun                 <NA>       <NA>                   1st
+#> 27289              Mun                 <NA>       <NA>                   1st
+#> 27295              Mun                 <NA>       <NA>                   1st
+#> 27305             City                 <NA>        HUC                   1st
+#> 27341              Mun                 <NA>       <NA>                   1st
+#> 27398              Mun                 <NA>       <NA>                   1st
+#> 27449              Mun               Locsin       <NA>                   1st
+#> 27504              Mun                 <NA>       <NA>                   1st
+#> 27549              Mun                 <NA>       <NA>                   4th
+#> 27573             City                 <NA>         CC                   1st
+#> 27644              Mun                 <NA>       <NA>                   1st
+#> 27692             City                 <NA>         CC                   3rd
+#> 27748              Mun                 <NA>       <NA>                   1st
+#> 27767              Mun                 <NA>       <NA>                   2nd
+#> 27797              Mun                 <NA>       <NA>                   2nd
+#> 27813              Mun                 <NA>       <NA>                   1st
+#> 27867              Mun                 <NA>       <NA>                   1st
+#> 27901              Mun                 <NA>       <NA>                   1st
+#> 27946              Mun                 <NA>       <NA>                   2nd
+#> 27981              Mun                Libog       <NA>                   2nd
+#> 28005             City                 <NA>         CC                   3rd
+#> 28053              Mun                 <NA>       <NA>                   1st
+#> 28080              Mun                 <NA>       <NA>                   1st
+#> 28110              Mun                 <NA>       <NA>                   1st
+#> 28133              Mun                 <NA>       <NA>                   1st
+#> 28159              Mun               Imelda       <NA>                   5th
+#> 28172              Mun                 <NA>       <NA>                   1st
+#> 28200              Mun                 <NA>       <NA>                   1st
+#> 28253              Mun                 <NA>       <NA>                   1st
+#> 28280              Mun                 <NA>       <NA>                   1st
+#> 28308              Mun                 <NA>       <NA>                   4th
+#> 28318              Mun                 <NA>       <NA>                   1st
+#> 28338              Mun                 <NA>       <NA>                   4th
+#> 28354              Mun                 <NA>       <NA>                   2nd
+#> 28375              Mun                 <NA>       <NA>                   1st
+#> 28406              Mun                 <NA>       <NA>                   3rd
+#> 28424              Mun                 <NA>       <NA>                   2nd
+#> 28458              Mun                 <NA>       <NA>                   4th
+#> 28467              Mun                 <NA>       <NA>                   1st
+#> 28506              Mun                 <NA>       <NA>                   1st
+#> 28540              Mun                 <NA>       <NA>                   4th
+#> 28550              Mun                 <NA>       <NA>                   1st
+#> 28599              Mun                 <NA>       <NA>                   4th
+#> 28613              Mun                 <NA>       <NA>                   3rd
+#> 28638              Mun                 <NA>       <NA>                   1st
+#> 28688              Mun                 <NA>       <NA>                   3rd
+#> 28721              Mun                 <NA>       <NA>                   5th
+#> 28730              Mun                 <NA>       <NA>                   2nd
+#> 28754              Mun                 <NA>       <NA>                   1st
+#> 28789             City                 <NA>         CC                   3rd
+#> 28826              Mun                 <NA>       <NA>                   1st
+#> 28865              Mun                 <NA>       <NA>                   1st
+#> 28941              Mun                 <NA>       <NA>                   2nd
+#> 28980              Mun                 <NA>       <NA>                   4th
+#> 28996              Mun                 <NA>       <NA>                   3rd
+#> 29017              Mun                 <NA>       <NA>                   1st
+#> 29043              Mun                 <NA>       <NA>                   1st
+#> 29086             City                 <NA>        ICC                   1st
+#> 29114              Mun                 <NA>       <NA>                   2nd
+#> 29140              Mun                 <NA>       <NA>                   3rd
+#> 29158              Mun                 <NA>       <NA>                   1st
+#> 29178              Mun                 <NA>       <NA>                   1st
+#> 29205              Mun             Parubcan       <NA>                   3rd
+#> 29224              Mun                 <NA>       <NA>                   1st
+#> 29263              Mun                 <NA>       <NA>                   2nd
+#> 29283              Mun                 <NA>       <NA>                   2nd
+#> 29306              Mun                 <NA>       <NA>                   3rd
+#> 29336              Mun                 <NA>       <NA>                   1st
+#> 29383              Mun                 <NA>       <NA>                   4th
+#> 29406              Mun                 <NA>       <NA>                   1st
+#> 29430              Mun                 <NA>       <NA>                   1st
+#> 29476              Mun                 <NA>       <NA>                   4th
+#> 29495              Mun                 <NA>       <NA>                   4th
+#> 29525              Mun                 <NA>       <NA>                   4th
+#> 29553              Mun                 <NA>       <NA>                   2nd
+#> 29581              Mun                 <NA>       <NA>                   4th
+#> 29591              Mun                 <NA>       <NA>                   4th
+#> 29618              Mun                 Payo       <NA>                   4th
+#> 29642              Mun             Calolbon       <NA>                   2nd
+#> 29681              Mun                 <NA>       <NA>                   4th
+#> 29706              Mun                 <NA>       <NA>                   3rd
+#> 29738              Mun                 <NA>       <NA>                   1st
+#> 29803              Mun                 <NA>       <NA>                   1st
+#> 29845              Mun                 <NA>       <NA>                   2nd
+#> 29870              Mun                 <NA>       <NA>                   2nd
+#> 29903              Mun                 <NA>       <NA>                   4th
+#> 29918              Mun                 <NA>       <NA>                   1st
+#> 29955              Mun                 <NA>       <NA>                   1st
+#> 29993              Mun                 <NA>       <NA>                   1st
+#> 30016              Mun                 <NA>       <NA>                   3rd
+#> 30037              Mun                 <NA>       <NA>                   4th
+#> 30058              Mun                 <NA>       <NA>                   1st
+#> 30085             City                 <NA>         CC                   3rd
+#> 30116              Mun                 <NA>       <NA>                   1st
+#> 30144              Mun                 <NA>       <NA>                   2nd
 #> 30174              Mun                 <NA>       <NA>                   3rd
-#> 30191              Mun                 <NA>       <NA>                   1st
-#> 30213              Mun                 <NA>       <NA>                   4th
-#> 30237              Mun                 <NA>       <NA>                   1st
-#> 30271              Mun            Karomatan       <NA>                   1st
-#> 30309              Mun                 <NA>       <NA>                   1st
-#> 30323              Mun                 <NA>       <NA>                   3rd
-#> 30350              Mun                 <NA>       <NA>                   1st
-#> 30378              Mun                 <NA>       <NA>                   4th
-#> 30387              Mun                 <NA>       <NA>                   3rd
-#> 30412              Mun                 <NA>       <NA>                   3rd
-#> 30426              Mun                 <NA>       <NA>                   4th
-#> 30439              Mun                 <NA>       <NA>                   2nd
-#> 30466              Mun                 <NA>       <NA>                   1st
-#> 30492              Mun                 <NA>       <NA>                   3rd
-#> 30513              Mun                 <NA>       <NA>                   2nd
-#> 30540              Mun                 <NA>       <NA>                   3rd
-#> 30566              Mun                 <NA>       <NA>                   4th
-#> 30584              Mun                 <NA>       <NA>                   4th
-#> 30592              Mun                 <NA>       <NA>                   4th
-#> 30611              Mun                 <NA>       <NA>                   1st
-#> 30636              Mun                 <NA>       <NA>                   4th
-#> 30659              Mun                 <NA>       <NA>                   3rd
-#> 30698              Mun                 <NA>       <NA>                   4th
-#> 30714              Mun                 <NA>       <NA>                   2nd
-#> 30743              Mun                 <NA>       <NA>                   3rd
-#> 30763              Mun                 <NA>       <NA>                   2nd
-#> 30793              Mun                 <NA>       <NA>                   5th
-#> 30812              Mun                 <NA>       <NA>                   2nd
-#> 30837              Mun                 <NA>       <NA>                   3rd
-#> 30866             City                 <NA>         CC                   3rd
-#> 30914             City                 <NA>         CC                   2nd
-#> 30966              Mun                 <NA>       <NA>                   4th
-#> 30983              Mun                 <NA>       <NA>                   1st
-#> 31017              Mun                 <NA>       <NA>                   4th
-#> 31046              Mun                 <NA>       <NA>                   4th
-#> 31064             City                 <NA>         CC                   3rd
-#> 31120              Mun                 <NA>       <NA>                   3rd
-#> 31154              Mun   Don Mariano Marcos       <NA>                   3rd
-#> 31167              Mun                 <NA>       <NA>                   1st
-#> 31184              Mun                 <NA>       <NA>                   1st
-#> 31215              Mun                 <NA>       <NA>                   4th
-#> 31225              Mun                 <NA>       <NA>                   5th
-#> 31234              Mun                 <NA>       <NA>                   1st
-#> 31259             City                 <NA>         CC                   4th
-#> 31275             City                 <NA>         CC                   1st
-#> 31355              Mun                 <NA>       <NA>                   2nd
-#> 31367              Mun                 <NA>       <NA>                   1st
-#> 31384              Mun                 <NA>       <NA>                   1st
-#> 31400              Mun                 <NA>       <NA>                   4th
-#> 31416              Mun                 <NA>       <NA>                   4th
-#> 31427              Mun                 <NA>       <NA>                   2nd
-#> 31439              Mun                 <NA>       <NA>                   4th
-#> 31449              Mun                 <NA>       <NA>                  3rd*
-#> 31458              Mun              Linugos       <NA>                   2nd
-#> 31484              Mun                 <NA>       <NA>                   2nd
-#> 31498              Mun                 <NA>       <NA>                   2nd
-#> 31518              Mun                 <NA>       <NA>                   3rd
-#> 31529              Mun                 <NA>       <NA>                   1st
-#> 31544              Mun                 <NA>       <NA>                   2nd
-#> 31563              Mun                 <NA>       <NA>                   5th
-#> 31574              Mun                 <NA>       <NA>                   1st
-#> 31585              Mun                 <NA>       <NA>                   3rd
-#> 31604              Mun                 <NA>       <NA>                   1st
-#> 31616             City                 <NA>        HUC                   1st
-#> 31697             City                 <NA>        HUC                   1st
-#> 31744              Mun                 Saug       <NA>                   1st
-#> 31765              Mun                 <NA>       <NA>                   1st
-#> 31786              Mun                 <NA>       <NA>                   1st
-#> 31801              Mun                 <NA>       <NA>                   1st
-#> 31822             City                 <NA>         CC                   1st
-#> 31863             City                 <NA>         CC                   2nd
-#> 31910              Mun                 <NA>       <NA>                   1st
-#> 31930             City                 <NA>         CC                   1st
-#> 31954              Mun                 <NA>       <NA>                   1st
-#> 31958              Mun                 <NA>       <NA>                   3rd
-#> 31964              Mun                 <NA>       <NA>                   3rd
-#> 31979              Mun                 <NA>       <NA>                   1st
-#> 32005             City                 <NA>         CC                   1st
-#> 32032              Mun                 <NA>       <NA>                   1st
-#> 32054              Mun                 <NA>       <NA>                   1st
-#> 32085              Mun                 <NA>       <NA>                   1st
-#> 32108              Mun                 <NA>       <NA>                   1st
-#> 32124              Mun                 <NA>       <NA>                   1st
-#> 32158              Mun                 <NA>       <NA>                   2nd
-#> 32176              Mun                 <NA>       <NA>                   1st
-#> 32195              Mun                 <NA>       <NA>                   2nd
-#> 32222              Mun                 <NA>       <NA>                   1st
-#> 32241              Mun                 <NA>       <NA>                   1st
-#> 32256              Mun                 <NA>       <NA>                   2nd
-#> 32265              Mun                 <NA>       <NA>                   1st
-#> 32283              Mun                 <NA>       <NA>                   1st
-#> 32300              Mun                 <NA>       <NA>                   1st
-#> 32321              Mun                 <NA>       <NA>                   1st
-#> 32343              Mun                 <NA>       <NA>                   1st
-#> 32361             City                 <NA>         CC                   1st
-#> 32388              Mun                 <NA>       <NA>                   2nd
-#> 32405              Mun                 <NA>       <NA>                   2nd
-#> 32417              Mun                 <NA>       <NA>                   1st
-#> 32434              Mun          San Vicente       <NA>                   1st
-#> 32475              Mun          Doña Alicia       <NA>                   1st
-#> 32487              Mun                 <NA>       <NA>                   1st
-#> 32525              Mun          San Mariano       <NA>                   1st
-#> 32550              Mun                 <NA>       <NA>                   1st
+#> 30186              Mun                 <NA>       <NA>                   3rd
+#> 30211              Mun             Limbuhan       <NA>                   4th
+#> 30230              Mun                 <NA>       <NA>                   1st
+#> 30266              Mun                 <NA>       <NA>                   4th
+#> 30293              Mun                 <NA>       <NA>                   3rd
+#> 30315              Mun                 <NA>       <NA>                   1st
+#> 30338              Mun                 <NA>       <NA>                   1st
+#> 30375              Mun                 <NA>       <NA>                   4th
+#> 30401              Mun                 <NA>       <NA>                   1st
+#> 30465              Mun                 <NA>       <NA>                   3rd
+#> 30490              Mun                 <NA>       <NA>                   3rd
+#> 30516              Mun                 <NA>       <NA>                   1st
+#> 30551              Mun                 <NA>       <NA>                   1st
+#> 30603              Mun                 <NA>       <NA>                   1st
+#> 30646              Mun                 <NA>       <NA>                   1st
+#> 30675              Mun                 <NA>       <NA>                   2nd
+#> 30701              Mun                 <NA>       <NA>                   2nd
+#> 30736              Mun                 <NA>       <NA>                   1st
+#> 30777              Mun                 <NA>       <NA>                   1st
+#> 30827              Mun                 <NA>       <NA>                   4th
+#> 30851              Mun                 <NA>       <NA>                   4th
+#> 30866             City                 <NA>         CC                   2nd
+#> 30933              Mun                 <NA>       <NA>                   3rd
+#> 30948              Mun                 <NA>       <NA>                   3rd
+#> 30959              Mun                 <NA>       <NA>                   2nd
+#> 30990              Mun                 <NA>       <NA>                   3rd
+#> 31011              Mun                 <NA>       <NA>                   4th
+#> 31027              Mun                 <NA>       <NA>                   1st
+#> 31063              Mun                 <NA>       <NA>                   1st
+#> 31080              Mun                 <NA>       <NA>                   4th
+#> 31093              Mun                 <NA>       <NA>                   2nd
+#> 31118              Mun                 <NA>       <NA>                   3rd
+#> 31144              Mun                 <NA>       <NA>                   3rd
+#> 31163              Mun                 <NA>       <NA>                   1st
+#> 31181              Mun                 <NA>       <NA>                   3rd
+#> 31205              Mun                 <NA>       <NA>                   2nd
+#> 31226              Mun                 <NA>       <NA>                   2nd
+#> 31243              Mun                 <NA>       <NA>                   3rd
+#> 31261              Mun                 <NA>       <NA>                   4th
+#> 31278              Mun                 <NA>       <NA>                   4th
+#> 31302              Mun                 <NA>       <NA>                   3rd
+#> 31342              Mun                 <NA>       <NA>                   5th
+#> 31354              Mun                 <NA>       <NA>                   2nd
+#> 31382              Mun                 <NA>       <NA>                   1st
+#> 31401              Mun                 <NA>       <NA>                   1st
+#> 31446              Mun                  Dao       <NA>                   3rd
+#> 31497              Mun                 <NA>       <NA>                   2nd
+#> 31545              Mun                 <NA>       <NA>                   3rd
+#> 31586              Mun                 <NA>       <NA>                   4th
+#> 31606              Mun                 <NA>       <NA>                   2nd
+#> 31641              Mun                 <NA>       <NA>                   2nd
+#> 31678              Mun                 <NA>       <NA>                   1st
+#> 31707              Mun                 <NA>       <NA>                   1st
+#> 31753              Mun                 <NA>       <NA>                   3rd
+#> 31764              Mun                 <NA>       <NA>                   1st
+#> 31841              Mun                 <NA>       <NA>                   2nd
+#> 31863              Mun                 <NA>       <NA>                   2nd
+#> 31887              Mun                 <NA>       <NA>                   3rd
+#> 31910              Mun                 <NA>       <NA>                   3rd
+#> 31931              Mun                 <NA>       <NA>                   3rd
+#> 31951              Mun                 <NA>       <NA>                   1st
+#> 31985              Mun                 <NA>       <NA>                   3rd
+#> 32001              Mun                 <NA>       <NA>                   1st
+#> 32032              Mun                 <NA>       <NA>                   2nd
+#> 32065              Mun                 <NA>       <NA>                   2nd
+#> 32092              Mun                 <NA>       <NA>                   2nd
+#> 32135              Mun                 <NA>       <NA>                   2nd
+#> 32162              Mun                 <NA>       <NA>                   2nd
+#> 32187              Mun                 <NA>       <NA>                   1st
+#> 32214              Mun                 <NA>       <NA>                   3rd
+#> 32237             City                 <NA>         CC                   2nd
+#> 32285              Mun                 <NA>       <NA>                   3rd
+#> 32296              Mun                 <NA>       <NA>                   3rd
+#> 32318              Mun                 <NA>       <NA>                   1st
+#> 32378              Mun                 <NA>       <NA>                   1st
+#> 32413              Mun                 <NA>       <NA>                   2nd
+#> 32465              Mun                 <NA>       <NA>                   3rd
+#> 32487              Mun                 <NA>       <NA>                   4th
+#> 32519              Mun                 <NA>       <NA>                   2nd
+#> 32543              Mun                 <NA>       <NA>                   2nd
 #> 32562              Mun                 <NA>       <NA>                   1st
-#> 32584              Mun                 <NA>       <NA>                   1st
-#> 32605              Mun                 <NA>       <NA>                   1st
-#> 32634              Mun                 <NA>       <NA>                   1st
-#> 32651              Mun                 <NA>       <NA>                   1st
-#> 32666              Mun                 <NA>       <NA>                   1st
-#> 32682              Mun             Trinidad       <NA>                   1st
-#> 32709              Mun                 <NA>       <NA>                   1st
-#> 32740              Mun                 <NA>       <NA>                   1st
-#> 32763              Mun                 <NA>       <NA>                   4th
-#> 32776             City                 <NA>        HUC                   1st
-#> 32961              Mun                 <NA>       <NA>                   1st
-#> 32979              Mun                 <NA>       <NA>                   1st
-#> 33001              Mun                 <NA>       <NA>                   1st
-#> 33019             City                 <NA>         CC                   1st
-#> 33060              Mun                 <NA>       <NA>                   1st
-#> 33081              Mun                 <NA>       <NA>                   1st
-#> 33114              Mun                 <NA>       <NA>                   1st
-#> 33153              Mun                 <NA>       <NA>                   1st
-#> 33188              Mun                 <NA>       <NA>                   1st
-#> 33233              Mun                 <NA>       <NA>                   1st
-#> 33271              Mun                 <NA>       <NA>                   1st
-#> 33300              Mun                 <NA>       <NA>                   1st
-#> 33321              Mun                 <NA>       <NA>                   1st
-#> 33347              Mun                 <NA>       <NA>                   1st
-#> 33377              Mun                 <NA>       <NA>                   1st
-#> 33391              Mun                 <NA>       <NA>                   1st
-#> 33412              Mun                 <NA>       <NA>                   1st
-#> 33430              Mun                 <NA>       <NA>                   1st
-#> 33460              Mun                 <NA>       <NA>                   1st
-#> 33483             City                 <NA>         CC                   1st
-#> 33511              Mun                 <NA>       <NA>                   2nd
-#> 33526              Mun                 <NA>       <NA>                   1st
-#> 33550              Mun                 <NA>       <NA>                   1st
-#> 33568              Mun                 <NA>       <NA>                   1st
-#> 33583              Mun                 <NA>       <NA>                   2nd
-#> 33597              Mun                 <NA>       <NA>                   1st
-#> 33623              Mun                 <NA>       <NA>                   1st
-#> 33640              Mun                 <NA>       <NA>                   2nd
-#> 33651              Mun                 <NA>       <NA>                   1st
-#> 33672              Mun                 <NA>       <NA>                   1st
-#> 33692              Mun                 <NA>       <NA>                   1st
-#> 33709              Mun                 <NA>       <NA>                   1st
-#> 33729              Mun                 <NA>       <NA>                   1st
-#> 33747              Mun                 <NA>       <NA>                   1st
-#> 33763              Mun                 <NA>       <NA>                   1st
-#> 33791              Mun                 <NA>       <NA>                   1st
-#> 33803              Mun       Mariano Marcos       <NA>                   1st
-#> 33830              Mun                 <NA>       <NA>                   1st
-#> 33871              Mun                 <NA>       <NA>                   2nd
-#> 33891             City                 <NA>         CC                   3rd
-#> 33912              Mun                 <NA>       <NA>                   1st
-#> 33934              Mun                 <NA>       <NA>                   1st
-#> 33949              Mun                 <NA>       <NA>                   1st
-#> 33981              Mun                 <NA>       <NA>                   1st
-#> 34001              Mun                 <NA>       <NA>                   1st
-#> 34018              Mun                 <NA>       <NA>                   1st
-#> 34038              Mun                 <NA>       <NA>                   1st
-#> 34051              Mun                 <NA>       <NA>                   1st
-#> 34083             City            Dadiangas        HUC                   1st
-#> 34111             City                 <NA>        HUC                   1st
-#> 34305             City                 <NA>        HUC                   1st
-#> 34326             City                 <NA>        HUC                   1st
-#> 34350             City                 <NA>        HUC                   1st
-#> 34372             City                 <NA>        HUC                   1st
-#> 34400             City                 <NA>        HUC                   1st
-#> 35312             City                 <NA>        HUC                   1st
-#> 35329             City                 <NA>        HUC                   1st
-#> 35339             City                 <NA>        HUC                   1st
-#> 35358             City                 <NA>        HUC                   1st
-#> 35375             City                 <NA>        HUC                   1st
-#> 35577             City                 <NA>        HUC                   1st
-#> 35608             City                 <NA>        HUC                   1st
-#> 35751             City                 <NA>        HUC                   1st
-#> 35773             City                 <NA>        HUC                   1st
-#> 35812             City                 <NA>        HUC                   1st
-#> 35846              Mun                 <NA>       <NA>                   1st
-#> 35859              Mun                 <NA>       <NA>                   1st
-#> 35891              Mun                 <NA>       <NA>                   3rd
-#> 35900              Mun                 <NA>       <NA>                   3rd
-#> 35922              Mun                 <NA>       <NA>                   4th
-#> 35927              Mun                 <NA>       <NA>                   4th
-#> 35932              Mun                 <NA>       <NA>                   3rd
-#> 35940              Mun                 <NA>       <NA>                   3rd
-#> 35956              Mun                 <NA>       <NA>                   4th
-#> 35969              Mun                 <NA>       <NA>                   2nd
-#> 35976              Mun                 <NA>       <NA>                   3rd
-#> 35994              Mun                 <NA>       <NA>                   4th
-#> 36000              Mun                 <NA>       <NA>                   4th
-#> 36007              Mun               Licuan       <NA>                   3rd
-#> 36019              Mun                 <NA>       <NA>                   1st
-#> 36028              Mun                 <NA>       <NA>                   3rd
-#> 36041              Mun                 <NA>       <NA>                   3rd
-#> 36053              Mun                 <NA>       <NA>                   4th
-#> 36063              Mun                 <NA>       <NA>                   3rd
-#> 36079              Mun                 <NA>       <NA>                   1st
-#> 36099              Mun                 <NA>       <NA>                   4th
-#> 36109              Mun                 <NA>       <NA>                   2nd
-#> 36119              Mun                 <NA>       <NA>                   4th
-#> 36139              Mun                 <NA>       <NA>                   3rd
-#> 36146              Mun                 <NA>       <NA>                   1st
-#> 36158              Mun                 <NA>       <NA>                   1st
-#> 36169              Mun                 <NA>       <NA>                   2nd
-#> 36180              Mun                 <NA>       <NA>                   1st
-#> 36190              Mun                 <NA>       <NA>                   3rd
-#> 36199              Mun                 <NA>       <NA>                   3rd
-#> 36207              Mun                 <NA>       <NA>                   2nd
-#> 36218              Mun                 <NA>       <NA>                   1st
-#> 36233              Mun                 <NA>       <NA>                   1st
-#> 36243              Mun                 <NA>       <NA>                   3rd
-#> 36257              Mun                 <NA>       <NA>                   3rd
-#> 36273              Mun                 <NA>       <NA>                   3rd
-#> 36281              Mun                 <NA>       <NA>                   1st
-#> 36298              Mun                 <NA>       <NA>                  2nd*
-#> 36311              Mun                 <NA>       <NA>                   4th
-#> 36320              Mun                 <NA>       <NA>                   1st
-#> 36334              Mun                 <NA>       <NA>                   4th
-#> 36344              Mun                 <NA>       <NA>                   3rd
-#> 36363              Mun                 <NA>       <NA>                   3rd
-#> 36373              Mun                 <NA>       <NA>                   3rd
-#> 36388              Mun                 <NA>       <NA>                   3rd
-#> 36409              Mun                 <NA>       <NA>                   2nd
-#> 36428              Mun                 <NA>       <NA>                   3rd
-#> 36456              Mun                Potia       <NA>                   1st
-#> 36477              Mun                 <NA>       <NA>                   1st
-#> 36494              Mun                 <NA>       <NA>                   5th
-#> 36507              Mun                 <NA>       <NA>                   3rd
-#> 36520              Mun                 <NA>       <NA>                   4th
-#> 36532              Mun                 <NA>       <NA>                   1st
-#> 36547              Mun                 <NA>       <NA>                   4th
-#> 36557              Mun                 <NA>       <NA>                   4th
-#> 36572              Mun                 <NA>       <NA>                   1st
-#> 36596              Mun                Liwan       <NA>                   3rd
-#> 36611             City                 <NA>         CC                   1st
-#> 36655              Mun                 <NA>       <NA>                   3rd
-#> 36672              Mun                 <NA>       <NA>                   3rd
-#> 36694              Mun                 <NA>       <NA>                   4th
-#> 36706              Mun                 <NA>       <NA>                   2nd
-#> 36729              Mun                 <NA>       <NA>                   4th
-#> 36744              Mun                 <NA>       <NA>                   1st
-#> 36761              Mun                 <NA>       <NA>                   3rd
-#> 36773              Mun                 <NA>       <NA>                   1st
-#> 36783              Mun                 <NA>       <NA>                   4th
-#> 36799              Mun                 <NA>       <NA>                   5th
-#> 36808              Mun                 <NA>       <NA>                   4th
-#> 36828              Mun                 <NA>       <NA>                   3rd
-#> 36849              Mun                Bayag       <NA>                   1st
-#> 36868              Mun                 <NA>       <NA>                   1st
-#> 36890              Mun                 <NA>       <NA>                   2nd
-#> 36907              Mun                 <NA>       <NA>                   1st
-#> 36929              Mun                 <NA>       <NA>                   1st
-#> 36952              Mun                 <NA>       <NA>                   2nd
-#> 36975              Mun                 <NA>       <NA>                   4th
-#> 36989             City                 <NA>        HUC                   1st
-#> 37121              Mun                 <NA>       <NA>                   1st
-#> 37147             City                 <NA>         CC                   3rd
-#> 37179              Mun                 <NA>       <NA>                   3rd
-#> 37188              Mun                 <NA>       <NA>                   2nd
-#> 37204              Mun                 <NA>       <NA>                   3rd
-#> 37216              Mun                 <NA>       <NA>                   1st
-#> 37237              Mun                 <NA>       <NA>                   4th
-#> 37246              Mun                 <NA>       <NA>                   1st
-#> 37266              Mun                 <NA>       <NA>                   1st
-#> 37276              Mun                 <NA>       <NA>                   1st
-#> 37290              Mun                 <NA>       <NA>                   4th
-#> 37300             City                 <NA>         CC                   1st
-#> 37344              Mun                 <NA>       <NA>                   1st
-#> 37355              Mun                 <NA>       <NA>                   1st
-#> 37403              Mun                 <NA>       <NA>                   1st
-#> 37419              Mun                 <NA>       <NA>                   1st
-#> 37437              Mun                 <NA>       <NA>                   1st
-#> 37470              Mun                 <NA>       <NA>                   1st
-#> 37482              Mun                 <NA>       <NA>                   1st
-#> 37510              Mun                 <NA>       <NA>                   1st
-#> 37536              Mun                 <NA>       <NA>                   1st
-#> 37548              Mun                 <NA>       <NA>                   1st
-#> 37565              Mun                 <NA>       <NA>                   1st
-#> 37582              Mun                 <NA>       <NA>                   1st
-#> 37603              Mun                 <NA>       <NA>                   1st
-#> 37629              Mun                 <NA>       <NA>                   4th
-#> 37642              Mun                 <NA>       <NA>                   4th
-#> 37652              Mun                 <NA>       <NA>                   5th
-#> 37659              Mun                 <NA>       <NA>                   1st
-#> 37674              Mun                 <NA>       <NA>                   2nd
-#> 37704              Mun                 <NA>       <NA>                   3rd
-#> 37725              Mun                 <NA>       <NA>                   3rd
-#> 37745              Mun                 <NA>       <NA>                   3rd
-#> 37759              Mun                 <NA>       <NA>                   3rd
-#> 37781              Mun                 <NA>       <NA>                   4th
-#> 37796              Mun                 <NA>       <NA>                   4th
-#> 37812              Mun                 <NA>       <NA>                   3rd
-#> 37833              Mun                 <NA>       <NA>                   5th
-#> 37840              Mun             Anao-aon       <NA>                   4th
-#> 37852              Mun                 <NA>       <NA>                   5th
-#> 37865              Mun                Sapao       <NA>                   5th
-#> 37877              Mun                 <NA>       <NA>                   4th
-#> 37890              Mun                 <NA>       <NA>                   3rd
-#> 37905             City                 <NA>         CC                   2nd
-#> 37960              Mun                 <NA>       <NA>                   3rd
-#> 37975              Mun                 <NA>       <NA>                   4th
-#> 37986              Mun                 <NA>       <NA>                   1st
-#> 38009              Mun                 <NA>       <NA>                   4th
-#> 38017             City                 <NA>         CC                   2nd
-#> 38042              Mun                 <NA>       <NA>                   2nd
-#> 38054              Mun                 <NA>       <NA>                   1st
-#> 38072              Mun                 <NA>       <NA>                   4th
-#> 38081              Mun                 <NA>       <NA>                   1st
-#> 38096              Mun                 <NA>       <NA>                   4th
-#> 38109              Mun                 <NA>       <NA>                   1st
-#> 38134              Mun                 <NA>       <NA>                   3rd
-#> 38148              Mun                 <NA>       <NA>                   2nd
-#> 38162              Mun                 <NA>       <NA>                   1st
-#> 38181              Mun                 <NA>       <NA>                   3rd
-#> 38196              Mun                 <NA>       <NA>                   2nd
-#> 38209              Mun                 <NA>       <NA>                   2nd
-#> 38223              Mun                 <NA>       <NA>                   1st
-#> 38242              Mun                 <NA>       <NA>                   1st
-#> 38268              Mun                 <NA>       <NA>                   1st
-#> 38293             City                 <NA>         CC                   3rd
-#> 38316              Mun                Rizal       <NA>                   3rd
-#> 38344              Mun                 <NA>       <NA>                   1st
-#> 38359              Mun                 <NA>       <NA>                   4th
-#> 38372              Mun                Albor       <NA>                   3rd
-#> 38389              Mun                 <NA>       <NA>                   2nd
-#> 38400              Mun                 <NA>       <NA>                   4th
-#> 38413              Mun                 <NA>       <NA>                   4th
-#> 38423             City                 <NA>        HUC                   1st
-#> 38512              Mun                 <NA>       <NA>                   1st
-#> 38574              Mun                 <NA>       <NA>                   4th
-#> 38590              Mun                 <NA>       <NA>                   2nd
-#> 38616              Mun                 <NA>       <NA>                   2nd
-#> 38654              Mun                 <NA>       <NA>                   1st
-#> 38710              Mun                 <NA>       <NA>                   2nd
-#> 38737              Mun                 <NA>       <NA>                   1st
-#> 38748              Mun                 <NA>       <NA>                   1st
-#> 38756              Mun                 <NA>       <NA>                   4th
-#> 38766              Mun                 <NA>       <NA>                   4th
-#> 38783              Mun                 <NA>       <NA>                   1st
-#> 38796              Mun                 <NA>       <NA>                   1st
-#> 38812              Mun                 <NA>       <NA>                   1st
-#> 38825              Mun                 <NA>       <NA>                   2nd
-#> 38837              Mun                 <NA>       <NA>                   1st
-#> 38860              Mun                 <NA>       <NA>                   1st
-#> 38900              Mun                 <NA>       <NA>                   1st
-#> 38913              Mun                 <NA>       <NA>                   1st
-#> 38941              Mun                 <NA>       <NA>                   1st
-#> 38955              Mun                 <NA>       <NA>                   1st
-#> 38992              Mun            San Pedro       <NA>                   1st
-#> 39008             City                 <NA>         CC                   2nd
-#> 39071              Mun                 <NA>       <NA>                   1st
-#> 39099              Mun                 <NA>       <NA>                   1st
-#> 39117              Mun                 <NA>       <NA>                   1st
-#> 39188              Mun                 <NA>       <NA>                   1st
-#> 39226              Mun                 <NA>       <NA>                   2nd
-#> 39250              Mun                 <NA>       <NA>                   1st
-#> 39264              Mun                 <NA>       <NA>                   1st
-#> 39285              Mun                 <NA>       <NA>                   2nd
-#> 39294              Mun                 <NA>       <NA>                   2nd
-#> 39321              Mun                 <NA>       <NA>                   1st
-#> 39355              Mun                 <NA>       <NA>                   1st
-#> 39375              Mun                 <NA>       <NA>                   5th
-#> 39386              Mun                 <NA>       <NA>                   3rd
-#> 39400              Mun                 <NA>       <NA>                   1st
-#> 39421              Mun                 <NA>       <NA>                   1st
-#> 39444              Mun                 <NA>       <NA>                   1st
-#> 39463              Mun                 <NA>       <NA>                   1st
-#> 39478              Mun                 <NA>       <NA>                   5th
-#> 39491              Mun                 <NA>       <NA>                   1st
-#> 39515              Mun                 <NA>       <NA>                   3rd
-#> 39533              Mun                 <NA>       <NA>                   1st
-#> 39550              Mun               Bacuit       <NA>                   1st
-#> 39569              Mun                 <NA>       <NA>                   3rd
-#> 39580              Mun                 <NA>       <NA>                   4th
-#> 39592              Mun                 <NA>       <NA>                   1st
-#> 39616              Mun                 <NA>       <NA>                   1st
-#> 39631              Mun                 <NA>       <NA>                   1st
-#> 39663              Mun                 <NA>       <NA>                   1st
-#> 39674              Mun                 <NA>       <NA>                   1st
-#> 39706              Mun                 <NA>       <NA>                   4th
-#> 39708              Mun                 <NA>       <NA>                   1st
-#> 39723              Mun               Marcos       <NA>                   1st
-#> 39735              Mun                 <NA>       <NA>                   1st
-#> 39746              Mun                 <NA>       <NA>                   4th
-#> 39759              Mun                 <NA>       <NA>                   5th
-#> 39777              Mun                 <NA>       <NA>                   3rd
-#> 39792              Mun                 <NA>       <NA>                   4th
-#> 39800              Mun                 <NA>       <NA>                   5th
-#> 39810              Mun                 <NA>       <NA>                   5th
-#> 39826              Mun                 <NA>       <NA>                   3rd
-#> 39839              Mun                 <NA>       <NA>                   4th
-#> 39849              Mun                 <NA>       <NA>                   1st
-#> 39875              Mun                 <NA>       <NA>                   2nd
-#> 39907              Mun                 <NA>       <NA>                   3rd
-#> 39923              Mun                 <NA>       <NA>                   4th
-#> 39937              Mun                 <NA>       <NA>                   3rd
-#> 39950              Mun                 <NA>       <NA>                   5th
-#> 39956              Mun                 <NA>       <NA>                   4th
-#> 39968              Mun                 <NA>       <NA>                   5th
-#> 39975              Mun               Imelda       <NA>                   5th
-#> 39982             City                 <NA>        HUC                   1st
-#> 40051             City                 <NA>         CC                   1st
-#> 40076              Mun                 <NA>       <NA>                   1st
-#> 40093             City                 <NA>         CC                   1st
-#> 40116              Mun                 <NA>       <NA>                   1st
-#> 40157              Mun                 <NA>       <NA>                   3rd
-#> 40167              Mun                 <NA>       <NA>                   1st
-#> 40193              Mun              Saravia       <NA>                   1st
-#> 40217             City                 <NA>         CC                   3rd
-#> 40239             City                 <NA>         CC                   2nd
-#> 40259              Mun                 <NA>       <NA>                   1st
-#> 40284              Mun                 Asia       <NA>                   1st
-#> 40298              Mun                 <NA>       <NA>                   1st
-#> 40314              Mun                 <NA>       <NA>                   1st
-#> 40345             City                 <NA>         CC                   1st
-#> 40378             City                 <NA>         CC                   4th
-#> 40393              Mun                 <NA>       <NA>                   1st
-#> 40407              Mun                 <NA>       <NA>                   1st
-#> 40420              Mun             Magallon       <NA>                   2nd
-#> 40436              Mun                 <NA>       <NA>                   1st
-#> 40460              Mun                 <NA>       <NA>                   1st
-#> 40481              Mun                 <NA>       <NA>                   3rd
-#> 40502             City                 <NA>         CC                   2nd
-#> 40528             City                 <NA>         CC                   1st
-#> 40547              Mun                 <NA>       <NA>                   4th
-#> 40558             City                 <NA>         CC                   3rd
-#> 40575             City                 <NA>         CC                   3rd
-#> 40593             City                 <NA>         CC                   3rd
-#> 40621              Mun                 <NA>       <NA>                   2nd
-#> 40631              Mun                 <NA>       <NA>                   2nd
-#> 40648             City                 <NA>         CC                   4th
-#> 40675              Mun                 <NA>       <NA>                   3rd
-#> 40684              Mun            Ayuquitan       <NA>                   3rd
-#> 40693              Mun                 <NA>       <NA>                   1st
-#> 40718              Mun                 <NA>       <NA>                   2nd
-#> 40741             City                 <NA>         CC                   3rd
-#> 40777              Mun                 <NA>       <NA>                   3rd
-#> 40788             City               Tulong         CC                   1st
-#> 40817              Mun              Payabon       <NA>                   2nd
-#> 40840             City                 <NA>         CC                   4th
-#> 40853              Mun                 <NA>       <NA>                   2nd
-#> 40877             City                 <NA>         CC                   2nd
-#> 40908             City                 <NA>         CC                   2nd
-#> 40942              Mun                 <NA>       <NA>                   3rd
-#> 40971              Mun                 <NA>       <NA>                   2nd
-#> 41001              Mun                 <NA>       <NA>                   1st
-#> 41034              Mun                 <NA>       <NA>                   1st
-#> 41062              Mun                 <NA>       <NA>                   2nd
+#> 32592              Mun                 <NA>       <NA>                   1st
+#> 32619              Mun                 <NA>       <NA>                   4th
+#> 32644              Mun                 <NA>       <NA>                   4th
+#> 32659              Mun                 <NA>       <NA>                   1st
+#> 32728              Mun                 <NA>       <NA>                   1st
+#> 32788              Mun                 <NA>       <NA>                   1st
+#> 32822              Mun                 <NA>       <NA>                   1st
+#> 32848              Mun                 <NA>       <NA>                   1st
+#> 32882              Mun                 <NA>       <NA>                   3rd
+#> 32930              Mun                 <NA>       <NA>                   1st
+#> 32976              Mun                 <NA>       <NA>                   1st
+#> 33002              Mun                 <NA>       <NA>                   3rd
+#> 33036              Mun                 <NA>       <NA>                   2nd
+#> 33083              Mun                 <NA>       <NA>                   1st
+#> 33144              Mun                 <NA>       <NA>                   1st
+#> 33218              Mun                 <NA>       <NA>                   2nd
+#> 33237              Mun                 <NA>       <NA>                   3rd
+#> 33269              Mun                 <NA>       <NA>                   1st
+#> 33355              Mun                 <NA>       <NA>                   2nd
+#> 33406              Mun                 <NA>       <NA>                   1st
+#> 33526              Mun                 <NA>       <NA>                   4th
+#> 33549              Mun                 <NA>       <NA>                   4th
+#> 33571              Mun                 <NA>       <NA>                   1st
+#> 33609             City                 <NA>         CC                   3rd
+#> 33661              Mun                 <NA>       <NA>                   1st
+#> 33680              Mun                 <NA>       <NA>                   1st
+#> 33731              Mun                 <NA>       <NA>                   2nd
+#> 33761              Mun                 <NA>       <NA>                   2nd
+#> 33790              Mun                 <NA>       <NA>                   1st
+#> 33876              Mun                 <NA>       <NA>                   3rd
+#> 33901              Mun                 <NA>       <NA>                   4th
+#> 33911              Mun                 <NA>       <NA>                   1st
+#> 33972              Mun                 <NA>       <NA>                   1st
+#> 34015              Mun                 <NA>       <NA>                   1st
+#> 34068              Mun                 <NA>       <NA>                   4th
+#> 34117              Mun                 <NA>       <NA>                   3rd
+#> 34143              Mun                 <NA>       <NA>                   1st
+#> 34180              Mun                 <NA>       <NA>                   2nd
+#> 34195              Mun                 <NA>       <NA>                   2nd
+#> 34218              Mun                 <NA>       <NA>                   3rd
+#> 34231              Mun                 <NA>       <NA>                   3rd
+#> 34246             City                 <NA>        HUC                   1st
+#> 34429              Mun                 <NA>       <NA>                   4th
+#> 34441              Mun                 <NA>       <NA>                   3rd
+#> 34457              Mun                 <NA>       <NA>                   4th
+#> 34474              Mun                 <NA>       <NA>                   4th
+#> 34496              Mun                 <NA>       <NA>                   4th
+#> 34514              Mun                 <NA>       <NA>                   3rd
+#> 34546              Mun                 <NA>       <NA>                   4th
+#> 34562              Mun                 <NA>       <NA>                   4th
+#> 34582              Mun                 <NA>       <NA>                   1st
+#> 34618              Mun                 <NA>       <NA>                   2nd
+#> 34652              Mun                 <NA>       <NA>                   3rd
+#> 34674              Mun                 <NA>       <NA>                   1st
+#> 34704              Mun                 <NA>       <NA>                   3rd
+#> 34727              Mun                 <NA>       <NA>                   4th
+#> 34752              Mun                 <NA>       <NA>                   4th
+#> 34761              Mun                 <NA>       <NA>                   4th
+#> 34776              Mun                 <NA>       <NA>                   4th
+#> 34792              Mun                 <NA>       <NA>                   3rd
+#> 34810              Mun                 <NA>       <NA>                   1st
+#> 34823              Mun                 <NA>       <NA>                   4th
+#> 34859              Mun                 <NA>       <NA>                   4th
+#> 34881              Mun                 <NA>       <NA>                   3rd
+#> 34912              Mun                 <NA>       <NA>                   2nd
+#> 34932              Mun                 <NA>       <NA>                   1st
+#> 34983              Mun                 <NA>       <NA>                   2nd
+#> 35017              Mun                 <NA>       <NA>                   2nd
+#> 35042              Mun                 <NA>       <NA>                   4th
+#> 35061              Mun                 <NA>       <NA>                   4th
+#> 35086              Mun                 <NA>       <NA>                   3rd
+#> 35115              Mun                 <NA>       <NA>                   1st
+#> 35183              Mun                 <NA>       <NA>                   3rd
+#> 35206              Mun                 <NA>       <NA>                   3rd
+#> 35229              Mun                 <NA>       <NA>                   1st
+#> 35240              Mun                 <NA>       <NA>                   3rd
+#> 35262              Mun               Pitogo       <NA>                   3rd
+#> 35286              Mun                Borja       <NA>                   3rd
+#> 35311              Mun                 <NA>       <NA>                   5th
+#> 35324              Mun                 <NA>       <NA>                   2nd
+#> 35343              Mun                 <NA>       <NA>                   4th
+#> 35357              Mun                 <NA>       <NA>                   2nd
+#> 35380              Mun                 <NA>       <NA>                   5th
+#> 35391             City                 <NA>         CC                   2nd
+#> 35407              Mun                 <NA>       <NA>                   1st
+#> 35433              Mun                 <NA>       <NA>                   1st
+#> 35454              Mun                 <NA>       <NA>                   1st
+#> 35489              Mun                 <NA>       <NA>                   1st
+#> 35534              Mun                 <NA>       <NA>                   3rd
+#> 35570              Mun                 <NA>       <NA>                   4th
+#> 35587              Mun                 <NA>       <NA>                   4th
+#> 35597              Mun                 <NA>       <NA>                   4th
+#> 35606              Mun                 <NA>       <NA>                   3rd
+#> 35616              Mun                 <NA>       <NA>                   3rd
+#> 35632              Mun                 <NA>       <NA>                   1st
+#> 35678              Mun                 <NA>       <NA>                   1st
+#> 35706              Mun                 <NA>       <NA>                   1st
+#> 35736              Mun                 <NA>       <NA>                   1st
+#> 35765              Mun                 <NA>       <NA>                   1st
+#> 35791              Mun                 <NA>       <NA>                   1st
+#> 35834             City                 <NA>         CC                   4th
+#> 35864              Mun                 <NA>       <NA>                   4th
+#> 35876              Mun                 <NA>       <NA>                   2nd
+#> 35896             City                 <NA>         CC                   3rd
+#> 35912              Mun                 <NA>       <NA>                   1st
+#> 35934              Mun                 <NA>       <NA>                   2nd
+#> 35955              Mun                 <NA>       <NA>                   1st
+#> 35973              Mun                 <NA>       <NA>                   1st
+#> 35995              Mun                 <NA>       <NA>                   1st
+#> 36009              Mun                 <NA>       <NA>                   1st
+#> 36030              Mun                 <NA>       <NA>                   1st
+#> 36064             City                 <NA>         CC                   2nd
+#> 36107              Mun                 <NA>       <NA>                   1st
+#> 36145              Mun                 <NA>       <NA>                   4th
+#> 36160              Mun                 <NA>       <NA>                   1st
+#> 36175              Mun                 <NA>       <NA>                   1st
+#> 36190              Mun                 <NA>       <NA>                   4th
+#> 36205              Mun                 <NA>       <NA>                   1st
+#> 36225              Mun                 <NA>       <NA>                   1st
+#> 36245              Mun                 <NA>       <NA>                   1st
+#> 36261             City                 <NA>         CC                   3rd
+#> 36290              Mun                 <NA>       <NA>                   1st
+#> 36312              Mun                 <NA>       <NA>                   5th
+#> 36326              Mun                 <NA>       <NA>                   1st
+#> 36353              Mun                 <NA>       <NA>                   3rd
+#> 36371              Mun                 <NA>       <NA>                   4th
+#> 36386              Mun                 <NA>       <NA>                   4th
+#> 36402              Mun                 <NA>       <NA>                   1st
+#> 36424              Mun                 <NA>       <NA>                   1st
+#> 36440              Mun                 <NA>       <NA>                   1st
+#> 36468              Mun                 <NA>       <NA>                   3rd
+#> 36479              Mun                 <NA>       <NA>                   4th
+#> 36490              Mun                 <NA>       <NA>                   1st
+#> 36516              Mun                 <NA>       <NA>                   2nd
+#> 36535              Mun                 <NA>       <NA>                   2nd
+#> 36561              Mun                 <NA>       <NA>                   2nd
+#> 36574             City                 <NA>         CC                   1st
+#> 36597             City                 <NA>         CC                   1st
+#> 36636              Mun                 <NA>       <NA>                   1st
+#> 36691              Mun                 <NA>       <NA>                   4th
+#> 36703             City                 <NA>        HUC                   1st
+#> 36784             City                 Opon        HUC                   1st
+#> 36815             City                 <NA>        HUC                   1st
+#> 36845              Mun                 <NA>       <NA>                  4th*
+#> 36866              Mun                 <NA>       <NA>                   3rd
+#> 36880              Mun                 <NA>       <NA>                   4th
+#> 36896             City                 <NA>         CC                   2nd
+#> 36958              Mun                 <NA>       <NA>                   2nd
+#> 36987              Mun                 <NA>       <NA>                   1st
+#> 37034              Mun                 <NA>       <NA>                   4th
+#> 37065              Mun                 <NA>       <NA>                   4th
+#> 37084              Mun                 <NA>       <NA>                   1st
+#> 37145              Mun                 <NA>       <NA>                   5th
+#> 37159              Mun                 <NA>       <NA>                   4th
+#> 37173              Mun                 <NA>       <NA>                   4th
+#> 37190              Mun                 <NA>       <NA>                   1st
+#> 37224              Mun                 <NA>       <NA>                   4th
+#> 37237              Mun                 <NA>       <NA>                   2nd
+#> 37258              Mun                 <NA>       <NA>                   5th
+#> 37275              Mun                 <NA>       <NA>                   2nd
+#> 37318              Mun                 <NA>       <NA>                   4th
+#> 37344              Mun                 <NA>       <NA>                   3rd
+#> 37386              Mun                 <NA>       <NA>                   4th
+#> 37403              Mun                 <NA>       <NA>                   4th
+#> 37421              Mun                 <NA>       <NA>                   4th
+#> 37440              Mun                 <NA>       <NA>                   3rd
+#> 37466              Mun                 <NA>       <NA>                   1st
+#> 37530              Mun                 <NA>       <NA>                   1st
+#> 37585              Mun                 <NA>       <NA>                   1st
+#> 37602              Mun                 <NA>       <NA>                   3rd
+#> 37628              Mun                 <NA>       <NA>                   3rd
+#> 37666              Mun                 <NA>       <NA>                   2nd
+#> 37699             City                 <NA>         CC                   1st
+#> 37792              Mun                 <NA>       <NA>                   1st
+#> 37870              Mun                 <NA>       <NA>                   3rd
+#> 37924              Mun                 <NA>       <NA>                   2nd
+#> 37946              Mun                 <NA>       <NA>                   1st
+#> 37996              Mun                 <NA>       <NA>                   2nd
+#> 38062              Mun                 <NA>       <NA>                   2nd
+#> 38108              Mun                 <NA>       <NA>                   1st
+#> 38160              Mun                 <NA>       <NA>                   4th
+#> 38181              Mun                 <NA>       <NA>                   4th
+#> 38202              Mun                 <NA>       <NA>                   1st
+#> 38227              Mun                 <NA>       <NA>                   1st
+#> 38274              Mun                Bugho       <NA>                   3rd
+#> 38303              Mun                 <NA>       <NA>                   4th
+#> 38330              Mun                 <NA>       <NA>                   1st
+#> 38354              Mun                 <NA>       <NA>                   4th
+#> 38390              Mun                 <NA>       <NA>                   2nd
+#> 38421              Mun                 <NA>       <NA>                   4th
+#> 38453              Mun                 <NA>       <NA>                   3rd
+#> 38482              Mun                 <NA>       <NA>                   4th
+#> 38504              Mun                 <NA>       <NA>                   2nd
+#> 38535              Mun                 <NA>       <NA>                   4th
+#> 38552              Mun                 <NA>       <NA>                   3rd
+#> 38575             City                 <NA>        ICC                   1st
+#> 38661              Mun                 <NA>       <NA>                   1st
+#> 38695              Mun                 <NA>       <NA>                   1st
+#> 38746              Mun                 <NA>       <NA>                   4th
+#> 38776              Mun                 <NA>       <NA>                   3rd
+#> 38796              Mun                 <NA>       <NA>                   3rd
+#> 38818              Mun                 <NA>       <NA>                   4th
+#> 38839              Mun                 <NA>       <NA>                   3rd
+#> 38853              Mun                 <NA>       <NA>                   5th
+#> 38870              Mun                 <NA>       <NA>                   1st
+#> 38925              Mun                 <NA>       <NA>                   4th
+#> 38941              Mun                 <NA>       <NA>                   5th
+#> 38950              Mun                 <NA>       <NA>                   2nd
+#> 38987              Mun                 <NA>       <NA>                   4th
+#> 39008              Mun                 <NA>       <NA>                   5th
+#> 39017              Mun                 <NA>       <NA>                   3rd
+#> 39036              Mun                 <NA>       <NA>                   5th
+#> 39049              Mun                 <NA>       <NA>                   1st
+#> 39105              Mun                 <NA>       <NA>                   2nd
+#> 39153              Mun                 <NA>       <NA>                   3rd
+#> 39180              Mun                 <NA>       <NA>                   1st
+#> 39237              Mun                 <NA>       <NA>                   5th
+#> 39253              Mun                 <NA>       <NA>                   2nd
+#> 39307              Mun                 <NA>       <NA>                   3rd
+#> 39334              Mun                 <NA>       <NA>                   4th
+#> 39348              Mun                 <NA>       <NA>                   1st
+#> 39373              Mun                 <NA>       <NA>                   2nd
+#> 39406              Mun                 <NA>       <NA>                   2nd
+#> 39433              Mun                 <NA>       <NA>                   5th
+#> 39445              Mun                 <NA>       <NA>                   5th
+#> 39456              Mun                 <NA>       <NA>                   2nd
+#> 39471              Mun                 <NA>       <NA>                   4th
+#> 39488              Mun                 <NA>       <NA>                   3rd
+#> 39505              Mun                 <NA>       <NA>                   5th
+#> 39513              Mun                 <NA>       <NA>                   3rd
+#> 39540              Mun                 <NA>       <NA>                   4th
+#> 39557              Mun                 <NA>       <NA>                   3rd
+#> 39581              Mun                 <NA>       <NA>                   5th
+#> 39605              Mun                 <NA>       <NA>                   1st
+#> 39657             City                 <NA>         CC                   1st
+#> 39815              Mun                 <NA>       <NA>                   2nd
+#> 39857             City                 <NA>         CC                   3rd
+#> 39915              Mun                 <NA>       <NA>                   2nd
+#> 39974              Mun                 <NA>       <NA>                   1st
+#> 40044              Mun                 <NA>       <NA>                   2nd
+#> 40066              Mun                 <NA>       <NA>                   4th
+#> 40101              Mun                 <NA>       <NA>                   4th
+#> 40126              Mun                 <NA>       <NA>                   4th
+#> 40147              Mun                 <NA>       <NA>                   4th
+#> 40178              Mun                 <NA>       <NA>                   3rd
+#> 40203              Mun                 <NA>       <NA>                   3rd
+#> 40218              Mun                 <NA>       <NA>                   5th
+#> 40233              Mun                 <NA>       <NA>                   3rd
+#> 40270              Mun                 <NA>       <NA>                   1st
+#> 40309              Mun                 <NA>       <NA>                   5th
+#> 40323              Mun                 <NA>       <NA>                   5th
+#> 40335              Mun                 <NA>       <NA>                   3rd
+#> 40377              Mun                 <NA>       <NA>                   3rd
+#> 40416              Mun               Wright       <NA>                   1st
+#> 40461              Mun                 <NA>       <NA>                   4th
+#> 40487              Mun                 <NA>       <NA>                   5th
+#> 40502              Mun                 <NA>       <NA>                   3rd
+#> 40544              Mun                 <NA>       <NA>                   5th
+#> 40559              Mun                 <NA>       <NA>                   5th
+#> 40574              Mun                 <NA>       <NA>                   3rd
+#> 40615              Mun                 <NA>       <NA>                   2nd
+#> 40656              Mun                 <NA>       <NA>                   4th
+#> 40674              Mun                 <NA>       <NA>                   4th
+#> 40689              Mun                 <NA>       <NA>                   3rd
+#> 40714             City                 <NA>         CC                   3rd
+#> 40785              Mun                 <NA>       <NA>                   3rd
+#> 40816              Mun                 <NA>       <NA>                   4th
+#> 40854              Mun                 <NA>       <NA>                   5th
+#> 40866              Mun                 <NA>       <NA>                   5th
+#> 40890              Mun                 <NA>       <NA>                   3rd
+#> 40921              Mun                 <NA>       <NA>                   4th
+#> 40944              Mun             Cabalian       <NA>                   4th
+#> 40963              Mun                 <NA>       <NA>                   5th
+#> 40979              Mun                 <NA>       <NA>                   4th
+#> 40995              Mun                 <NA>       <NA>                   1st
+#> 41041              Mun                 <NA>       <NA>                   4th
+#> 41071              Mun                 <NA>       <NA>                   5th
 #> 41079              Mun                 <NA>       <NA>                   4th
-#> 41094              Mun                 <NA>       <NA>                   1st
-#> 41117              Mun                 <NA>       <NA>                   1st
-#> 41144              Mun                 <NA>       <NA>                   1st
-#> 41160             City                 <NA>         CC                   3rd
-#> 41185              Mun                 <NA>       <NA>                   2nd
-#> 41214              Mun           Luzurriaga       <NA>                   1st
-#> 41239              Mun                 <NA>       <NA>                   2nd
-#> 41255              Mun                 <NA>       <NA>                   3rd
-#> 41267              Mun                 <NA>       <NA>                   5th
-#> 41282              Mun                 <NA>       <NA>                   4th
-#> 41306              Mun                 <NA>       <NA>                   4th
-#> 41325              Mun                 <NA>       <NA>                   4th
-#> 41348              Mun                 <NA>       <NA>                   4th
-#> 41364              Mun                 <NA>       <NA>                   3rd
-#> 41407             City                 <NA>        HUC                   1st
-#> 41471             City                 <NA>         CC                   3rd
-#> 41517              Mun                 <NA>       <NA>                   2nd
-#> 41543              Mun                 <NA>       <NA>                   2nd
-#> 41564              Mun                 <NA>       <NA>                   1st
-#> 41594              Mun                 <NA>       <NA>                  4th*
-#> 41606              Mun                 <NA>       <NA>                   2nd
-#> 41617              Mun                 <NA>       <NA>                   4th
-#> 41627              Mun                 <NA>       <NA>                   4th
-#> 41644              Mun                 <NA>       <NA>                   4th
-#> 41656              Mun                 <NA>       <NA>                   4th
-#> 41669              Mun                 <NA>       <NA>                   5th
-#> 41680              Mun                 <NA>       <NA>                   4th
-#> 41694              Mun       Bacolod Grande       <NA>                   1st
-#> 41721              Mun                 <NA>       <NA>                   2nd
-#> 41749              Mun                 Watu       <NA>                   2nd
-#> 41788              Mun                 <NA>       <NA>                   3rd
-#> 41838              Mun                 <NA>       <NA>                   3rd
-#> 41865              Mun                 <NA>       <NA>                   1st
-#> 41902              Mun                 <NA>       <NA>                   2nd
-#> 41919              Mun                 <NA>       <NA>                   2nd
-#> 41952              Mun                 <NA>       <NA>                   2nd
-#> 41973              Mun              Maguing       <NA>                   1st
-#> 42012              Mun                 <NA>       <NA>                   4th
-#> 42034              Mun                 <NA>       <NA>                   1st
-#> 42072              Mun                 <NA>       <NA>                   3rd
-#> 42097              Mun                 <NA>       <NA>                   1st
-#> 42135              Mun                 <NA>       <NA>                   1st
-#> 42170             City                 <NA>         CC                   3rd
-#> 42272              Mun                 <NA>       <NA>                   3rd
-#> 42308              Mun                 <NA>       <NA>                   2nd
-#> 42335              Mun            Tatarikan       <NA>                   3rd
-#> 42354              Mun                 <NA>       <NA>                   2nd
-#> 42392              Mun                 Gata       <NA>                   2nd
-#> 42418              Mun                 <NA>       <NA>                   3rd
-#> 42442              Mun                 <NA>       <NA>                   2nd
-#> 42478              Mun                 <NA>       <NA>                   3rd
-#> 42509              Mun                 <NA>       <NA>                   3rd
-#> 42554              Mun                 <NA>       <NA>                   2nd
-#> 42598              Mun                 <NA>       <NA>                   2nd
-#> 42620              Mun                 <NA>       <NA>                   3rd
-#> 42644              Mun                 <NA>       <NA>                   1st
-#> 42671              Mun                 <NA>       <NA>                   2nd
-#> 42696              Mun                 <NA>       <NA>                   4th
-#> 42714              Mun                 <NA>       <NA>                   3rd
-#> 42748              Mun                 <NA>       <NA>                   1st
-#> 42783              Mun      Sultan Gumander       <NA>                   3rd
-#> 42803              Mun                 <NA>       <NA>                   3rd
-#> 42826              Mun             Bumbaran       <NA>                   1st
-#> 42844              Mun                 <NA>       <NA>                   3rd
-#> 42864              Mun                 <NA>       <NA>                   2nd
-#> 42880              Mun                 <NA>       <NA>                   5th
-#> 42888              Mun                 <NA>       <NA>                   5th
-#> 42899              Mun            Balimbing       <NA>                   1st
-#> 42917              Mun                 <NA>       <NA>                   1st
-#> 42953              Mun Cagayan de Tawi-Tawi       <NA>                   3rd
-#> 42969              Mun                 <NA>       <NA>                   2nd
-#> 42985              Mun                 <NA>       <NA>                   1st
-#> 42995              Mun                 <NA>       <NA>                   2nd
-#> 43027              Mun                 <NA>       <NA>                   1st
-#> 43048              Mun                 <NA>       <NA>                   5th
-#> 43051              Mun                 <NA>       <NA>                   1st
-#> 43072              Mun                 <NA>       <NA>                   2nd
-#> 43096              Mun                 <NA>       <NA>                   3rd
-#> 43114              Mun                 <NA>       <NA>                   2nd
-#> 43129              Mun                 <NA>       <NA>                   1st
-#> 43145             City                 <NA>        ICC                   1st
-#> 43183              Mun                 <NA>       <NA>                   3rd
-#> 43197              Mun               Dinaig       <NA>                   1st
-#> 43232              Mun               Tumbao       <NA>                   4th
-#> 43250              Mun                 <NA>       <NA>                   3rd
-#> 43259              Mun                 <NA>       <NA>                   4th
-#> 43271              Mun                 <NA>       <NA>                   1st
-#> 43297              Mun               Nuling       <NA>                   1st
-#> 43337              Mun                 <NA>       <NA>                   3rd
-#> 43351              Mun                 <NA>       <NA>                   4th
-#> 43361              Mun                 <NA>       <NA>                   1st
-#> 43386              Mun                 <NA>       <NA>                   2nd
-#> 43398              Mun                 <NA>       <NA>                   1st
-#> 43406              Mun                 <NA>       <NA>                   2nd
-#> 43417              Mun                 <NA>       <NA>                   4th
-#> 43425              Mun                 <NA>       <NA>                   4th
-#> 43437              Mun                 <NA>       <NA>                   3rd
-#> 43461              Mun                 <NA>       <NA>                   2nd
-#> 43478              Mun                 <NA>       <NA>                   4th
-#> 43496              Mun                 <NA>       <NA>                   4th
-#> 43505              Mun                 <NA>       <NA>                   4th
-#> 43514              Mun                 <NA>       <NA>                   2nd
-#> 43534              Mun                 <NA>       <NA>                   4th
-#> 43546              Mun                 <NA>       <NA>                   4th
-#> 43561              Mun                 <NA>       <NA>                   3rd
-#> 43570              Mun                 <NA>       <NA>                   2nd
-#> 43582              Mun                 <NA>       <NA>                   1st
-#> 43595              Mun                 <NA>       <NA>                   4th
-#> 43604              Mun                 <NA>       <NA>                   4th
-#> 43613              Mun                 <NA>       <NA>                   4th
-#> 43625              Mun              Maganoy       <NA>                   2nd
-#> 43639              Mun                 <NA>       <NA>                   4th
-#> 43656              Mun                 <NA>       <NA>                   2nd
-#> 43668              Mun            Lambayong       <NA>                  3rd*
-#> 43681              Mun                 <NA>       <NA>                   3rd
-#> 43698              Mun                 <NA>       <NA>                  <NA>
-#> 43706              Mun                 <NA>       <NA>                  <NA>
-#> 43714              Mun                 <NA>       <NA>                  <NA>
-#> 43722              Mun                 <NA>       <NA>                  <NA>
-#> 43730              Mun                 <NA>       <NA>                  <NA>
-#> 43743              Mun                 <NA>       <NA>                  <NA>
-#> 43751              Mun                 <NA>       <NA>                  <NA>
-#> 43759              Mun                 <NA>       <NA>                  <NA>
+#> 41093              Mun                 <NA>       <NA>                   4th
+#> 41105              Mun                 <NA>       <NA>                   4th
+#> 41119              Mun                 <NA>       <NA>                   4th
+#> 41137              Mun                 <NA>       <NA>                   4th
+#> 41155              Mun                 <NA>       <NA>                   4th
+#> 41176              Mun                 <NA>       <NA>                   5th
+#> 41192              Mun                 <NA>       <NA>                   1st
+#> 41219             City                 <NA>        HUC                   1st
+#> 41360              Mun                 <NA>       <NA>                   1st
+#> 41395              Mun                 <NA>       <NA>                   1st
+#> 41404              Mun                 <NA>       <NA>                   3rd
+#> 41414              Mun                 <NA>       <NA>                   3rd
+#> 41427              Mun                 <NA>       <NA>                   2nd
+#> 41455              Mun            Marunggas       <NA>                   5th
+#> 41461              Mun                 <NA>       <NA>                   2nd
+#> 41493              Mun                 <NA>       <NA>                   2nd
+#> 41510              Mun                 <NA>       <NA>                   1st
+#> 41551              Mun                 <NA>       <NA>                   4th
+#> 41566              Mun                 <NA>       <NA>                   1st
+#> 41597              Mun                 <NA>       <NA>                   1st
+#> 41648              Mun                 <NA>       <NA>                   1st
+#> 41701              Mun                 <NA>       <NA>                   4th
+#> 41717              Mun                 <NA>       <NA>                   2nd
+#> 41732              Mun          New Panamao       <NA>                   3rd
+#> 41745              Mun                 <NA>       <NA>                   4th
+#> 41763              Mun                 <NA>       <NA>                   3rd
+#> 41780              Mun                 <NA>       <NA>                   4th
+#> 41790             City                 <NA>         CC                   2nd
+#> 41841             City                 <NA>         CC                   2nd
+#> 41863              Mun                 <NA>       <NA>                   1st
+#> 41894              Mun                 <NA>       <NA>                   5th
+#> 41908              Mun                 <NA>       <NA>                   2nd
+#> 41929              Mun                 <NA>       <NA>                   2nd
+#> 41967              Mun                 <NA>       <NA>                   1st
+#> 41990              Mun                 <NA>       <NA>                   4th
+#> 42007              Mun            New Piñan       <NA>                   3rd
+#> 42030              Mun                 <NA>       <NA>                   1st
+#> 42061              Mun                 <NA>       <NA>                   1st
+#> 42093              Mun                 <NA>       <NA>                   4th
+#> 42116              Mun                 <NA>       <NA>                   2nd
+#> 42140              Mun                 <NA>       <NA>                   1st
+#> 42180              Mun                 <NA>       <NA>                   1st
+#> 42203              Mun                 <NA>       <NA>                   1st
+#> 42232              Mun                 <NA>       <NA>                   4th
+#> 42249              Mun                 <NA>       <NA>                   1st
+#> 42302              Mun                 <NA>       <NA>                   1st
+#> 42329              Mun                 <NA>       <NA>                   2nd
+#> 42364              Mun                 <NA>       <NA>                   3rd
+#> 42385              Mun                Ponot       <NA>                   3rd
+#> 42404              Mun                 <NA>       <NA>                   1st
+#> 42438              Mun                 <NA>       <NA>                   1st
+#> 42456              Mun                 <NA>       <NA>                   3rd
+#> 42474              Mun             Bacungan       <NA>                   2nd
+#> 42493              Mun                 <NA>       <NA>                   3rd
+#> 42509              Mun                 <NA>       <NA>                   1st
+#> 42554              Mun                 <NA>       <NA>                   1st
+#> 42583              Mun                 <NA>       <NA>                   3rd
+#> 42608              Mun                 <NA>       <NA>                   2nd
+#> 42639              Mun                 <NA>       <NA>                   2nd
+#> 42670              Mun                 <NA>       <NA>                   1st
+#> 42715              Mun                 <NA>       <NA>                   2nd
+#> 42734              Mun                 <NA>       <NA>                   2nd
+#> 42760              Mun                 <NA>       <NA>                   2nd
+#> 42787              Mun                 <NA>       <NA>                   1st
+#> 42817              Mun                 <NA>       <NA>                   2nd
+#> 42835              Mun                 <NA>       <NA>                   2nd
+#> 42869              Mun                 <NA>       <NA>                   1st
+#> 42895             City                 <NA>         CC                   1st
+#> 42950              Mun               Liargo       <NA>                   3rd
+#> 42978              Mun                 <NA>       <NA>                   3rd
+#> 42997              Mun                 <NA>       <NA>                   3rd
+#> 43026              Mun                 <NA>       <NA>                   3rd
+#> 43042              Mun                 <NA>       <NA>                   2nd
+#> 43074              Mun                 <NA>       <NA>                   2nd
+#> 43100              Mun                 <NA>       <NA>                   3rd
+#> 43115              Mun                 <NA>       <NA>                   4th
+#> 43130              Mun                 <NA>       <NA>                   3rd
+#> 43146              Mun   Don Mariano Marcos       <NA>                   4th
+#> 43165              Mun                 <NA>       <NA>                   4th
+#> 43180              Mun                 <NA>       <NA>                   4th
+#> 43198              Mun                 <NA>       <NA>                   4th
+#> 43218              Mun                 <NA>       <NA>                   2nd
+#> 43246              Mun                 <NA>       <NA>                   2nd
+#> 43274              Mun                 <NA>       <NA>                   1st
+#> 43297              Mun                 <NA>       <NA>                   3rd
+#> 43317              Mun                 <NA>       <NA>                   1st
+#> 43346              Mun                 <NA>       <NA>                   1st
+#> 43376              Mun                 <NA>       <NA>                   3rd
+#> 43395              Mun                 <NA>       <NA>                   1st
+#> 43421              Mun                 <NA>       <NA>                   1st
+#> 43445              Mun                 <NA>       <NA>                   2nd
+#> 43465              Mun                 <NA>       <NA>                   2nd
+#> 43494              Mun                 <NA>       <NA>                   1st
+#> 43521              Mun                 <NA>       <NA>                   1st
+#> 43551              Mun                 <NA>       <NA>                   4th
+#> 43566              Mun                 <NA>       <NA>                   1st
+#> 43597              Mun                 <NA>       <NA>                   1st
+#> 43623             City                 <NA>        HUC                   1st
+#> 43723             City                 <NA>         CC                   3rd
 #>       urban_rural island_region
-#> 3            <NA>             L
-#> 5            <NA>             L
-#> 49           <NA>             L
-#> 81           <NA>             L
-#> 96           <NA>             L
-#> 140          <NA>             L
-#> 152          <NA>             L
-#> 156          <NA>             L
-#> 180          <NA>             L
-#> 212          <NA>             L
-#> 217          <NA>             L
-#> 238          <NA>             L
-#> 319          <NA>             L
-#> 333          <NA>             L
-#> 345          <NA>             L
-#> 362          <NA>             L
-#> 394          <NA>             L
-#> 428          <NA>             L
-#> 452          <NA>             L
-#> 478          <NA>             L
-#> 503          <NA>             L
-#> 528          <NA>             L
-#> 551          <NA>             L
-#> 586          <NA>             L
-#> 596          <NA>             L
-#> 611          <NA>             L
-#> 646          <NA>             L
-#> 673          <NA>             L
-#> 707          <NA>             L
-#> 750          <NA>             L
-#> 768          <NA>             L
-#> 782          <NA>             L
-#> 807          <NA>             L
-#> 815          <NA>             L
-#> 827          <NA>             L
-#> 858          <NA>             L
-#> 871          <NA>             L
-#> 906          <NA>             L
-#> 916          <NA>             L
-#> 938          <NA>             L
-#> 947          <NA>             L
-#> 958          <NA>             L
-#> 974          <NA>             L
-#> 1007         <NA>             L
-#> 1015         <NA>             L
-#> 1042         <NA>             L
-#> 1052         <NA>             L
-#> 1102         <NA>             L
-#> 1139         <NA>             L
-#> 1173         <NA>             L
-#> 1198         <NA>             L
-#> 1235         <NA>             L
-#> 1243         <NA>             L
-#> 1288         <NA>             L
-#> 1295         <NA>             L
-#> 1304         <NA>             L
-#> 1348         <NA>             L
-#> 1389         <NA>             L
-#> 1439         <NA>             L
-#> 1464         <NA>             L
-#> 1512         <NA>             L
-#> 1523         <NA>             L
-#> 1560         <NA>             L
-#> 1594         <NA>             L
-#> 1634         <NA>             L
-#> 1647         <NA>             L
-#> 1665         <NA>             L
-#> 1706         <NA>             L
-#> 1744         <NA>             L
-#> 1759         <NA>             L
-#> 1793         <NA>             L
-#> 1853         <NA>             L
-#> 1869         <NA>             L
-#> 1911         <NA>             L
-#> 1936         <NA>             L
-#> 1948         <NA>             L
-#> 1966         <NA>             L
-#> 1986         <NA>             L
-#> 2004         <NA>             L
-#> 2021         <NA>             L
-#> 2061         <NA>             L
-#> 2083         <NA>             L
-#> 2102         <NA>             L
-#> 2124         <NA>             L
-#> 2145         <NA>             L
-#> 2173         <NA>             L
-#> 2187         <NA>             L
-#> 2206         <NA>             L
-#> 2284         <NA>             L
-#> 2309         <NA>             L
-#> 2343         <NA>             L
-#> 2374         <NA>             L
-#> 2399         <NA>             L
-#> 2414         <NA>             L
-#> 2439         <NA>             L
-#> 2471         <NA>             L
-#> 2490         <NA>             L
-#> 2504         <NA>             L
-#> 2515         <NA>             L
-#> 2548         <NA>             L
-#> 2565         <NA>             L
-#> 2639         <NA>             L
-#> 2666         <NA>             L
-#> 2697         <NA>             L
-#> 2780         <NA>             L
-#> 2796         <NA>             L
-#> 2815         <NA>             L
-#> 2850         <NA>             L
-#> 2888         <NA>             L
-#> 2975         <NA>             L
+#> 4            <NA>             M
+#> 21           <NA>             M
+#> 39           <NA>             M
+#> 54           <NA>             M
+#> 84           <NA>             M
+#> 98           <NA>             M
+#> 116          <NA>             M
+#> 131          <NA>             M
+#> 155          <NA>             M
+#> 191          <NA>             M
+#> 206          <NA>             M
+#> 221          <NA>             M
+#> 268          <NA>             M
+#> 280          <NA>             M
+#> 303          <NA>             M
+#> 324          <NA>             M
+#> 344          <NA>             M
+#> 376          <NA>             M
+#> 401          <NA>             M
+#> 412          <NA>             M
+#> 442          <NA>             M
+#> 474          <NA>             M
+#> 491          <NA>             M
+#> 506          <NA>             M
+#> 514          <NA>             M
+#> 528          <NA>             M
+#> 544          <NA>             M
+#> 555          <NA>             M
+#> 572          <NA>             M
+#> 594          <NA>             M
+#> 618          <NA>             M
+#> 652          <NA>             M
+#> 690          <NA>             M
+#> 704          <NA>             M
+#> 731          <NA>             M
+#> 759          <NA>             M
+#> 768          <NA>             M
+#> 793          <NA>             M
+#> 807          <NA>             M
+#> 820          <NA>             M
+#> 847          <NA>             M
+#> 873          <NA>             M
+#> 894          <NA>             M
+#> 921          <NA>             M
+#> 947          <NA>             M
+#> 965          <NA>             M
+#> 973          <NA>             M
+#> 992          <NA>             M
+#> 1017         <NA>             M
+#> 1040         <NA>             M
+#> 1079         <NA>             M
+#> 1095         <NA>             M
+#> 1124         <NA>             M
+#> 1144         <NA>             M
+#> 1174         <NA>             M
+#> 1193         <NA>             M
+#> 1218         <NA>             M
+#> 1247         <NA>             M
+#> 1295         <NA>             M
+#> 1347         <NA>             M
+#> 1364         <NA>             M
+#> 1398         <NA>             M
+#> 1427         <NA>             M
+#> 1445         <NA>             M
+#> 1501         <NA>             M
+#> 1535         <NA>             M
+#> 1548         <NA>             M
+#> 1565         <NA>             M
+#> 1596         <NA>             M
+#> 1606         <NA>             M
+#> 1615         <NA>             M
+#> 1640         <NA>             M
+#> 1656         <NA>             M
+#> 1736         <NA>             M
+#> 1748         <NA>             M
+#> 1765         <NA>             M
+#> 1781         <NA>             M
+#> 1797         <NA>             M
+#> 1808         <NA>             M
+#> 1820         <NA>             M
+#> 1830         <NA>             M
+#> 1839         <NA>             M
+#> 1865         <NA>             M
+#> 1879         <NA>             M
+#> 1899         <NA>             M
+#> 1910         <NA>             M
+#> 1925         <NA>             M
+#> 1944         <NA>             M
+#> 1955         <NA>             M
+#> 1966         <NA>             M
+#> 1985         <NA>             M
+#> 1998         <NA>             L
+#> 2000         <NA>             L
+#> 2044         <NA>             L
+#> 2076         <NA>             L
+#> 2091         <NA>             L
+#> 2135         <NA>             L
+#> 2147         <NA>             L
+#> 2151         <NA>             L
+#> 2175         <NA>             L
+#> 2207         <NA>             L
+#> 2212         <NA>             L
+#> 2233         <NA>             L
+#> 2314         <NA>             L
+#> 2328         <NA>             L
+#> 2340         <NA>             L
+#> 2357         <NA>             L
+#> 2389         <NA>             L
+#> 2423         <NA>             L
+#> 2447         <NA>             L
+#> 2473         <NA>             L
+#> 2498         <NA>             L
+#> 2523         <NA>             L
+#> 2546         <NA>             L
+#> 2581         <NA>             L
+#> 2591         <NA>             L
+#> 2606         <NA>             L
+#> 2641         <NA>             L
+#> 2668         <NA>             L
+#> 2702         <NA>             L
+#> 2745         <NA>             L
+#> 2763         <NA>             L
+#> 2777         <NA>             L
+#> 2802         <NA>             L
+#> 2810         <NA>             L
+#> 2822         <NA>             L
+#> 2853         <NA>             L
+#> 2866         <NA>             L
+#> 2901         <NA>             L
+#> 2911         <NA>             L
+#> 2933         <NA>             L
+#> 2942         <NA>             L
+#> 2953         <NA>             L
+#> 2969         <NA>             L
+#> 3002         <NA>             L
 #> 3010         <NA>             L
-#> 3030         <NA>             L
-#> 3045         <NA>             L
-#> 3079         <NA>             L
-#> 3101         <NA>             L
-#> 3131         <NA>             L
-#> 3155         <NA>             L
-#> 3166         <NA>             L
-#> 3195         <NA>             L
-#> 3215         <NA>             L
-#> 3237         <NA>             L
-#> 3296         <NA>             L
-#> 3318         <NA>             L
-#> 3353         <NA>             L
-#> 3375         <NA>             L
-#> 3400         <NA>             L
-#> 3407         <NA>             L
-#> 3413         <NA>             L
-#> 3418         <NA>             L
-#> 3423         <NA>             L
-#> 3430         <NA>             L
-#> 3436         <NA>             L
-#> 3457         <NA>             L
-#> 3483         <NA>             L
-#> 3511         <NA>             L
-#> 3559         <NA>             L
-#> 3602         <NA>             L
-#> 3651         <NA>             L
-#> 3671         <NA>             L
-#> 3702         <NA>             L
+#> 3037         <NA>             L
+#> 3047         <NA>             L
+#> 3097         <NA>             L
+#> 3134         <NA>             L
+#> 3168         <NA>             L
+#> 3193         <NA>             L
+#> 3230         <NA>             L
+#> 3238         <NA>             L
+#> 3283         <NA>             L
+#> 3290         <NA>             L
+#> 3299         <NA>             L
+#> 3343         <NA>             L
+#> 3383         <NA>             M
+#> 3464         <NA>             M
+#> 3510         <NA>             L
+#> 3560         <NA>             L
+#> 3585         <NA>             L
+#> 3633         <NA>             L
+#> 3644         <NA>             L
+#> 3681         <NA>             L
 #> 3715         <NA>             L
-#> 3744         <NA>             L
+#> 3755         <NA>             L
+#> 3768         <NA>             L
 #> 3786         <NA>             L
-#> 3809         <NA>             L
-#> 3860         <NA>             L
-#> 3886         <NA>             L
-#> 3910         <NA>             L
-#> 3946         <NA>             L
-#> 3977         <NA>             L
-#> 3996         <NA>             L
-#> 4021         <NA>             L
-#> 4040         <NA>             L
-#> 4070         <NA>             L
-#> 4089         <NA>             L
-#> 4106         <NA>             L
-#> 4117         <NA>             L
-#> 4131         <NA>             L
-#> 4163         <NA>             L
-#> 4202         <NA>             L
-#> 4235         <NA>             L
-#> 4286         <NA>             L
-#> 4321         <NA>             L
-#> 4381         <NA>             L
-#> 4415         <NA>             L
-#> 4445         <NA>             L
-#> 4460         <NA>             L
-#> 4487         <NA>             L
-#> 4510         <NA>             L
-#> 4576         <NA>             L
-#> 4603         <NA>             L
-#> 4610         <NA>             L
-#> 4623         <NA>             L
-#> 4688         <NA>             L
-#> 4705         <NA>             L
-#> 4797         <NA>             L
-#> 4840         <NA>             L
-#> 4860         <NA>             L
-#> 4871         <NA>             L
+#> 3827         <NA>             L
+#> 3865         <NA>             L
+#> 3880         <NA>             L
+#> 3914         <NA>             L
+#> 3974         <NA>             L
+#> 3990         <NA>             L
+#> 4032         <NA>             L
+#> 4057         <NA>             L
+#> 4069         <NA>             L
+#> 4087         <NA>             L
+#> 4107         <NA>             L
+#> 4125         <NA>             L
+#> 4142         <NA>             L
+#> 4182         <NA>             L
+#> 4204         <NA>             L
+#> 4223         <NA>             L
+#> 4245         <NA>             L
+#> 4266         <NA>             L
+#> 4294         <NA>             L
+#> 4308         <NA>             L
+#> 4327         <NA>             L
+#> 4405         <NA>             L
+#> 4430         <NA>             L
+#> 4464         <NA>             L
+#> 4495         <NA>             L
+#> 4520         <NA>             L
+#> 4535         <NA>             L
+#> 4560         <NA>             L
+#> 4592         <NA>             L
+#> 4611         <NA>             L
+#> 4625         <NA>             L
+#> 4636         <NA>             L
+#> 4669         <NA>             L
+#> 4686         <NA>             L
+#> 4760         <NA>             L
+#> 4787         <NA>             L
+#> 4818         <NA>             L
 #> 4901         <NA>             L
-#> 4920         <NA>             L
-#> 4946         <NA>             L
-#> 4964         <NA>             L
-#> 4980         <NA>             L
-#> 5002         <NA>             L
-#> 5022         <NA>             L
-#> 5043         <NA>             L
-#> 5070         <NA>             L
-#> 5094         <NA>             L
-#> 5121         <NA>             L
-#> 5135         <NA>             L
-#> 5155         <NA>             L
-#> 5192         <NA>             L
-#> 5226         <NA>             L
-#> 5244         <NA>             L
-#> 5265         <NA>             L
-#> 5303         <NA>             L
-#> 5331         <NA>             L
-#> 5379         <NA>             L
-#> 5388         <NA>             L
-#> 5411         <NA>             L
-#> 5429         <NA>             L
-#> 5455         <NA>             L
-#> 5481         <NA>             L
-#> 5501         <NA>             L
-#> 5517         <NA>             L
-#> 5537         <NA>             L
-#> 5568         <NA>             L
-#> 5599         <NA>             L
-#> 5612         <NA>             L
-#> 5629         <NA>             L
-#> 5652         <NA>             L
-#> 5662         <NA>             L
-#> 5670         <NA>             L
-#> 5696         <NA>             L
-#> 5714         <NA>             L
-#> 5748         <NA>             L
-#> 5781         <NA>             L
-#> 5791         <NA>             L
-#> 5810         <NA>             L
-#> 5820         <NA>             L
-#> 5835         <NA>             L
-#> 5861         <NA>             L
-#> 5908         <NA>             L
-#> 5932         <NA>             L
-#> 5945         <NA>             L
-#> 5964         <NA>             L
-#> 5970         <NA>             L
-#> 6000         <NA>             L
-#> 6024         <NA>             L
-#> 6044         <NA>             L
-#> 6060         <NA>             L
-#> 6077         <NA>             L
-#> 6087         <NA>             L
-#> 6115         <NA>             L
-#> 6135         <NA>             L
-#> 6150         <NA>             L
-#> 6165         <NA>             L
-#> 6195         <NA>             L
-#> 6210         <NA>             L
-#> 6237         <NA>             L
-#> 6289         <NA>             L
-#> 6306         <NA>             L
-#> 6333         <NA>             L
-#> 6347         <NA>             L
-#> 6359         <NA>             L
-#> 6382         <NA>             L
-#> 6397         <NA>             L
-#> 6417         <NA>             L
-#> 6437         <NA>             L
-#> 6474         <NA>             L
-#> 6537         <NA>             L
-#> 6587         <NA>             L
-#> 6622         <NA>             L
-#> 6647         <NA>             L
-#> 6657         <NA>             L
-#> 6684         <NA>             L
-#> 6713         <NA>             L
-#> 6803         <NA>             L
-#> 6827         <NA>             L
-#> 6845         <NA>             L
-#> 6897         <NA>             L
-#> 6914         <NA>             L
-#> 6938         <NA>             L
-#> 6959         <NA>             L
-#> 6973         <NA>             L
-#> 7038         <NA>             L
-#> 7066         <NA>             L
-#> 7084         <NA>             L
-#> 7096         <NA>             L
-#> 7119         <NA>             L
-#> 7144         <NA>             L
-#> 7182         <NA>             L
-#> 7204         <NA>             L
-#> 7224         <NA>             L
-#> 7239         <NA>             L
-#> 7250         <NA>             L
-#> 7267         <NA>             L
-#> 7294         <NA>             L
-#> 7311         <NA>             L
-#> 7321         <NA>             L
-#> 7360         <NA>             L
-#> 7376         <NA>             L
-#> 7410         <NA>             L
-#> 7435         <NA>             L
-#> 7489         <NA>             L
-#> 7518         <NA>             L
-#> 7539         <NA>             L
-#> 7552         <NA>             L
-#> 7583         <NA>             L
-#> 7605         <NA>             L
-#> 7639         <NA>             L
-#> 7673         <NA>             L
-#> 7705         <NA>             L
-#> 7750         <NA>             L
-#> 7778         <NA>             L
-#> 7804         <NA>             L
-#> 7832         <NA>             L
-#> 7859         <NA>             L
-#> 7903         <NA>             L
-#> 7919         <NA>             L
-#> 7949         <NA>             L
-#> 7985         <NA>             L
-#> 8003         <NA>             L
-#> 8018         <NA>             L
-#> 8033         <NA>             L
-#> 8044         <NA>             L
-#> 8052         <NA>             L
-#> 8066         <NA>             L
-#> 8085         <NA>             L
-#> 8101         <NA>             L
-#> 8163         <NA>             L
-#> 8184         <NA>             L
-#> 8230         <NA>             L
-#> 8275         <NA>             L
-#> 8297         <NA>             L
-#> 8322         <NA>             L
-#> 8360         <NA>             L
-#> 8396         <NA>             L
-#> 8413         <NA>             L
-#> 8423         <NA>             L
-#> 8436         <NA>             L
-#> 8452         <NA>             L
-#> 8477         <NA>             L
-#> 8554         <NA>             L
-#> 8581         <NA>             L
-#> 8596         <NA>             L
-#> 8628         <NA>             L
-#> 8651         <NA>             L
-#> 8668         <NA>             L
-#> 8683         <NA>             L
-#> 8698         <NA>             L
-#> 8712         <NA>             L
-#> 8732         <NA>             L
-#> 8747         <NA>             L
-#> 8759         <NA>             L
-#> 8778         <NA>             L
-#> 8796         <NA>             L
-#> 8822         <NA>             L
-#> 8840         <NA>             L
-#> 8854         <NA>             L
-#> 8879         <NA>             L
-#> 8891         <NA>             L
-#> 8901         <NA>             L
-#> 8913         <NA>             L
-#> 8939         <NA>             L
-#> 8980         <NA>             L
-#> 8999         <NA>             L
-#> 9033         <NA>             L
-#> 9053         <NA>             L
-#> 9075         <NA>             L
-#> 9095         <NA>             L
-#> 9144         <NA>             L
-#> 9158         <NA>             L
-#> 9264         <NA>             L
-#> 9305         <NA>             L
-#> 9345         <NA>             L
-#> 9371         <NA>             L
-#> 9393         <NA>             L
-#> 9420         <NA>             L
-#> 9442         <NA>             L
-#> 9489         <NA>             L
-#> 9509         <NA>             L
-#> 9582         <NA>             L
-#> 9609         <NA>             L
-#> 9644         <NA>             L
-#> 9660         <NA>             L
+#> 4917         <NA>             L
+#> 4936         <NA>             L
+#> 4971         <NA>             L
+#> 5009         <NA>             L
+#> 5096         <NA>             L
+#> 5131         <NA>             L
+#> 5151         <NA>             L
+#> 5166         <NA>             L
+#> 5200         <NA>             L
+#> 5222         <NA>             L
+#> 5252         <NA>             L
+#> 5276         <NA>             L
+#> 5287         <NA>             L
+#> 5316         <NA>             L
+#> 5336         <NA>             L
+#> 5358         <NA>             L
+#> 5417         <NA>             L
+#> 5439         <NA>             L
+#> 5474         <NA>             L
+#> 5496         <NA>             L
+#> 5521         <NA>             M
+#> 5542         <NA>             M
+#> 5563         <NA>             M
+#> 5578         <NA>             M
+#> 5599         <NA>             M
+#> 5640         <NA>             M
+#> 5687         <NA>             M
+#> 5707         <NA>             M
+#> 5731         <NA>             M
+#> 5735         <NA>             M
+#> 5741         <NA>             M
+#> 5756         <NA>             M
+#> 5782         <NA>             M
+#> 5809         <NA>             M
+#> 5831         <NA>             M
+#> 5862         <NA>             M
+#> 5885         <NA>             M
+#> 5901         <NA>             M
+#> 5935         <NA>             M
+#> 5953         <NA>             M
+#> 5972         <NA>             M
+#> 5999         <NA>             M
+#> 6018         <NA>             M
+#> 6033         <NA>             M
+#> 6042         <NA>             M
+#> 6060         <NA>             M
+#> 6077         <NA>             M
+#> 6098         <NA>             M
+#> 6120         <NA>             M
+#> 6138         <NA>             M
+#> 6165         <NA>             M
+#> 6182         <NA>             M
+#> 6194         <NA>             M
+#> 6211         <NA>             M
+#> 6252         <NA>             M
+#> 6264         <NA>             M
+#> 6302         <NA>             M
+#> 6327         <NA>             M
+#> 6339         <NA>             M
+#> 6361         <NA>             M
+#> 6382         <NA>             M
+#> 6411         <NA>             M
+#> 6428         <NA>             M
+#> 6443         <NA>             M
+#> 6459         <NA>             M
+#> 6486         <NA>             M
+#> 6517         <NA>             M
+#> 6540         <NA>             M
+#> 6553         <NA>             M
+#> 6738         <NA>             M
+#> 6756         <NA>             M
+#> 6778         <NA>             M
+#> 6796         <NA>             M
+#> 6837         <NA>             M
+#> 6858         <NA>             M
+#> 6891         <NA>             M
+#> 6930         <NA>             M
+#> 6965         <NA>             M
+#> 7010         <NA>             M
+#> 7048         <NA>             M
+#> 7077         <NA>             M
+#> 7098         <NA>             M
+#> 7124         <NA>             M
+#> 7154         <NA>             M
+#> 7168         <NA>             M
+#> 7189         <NA>             M
+#> 7207         <NA>             M
+#> 7237         <NA>             M
+#> 7260         <NA>             M
+#> 7288         <NA>             M
+#> 7303         <NA>             M
+#> 7327         <NA>             M
+#> 7345         <NA>             M
+#> 7360         <NA>             M
+#> 7374         <NA>             M
+#> 7400         <NA>             M
+#> 7417         <NA>             M
+#> 7428         <NA>             M
+#> 7449         <NA>             M
+#> 7469         <NA>             M
+#> 7486         <NA>             M
+#> 7506         <NA>             M
+#> 7524         <NA>             M
+#> 7540         <NA>             M
+#> 7568         <NA>             M
+#> 7580         <NA>             M
+#> 7607         <NA>             M
+#> 7648         <NA>             M
+#> 7668         <NA>             M
+#> 7689         <NA>             M
+#> 7711         <NA>             M
+#> 7726         <NA>             M
+#> 7758         <NA>             M
+#> 7778         <NA>             M
+#> 7795         <NA>             M
+#> 7815         <NA>             M
+#> 7828         <NA>             M
+#> 7860         <NA>             M
+#> 7888         <NA>             L
+#> 8082         <NA>             L
+#> 8103         <NA>             L
+#> 8127         <NA>             L
+#> 8149         <NA>             L
+#> 8177         <NA>             L
+#> 9089         <NA>             L
+#> 9106         <NA>             L
+#> 9116         <NA>             L
+#> 9135         <NA>             L
+#> 9152         <NA>             L
+#> 9354         <NA>             L
+#> 9385         <NA>             L
+#> 9528         <NA>             L
+#> 9550         <NA>             L
+#> 9589         <NA>             L
+#> 9623         <NA>             L
+#> 9636         <NA>             L
+#> 9668         <NA>             L
 #> 9677         <NA>             L
-#> 9720         <NA>             L
-#> 9739         <NA>             L
-#> 9788         <NA>             L
-#> 9822         <NA>             L
-#> 9865         <NA>             L
-#> 9892         <NA>             L
-#> 9911         <NA>             L
-#> 9941         <NA>             L
-#> 9959         <NA>             L
-#> 9990         <NA>             L
-#> 10033        <NA>             L
-#> 10055        <NA>             L
-#> 10104        <NA>             L
-#> 10125        <NA>             L
-#> 10141        <NA>             L
+#> 9699         <NA>             L
+#> 9704         <NA>             L
+#> 9709         <NA>             L
+#> 9717         <NA>             L
+#> 9733         <NA>             L
+#> 9746         <NA>             L
+#> 9753         <NA>             L
+#> 9771         <NA>             L
+#> 9777         <NA>             L
+#> 9784         <NA>             L
+#> 9796         <NA>             L
+#> 9805         <NA>             L
+#> 9818         <NA>             L
+#> 9830         <NA>             L
+#> 9840         <NA>             L
+#> 9856         <NA>             L
+#> 9876         <NA>             L
+#> 9886         <NA>             L
+#> 9896         <NA>             L
+#> 9916         <NA>             L
+#> 9923         <NA>             L
+#> 9935         <NA>             L
+#> 9946         <NA>             L
+#> 9957         <NA>             L
+#> 9967         <NA>             L
+#> 9976         <NA>             L
+#> 9984         <NA>             L
+#> 9995         <NA>             L
+#> 10010        <NA>             L
+#> 10020        <NA>             L
+#> 10034        <NA>             L
+#> 10050        <NA>             L
+#> 10058        <NA>             L
+#> 10075        <NA>             L
+#> 10088        <NA>             L
+#> 10097        <NA>             L
+#> 10111        <NA>             L
+#> 10121        <NA>             L
+#> 10140        <NA>             L
+#> 10150        <NA>             L
 #> 10165        <NA>             L
-#> 10198        <NA>             L
-#> 10225        <NA>             L
-#> 10273        <NA>             L
-#> 10288        <NA>             L
+#> 10186        <NA>             L
+#> 10205        <NA>             L
+#> 10233        <NA>             L
+#> 10254        <NA>             L
+#> 10271        <NA>             L
+#> 10284        <NA>             L
+#> 10297        <NA>             L
+#> 10309        <NA>             L
+#> 10324        <NA>             L
+#> 10334        <NA>             L
+#> 10349        <NA>             L
 #> 10373        <NA>             L
+#> 10388        <NA>             L
+#> 10432        <NA>             L
 #> 10449        <NA>             L
-#> 10464        <NA>             L
-#> 10498        <NA>             L
-#> 10596        <NA>             L
-#> 10633        <NA>             L
-#> 10657        <NA>             L
-#> 10674        <NA>             L
-#> 10702        <NA>             L
-#> 10727        <NA>             L
-#> 10758        <NA>             L
-#> 10775        <NA>             L
-#> 10796        <NA>             L
-#> 10861        <NA>             L
-#> 10896        <NA>             L
-#> 10938        <NA>             L
-#> 10949        <NA>             L
-#> 10963        <NA>             L
-#> 10992        <NA>             L
-#> 11008        <NA>             L
-#> 11024        <NA>             L
-#> 11049        <NA>             L
-#> 11068        <NA>             L
-#> 11123        <NA>             L
-#> 11141        <NA>             L
-#> 11161        <NA>             L
-#> 11182        <NA>             L
-#> 11186        <NA>             L
-#> 11220        <NA>             L
-#> 11235        <NA>             L
-#> 11259        <NA>             L
-#> 11276        <NA>             L
-#> 11292        <NA>             L
-#> 11317        <NA>             L
-#> 11358        <NA>             L
-#> 11411        <NA>             L
-#> 11421        <NA>             L
-#> 11438        <NA>             L
-#> 11452        <NA>             L
-#> 11461        <NA>             L
-#> 11479        <NA>             L
-#> 11491        <NA>             L
-#> 11572        <NA>             L
-#> 11600        <NA>             L
-#> 11627        <NA>             L
-#> 11653        <NA>             L
-#> 11672        <NA>             L
-#> 11693        <NA>             L
-#> 11704        <NA>             L
-#> 11717        <NA>             L
-#> 11737        <NA>             L
-#> 11780        <NA>             L
-#> 11818        <NA>             L
-#> 11832        <NA>             L
-#> 11914        <NA>             L
-#> 11940        <NA>             L
-#> 11987        <NA>             L
-#> 12004        <NA>             L
-#> 12032        <NA>             L
-#> 12052        <NA>             L
-#> 12107        <NA>             L
-#> 12167        <NA>             L
-#> 12204        <NA>             L
-#> 12210        <NA>             L
-#> 12306        <NA>             L
-#> 12339        <NA>             L
-#> 12370        <NA>             L
-#> 12411        <NA>             L
-#> 12440        <NA>             L
-#> 12463        <NA>             L
-#> 12491        <NA>             L
-#> 12505        <NA>             L
-#> 12512        <NA>             L
-#> 12527        <NA>             L
-#> 12567        <NA>             L
-#> 12577        <NA>             L
-#> 12598        <NA>             L
-#> 12623        <NA>             L
-#> 12641        <NA>             L
-#> 12656        <NA>             L
-#> 12664        <NA>             L
-#> 12685        <NA>             L
-#> 12702        <NA>             L
-#> 12727        <NA>             L
-#> 12771        <NA>             L
-#> 12817        <NA>             L
-#> 12884        <NA>             L
-#> 12916        <NA>             L
-#> 12954        <NA>             L
+#> 10471        <NA>             L
+#> 10483        <NA>             L
+#> 10506        <NA>             L
+#> 10521        <NA>             L
+#> 10538        <NA>             L
+#> 10550        <NA>             L
+#> 10560        <NA>             L
+#> 10576        <NA>             L
+#> 10585        <NA>             L
+#> 10605        <NA>             L
+#> 10626        <NA>             L
+#> 10645        <NA>             L
+#> 10667        <NA>             L
+#> 10684        <NA>             L
+#> 10706        <NA>             L
+#> 10729        <NA>             L
+#> 10752        <NA>             L
+#> 10766        <NA>             L
+#> 10898        <NA>             M
+#> 10924        <NA>             M
+#> 10956        <NA>             M
+#> 10965        <NA>             M
+#> 10981        <NA>             M
+#> 10993        <NA>             M
+#> 11014        <NA>             M
+#> 11023        <NA>             M
+#> 11043        <NA>             M
+#> 11053        <NA>             M
+#> 11067        <NA>             M
+#> 11077        <NA>             M
+#> 11121        <NA>             M
+#> 11132        <NA>             M
+#> 11180        <NA>             M
+#> 11196        <NA>             M
+#> 11214        <NA>             M
+#> 11247        <NA>             M
+#> 11259        <NA>             M
+#> 11287        <NA>             M
+#> 11313        <NA>             M
+#> 11325        <NA>             M
+#> 11342        <NA>             M
+#> 11359        <NA>             M
+#> 11380        <NA>             M
+#> 11406        <NA>             M
+#> 11419        <NA>             M
+#> 11429        <NA>             M
+#> 11436        <NA>             M
+#> 11451        <NA>             M
+#> 11481        <NA>             M
+#> 11502        <NA>             M
+#> 11522        <NA>             M
+#> 11536        <NA>             M
+#> 11558        <NA>             M
+#> 11573        <NA>             M
+#> 11589        <NA>             M
+#> 11610        <NA>             M
+#> 11617        <NA>             M
+#> 11629        <NA>             M
+#> 11642        <NA>             M
+#> 11654        <NA>             M
+#> 11667        <NA>             M
+#> 11682        <NA>             M
+#> 11737        <NA>             M
+#> 11752        <NA>             M
+#> 11763        <NA>             M
+#> 11786        <NA>             M
+#> 11794        <NA>             M
+#> 11819        <NA>             M
+#> 11831        <NA>             M
+#> 11849        <NA>             M
+#> 11858        <NA>             M
+#> 11873        <NA>             M
+#> 11886        <NA>             M
+#> 11911        <NA>             M
+#> 11925        <NA>             M
+#> 11939        <NA>             M
+#> 11958        <NA>             M
+#> 11973        <NA>             M
+#> 11986        <NA>             M
+#> 12000        <NA>             M
+#> 12019        <NA>             M
+#> 12045        <NA>             M
+#> 12070        <NA>             M
+#> 12093        <NA>             M
+#> 12121        <NA>             M
+#> 12136        <NA>             M
+#> 12149        <NA>             M
+#> 12166        <NA>             M
+#> 12177        <NA>             M
+#> 12190        <NA>             M
+#> 12200        <NA>             M
+#> 12289        <NA>             L
+#> 12351        <NA>             L
+#> 12367        <NA>             L
+#> 12393        <NA>             L
+#> 12431        <NA>             L
+#> 12487        <NA>             L
+#> 12514        <NA>             L
+#> 12525        <NA>             L
+#> 12533        <NA>             L
+#> 12543        <NA>             L
+#> 12560        <NA>             L
+#> 12573        <NA>             L
+#> 12589        <NA>             L
+#> 12602        <NA>             L
+#> 12614        <NA>             L
+#> 12637        <NA>             L
+#> 12677        <NA>             L
+#> 12690        <NA>             L
+#> 12718        <NA>             L
+#> 12732        <NA>             L
+#> 12769        <NA>             L
+#> 12785        <NA>             L
+#> 12848        <NA>             L
+#> 12876        <NA>             L
+#> 12894        <NA>             L
 #> 12965        <NA>             L
-#> 12982        <NA>             L
-#> 12993        <NA>             L
-#> 13034        <NA>             L
-#> 13042        <NA>             L
-#> 13061        <NA>             L
-#> 13073        <NA>             L
-#> 13085        <NA>             L
-#> 13094        <NA>             L
-#> 13104        <NA>             L
-#> 13120        <NA>             L
-#> 13141        <NA>             L
-#> 13147        <NA>             L
-#> 13157        <NA>             L
-#> 13193        <NA>             L
-#> 13250        <NA>             L
-#> 13301        <NA>             L
-#> 13356        <NA>             L
-#> 13401        <NA>             L
-#> 13425        <NA>             L
-#> 13496        <NA>             L
-#> 13544        <NA>             L
-#> 13600        <NA>             L
-#> 13619        <NA>             L
-#> 13649        <NA>             L
-#> 13665        <NA>             L
-#> 13719        <NA>             L
-#> 13753        <NA>             L
-#> 13798        <NA>             L
-#> 13833        <NA>             L
-#> 13857        <NA>             L
-#> 13905        <NA>             L
-#> 13932        <NA>             L
-#> 13962        <NA>             L
-#> 13985        <NA>             L
-#> 14011        <NA>             L
-#> 14024        <NA>             L
-#> 14052        <NA>             L
-#> 14105        <NA>             L
-#> 14132        <NA>             L
-#> 14160        <NA>             L
-#> 14170        <NA>             L
-#> 14190        <NA>             L
-#> 14206        <NA>             L
-#> 14227        <NA>             L
-#> 14258        <NA>             L
-#> 14276        <NA>             L
-#> 14310        <NA>             L
-#> 14319        <NA>             L
-#> 14358        <NA>             L
-#> 14392        <NA>             L
-#> 14402        <NA>             L
-#> 14451        <NA>             L
-#> 14465        <NA>             L
-#> 14490        <NA>             L
-#> 14540        <NA>             L
-#> 14573        <NA>             L
-#> 14582        <NA>             L
-#> 14606        <NA>             L
-#> 14641        <NA>             L
-#> 14678        <NA>             L
-#> 14717        <NA>             L
-#> 14793        <NA>             L
-#> 14832        <NA>             L
-#> 14848        <NA>             L
-#> 14869        <NA>             L
-#> 14895        <NA>             L
-#> 14938        <NA>             L
-#> 14966        <NA>             L
-#> 14992        <NA>             L
-#> 15010        <NA>             L
-#> 15030        <NA>             L
-#> 15057        <NA>             L
-#> 15076        <NA>             L
-#> 15115        <NA>             L
-#> 15135        <NA>             L
-#> 15158        <NA>             L
-#> 15188        <NA>             L
-#> 15235        <NA>             L
-#> 15258        <NA>             L
-#> 15282        <NA>             L
-#> 15328        <NA>             L
-#> 15347        <NA>             L
-#> 15377        <NA>             L
-#> 15405        <NA>             L
-#> 15433        <NA>             L
-#> 15443        <NA>             L
-#> 15470        <NA>             L
-#> 15494        <NA>             L
-#> 15533        <NA>             L
-#> 15558        <NA>             L
-#> 15590        <NA>             L
-#> 15655        <NA>             L
-#> 15697        <NA>             L
-#> 15722        <NA>             L
-#> 15755        <NA>             L
-#> 15770        <NA>             L
-#> 15807        <NA>             L
-#> 15845        <NA>             L
-#> 15868        <NA>             L
-#> 15889        <NA>             L
-#> 15910        <NA>             L
-#> 15937        <NA>             L
-#> 15968        <NA>             L
-#> 15996        <NA>             L
-#> 16026        <NA>             L
-#> 16038        <NA>             L
-#> 16063        <NA>             L
-#> 16082        <NA>             L
-#> 16118        <NA>             L
-#> 16145        <NA>             L
-#> 16167        <NA>             L
-#> 16190        <NA>             L
-#> 16227        <NA>             L
-#> 16253        <NA>             L
-#> 16317        <NA>             L
-#> 16342        <NA>             L
-#> 16368        <NA>             L
-#> 16403        <NA>             L
-#> 16455        <NA>             L
-#> 16498        <NA>             L
-#> 16527        <NA>             L
-#> 16553        <NA>             L
-#> 16588        <NA>             L
-#> 16629        <NA>             L
-#> 16679        <NA>             L
-#> 16703        <NA>             L
-#> 16718        <NA>             L
-#> 16785        <NA>             V
-#> 16800        <NA>             V
-#> 16811        <NA>             V
-#> 16842        <NA>             V
-#> 16863        <NA>             V
-#> 16879        <NA>             V
-#> 16915        <NA>             V
-#> 16932        <NA>             V
-#> 16945        <NA>             V
-#> 16970        <NA>             V
-#> 16996        <NA>             V
-#> 17015        <NA>             V
-#> 17033        <NA>             V
-#> 17057        <NA>             V
-#> 17078        <NA>             V
-#> 17095        <NA>             V
-#> 17113        <NA>             V
-#> 17130        <NA>             V
-#> 17154        <NA>             V
-#> 17194        <NA>             V
-#> 17206        <NA>             V
-#> 17234        <NA>             V
-#> 17253        <NA>             V
-#> 17298        <NA>             V
-#> 17349        <NA>             V
-#> 17397        <NA>             V
-#> 17438        <NA>             V
-#> 17458        <NA>             V
-#> 17493        <NA>             V
-#> 17530        <NA>             V
-#> 17559        <NA>             V
-#> 17605        <NA>             V
-#> 17616        <NA>             V
-#> 17693        <NA>             V
-#> 17715        <NA>             V
-#> 17739        <NA>             V
-#> 17762        <NA>             V
-#> 17783        <NA>             V
-#> 17803        <NA>             V
-#> 17837        <NA>             V
-#> 17853        <NA>             V
-#> 17884        <NA>             V
-#> 17917        <NA>             V
-#> 17944        <NA>             V
-#> 17987        <NA>             V
-#> 18014        <NA>             V
-#> 18039        <NA>             V
-#> 18066        <NA>             V
-#> 18089        <NA>             V
-#> 18137        <NA>             V
-#> 18148        <NA>             V
-#> 18170        <NA>             V
-#> 18230        <NA>             V
-#> 18265        <NA>             V
-#> 18317        <NA>             V
-#> 18339        <NA>             V
-#> 18371        <NA>             V
-#> 18395        <NA>             V
-#> 18414        <NA>             V
-#> 18444        <NA>             V
-#> 18471        <NA>             V
-#> 18496        <NA>             V
-#> 18511        <NA>             V
-#> 18580        <NA>             V
-#> 18640        <NA>             V
-#> 18674        <NA>             V
-#> 18700        <NA>             V
-#> 18734        <NA>             V
-#> 18782        <NA>             V
-#> 18828        <NA>             V
-#> 18854        <NA>             V
-#> 18888        <NA>             V
-#> 18935        <NA>             V
-#> 18996        <NA>             V
-#> 19070        <NA>             V
-#> 19089        <NA>             V
-#> 19121        <NA>             V
-#> 19207        <NA>             V
-#> 19258        <NA>             V
-#> 19378        <NA>             V
-#> 19401        <NA>             V
-#> 19423        <NA>             V
-#> 19461        <NA>             V
-#> 19513        <NA>             V
-#> 19532        <NA>             V
-#> 19583        <NA>             V
-#> 19613        <NA>             V
-#> 19642        <NA>             V
-#> 19728        <NA>             V
-#> 19753        <NA>             V
-#> 19763        <NA>             V
-#> 19824        <NA>             V
-#> 19867        <NA>             V
-#> 19920        <NA>             V
-#> 19969        <NA>             V
-#> 19995        <NA>             V
-#> 20032        <NA>             V
-#> 20047        <NA>             V
-#> 20070        <NA>             V
-#> 20083        <NA>             V
-#> 20098        <NA>             V
-#> 20281        <NA>             V
-#> 20293        <NA>             V
-#> 20309        <NA>             V
-#> 20326        <NA>             V
-#> 20348        <NA>             V
-#> 20366        <NA>             V
-#> 20398        <NA>             V
-#> 20414        <NA>             V
-#> 20434        <NA>             V
-#> 20470        <NA>             V
-#> 20504        <NA>             V
-#> 20526        <NA>             V
-#> 20556        <NA>             V
-#> 20579        <NA>             V
-#> 20604        <NA>             V
-#> 20613        <NA>             V
-#> 20628        <NA>             V
-#> 20644        <NA>             V
-#> 20662        <NA>             V
-#> 20675        <NA>             V
-#> 20711        <NA>             V
-#> 20733        <NA>             V
-#> 20764        <NA>             V
-#> 20784        <NA>             V
-#> 20835        <NA>             V
-#> 20869        <NA>             V
-#> 20894        <NA>             V
-#> 20913        <NA>             V
-#> 20938        <NA>             V
-#> 20967        <NA>             V
-#> 21035        <NA>             V
-#> 21058        <NA>             V
-#> 21081        <NA>             V
-#> 21092        <NA>             V
-#> 21114        <NA>             V
-#> 21138        <NA>             V
-#> 21163        <NA>             V
-#> 21176        <NA>             V
-#> 21195        <NA>             V
-#> 21209        <NA>             V
-#> 21232        <NA>             V
-#> 21243        <NA>             V
-#> 21259        <NA>             V
-#> 21285        <NA>             V
-#> 21306        <NA>             V
-#> 21341        <NA>             V
-#> 21386        <NA>             V
-#> 21422        <NA>             V
-#> 21439        <NA>             V
-#> 21449        <NA>             V
-#> 21458        <NA>             V
-#> 21468        <NA>             V
-#> 21484        <NA>             V
-#> 21530        <NA>             V
-#> 21558        <NA>             V
-#> 21588        <NA>             V
-#> 21617        <NA>             V
-#> 21643        <NA>             V
-#> 21686        <NA>             V
-#> 21716        <NA>             V
-#> 21728        <NA>             V
-#> 21748        <NA>             V
-#> 21764        <NA>             V
-#> 21786        <NA>             V
-#> 21807        <NA>             V
-#> 21825        <NA>             V
-#> 21847        <NA>             V
-#> 21861        <NA>             V
-#> 21882        <NA>             V
-#> 21916        <NA>             V
-#> 21959        <NA>             V
-#> 21997        <NA>             V
-#> 22012        <NA>             V
-#> 22027        <NA>             V
-#> 22042        <NA>             V
-#> 22057        <NA>             V
-#> 22077        <NA>             V
-#> 22097        <NA>             V
-#> 22113        <NA>             V
-#> 22142        <NA>             V
-#> 22164        <NA>             V
-#> 22178        <NA>             V
-#> 22205        <NA>             V
-#> 22223        <NA>             V
-#> 22238        <NA>             V
-#> 22254        <NA>             V
-#> 22276        <NA>             V
-#> 22292        <NA>             V
-#> 22320        <NA>             V
-#> 22331        <NA>             V
-#> 22342        <NA>             V
-#> 22368        <NA>             V
-#> 22387        <NA>             V
-#> 22413        <NA>             V
-#> 22426        <NA>             V
-#> 22449        <NA>             V
-#> 22488        <NA>             V
-#> 22543        <NA>             V
-#> 22555        <NA>             V
-#> 22636        <NA>             V
-#> 22667        <NA>             V
-#> 22697        <NA>             V
-#> 22718        <NA>             V
-#> 22732        <NA>             V
-#> 22748        <NA>             V
-#> 22810        <NA>             V
-#> 22839        <NA>             V
-#> 22886        <NA>             V
-#> 22917        <NA>             V
-#> 22936        <NA>             V
-#> 22997        <NA>             V
-#> 23011        <NA>             V
-#> 23025        <NA>             V
-#> 23042        <NA>             V
-#> 23076        <NA>             V
-#> 23089        <NA>             V
-#> 23110        <NA>             V
-#> 23127        <NA>             V
-#> 23170        <NA>             V
-#> 23196        <NA>             V
-#> 23238        <NA>             V
-#> 23255        <NA>             V
-#> 23273        <NA>             V
-#> 23292        <NA>             V
-#> 23318        <NA>             V
-#> 23382        <NA>             V
-#> 23437        <NA>             V
-#> 23454        <NA>             V
-#> 23480        <NA>             V
-#> 23518        <NA>             V
-#> 23551        <NA>             V
-#> 23644        <NA>             V
-#> 23722        <NA>             V
-#> 23776        <NA>             V
-#> 23798        <NA>             V
-#> 23848        <NA>             V
-#> 23914        <NA>             V
-#> 23960        <NA>             V
-#> 24012        <NA>             V
-#> 24033        <NA>             V
-#> 24054        <NA>             V
-#> 24079        <NA>             V
-#> 24126        <NA>             V
-#> 24155        <NA>             V
-#> 24182        <NA>             V
-#> 24206        <NA>             V
-#> 24242        <NA>             V
-#> 24273        <NA>             V
-#> 24305        <NA>             V
-#> 24334        <NA>             V
-#> 24356        <NA>             V
-#> 24387        <NA>             V
-#> 24404        <NA>             V
-#> 24427        <NA>             V
-#> 24513        <NA>             V
-#> 24547        <NA>             V
-#> 24598        <NA>             V
-#> 24628        <NA>             V
-#> 24648        <NA>             V
-#> 24670        <NA>             V
-#> 24691        <NA>             V
-#> 24705        <NA>             V
-#> 24722        <NA>             V
-#> 24777        <NA>             V
-#> 24793        <NA>             V
-#> 24802        <NA>             V
-#> 24839        <NA>             V
-#> 24860        <NA>             V
-#> 24869        <NA>             V
-#> 24888        <NA>             V
-#> 24901        <NA>             V
-#> 24957        <NA>             V
-#> 25005        <NA>             V
-#> 25032        <NA>             V
-#> 25089        <NA>             V
-#> 25105        <NA>             V
-#> 25159        <NA>             V
-#> 25186        <NA>             V
-#> 25200        <NA>             V
-#> 25225        <NA>             V
-#> 25258        <NA>             V
-#> 25285        <NA>             V
-#> 25297        <NA>             V
-#> 25308        <NA>             V
-#> 25323        <NA>             V
-#> 25340        <NA>             V
-#> 25357        <NA>             V
-#> 25365        <NA>             V
-#> 25392        <NA>             V
-#> 25409        <NA>             V
-#> 25433        <NA>             V
-#> 25457        <NA>             V
-#> 25509        <NA>             V
-#> 25667        <NA>             V
-#> 25709        <NA>             V
-#> 25767        <NA>             V
-#> 25826        <NA>             V
-#> 25896        <NA>             V
-#> 25918        <NA>             V
-#> 25953        <NA>             V
-#> 25978        <NA>             V
-#> 25999        <NA>             V
-#> 26030        <NA>             V
-#> 26055        <NA>             V
-#> 26070        <NA>             V
-#> 26085        <NA>             V
-#> 26122        <NA>             V
-#> 26161        <NA>             V
-#> 26175        <NA>             V
-#> 26187        <NA>             V
-#> 26229        <NA>             V
-#> 26268        <NA>             V
-#> 26313        <NA>             V
-#> 26339        <NA>             V
-#> 26354        <NA>             V
-#> 26396        <NA>             V
-#> 26411        <NA>             V
-#> 26426        <NA>             V
-#> 26467        <NA>             V
-#> 26508        <NA>             V
-#> 26526        <NA>             V
-#> 26541        <NA>             V
-#> 26566        <NA>             V
-#> 26637        <NA>             V
-#> 26668        <NA>             V
-#> 26706        <NA>             V
-#> 26718        <NA>             V
-#> 26742        <NA>             V
-#> 26773        <NA>             V
-#> 26796        <NA>             V
-#> 26815        <NA>             V
-#> 26831        <NA>             V
-#> 26847        <NA>             V
-#> 26893        <NA>             V
-#> 26923        <NA>             V
-#> 26931        <NA>             V
-#> 26945        <NA>             V
-#> 26957        <NA>             V
-#> 26971        <NA>             V
-#> 26989        <NA>             V
-#> 27007        <NA>             V
-#> 27028        <NA>             V
-#> 27044        <NA>             V
-#> 27071        <NA>             V
-#> 27212        <NA>             M
-#> 27247        <NA>             M
-#> 27256        <NA>             M
-#> 27266        <NA>             M
-#> 27279        <NA>             M
-#> 27307        <NA>             M
-#> 27313        <NA>             M
-#> 27345        <NA>             M
-#> 27362        <NA>             M
-#> 27403        <NA>             M
-#> 27418        <NA>             M
-#> 27449        <NA>             M
-#> 27500        <NA>             M
-#> 27553        <NA>             M
-#> 27569        <NA>             M
-#> 27584        <NA>             M
-#> 27597        <NA>             M
-#> 27615        <NA>             M
-#> 27632        <NA>             M
-#> 27642        <NA>             M
-#> 27693        <NA>             M
-#> 27715        <NA>             M
-#> 27746        <NA>             M
-#> 27760        <NA>             M
-#> 27781        <NA>             M
-#> 27819        <NA>             M
-#> 27842        <NA>             M
-#> 27859        <NA>             M
-#> 27882        <NA>             M
-#> 27913        <NA>             M
-#> 27945        <NA>             M
-#> 27968        <NA>             M
-#> 27992        <NA>             M
-#> 28032        <NA>             M
-#> 28055        <NA>             M
-#> 28084        <NA>             M
-#> 28101        <NA>             M
-#> 28154        <NA>             M
-#> 28181        <NA>             M
-#> 28216        <NA>             M
-#> 28237        <NA>             M
-#> 28256        <NA>             M
-#> 28290        <NA>             M
-#> 28308        <NA>             M
-#> 28326        <NA>             M
-#> 28345        <NA>             M
-#> 28361        <NA>             M
-#> 28406        <NA>             M
-#> 28435        <NA>             M
-#> 28460        <NA>             M
-#> 28491        <NA>             M
-#> 28522        <NA>             M
-#> 28567        <NA>             M
-#> 28586        <NA>             M
-#> 28612        <NA>             M
-#> 28639        <NA>             M
-#> 28669        <NA>             M
-#> 28687        <NA>             M
-#> 28721        <NA>             M
-#> 28747        <NA>             M
-#> 28802        <NA>             M
-#> 28830        <NA>             M
-#> 28849        <NA>             M
-#> 28878        <NA>             M
-#> 28894        <NA>             M
-#> 28926        <NA>             M
-#> 28952        <NA>             M
-#> 28967        <NA>             M
-#> 28982        <NA>             M
-#> 28998        <NA>             M
-#> 29017        <NA>             M
-#> 29032        <NA>             M
-#> 29050        <NA>             M
-#> 29070        <NA>             M
-#> 29098        <NA>             M
-#> 29126        <NA>             M
-#> 29149        <NA>             M
-#> 29169        <NA>             M
-#> 29198        <NA>             M
-#> 29228        <NA>             M
-#> 29247        <NA>             M
-#> 29273        <NA>             M
-#> 29297        <NA>             M
-#> 29317        <NA>             M
-#> 29346        <NA>             M
-#> 29373        <NA>             M
-#> 29403        <NA>             M
-#> 29418        <NA>             M
-#> 29449        <NA>             M
-#> 29475        <NA>             M
-#> 29575        <NA>             M
-#> 29623        <NA>             M
-#> 29640        <NA>             M
-#> 29658        <NA>             M
-#> 29673        <NA>             M
-#> 29703        <NA>             M
-#> 29717        <NA>             M
-#> 29735        <NA>             M
-#> 29750        <NA>             M
-#> 29774        <NA>             M
-#> 29810        <NA>             M
-#> 29825        <NA>             M
-#> 29840        <NA>             M
-#> 29887        <NA>             M
-#> 29899        <NA>             M
-#> 29922        <NA>             M
-#> 29943        <NA>             M
-#> 29963        <NA>             M
-#> 29995        <NA>             M
-#> 30020        <NA>             M
-#> 30031        <NA>             M
-#> 30061        <NA>             M
-#> 30093        <NA>             M
-#> 30110        <NA>             M
-#> 30125        <NA>             M
-#> 30133        <NA>             M
-#> 30147        <NA>             M
-#> 30163        <NA>             M
-#> 30174        <NA>             M
-#> 30191        <NA>             M
-#> 30213        <NA>             M
-#> 30237        <NA>             M
-#> 30271        <NA>             M
-#> 30309        <NA>             M
-#> 30323        <NA>             M
-#> 30350        <NA>             M
-#> 30378        <NA>             M
-#> 30387        <NA>             M
-#> 30412        <NA>             M
-#> 30426        <NA>             M
-#> 30439        <NA>             M
-#> 30466        <NA>             M
-#> 30492        <NA>             M
-#> 30513        <NA>             M
-#> 30540        <NA>             M
-#> 30566        <NA>             M
-#> 30584        <NA>             M
-#> 30592        <NA>             M
-#> 30611        <NA>             M
-#> 30636        <NA>             M
-#> 30659        <NA>             M
-#> 30698        <NA>             M
-#> 30714        <NA>             M
-#> 30743        <NA>             M
-#> 30763        <NA>             M
-#> 30793        <NA>             M
-#> 30812        <NA>             M
-#> 30837        <NA>             M
-#> 30866        <NA>             M
-#> 30914        <NA>             M
-#> 30966        <NA>             M
-#> 30983        <NA>             M
-#> 31017        <NA>             M
-#> 31046        <NA>             M
-#> 31064        <NA>             M
-#> 31120        <NA>             M
-#> 31154        <NA>             M
-#> 31167        <NA>             M
-#> 31184        <NA>             M
-#> 31215        <NA>             M
-#> 31225        <NA>             M
-#> 31234        <NA>             M
-#> 31259        <NA>             M
-#> 31275        <NA>             M
-#> 31355        <NA>             M
-#> 31367        <NA>             M
-#> 31384        <NA>             M
-#> 31400        <NA>             M
-#> 31416        <NA>             M
-#> 31427        <NA>             M
-#> 31439        <NA>             M
-#> 31449        <NA>             M
-#> 31458        <NA>             M
-#> 31484        <NA>             M
-#> 31498        <NA>             M
-#> 31518        <NA>             M
-#> 31529        <NA>             M
-#> 31544        <NA>             M
-#> 31563        <NA>             M
-#> 31574        <NA>             M
-#> 31585        <NA>             M
-#> 31604        <NA>             M
-#> 31616        <NA>             M
-#> 31697        <NA>             M
-#> 31744        <NA>             M
-#> 31765        <NA>             M
-#> 31786        <NA>             M
-#> 31801        <NA>             M
-#> 31822        <NA>             M
-#> 31863        <NA>             M
-#> 31910        <NA>             M
-#> 31930        <NA>             M
-#> 31954        <NA>             M
-#> 31958        <NA>             M
-#> 31964        <NA>             M
-#> 31979        <NA>             M
-#> 32005        <NA>             M
-#> 32032        <NA>             M
-#> 32054        <NA>             M
-#> 32085        <NA>             M
-#> 32108        <NA>             M
-#> 32124        <NA>             M
-#> 32158        <NA>             M
-#> 32176        <NA>             M
-#> 32195        <NA>             M
-#> 32222        <NA>             M
-#> 32241        <NA>             M
-#> 32256        <NA>             M
-#> 32265        <NA>             M
-#> 32283        <NA>             M
-#> 32300        <NA>             M
-#> 32321        <NA>             M
-#> 32343        <NA>             M
-#> 32361        <NA>             M
-#> 32388        <NA>             M
-#> 32405        <NA>             M
-#> 32417        <NA>             M
-#> 32434        <NA>             M
-#> 32475        <NA>             M
-#> 32487        <NA>             M
-#> 32525        <NA>             M
-#> 32550        <NA>             M
-#> 32562        <NA>             M
-#> 32584        <NA>             M
-#> 32605        <NA>             M
-#> 32634        <NA>             M
-#> 32651        <NA>             M
-#> 32666        <NA>             M
-#> 32682        <NA>             M
-#> 32709        <NA>             M
-#> 32740        <NA>             M
-#> 32763        <NA>             M
-#> 32776        <NA>             M
-#> 32961        <NA>             M
-#> 32979        <NA>             M
-#> 33001        <NA>             M
-#> 33019        <NA>             M
-#> 33060        <NA>             M
-#> 33081        <NA>             M
-#> 33114        <NA>             M
-#> 33153        <NA>             M
-#> 33188        <NA>             M
-#> 33233        <NA>             M
-#> 33271        <NA>             M
-#> 33300        <NA>             M
-#> 33321        <NA>             M
-#> 33347        <NA>             M
-#> 33377        <NA>             M
-#> 33391        <NA>             M
-#> 33412        <NA>             M
-#> 33430        <NA>             M
-#> 33460        <NA>             M
-#> 33483        <NA>             M
-#> 33511        <NA>             M
-#> 33526        <NA>             M
-#> 33550        <NA>             M
-#> 33568        <NA>             M
-#> 33583        <NA>             M
-#> 33597        <NA>             M
-#> 33623        <NA>             M
-#> 33640        <NA>             M
-#> 33651        <NA>             M
-#> 33672        <NA>             M
-#> 33692        <NA>             M
-#> 33709        <NA>             M
-#> 33729        <NA>             M
-#> 33747        <NA>             M
-#> 33763        <NA>             M
-#> 33791        <NA>             M
-#> 33803        <NA>             M
-#> 33830        <NA>             M
-#> 33871        <NA>             M
-#> 33891        <NA>             M
-#> 33912        <NA>             M
-#> 33934        <NA>             M
-#> 33949        <NA>             M
-#> 33981        <NA>             M
-#> 34001        <NA>             M
-#> 34018        <NA>             M
-#> 34038        <NA>             M
-#> 34051        <NA>             M
-#> 34083        <NA>             M
-#> 34111        <NA>             L
-#> 34305        <NA>             L
-#> 34326        <NA>             L
-#> 34350        <NA>             L
-#> 34372        <NA>             L
-#> 34400        <NA>             L
-#> 35312        <NA>             L
-#> 35329        <NA>             L
-#> 35339        <NA>             L
-#> 35358        <NA>             L
-#> 35375        <NA>             L
-#> 35577        <NA>             L
-#> 35608        <NA>             L
-#> 35751        <NA>             L
-#> 35773        <NA>             L
-#> 35812        <NA>             L
-#> 35846        <NA>             L
-#> 35859        <NA>             L
-#> 35891        <NA>             L
-#> 35900        <NA>             L
-#> 35922        <NA>             L
-#> 35927        <NA>             L
-#> 35932        <NA>             L
-#> 35940        <NA>             L
-#> 35956        <NA>             L
-#> 35969        <NA>             L
-#> 35976        <NA>             L
-#> 35994        <NA>             L
-#> 36000        <NA>             L
-#> 36007        <NA>             L
-#> 36019        <NA>             L
-#> 36028        <NA>             L
-#> 36041        <NA>             L
-#> 36053        <NA>             L
-#> 36063        <NA>             L
-#> 36079        <NA>             L
-#> 36099        <NA>             L
-#> 36109        <NA>             L
-#> 36119        <NA>             L
-#> 36139        <NA>             L
-#> 36146        <NA>             L
-#> 36158        <NA>             L
-#> 36169        <NA>             L
-#> 36180        <NA>             L
-#> 36190        <NA>             L
-#> 36199        <NA>             L
-#> 36207        <NA>             L
-#> 36218        <NA>             L
-#> 36233        <NA>             L
-#> 36243        <NA>             L
-#> 36257        <NA>             L
-#> 36273        <NA>             L
-#> 36281        <NA>             L
-#> 36298        <NA>             L
-#> 36311        <NA>             L
-#> 36320        <NA>             L
-#> 36334        <NA>             L
-#> 36344        <NA>             L
-#> 36363        <NA>             L
-#> 36373        <NA>             L
-#> 36388        <NA>             L
-#> 36409        <NA>             L
-#> 36428        <NA>             L
-#> 36456        <NA>             L
-#> 36477        <NA>             L
-#> 36494        <NA>             L
-#> 36507        <NA>             L
-#> 36520        <NA>             L
-#> 36532        <NA>             L
-#> 36547        <NA>             L
-#> 36557        <NA>             L
-#> 36572        <NA>             L
-#> 36596        <NA>             L
-#> 36611        <NA>             L
-#> 36655        <NA>             L
-#> 36672        <NA>             L
-#> 36694        <NA>             L
-#> 36706        <NA>             L
-#> 36729        <NA>             L
-#> 36744        <NA>             L
-#> 36761        <NA>             L
-#> 36773        <NA>             L
-#> 36783        <NA>             L
-#> 36799        <NA>             L
-#> 36808        <NA>             L
-#> 36828        <NA>             L
-#> 36849        <NA>             L
-#> 36868        <NA>             L
-#> 36890        <NA>             L
-#> 36907        <NA>             L
-#> 36929        <NA>             L
-#> 36952        <NA>             L
-#> 36975        <NA>             L
-#> 36989        <NA>             L
-#> 37121        <NA>             M
-#> 37147        <NA>             M
-#> 37179        <NA>             M
-#> 37188        <NA>             M
-#> 37204        <NA>             M
-#> 37216        <NA>             M
-#> 37237        <NA>             M
-#> 37246        <NA>             M
-#> 37266        <NA>             M
-#> 37276        <NA>             M
-#> 37290        <NA>             M
-#> 37300        <NA>             M
-#> 37344        <NA>             M
-#> 37355        <NA>             M
-#> 37403        <NA>             M
-#> 37419        <NA>             M
-#> 37437        <NA>             M
-#> 37470        <NA>             M
-#> 37482        <NA>             M
-#> 37510        <NA>             M
-#> 37536        <NA>             M
-#> 37548        <NA>             M
-#> 37565        <NA>             M
-#> 37582        <NA>             M
-#> 37603        <NA>             M
-#> 37629        <NA>             M
-#> 37642        <NA>             M
-#> 37652        <NA>             M
-#> 37659        <NA>             M
-#> 37674        <NA>             M
-#> 37704        <NA>             M
-#> 37725        <NA>             M
-#> 37745        <NA>             M
-#> 37759        <NA>             M
-#> 37781        <NA>             M
-#> 37796        <NA>             M
-#> 37812        <NA>             M
-#> 37833        <NA>             M
-#> 37840        <NA>             M
-#> 37852        <NA>             M
-#> 37865        <NA>             M
-#> 37877        <NA>             M
-#> 37890        <NA>             M
-#> 37905        <NA>             M
-#> 37960        <NA>             M
-#> 37975        <NA>             M
-#> 37986        <NA>             M
-#> 38009        <NA>             M
-#> 38017        <NA>             M
-#> 38042        <NA>             M
-#> 38054        <NA>             M
-#> 38072        <NA>             M
-#> 38081        <NA>             M
-#> 38096        <NA>             M
-#> 38109        <NA>             M
-#> 38134        <NA>             M
-#> 38148        <NA>             M
-#> 38162        <NA>             M
-#> 38181        <NA>             M
-#> 38196        <NA>             M
-#> 38209        <NA>             M
-#> 38223        <NA>             M
-#> 38242        <NA>             M
-#> 38268        <NA>             M
-#> 38293        <NA>             M
-#> 38316        <NA>             M
-#> 38344        <NA>             M
-#> 38359        <NA>             M
-#> 38372        <NA>             M
-#> 38389        <NA>             M
-#> 38400        <NA>             M
-#> 38413        <NA>             M
-#> 38423        <NA>             M
-#> 38512        <NA>             L
-#> 38574        <NA>             L
-#> 38590        <NA>             L
-#> 38616        <NA>             L
-#> 38654        <NA>             L
-#> 38710        <NA>             L
-#> 38737        <NA>             L
-#> 38748        <NA>             L
-#> 38756        <NA>             L
-#> 38766        <NA>             L
-#> 38783        <NA>             L
-#> 38796        <NA>             L
-#> 38812        <NA>             L
-#> 38825        <NA>             L
-#> 38837        <NA>             L
-#> 38860        <NA>             L
-#> 38900        <NA>             L
-#> 38913        <NA>             L
-#> 38941        <NA>             L
-#> 38955        <NA>             L
-#> 38992        <NA>             L
-#> 39008        <NA>             L
-#> 39071        <NA>             L
-#> 39099        <NA>             L
-#> 39117        <NA>             L
-#> 39188        <NA>             L
-#> 39226        <NA>             L
-#> 39250        <NA>             L
-#> 39264        <NA>             L
-#> 39285        <NA>             L
-#> 39294        <NA>             L
-#> 39321        <NA>             L
-#> 39355        <NA>             L
-#> 39375        <NA>             L
-#> 39386        <NA>             L
-#> 39400        <NA>             L
-#> 39421        <NA>             L
-#> 39444        <NA>             L
-#> 39463        <NA>             L
-#> 39478        <NA>             L
-#> 39491        <NA>             L
-#> 39515        <NA>             L
-#> 39533        <NA>             L
-#> 39550        <NA>             L
-#> 39569        <NA>             L
-#> 39580        <NA>             L
-#> 39592        <NA>             L
-#> 39616        <NA>             L
-#> 39631        <NA>             L
-#> 39663        <NA>             L
-#> 39674        <NA>             L
-#> 39706        <NA>             L
-#> 39708        <NA>             L
-#> 39723        <NA>             L
-#> 39735        <NA>             L
-#> 39746        <NA>             L
-#> 39759        <NA>             L
-#> 39777        <NA>             L
-#> 39792        <NA>             L
-#> 39800        <NA>             L
-#> 39810        <NA>             L
-#> 39826        <NA>             L
-#> 39839        <NA>             L
-#> 39849        <NA>             L
-#> 39875        <NA>             L
-#> 39907        <NA>             L
-#> 39923        <NA>             L
-#> 39937        <NA>             L
-#> 39950        <NA>             L
-#> 39956        <NA>             L
-#> 39968        <NA>             L
-#> 39975        <NA>             L
-#> 39982        <NA>             L
-#> 40051        <NA>             V
-#> 40076        <NA>             V
-#> 40093        <NA>             V
-#> 40116        <NA>             V
-#> 40157        <NA>             V
-#> 40167        <NA>             V
-#> 40193        <NA>             V
-#> 40217        <NA>             V
-#> 40239        <NA>             V
-#> 40259        <NA>             V
-#> 40284        <NA>             V
-#> 40298        <NA>             V
-#> 40314        <NA>             V
-#> 40345        <NA>             V
-#> 40378        <NA>             V
-#> 40393        <NA>             V
-#> 40407        <NA>             V
-#> 40420        <NA>             V
-#> 40436        <NA>             V
-#> 40460        <NA>             V
-#> 40481        <NA>             V
+#> 13003        <NA>             L
+#> 13027        <NA>             L
+#> 13041        <NA>             L
+#> 13062        <NA>             L
+#> 13071        <NA>             L
+#> 13098        <NA>             L
+#> 13132        <NA>             L
+#> 13152        <NA>             L
+#> 13163        <NA>             L
+#> 13177        <NA>             L
+#> 13198        <NA>             L
+#> 13221        <NA>             L
+#> 13240        <NA>             L
+#> 13255        <NA>             L
+#> 13268        <NA>             L
+#> 13292        <NA>             L
+#> 13310        <NA>             L
+#> 13327        <NA>             L
+#> 13346        <NA>             L
+#> 13357        <NA>             L
+#> 13369        <NA>             L
+#> 13393        <NA>             L
+#> 13408        <NA>             L
+#> 13440        <NA>             L
+#> 13451        <NA>             L
+#> 13483        <NA>             L
+#> 13485        <NA>             L
+#> 13500        <NA>             L
+#> 13512        <NA>             L
+#> 13523        <NA>             L
+#> 13536        <NA>             L
+#> 13554        <NA>             L
+#> 13569        <NA>             L
+#> 13577        <NA>             L
+#> 13587        <NA>             L
+#> 13603        <NA>             L
+#> 13616        <NA>             L
+#> 13626        <NA>             L
+#> 13652        <NA>             L
+#> 13684        <NA>             L
+#> 13700        <NA>             L
+#> 13714        <NA>             L
+#> 13727        <NA>             L
+#> 13733        <NA>             L
+#> 13745        <NA>             L
+#> 13752        <NA>             L
+#> 13759        <NA>             L
+#> 13828        <NA>             V
+#> 13853        <NA>             V
+#> 13870        <NA>             V
+#> 13893        <NA>             V
+#> 13934        <NA>             V
+#> 13944        <NA>             V
+#> 13970        <NA>             V
+#> 13994        <NA>             V
+#> 14016        <NA>             V
+#> 14036        <NA>             V
+#> 14061        <NA>             V
+#> 14075        <NA>             V
+#> 14091        <NA>             V
+#> 14122        <NA>             V
+#> 14155        <NA>             V
+#> 14170        <NA>             V
+#> 14184        <NA>             V
+#> 14197        <NA>             V
+#> 14213        <NA>             V
+#> 14237        <NA>             V
+#> 14258        <NA>             V
+#> 14279        <NA>             V
+#> 14305        <NA>             V
+#> 14324        <NA>             V
+#> 14335        <NA>             V
+#> 14352        <NA>             V
+#> 14370        <NA>             V
+#> 14398        <NA>             V
+#> 14408        <NA>             V
+#> 14425        <NA>             V
+#> 14452        <NA>             V
+#> 14461        <NA>             V
+#> 14470        <NA>             V
+#> 14495        <NA>             V
+#> 14518        <NA>             V
+#> 14554        <NA>             V
+#> 14565        <NA>             V
+#> 14594        <NA>             V
+#> 14617        <NA>             V
+#> 14630        <NA>             V
+#> 14654        <NA>             V
+#> 14685        <NA>             V
+#> 14719        <NA>             V
+#> 14748        <NA>             V
+#> 14778        <NA>             V
+#> 14811        <NA>             V
+#> 14839        <NA>             V
+#> 14856        <NA>             V
+#> 14871        <NA>             V
+#> 14894        <NA>             V
+#> 14921        <NA>             V
+#> 14937        <NA>             V
+#> 14962        <NA>             V
+#> 14991        <NA>             V
+#> 15016        <NA>             V
+#> 15032        <NA>             V
+#> 15044        <NA>             V
+#> 15059        <NA>             V
+#> 15083        <NA>             V
+#> 15102        <NA>             V
+#> 15125        <NA>             V
+#> 15141        <NA>             V
+#> 15184        <NA>             V
+#> 15248        <NA>             M
+#> 15294        <NA>             M
+#> 15320        <NA>             M
+#> 15341        <NA>             M
+#> 15371        <NA>             M
+#> 15383        <NA>             M
+#> 15394        <NA>             M
+#> 15404        <NA>             M
+#> 15421        <NA>             M
+#> 15433        <NA>             M
+#> 15446        <NA>             M
+#> 15457        <NA>             M
+#> 15471        <NA>             M
+#> 15498        <NA>             M
+#> 15526        <NA>             M
+#> 15565        <NA>             M
+#> 15615        <NA>             M
+#> 15642        <NA>             M
+#> 15679        <NA>             M
+#> 15696        <NA>             M
+#> 15729        <NA>             M
+#> 15750        <NA>             M
+#> 15789        <NA>             M
+#> 15811        <NA>             M
+#> 15849        <NA>             M
+#> 15874        <NA>             M
+#> 15912        <NA>             M
+#> 15947        <NA>             M
+#> 16049        <NA>             M
+#> 16085        <NA>             M
+#> 16112        <NA>             M
+#> 16131        <NA>             M
+#> 16169        <NA>             M
+#> 16195        <NA>             M
+#> 16219        <NA>             M
+#> 16255        <NA>             M
+#> 16286        <NA>             M
+#> 16331        <NA>             M
+#> 16375        <NA>             M
+#> 16397        <NA>             M
+#> 16421        <NA>             M
+#> 16448        <NA>             M
+#> 16473        <NA>             M
+#> 16491        <NA>             M
+#> 16525        <NA>             M
+#> 16560        <NA>             M
+#> 16580        <NA>             M
+#> 16603        <NA>             M
+#> 16621        <NA>             M
+#> 16641        <NA>             M
+#> 16657        <NA>             M
+#> 16665        <NA>             M
+#> 16676        <NA>             M
+#> 16694        <NA>             M
+#> 16730        <NA>             M
+#> 16746        <NA>             M
+#> 16762        <NA>             M
+#> 16772        <NA>             M
+#> 16804        <NA>             M
+#> 16825        <NA>             M
+#> 16828        <NA>             M
+#> 16849        <NA>             M
+#> 16873        <NA>             M
+#> 16891        <NA>             M
+#> 16906        <NA>             M
+#> 16922        <NA>             M
+#> 16960        <NA>             M
+#> 16974        <NA>             M
+#> 17009        <NA>             M
+#> 17027        <NA>             M
+#> 17036        <NA>             M
+#> 17048        <NA>             M
+#> 17074        <NA>             M
+#> 17114        <NA>             M
+#> 17128        <NA>             M
+#> 17138        <NA>             M
+#> 17163        <NA>             M
+#> 17175        <NA>             M
+#> 17183        <NA>             M
+#> 17194        <NA>             M
+#> 17202        <NA>             M
+#> 17214        <NA>             M
+#> 17238        <NA>             M
+#> 17255        <NA>             M
+#> 17273        <NA>             M
+#> 17282        <NA>             M
+#> 17291        <NA>             M
+#> 17311        <NA>             M
+#> 17323        <NA>             M
+#> 17338        <NA>             M
+#> 17347        <NA>             M
+#> 17359        <NA>             M
+#> 17372        <NA>             M
+#> 17381        <NA>             M
+#> 17390        <NA>             M
+#> 17402        <NA>             M
+#> 17416        <NA>             M
+#> 17433        <NA>             M
+#> 17445        <NA>             M
+#> 17458        <NA>             M
+#> 17475        <NA>             M
+#> 17483        <NA>             M
+#> 17491        <NA>             M
+#> 17499        <NA>             M
+#> 17507        <NA>             M
+#> 17520        <NA>             M
+#> 17528        <NA>             M
+#> 17536        <NA>             M
+#> 17548        <NA>             L
+#> 17555        <NA>             L
+#> 17561        <NA>             L
+#> 17566        <NA>             L
+#> 17571        <NA>             L
+#> 17578        <NA>             L
+#> 17584        <NA>             L
+#> 17605        <NA>             L
+#> 17631        <NA>             L
+#> 17659        <NA>             L
+#> 17707        <NA>             L
+#> 17750        <NA>             L
+#> 17799        <NA>             L
+#> 17819        <NA>             L
+#> 17850        <NA>             L
+#> 17863        <NA>             L
+#> 17892        <NA>             L
+#> 17934        <NA>             L
+#> 17957        <NA>             L
+#> 18008        <NA>             L
+#> 18034        <NA>             L
+#> 18058        <NA>             L
+#> 18094        <NA>             L
+#> 18125        <NA>             L
+#> 18144        <NA>             L
+#> 18169        <NA>             L
+#> 18188        <NA>             L
+#> 18218        <NA>             L
+#> 18237        <NA>             L
+#> 18254        <NA>             L
+#> 18265        <NA>             L
+#> 18279        <NA>             L
+#> 18311        <NA>             L
+#> 18350        <NA>             L
+#> 18383        <NA>             L
+#> 18434        <NA>             L
+#> 18469        <NA>             L
+#> 18529        <NA>             L
+#> 18563        <NA>             L
+#> 18593        <NA>             L
+#> 18608        <NA>             L
+#> 18635        <NA>             L
+#> 18658        <NA>             L
+#> 18724        <NA>             L
+#> 18751        <NA>             L
+#> 18758        <NA>             L
+#> 18771        <NA>             L
+#> 18836        <NA>             L
+#> 18853        <NA>             L
+#> 18945        <NA>             L
+#> 18988        <NA>             L
+#> 19008        <NA>             L
+#> 19019        <NA>             L
+#> 19049        <NA>             L
+#> 19068        <NA>             L
+#> 19094        <NA>             L
+#> 19112        <NA>             L
+#> 19128        <NA>             L
+#> 19150        <NA>             L
+#> 19170        <NA>             L
+#> 19191        <NA>             L
+#> 19218        <NA>             L
+#> 19242        <NA>             L
+#> 19269        <NA>             L
+#> 19283        <NA>             L
+#> 19303        <NA>             L
+#> 19340        <NA>             L
+#> 19374        <NA>             L
+#> 19392        <NA>             L
+#> 19413        <NA>             L
+#> 19451        <NA>             L
+#> 19479        <NA>             L
+#> 19527        <NA>             L
+#> 19536        <NA>             L
+#> 19559        <NA>             L
+#> 19577        <NA>             L
+#> 19603        <NA>             L
+#> 19629        <NA>             L
+#> 19649        <NA>             L
+#> 19665        <NA>             L
+#> 19685        <NA>             L
+#> 19716        <NA>             L
+#> 19747        <NA>             L
+#> 19760        <NA>             L
+#> 19777        <NA>             L
+#> 19800        <NA>             L
+#> 19810        <NA>             L
+#> 19818        <NA>             L
+#> 19844        <NA>             L
+#> 19862        <NA>             L
+#> 19896        <NA>             L
+#> 19929        <NA>             L
+#> 19939        <NA>             L
+#> 19958        <NA>             L
+#> 19968        <NA>             L
+#> 19983        <NA>             L
+#> 20009        <NA>             L
+#> 20056        <NA>             L
+#> 20080        <NA>             L
+#> 20093        <NA>             L
+#> 20112        <NA>             L
+#> 20118        <NA>             L
+#> 20148        <NA>             L
+#> 20172        <NA>             L
+#> 20192        <NA>             L
+#> 20208        <NA>             L
+#> 20225        <NA>             L
+#> 20235        <NA>             L
+#> 20263        <NA>             L
+#> 20283        <NA>             L
+#> 20298        <NA>             L
+#> 20313        <NA>             L
+#> 20343        <NA>             L
+#> 20358        <NA>             L
+#> 20385        <NA>             L
+#> 20437        <NA>             L
+#> 20454        <NA>             L
+#> 20481        <NA>             L
+#> 20495        <NA>             L
+#> 20507        <NA>             L
+#> 20530        <NA>             L
+#> 20545        <NA>             L
+#> 20565        <NA>             L
+#> 20585        <NA>             L
+#> 20622        <NA>             L
+#> 20685        <NA>             L
+#> 20735        <NA>             L
+#> 20770        <NA>             L
+#> 20795        <NA>             L
+#> 20805        <NA>             L
+#> 20832        <NA>             L
+#> 20861        <NA>             L
+#> 20951        <NA>             L
+#> 20975        <NA>             L
+#> 20993        <NA>             L
+#> 21045        <NA>             L
+#> 21062        <NA>             L
+#> 21086        <NA>             L
+#> 21107        <NA>             L
+#> 21121        <NA>             L
+#> 21186        <NA>             L
+#> 21214        <NA>             L
+#> 21232        <NA>             L
+#> 21244        <NA>             L
+#> 21267        <NA>             L
+#> 21292        <NA>             L
+#> 21330        <NA>             L
+#> 21352        <NA>             L
+#> 21372        <NA>             L
+#> 21387        <NA>             L
+#> 21398        <NA>             L
+#> 21415        <NA>             L
+#> 21442        <NA>             L
+#> 21459        <NA>             L
+#> 21469        <NA>             L
+#> 21508        <NA>             L
+#> 21524        <NA>             L
+#> 21558        <NA>             L
+#> 21583        <NA>             L
+#> 21637        <NA>             L
+#> 21666        <NA>             L
+#> 21687        <NA>             L
+#> 21700        <NA>             L
+#> 21731        <NA>             L
+#> 21753        <NA>             L
+#> 21787        <NA>             L
+#> 21821        <NA>             L
+#> 21853        <NA>             L
+#> 21898        <NA>             L
+#> 21926        <NA>             L
+#> 21952        <NA>             L
+#> 21980        <NA>             L
+#> 22007        <NA>             L
+#> 22051        <NA>             L
+#> 22067        <NA>             L
+#> 22097        <NA>             L
+#> 22133        <NA>             L
+#> 22151        <NA>             L
+#> 22166        <NA>             L
+#> 22181        <NA>             L
+#> 22192        <NA>             L
+#> 22200        <NA>             L
+#> 22214        <NA>             L
+#> 22233        <NA>             L
+#> 22249        <NA>             L
+#> 22311        <NA>             L
+#> 22332        <NA>             L
+#> 22378        <NA>             L
+#> 22423        <NA>             L
+#> 22445        <NA>             L
+#> 22470        <NA>             L
+#> 22508        <NA>             L
+#> 22544        <NA>             L
+#> 22561        <NA>             L
+#> 22571        <NA>             L
+#> 22584        <NA>             L
+#> 22600        <NA>             L
+#> 22625        <NA>             L
+#> 22702        <NA>             L
+#> 22729        <NA>             L
+#> 22744        <NA>             L
+#> 22776        <NA>             L
+#> 22799        <NA>             L
+#> 22816        <NA>             L
+#> 22831        <NA>             L
+#> 22846        <NA>             L
+#> 22860        <NA>             L
+#> 22880        <NA>             L
+#> 22895        <NA>             L
+#> 22907        <NA>             L
+#> 22926        <NA>             L
+#> 22944        <NA>             L
+#> 22970        <NA>             L
+#> 22988        <NA>             L
+#> 23002        <NA>             L
+#> 23027        <NA>             L
+#> 23039        <NA>             L
+#> 23049        <NA>             L
+#> 23061        <NA>             L
+#> 23087        <NA>             L
+#> 23128        <NA>             L
+#> 23147        <NA>             L
+#> 23181        <NA>             L
+#> 23201        <NA>             L
+#> 23223        <NA>             L
+#> 23243        <NA>             L
+#> 23292        <NA>             L
+#> 23306        <NA>             L
+#> 23412        <NA>             L
+#> 23453        <NA>             L
+#> 23493        <NA>             L
+#> 23519        <NA>             L
+#> 23541        <NA>             L
+#> 23568        <NA>             L
+#> 23590        <NA>             L
+#> 23637        <NA>             L
+#> 23657        <NA>             L
+#> 23730        <NA>             L
+#> 23757        <NA>             L
+#> 23792        <NA>             L
+#> 23808        <NA>             L
+#> 23825        <NA>             L
+#> 23868        <NA>             L
+#> 23887        <NA>             L
+#> 23936        <NA>             L
+#> 23970        <NA>             L
+#> 24013        <NA>             L
+#> 24040        <NA>             L
+#> 24059        <NA>             L
+#> 24089        <NA>             L
+#> 24107        <NA>             L
+#> 24138        <NA>             L
+#> 24181        <NA>             L
+#> 24203        <NA>             L
+#> 24252        <NA>             L
+#> 24273        <NA>             L
+#> 24289        <NA>             L
+#> 24313        <NA>             L
+#> 24346        <NA>             L
+#> 24373        <NA>             L
+#> 24421        <NA>             L
+#> 24436        <NA>             L
+#> 24521        <NA>             L
+#> 24597        <NA>             L
+#> 24612        <NA>             L
+#> 24646        <NA>             L
+#> 24744        <NA>             L
+#> 24781        <NA>             L
+#> 24805        <NA>             L
+#> 24822        <NA>             L
+#> 24850        <NA>             L
+#> 24875        <NA>             L
+#> 24906        <NA>             L
+#> 24923        <NA>             L
+#> 24944        <NA>             L
+#> 25009        <NA>             L
+#> 25044        <NA>             L
+#> 25086        <NA>             L
+#> 25097        <NA>             L
+#> 25111        <NA>             L
+#> 25140        <NA>             L
+#> 25156        <NA>             L
+#> 25172        <NA>             L
+#> 25197        <NA>             L
+#> 25216        <NA>             L
+#> 25271        <NA>             L
+#> 25289        <NA>             L
+#> 25309        <NA>             L
+#> 25330        <NA>             L
+#> 25334        <NA>             L
+#> 25368        <NA>             L
+#> 25383        <NA>             L
+#> 25407        <NA>             L
+#> 25424        <NA>             L
+#> 25440        <NA>             L
+#> 25465        <NA>             L
+#> 25506        <NA>             L
+#> 25559        <NA>             L
+#> 25569        <NA>             L
+#> 25586        <NA>             L
+#> 25600        <NA>             L
+#> 25609        <NA>             L
+#> 25627        <NA>             L
+#> 25639        <NA>             L
+#> 25720        <NA>             L
+#> 25748        <NA>             L
+#> 25775        <NA>             L
+#> 25801        <NA>             L
+#> 25820        <NA>             L
+#> 25841        <NA>             L
+#> 25852        <NA>             L
+#> 25865        <NA>             L
+#> 25885        <NA>             L
+#> 25928        <NA>             L
+#> 25966        <NA>             L
+#> 25980        <NA>             L
+#> 26062        <NA>             L
+#> 26088        <NA>             L
+#> 26135        <NA>             L
+#> 26152        <NA>             L
+#> 26180        <NA>             L
+#> 26200        <NA>             L
+#> 26255        <NA>             L
+#> 26315        <NA>             L
+#> 26352        <NA>             L
+#> 26358        <NA>             L
+#> 26454        <NA>             L
+#> 26487        <NA>             L
+#> 26518        <NA>             L
+#> 26559        <NA>             L
+#> 26588        <NA>             L
+#> 26611        <NA>             L
+#> 26639        <NA>             L
+#> 26653        <NA>             L
+#> 26660        <NA>             L
+#> 26675        <NA>             L
+#> 26715        <NA>             L
+#> 26725        <NA>             L
+#> 26746        <NA>             L
+#> 26771        <NA>             L
+#> 26789        <NA>             L
+#> 26804        <NA>             L
+#> 26812        <NA>             L
+#> 26833        <NA>             L
+#> 26850        <NA>             L
+#> 26875        <NA>             L
+#> 26919        <NA>             L
+#> 26965        <NA>             L
+#> 27032        <NA>             L
+#> 27064        <NA>             L
+#> 27102        <NA>             L
+#> 27113        <NA>             L
+#> 27130        <NA>             L
+#> 27141        <NA>             L
+#> 27182        <NA>             L
+#> 27190        <NA>             L
+#> 27209        <NA>             L
+#> 27221        <NA>             L
+#> 27233        <NA>             L
+#> 27242        <NA>             L
+#> 27252        <NA>             L
+#> 27268        <NA>             L
+#> 27289        <NA>             L
+#> 27295        <NA>             L
+#> 27305        <NA>             L
+#> 27341        <NA>             L
+#> 27398        <NA>             L
+#> 27449        <NA>             L
+#> 27504        <NA>             L
+#> 27549        <NA>             L
+#> 27573        <NA>             L
+#> 27644        <NA>             L
+#> 27692        <NA>             L
+#> 27748        <NA>             L
+#> 27767        <NA>             L
+#> 27797        <NA>             L
+#> 27813        <NA>             L
+#> 27867        <NA>             L
+#> 27901        <NA>             L
+#> 27946        <NA>             L
+#> 27981        <NA>             L
+#> 28005        <NA>             L
+#> 28053        <NA>             L
+#> 28080        <NA>             L
+#> 28110        <NA>             L
+#> 28133        <NA>             L
+#> 28159        <NA>             L
+#> 28172        <NA>             L
+#> 28200        <NA>             L
+#> 28253        <NA>             L
+#> 28280        <NA>             L
+#> 28308        <NA>             L
+#> 28318        <NA>             L
+#> 28338        <NA>             L
+#> 28354        <NA>             L
+#> 28375        <NA>             L
+#> 28406        <NA>             L
+#> 28424        <NA>             L
+#> 28458        <NA>             L
+#> 28467        <NA>             L
+#> 28506        <NA>             L
+#> 28540        <NA>             L
+#> 28550        <NA>             L
+#> 28599        <NA>             L
+#> 28613        <NA>             L
+#> 28638        <NA>             L
+#> 28688        <NA>             L
+#> 28721        <NA>             L
+#> 28730        <NA>             L
+#> 28754        <NA>             L
+#> 28789        <NA>             L
+#> 28826        <NA>             L
+#> 28865        <NA>             L
+#> 28941        <NA>             L
+#> 28980        <NA>             L
+#> 28996        <NA>             L
+#> 29017        <NA>             L
+#> 29043        <NA>             L
+#> 29086        <NA>             L
+#> 29114        <NA>             L
+#> 29140        <NA>             L
+#> 29158        <NA>             L
+#> 29178        <NA>             L
+#> 29205        <NA>             L
+#> 29224        <NA>             L
+#> 29263        <NA>             L
+#> 29283        <NA>             L
+#> 29306        <NA>             L
+#> 29336        <NA>             L
+#> 29383        <NA>             L
+#> 29406        <NA>             L
+#> 29430        <NA>             L
+#> 29476        <NA>             L
+#> 29495        <NA>             L
+#> 29525        <NA>             L
+#> 29553        <NA>             L
+#> 29581        <NA>             L
+#> 29591        <NA>             L
+#> 29618        <NA>             L
+#> 29642        <NA>             L
+#> 29681        <NA>             L
+#> 29706        <NA>             L
+#> 29738        <NA>             L
+#> 29803        <NA>             L
+#> 29845        <NA>             L
+#> 29870        <NA>             L
+#> 29903        <NA>             L
+#> 29918        <NA>             L
+#> 29955        <NA>             L
+#> 29993        <NA>             L
+#> 30016        <NA>             L
+#> 30037        <NA>             L
+#> 30058        <NA>             L
+#> 30085        <NA>             L
+#> 30116        <NA>             L
+#> 30144        <NA>             L
+#> 30174        <NA>             L
+#> 30186        <NA>             L
+#> 30211        <NA>             L
+#> 30230        <NA>             L
+#> 30266        <NA>             L
+#> 30293        <NA>             L
+#> 30315        <NA>             L
+#> 30338        <NA>             L
+#> 30375        <NA>             L
+#> 30401        <NA>             L
+#> 30465        <NA>             L
+#> 30490        <NA>             L
+#> 30516        <NA>             L
+#> 30551        <NA>             L
+#> 30603        <NA>             L
+#> 30646        <NA>             L
+#> 30675        <NA>             L
+#> 30701        <NA>             L
+#> 30736        <NA>             L
+#> 30777        <NA>             L
+#> 30827        <NA>             L
+#> 30851        <NA>             L
+#> 30866        <NA>             L
+#> 30933        <NA>             V
+#> 30948        <NA>             V
+#> 30959        <NA>             V
+#> 30990        <NA>             V
+#> 31011        <NA>             V
+#> 31027        <NA>             V
+#> 31063        <NA>             V
+#> 31080        <NA>             V
+#> 31093        <NA>             V
+#> 31118        <NA>             V
+#> 31144        <NA>             V
+#> 31163        <NA>             V
+#> 31181        <NA>             V
+#> 31205        <NA>             V
+#> 31226        <NA>             V
+#> 31243        <NA>             V
+#> 31261        <NA>             V
+#> 31278        <NA>             V
+#> 31302        <NA>             V
+#> 31342        <NA>             V
+#> 31354        <NA>             V
+#> 31382        <NA>             V
+#> 31401        <NA>             V
+#> 31446        <NA>             V
+#> 31497        <NA>             V
+#> 31545        <NA>             V
+#> 31586        <NA>             V
+#> 31606        <NA>             V
+#> 31641        <NA>             V
+#> 31678        <NA>             V
+#> 31707        <NA>             V
+#> 31753        <NA>             V
+#> 31764        <NA>             V
+#> 31841        <NA>             V
+#> 31863        <NA>             V
+#> 31887        <NA>             V
+#> 31910        <NA>             V
+#> 31931        <NA>             V
+#> 31951        <NA>             V
+#> 31985        <NA>             V
+#> 32001        <NA>             V
+#> 32032        <NA>             V
+#> 32065        <NA>             V
+#> 32092        <NA>             V
+#> 32135        <NA>             V
+#> 32162        <NA>             V
+#> 32187        <NA>             V
+#> 32214        <NA>             V
+#> 32237        <NA>             V
+#> 32285        <NA>             V
+#> 32296        <NA>             V
+#> 32318        <NA>             V
+#> 32378        <NA>             V
+#> 32413        <NA>             V
+#> 32465        <NA>             V
+#> 32487        <NA>             V
+#> 32519        <NA>             V
+#> 32543        <NA>             V
+#> 32562        <NA>             V
+#> 32592        <NA>             V
+#> 32619        <NA>             V
+#> 32644        <NA>             V
+#> 32659        <NA>             V
+#> 32728        <NA>             V
+#> 32788        <NA>             V
+#> 32822        <NA>             V
+#> 32848        <NA>             V
+#> 32882        <NA>             V
+#> 32930        <NA>             V
+#> 32976        <NA>             V
+#> 33002        <NA>             V
+#> 33036        <NA>             V
+#> 33083        <NA>             V
+#> 33144        <NA>             V
+#> 33218        <NA>             V
+#> 33237        <NA>             V
+#> 33269        <NA>             V
+#> 33355        <NA>             V
+#> 33406        <NA>             V
+#> 33526        <NA>             V
+#> 33549        <NA>             V
+#> 33571        <NA>             V
+#> 33609        <NA>             V
+#> 33661        <NA>             V
+#> 33680        <NA>             V
+#> 33731        <NA>             V
+#> 33761        <NA>             V
+#> 33790        <NA>             V
+#> 33876        <NA>             V
+#> 33901        <NA>             V
+#> 33911        <NA>             V
+#> 33972        <NA>             V
+#> 34015        <NA>             V
+#> 34068        <NA>             V
+#> 34117        <NA>             V
+#> 34143        <NA>             V
+#> 34180        <NA>             V
+#> 34195        <NA>             V
+#> 34218        <NA>             V
+#> 34231        <NA>             V
+#> 34246        <NA>             V
+#> 34429        <NA>             V
+#> 34441        <NA>             V
+#> 34457        <NA>             V
+#> 34474        <NA>             V
+#> 34496        <NA>             V
+#> 34514        <NA>             V
+#> 34546        <NA>             V
+#> 34562        <NA>             V
+#> 34582        <NA>             V
+#> 34618        <NA>             V
+#> 34652        <NA>             V
+#> 34674        <NA>             V
+#> 34704        <NA>             V
+#> 34727        <NA>             V
+#> 34752        <NA>             V
+#> 34761        <NA>             V
+#> 34776        <NA>             V
+#> 34792        <NA>             V
+#> 34810        <NA>             V
+#> 34823        <NA>             V
+#> 34859        <NA>             V
+#> 34881        <NA>             V
+#> 34912        <NA>             V
+#> 34932        <NA>             V
+#> 34983        <NA>             V
+#> 35017        <NA>             V
+#> 35042        <NA>             V
+#> 35061        <NA>             V
+#> 35086        <NA>             V
+#> 35115        <NA>             V
+#> 35183        <NA>             V
+#> 35206        <NA>             V
+#> 35229        <NA>             V
+#> 35240        <NA>             V
+#> 35262        <NA>             V
+#> 35286        <NA>             V
+#> 35311        <NA>             V
+#> 35324        <NA>             V
+#> 35343        <NA>             V
+#> 35357        <NA>             V
+#> 35380        <NA>             V
+#> 35391        <NA>             V
+#> 35407        <NA>             V
+#> 35433        <NA>             V
+#> 35454        <NA>             V
+#> 35489        <NA>             V
+#> 35534        <NA>             V
+#> 35570        <NA>             V
+#> 35587        <NA>             V
+#> 35597        <NA>             V
+#> 35606        <NA>             V
+#> 35616        <NA>             V
+#> 35632        <NA>             V
+#> 35678        <NA>             V
+#> 35706        <NA>             V
+#> 35736        <NA>             V
+#> 35765        <NA>             V
+#> 35791        <NA>             V
+#> 35834        <NA>             V
+#> 35864        <NA>             V
+#> 35876        <NA>             V
+#> 35896        <NA>             V
+#> 35912        <NA>             V
+#> 35934        <NA>             V
+#> 35955        <NA>             V
+#> 35973        <NA>             V
+#> 35995        <NA>             V
+#> 36009        <NA>             V
+#> 36030        <NA>             V
+#> 36064        <NA>             V
+#> 36107        <NA>             V
+#> 36145        <NA>             V
+#> 36160        <NA>             V
+#> 36175        <NA>             V
+#> 36190        <NA>             V
+#> 36205        <NA>             V
+#> 36225        <NA>             V
+#> 36245        <NA>             V
+#> 36261        <NA>             V
+#> 36290        <NA>             V
+#> 36312        <NA>             V
+#> 36326        <NA>             V
+#> 36353        <NA>             V
+#> 36371        <NA>             V
+#> 36386        <NA>             V
+#> 36402        <NA>             V
+#> 36424        <NA>             V
+#> 36440        <NA>             V
+#> 36468        <NA>             V
+#> 36479        <NA>             V
+#> 36490        <NA>             V
+#> 36516        <NA>             V
+#> 36535        <NA>             V
+#> 36561        <NA>             V
+#> 36574        <NA>             V
+#> 36597        <NA>             V
+#> 36636        <NA>             V
+#> 36691        <NA>             V
+#> 36703        <NA>             V
+#> 36784        <NA>             V
+#> 36815        <NA>             V
+#> 36845        <NA>             V
+#> 36866        <NA>             V
+#> 36880        <NA>             V
+#> 36896        <NA>             V
+#> 36958        <NA>             V
+#> 36987        <NA>             V
+#> 37034        <NA>             V
+#> 37065        <NA>             V
+#> 37084        <NA>             V
+#> 37145        <NA>             V
+#> 37159        <NA>             V
+#> 37173        <NA>             V
+#> 37190        <NA>             V
+#> 37224        <NA>             V
+#> 37237        <NA>             V
+#> 37258        <NA>             V
+#> 37275        <NA>             V
+#> 37318        <NA>             V
+#> 37344        <NA>             V
+#> 37386        <NA>             V
+#> 37403        <NA>             V
+#> 37421        <NA>             V
+#> 37440        <NA>             V
+#> 37466        <NA>             V
+#> 37530        <NA>             V
+#> 37585        <NA>             V
+#> 37602        <NA>             V
+#> 37628        <NA>             V
+#> 37666        <NA>             V
+#> 37699        <NA>             V
+#> 37792        <NA>             V
+#> 37870        <NA>             V
+#> 37924        <NA>             V
+#> 37946        <NA>             V
+#> 37996        <NA>             V
+#> 38062        <NA>             V
+#> 38108        <NA>             V
+#> 38160        <NA>             V
+#> 38181        <NA>             V
+#> 38202        <NA>             V
+#> 38227        <NA>             V
+#> 38274        <NA>             V
+#> 38303        <NA>             V
+#> 38330        <NA>             V
+#> 38354        <NA>             V
+#> 38390        <NA>             V
+#> 38421        <NA>             V
+#> 38453        <NA>             V
+#> 38482        <NA>             V
+#> 38504        <NA>             V
+#> 38535        <NA>             V
+#> 38552        <NA>             V
+#> 38575        <NA>             V
+#> 38661        <NA>             V
+#> 38695        <NA>             V
+#> 38746        <NA>             V
+#> 38776        <NA>             V
+#> 38796        <NA>             V
+#> 38818        <NA>             V
+#> 38839        <NA>             V
+#> 38853        <NA>             V
+#> 38870        <NA>             V
+#> 38925        <NA>             V
+#> 38941        <NA>             V
+#> 38950        <NA>             V
+#> 38987        <NA>             V
+#> 39008        <NA>             V
+#> 39017        <NA>             V
+#> 39036        <NA>             V
+#> 39049        <NA>             V
+#> 39105        <NA>             V
+#> 39153        <NA>             V
+#> 39180        <NA>             V
+#> 39237        <NA>             V
+#> 39253        <NA>             V
+#> 39307        <NA>             V
+#> 39334        <NA>             V
+#> 39348        <NA>             V
+#> 39373        <NA>             V
+#> 39406        <NA>             V
+#> 39433        <NA>             V
+#> 39445        <NA>             V
+#> 39456        <NA>             V
+#> 39471        <NA>             V
+#> 39488        <NA>             V
+#> 39505        <NA>             V
+#> 39513        <NA>             V
+#> 39540        <NA>             V
+#> 39557        <NA>             V
+#> 39581        <NA>             V
+#> 39605        <NA>             V
+#> 39657        <NA>             V
+#> 39815        <NA>             V
+#> 39857        <NA>             V
+#> 39915        <NA>             V
+#> 39974        <NA>             V
+#> 40044        <NA>             V
+#> 40066        <NA>             V
+#> 40101        <NA>             V
+#> 40126        <NA>             V
+#> 40147        <NA>             V
+#> 40178        <NA>             V
+#> 40203        <NA>             V
+#> 40218        <NA>             V
+#> 40233        <NA>             V
+#> 40270        <NA>             V
+#> 40309        <NA>             V
+#> 40323        <NA>             V
+#> 40335        <NA>             V
+#> 40377        <NA>             V
+#> 40416        <NA>             V
+#> 40461        <NA>             V
+#> 40487        <NA>             V
 #> 40502        <NA>             V
-#> 40528        <NA>             V
-#> 40547        <NA>             V
-#> 40558        <NA>             V
-#> 40575        <NA>             V
-#> 40593        <NA>             V
-#> 40621        <NA>             V
-#> 40631        <NA>             V
-#> 40648        <NA>             V
-#> 40675        <NA>             V
-#> 40684        <NA>             V
-#> 40693        <NA>             V
-#> 40718        <NA>             V
-#> 40741        <NA>             V
-#> 40777        <NA>             V
-#> 40788        <NA>             V
-#> 40817        <NA>             V
-#> 40840        <NA>             V
-#> 40853        <NA>             V
-#> 40877        <NA>             V
-#> 40908        <NA>             V
-#> 40942        <NA>             V
-#> 40971        <NA>             V
-#> 41001        <NA>             V
-#> 41034        <NA>             V
-#> 41062        <NA>             V
+#> 40544        <NA>             V
+#> 40559        <NA>             V
+#> 40574        <NA>             V
+#> 40615        <NA>             V
+#> 40656        <NA>             V
+#> 40674        <NA>             V
+#> 40689        <NA>             V
+#> 40714        <NA>             V
+#> 40785        <NA>             V
+#> 40816        <NA>             V
+#> 40854        <NA>             V
+#> 40866        <NA>             V
+#> 40890        <NA>             V
+#> 40921        <NA>             V
+#> 40944        <NA>             V
+#> 40963        <NA>             V
+#> 40979        <NA>             V
+#> 40995        <NA>             V
+#> 41041        <NA>             V
+#> 41071        <NA>             V
 #> 41079        <NA>             V
-#> 41094        <NA>             V
-#> 41117        <NA>             V
-#> 41144        <NA>             V
-#> 41160        <NA>             V
-#> 41185        <NA>             V
-#> 41214        <NA>             V
-#> 41239        <NA>             V
-#> 41255        <NA>             V
-#> 41267        <NA>             V
-#> 41282        <NA>             V
-#> 41306        <NA>             V
-#> 41325        <NA>             V
-#> 41348        <NA>             V
-#> 41364        <NA>             V
-#> 41407        <NA>             V
-#> 41471        <NA>             M
-#> 41517        <NA>             M
-#> 41543        <NA>             M
-#> 41564        <NA>             M
-#> 41594        <NA>             M
-#> 41606        <NA>             M
-#> 41617        <NA>             M
-#> 41627        <NA>             M
-#> 41644        <NA>             M
-#> 41656        <NA>             M
-#> 41669        <NA>             M
-#> 41680        <NA>             M
-#> 41694        <NA>             M
-#> 41721        <NA>             M
-#> 41749        <NA>             M
-#> 41788        <NA>             M
-#> 41838        <NA>             M
-#> 41865        <NA>             M
-#> 41902        <NA>             M
-#> 41919        <NA>             M
-#> 41952        <NA>             M
-#> 41973        <NA>             M
-#> 42012        <NA>             M
-#> 42034        <NA>             M
-#> 42072        <NA>             M
-#> 42097        <NA>             M
-#> 42135        <NA>             M
-#> 42170        <NA>             M
-#> 42272        <NA>             M
-#> 42308        <NA>             M
-#> 42335        <NA>             M
-#> 42354        <NA>             M
-#> 42392        <NA>             M
-#> 42418        <NA>             M
-#> 42442        <NA>             M
-#> 42478        <NA>             M
+#> 41093        <NA>             V
+#> 41105        <NA>             V
+#> 41119        <NA>             V
+#> 41137        <NA>             V
+#> 41155        <NA>             V
+#> 41176        <NA>             V
+#> 41192        <NA>             V
+#> 41219        <NA>             V
+#> 41360        <NA>             M
+#> 41395        <NA>             M
+#> 41404        <NA>             M
+#> 41414        <NA>             M
+#> 41427        <NA>             M
+#> 41455        <NA>             M
+#> 41461        <NA>             M
+#> 41493        <NA>             M
+#> 41510        <NA>             M
+#> 41551        <NA>             M
+#> 41566        <NA>             M
+#> 41597        <NA>             M
+#> 41648        <NA>             M
+#> 41701        <NA>             M
+#> 41717        <NA>             M
+#> 41732        <NA>             M
+#> 41745        <NA>             M
+#> 41763        <NA>             M
+#> 41780        <NA>             M
+#> 41790        <NA>             M
+#> 41841        <NA>             M
+#> 41863        <NA>             M
+#> 41894        <NA>             M
+#> 41908        <NA>             M
+#> 41929        <NA>             M
+#> 41967        <NA>             M
+#> 41990        <NA>             M
+#> 42007        <NA>             M
+#> 42030        <NA>             M
+#> 42061        <NA>             M
+#> 42093        <NA>             M
+#> 42116        <NA>             M
+#> 42140        <NA>             M
+#> 42180        <NA>             M
+#> 42203        <NA>             M
+#> 42232        <NA>             M
+#> 42249        <NA>             M
+#> 42302        <NA>             M
+#> 42329        <NA>             M
+#> 42364        <NA>             M
+#> 42385        <NA>             M
+#> 42404        <NA>             M
+#> 42438        <NA>             M
+#> 42456        <NA>             M
+#> 42474        <NA>             M
+#> 42493        <NA>             M
 #> 42509        <NA>             M
 #> 42554        <NA>             M
-#> 42598        <NA>             M
-#> 42620        <NA>             M
-#> 42644        <NA>             M
-#> 42671        <NA>             M
-#> 42696        <NA>             M
-#> 42714        <NA>             M
-#> 42748        <NA>             M
-#> 42783        <NA>             M
-#> 42803        <NA>             M
-#> 42826        <NA>             M
-#> 42844        <NA>             M
-#> 42864        <NA>             M
-#> 42880        <NA>             M
-#> 42888        <NA>             M
-#> 42899        <NA>             M
-#> 42917        <NA>             M
-#> 42953        <NA>             M
-#> 42969        <NA>             M
-#> 42985        <NA>             M
-#> 42995        <NA>             M
-#> 43027        <NA>             M
-#> 43048        <NA>             M
-#> 43051        <NA>             M
-#> 43072        <NA>             M
-#> 43096        <NA>             M
-#> 43114        <NA>             M
-#> 43129        <NA>             M
-#> 43145        <NA>             M
-#> 43183        <NA>             M
-#> 43197        <NA>             M
-#> 43232        <NA>             M
-#> 43250        <NA>             M
-#> 43259        <NA>             M
-#> 43271        <NA>             M
+#> 42583        <NA>             M
+#> 42608        <NA>             M
+#> 42639        <NA>             M
+#> 42670        <NA>             M
+#> 42715        <NA>             M
+#> 42734        <NA>             M
+#> 42760        <NA>             M
+#> 42787        <NA>             M
+#> 42817        <NA>             M
+#> 42835        <NA>             M
+#> 42869        <NA>             M
+#> 42895        <NA>             M
+#> 42950        <NA>             M
+#> 42978        <NA>             M
+#> 42997        <NA>             M
+#> 43026        <NA>             M
+#> 43042        <NA>             M
+#> 43074        <NA>             M
+#> 43100        <NA>             M
+#> 43115        <NA>             M
+#> 43130        <NA>             M
+#> 43146        <NA>             M
+#> 43165        <NA>             M
+#> 43180        <NA>             M
+#> 43198        <NA>             M
+#> 43218        <NA>             M
+#> 43246        <NA>             M
+#> 43274        <NA>             M
 #> 43297        <NA>             M
-#> 43337        <NA>             M
-#> 43351        <NA>             M
-#> 43361        <NA>             M
-#> 43386        <NA>             M
-#> 43398        <NA>             M
-#> 43406        <NA>             M
-#> 43417        <NA>             M
-#> 43425        <NA>             M
-#> 43437        <NA>             M
-#> 43461        <NA>             M
-#> 43478        <NA>             M
-#> 43496        <NA>             M
-#> 43505        <NA>             M
-#> 43514        <NA>             M
-#> 43534        <NA>             M
-#> 43546        <NA>             M
-#> 43561        <NA>             M
-#> 43570        <NA>             M
-#> 43582        <NA>             M
-#> 43595        <NA>             M
-#> 43604        <NA>             M
-#> 43613        <NA>             M
-#> 43625        <NA>             M
-#> 43639        <NA>             M
-#> 43656        <NA>             M
-#> 43668        <NA>             M
-#> 43681        <NA>             M
-#> 43698        <NA>             M
-#> 43706        <NA>             M
-#> 43714        <NA>             M
-#> 43722        <NA>             M
-#> 43730        <NA>             M
-#> 43743        <NA>             M
-#> 43751        <NA>             M
-#> 43759        <NA>             M
+#> 43317        <NA>             M
+#> 43346        <NA>             M
+#> 43376        <NA>             M
+#> 43395        <NA>             M
+#> 43421        <NA>             M
+#> 43445        <NA>             M
+#> 43465        <NA>             M
+#> 43494        <NA>             M
+#> 43521        <NA>             M
+#> 43551        <NA>             M
+#> 43566        <NA>             M
+#> 43597        <NA>             M
+#> 43623        <NA>             M
+#> 43723        <NA>             M
 get_psgc(geographic_level = c("Prov", "City"))
 #>        psgc_code                   area_name correspondence_code
-#> 2     0102800000                Ilocos Norte           012800000
-#> 96    0102805000               City of Batac           012805000
-#> 238   0102812000               City of Laoag           012812000
-#> 585   0102900000                  Ilocos Sur           012900000
-#> 707   0102906000              City of Candon           012906000
-#> 1348  0102934000               City of Vigan           012934000
-#> 1388  0103300000                    La Union           013300000
-#> 1793  0103314000        City of San Fernando           013314000
-#> 1985  0105500000                  Pangasinan           015500000
-#> 2021  0105503000            City of Alaminos           015503000
-#> 2439  0105518000             City of Dagupan           015518000
-#> 2888  0105532000          City of San Carlos           015532000
-#> 3318  0105546000            City of Urdaneta           015546000
-#> 3399  0200900000                     Batanes           020900000
-#> 3435  0201500000                     Cagayan           021500000
-#> 4235  0201529000             Tuguegarao City           021529000
-#> 4285  0203100000                     Isabela           023100000
-#> 4510  0203108000             City of Cauayan           023108000
-#> 4705  0203114000              City of Ilagan           023114000
-#> 5265  0203135000            City of Santiago           023135000
-#> 5378  0205000000               Nueva Vizcaya           025000000
-#> 5669  0205700000                     Quirino           025700000
-#> 5809  0300800000                      Bataan           030800000
-#> 5835  0300803000             City of Balanga           030803000
-#> 6059  0301400000                     Bulacan           031400000
-#> 6087  0301403000             City of Baliwag           031403000
-#> 6237  0301410000             City of Malolos           031410000
-#> 6306  0301412000          City of Meycauayan           031412000
-#> 6474  0301420000  City of San Jose Del Monte           031420000
-#> 6656  0304900000                 Nueva Ecija           034900000
-#> 6713  0304903000          City of Cabanatuan           034903000
-#> 6914  0304908000               City of Gapan           034908000
-#> 7144  0304917000       Science City of Muñoz           034917000
-#> 7204  0304919000             City of Palayan           034919000
-#> 7321  0304926000               San Jose City           034926000
-#> 7538  0305400000                    Pampanga           035400000
-#> 7750  0305409000              Mabalacat City           035409000
-#> 7949  0305416000        City of San Fernando           035416000
-#> 8065  0306900000                      Tarlac           036900000
-#> 8477  0306916000              City of Tarlac           036916000
-#> 8595  0307100000                    Zambales           037100000
-#> 8839  0307700000                      Aurora           037700000
-#> 8999  0330100000             City of Angeles           035401000
-#> 9033  0331400000            City of Olongapo           037107000
-#> 9052  0401000000                    Batangas           041000000
-#> 9158  0401005000               Batangas City           041005000
-#> 9305  0401007000              City of Calaca           041007000
-#> 9509  0401014000                City of Lipa           041014000
-#> 9959  0401028000          City of Sto. Tomas           041028000
-#> 10055 0401031000             City of Tanauan           041031000
-#> 10164 0402100000                      Cavite           042100000
-#> 10225 0402103000              City of Bacoor           042103000
-#> 10273 0402104000             City of Carmona           042104000
-#> 10288 0402105000              City of Cavite           042105000
-#> 10373 0402106000          City of Dasmariñas           042106000
-#> 10464 0402108000       City of General Trias           042108000
-#> 10498 0402109000                City of Imus           042109000
-#> 10861 0402119000            City of Tagaytay           042119000
-#> 10949 0402122000      City of Trece Martires           042122000
-#> 10991 0403400000                      Laguna           043400000
-#> 11024 0403403000               City of Biñan           043403000
-#> 11049 0403404000             City of Cabuyao           043404000
-#> 11068 0403405000             City of Calamba           043405000
-#> 11491 0403424000           City of San Pablo           043424000
-#> 11572 0403425000           City of San Pedro           043425000
-#> 11653 0403428000          City of Santa Rosa           043428000
-#> 11703 0405600000                      Quezon           045600000
-#> 12817 0405647000             City of Tayabas           045647000
-#> 12953 0405800000                       Rizal           045800000
-#> 12965 0405802000            City of Antipolo           045802000
-#> 13157 0431200000              City of Lucena           045624000
-#> 13192 0500500000                       Albay           050500000
-#> 13425 0500506000             City of Legazpi           050506000
-#> 13544 0500508000               City of Ligao           050508000
-#> 13857 0500517000              City of Tabaco           050517000
-#> 13931 0501600000             Camarines Norte           051600000
-#> 14226 0501700000               Camarines Sur           051700000
-#> 14641 0501716000               City of Iriga           051716000
-#> 14938 0501724000                City of Naga           051724000
-#> 15327 0502000000                 Catanduanes           052000000
-#> 15654 0504100000                     Masbate           054100000
-#> 15937 0504111000             City of Masbate           054111000
-#> 16226 0506200000                    Sorsogon           056200000
-#> 16718 0506216000            City of Sorsogon           056216000
-#> 16784 0600400000                       Aklan           060400000
-#> 17129 0600600000                     Antique           060600000
-#> 17738 0601900000                       Capiz           061900000
-#> 18089 0601914000               City of Roxas           061914000
-#> 18229 0603000000                      Iloilo           063000000
-#> 19461 0603035000               City of Passi           063035000
-#> 19994 0607900000                    Guimaras           067900000
-#> 20098 0631000000              City of Iloilo           063022000
-#> 20280 0701200000                       Bohol           071200000
-#> 21243 0701242000          City of Tagbilaran           071242000
-#> 21438 0702200000                        Cebu           072200000
-#> 21686 0702211000                City of Bogo           072211000
-#> 21748 0702214000              City of Carcar           072214000
-#> 21916 0702223000                  Danao City           072223000
-#> 22113 0702234000                City of Naga           072234000
-#> 22426 0702250000             City of Talisay           072250000
-#> 22449 0702251000              City of Toledo           072251000
-#> 22555 0730600000                City of Cebu           072217000
-#> 22636 0731100000           City of Lapu-Lapu           072226000
-#> 22667 0731300000             City of Mandaue           072230000
-#> 22696 0802600000               Eastern Samar           082600000
-#> 22748 0802604000            City of Borongan           082604000
-#> 23317 0803700000                       Leyte           083700000
-#> 23551 0803708000              City of Baybay           083708000
-#> 24427 0803738000                  Ormoc City           083738000
-#> 24838 0804800000              Northern Samar           084800000
-#> 25432 0806000000                       Samar           086000000
-#> 25509 0806003000            City of Calbayog           086003000
-#> 25709 0806005000          City of Catbalogan           086005000
-#> 26410 0806400000              Southern Leyte           086400000
-#> 26566 0806407000              City of Maasin           086407000
-#> 26930 0807800000                     Biliran           087800000
-#> 27071 0831600000            City of Tacloban           083747000
-#> 27211 0906600000                        Sulu           156600000
-#> 27641 0907200000         Zamboanga del Norte           097200000
-#> 27642 0907201000             City of Dapitan           097201000
-#> 27693 0907202000             City of Dipolog           097202000
-#> 28360 0907300000           Zamboanga del Sur           097300000
-#> 28747 0907322000            City of Pagadian           097322000
-#> 29069 0908300000           Zamboanga Sibugay           098300000
-#> 29475 0931700000           City of Zamboanga           097332000
-#> 29575 0990101000             City of Isabela           099701000
-#> 29622 1001300000                    Bukidnon           101300000
-#> 29840 1001312000          City of Malaybalay           101312000
-#> 30061 1001321000            City of Valencia           101321000
-#> 30109 1001800000                    Camiguin           101800000
-#> 30173 1003500000             Lanao del Norte           103500000
-#> 30658 1004200000          Misamis Occidental           104200000
-#> 30866 1004209000           City of Oroquieta           104209000
-#> 30914 1004210000              City of Ozamiz           104210000
-#> 31064 1004215000              City of Tangub           104215000
-#> 31166 1004300000            Misamis Oriental           104300000
-#> 31259 1004307000         City of El Salvador           104307000
-#> 31275 1004308000             City of Gingoog           104308000
-#> 31616 1030500000      City of Cagayan De Oro           104305000
-#> 31697 1030900000              City of Iligan           103504000
-#> 31743 1102300000             Davao del Norte           112300000
-#> 31822 1102315000              City of Panabo           112315000
-#> 31863 1102317000 Island Garden City of Samal           112317000
-#> 31930 1102319000               City of Tagum           112319000
-#> 31978 1102400000               Davao del Sur           112400000
-#> 32005 1102403000               City of Digos           112403000
-#> 32221 1102500000              Davao Oriental           112500000
-#> 32361 1102509000                City of Mati           112509000
-#> 32416 1108200000                Davao de Oro           118200000
-#> 32665 1108600000            Davao Occidental           118600000
-#> 32776 1130700000               City of Davao           112402000
-#> 32960 1204700000                    Cotabato           124700000
-#> 33019 1204704000           City of Kidapawan           124704000
-#> 33459 1206300000              South Cotabato           126300000
-#> 33483 1206306000           City of Koronadal           126306000
-#> 33671 1206500000              Sultan Kudarat           126500000
-#> 33891 1206511000            City of Tacurong           126511000
-#> 33933 1208000000                   Sarangani           128000000
-#> 34083 1230800000      City of General Santos           126303000
-#> 34111 1380100000            City of Caloocan           137501000
-#> 34305 1380200000           City of Las Piñas           137601000
-#> 34326 1380300000              City of Makati           137602000
-#> 34350 1380400000             City of Malabon           137502000
-#> 34372 1380500000         City of Mandaluyong           137401000
-#> 34400 1380600000              City of Manila           133900000
-#> 35312 1380700000            City of Marikina           137402000
-#> 35329 1380800000          City of Muntinlupa           137603000
-#> 35339 1380900000             City of Navotas           137503000
-#> 35358 1381000000           City of Parañaque           137604000
-#> 35375 1381100000                  Pasay City           137605000
-#> 35577 1381200000               City of Pasig           137403000
-#> 35608 1381300000                 Quezon City           137404000
-#> 35751 1381400000            City of San Juan           137405000
-#> 35773 1381500000              City of Taguig           137607000
-#> 35812 1381600000          City of Valenzuela           137504000
-#> 35858 1400100000                        Abra           140100000
-#> 36189 1401100000                     Benguet           141100000
-#> 36343 1402700000                      Ifugao           142700000
-#> 36531 1403200000                     Kalinga           143200000
-#> 36611 1403213000               City of Tabuk           143213000
-#> 36693 1404400000           Mountain Province           144400000
-#> 36848 1408100000                      Apayao           148100000
-#> 36989 1430300000              City of Baguio           141102000
-#> 37120 1600200000            Agusan del Norte           160200000
-#> 37147 1600203000          City of Cabadbaran           160203000
-#> 37299 1600300000              Agusan del Sur           160300000
-#> 37300 1600301000             City of Bayugan           160301000
-#> 37628 1606700000           Surigao del Norte           166700000
-#> 37905 1606724000             City of Surigao           166724000
-#> 37985 1606800000             Surigao del Sur           166800000
-#> 38017 1606803000              City of Bislig           166803000
-#> 38293 1606819000              City of Tandag           166819000
-#> 38315 1608500000             Dinagat Islands           168500000
-#> 38423 1630400000              City of Butuan           160202000
-#> 38511 1704000000                  Marinduque           174000000
-#> 38736 1705100000          Occidental Mindoro           175100000
-#> 38912 1705200000            Oriental Mindoro           175200000
-#> 39008 1705205000             City of Calapan           175205000
-#> 39354 1705300000                     Palawan           175300000
-#> 39745 1705900000                     Romblon           175900000
-#> 39982 1731500000     City of Puerto Princesa           175316000
-#> 40050 1804500000           Negros Occidental           064500000
-#> 40051 1804502000                City of Bago           064502000
-#> 40093 1804504000               City of Cadiz           064504000
-#> 40217 1804509000           City of Escalante           064509000
-#> 40239 1804510000          City of Himamaylan           064510000
-#> 40345 1804515000          City of Kabankalan           064515000
-#> 40378 1804516000          City of La Carlota           064516000
-#> 40502 1804523000               City of Sagay           064523000
-#> 40528 1804524000          City of San Carlos           064524000
-#> 40558 1804526000               City of Silay           064526000
-#> 40575 1804527000             City of Sipalay           064527000
-#> 40593 1804528000             City of Talisay           064528000
-#> 40648 1804531000           City of Victorias           064531000
-#> 40683 1804600000             Negros Oriental           074600000
-#> 40741 1804604000                City of Bais           074604000
-#> 40788 1804606000             City of Bayawan           074606000
-#> 40840 1804608000             City of Canlaon           074608000
-#> 40877 1804610000           City of Dumaguete           074610000
-#> 40908 1804611000          City of Guihulngan           074611000
-#> 41160 1804621000              City of Tanjay           074621000
-#> 41266 1806100000                    Siquijor           076100000
-#> 41407 1830200000             City of Bacolod           064501000
-#> 41470 1900700000                     Basilan           150700000
-#> 41471 1900702000             City of Lamitan           150702000
-#> 41693 1903600000               Lanao del Sur           153600000
-#> 42170 1903617000              City of Marawi           153617000
-#> 42898 1907000000                   Tawi-Tawi           157000000
-#> 43113 1908700000       Maguindanao del Norte                <NA>
-#> 43145 1908703000            City of Cotabato           129804000
-#> 43385 1908800000         Maguindanao del Sur                <NA>
+#> 3     1001300000                    Bukidnon           101300000
+#> 221   1001312000          City of Malaybalay           101312000
+#> 442   1001321000            City of Valencia           101321000
+#> 490   1001800000                    Camiguin           101800000
+#> 554   1003500000             Lanao del Norte           103500000
+#> 1039  1004200000          Misamis Occidental           104200000
+#> 1247  1004209000           City of Oroquieta           104209000
+#> 1295  1004210000              City of Ozamiz           104210000
+#> 1445  1004215000              City of Tangub           104215000
+#> 1547  1004300000            Misamis Oriental           104300000
+#> 1640  1004307000         City of El Salvador           104307000
+#> 1656  1004308000             City of Gingoog           104308000
+#> 1997  0102800000                Ilocos Norte           012800000
+#> 2091  0102805000               City of Batac           012805000
+#> 2233  0102812000               City of Laoag           012812000
+#> 2580  0102900000                  Ilocos Sur           012900000
+#> 2702  0102906000              City of Candon           012906000
+#> 3343  0102934000               City of Vigan           012934000
+#> 3383  1030500000      City of Cagayan De Oro           104305000
+#> 3464  1030900000              City of Iligan           103504000
+#> 3509  0103300000                    La Union           013300000
+#> 3914  0103314000        City of San Fernando           013314000
+#> 4106  0105500000                  Pangasinan           015500000
+#> 4142  0105503000            City of Alaminos           015503000
+#> 4560  0105518000             City of Dagupan           015518000
+#> 5009  0105532000          City of San Carlos           015532000
+#> 5439  0105546000            City of Urdaneta           015546000
+#> 5520  1102300000             Davao del Norte           112300000
+#> 5599  1102315000              City of Panabo           112315000
+#> 5640  1102317000 Island Garden City of Samal           112317000
+#> 5707  1102319000               City of Tagum           112319000
+#> 5755  1102400000               Davao del Sur           112400000
+#> 5782  1102403000               City of Digos           112403000
+#> 5998  1102500000              Davao Oriental           112500000
+#> 6138  1102509000                City of Mati           112509000
+#> 6193  1108200000                Davao de Oro           118200000
+#> 6442  1108600000            Davao Occidental           118600000
+#> 6553  1130700000               City of Davao           112402000
+#> 6737  1204700000                    Cotabato           124700000
+#> 6796  1204704000           City of Kidapawan           124704000
+#> 7236  1206300000              South Cotabato           126300000
+#> 7260  1206306000           City of Koronadal           126306000
+#> 7448  1206500000              Sultan Kudarat           126500000
+#> 7668  1206511000            City of Tacurong           126511000
+#> 7710  1208000000                   Sarangani           128000000
+#> 7860  1230800000      City of General Santos           126303000
+#> 7888  1380100000            City of Caloocan           137501000
+#> 8082  1380200000           City of Las Piñas           137601000
+#> 8103  1380300000              City of Makati           137602000
+#> 8127  1380400000             City of Malabon           137502000
+#> 8149  1380500000         City of Mandaluyong           137401000
+#> 8177  1380600000              City of Manila           133900000
+#> 9089  1380700000            City of Marikina           137402000
+#> 9106  1380800000          City of Muntinlupa           137603000
+#> 9116  1380900000             City of Navotas           137503000
+#> 9135  1381000000           City of Parañaque           137604000
+#> 9152  1381100000                  Pasay City           137605000
+#> 9354  1381200000               City of Pasig           137403000
+#> 9385  1381300000                 Quezon City           137404000
+#> 9528  1381400000            City of San Juan           137405000
+#> 9550  1381500000              City of Taguig           137607000
+#> 9589  1381600000          City of Valenzuela           137504000
+#> 9635  1400100000                        Abra           140100000
+#> 9966  1401100000                     Benguet           141100000
+#> 10120 1402700000                      Ifugao           142700000
+#> 10308 1403200000                     Kalinga           143200000
+#> 10388 1403213000               City of Tabuk           143213000
+#> 10470 1404400000           Mountain Province           144400000
+#> 10625 1408100000                      Apayao           148100000
+#> 10766 1430300000              City of Baguio           141102000
+#> 10897 1600200000            Agusan del Norte           160200000
+#> 10924 1600203000          City of Cabadbaran           160203000
+#> 11076 1600300000              Agusan del Sur           160300000
+#> 11077 1600301000             City of Bayugan           160301000
+#> 11405 1606700000           Surigao del Norte           166700000
+#> 11682 1606724000             City of Surigao           166724000
+#> 11762 1606800000             Surigao del Sur           166800000
+#> 11794 1606803000              City of Bislig           166803000
+#> 12070 1606819000              City of Tandag           166819000
+#> 12092 1608500000             Dinagat Islands           168500000
+#> 12200 1630400000              City of Butuan           160202000
+#> 12288 1704000000                  Marinduque           174000000
+#> 12513 1705100000          Occidental Mindoro           175100000
+#> 12689 1705200000            Oriental Mindoro           175200000
+#> 12785 1705205000             City of Calapan           175205000
+#> 13131 1705300000                     Palawan           175300000
+#> 13522 1705900000                     Romblon           175900000
+#> 13759 1731500000     City of Puerto Princesa           175316000
+#> 13827 1804500000           Negros Occidental           064500000
+#> 13828 1804502000                City of Bago           064502000
+#> 13870 1804504000               City of Cadiz           064504000
+#> 13994 1804509000           City of Escalante           064509000
+#> 14016 1804510000          City of Himamaylan           064510000
+#> 14122 1804515000          City of Kabankalan           064515000
+#> 14155 1804516000          City of La Carlota           064516000
+#> 14279 1804523000               City of Sagay           064523000
+#> 14305 1804524000          City of San Carlos           064524000
+#> 14335 1804526000               City of Silay           064526000
+#> 14352 1804527000             City of Sipalay           064527000
+#> 14370 1804528000             City of Talisay           064528000
+#> 14425 1804531000           City of Victorias           064531000
+#> 14460 1804600000             Negros Oriental           074600000
+#> 14518 1804604000                City of Bais           074604000
+#> 14565 1804606000             City of Bayawan           074606000
+#> 14617 1804608000             City of Canlaon           074608000
+#> 14654 1804610000           City of Dumaguete           074610000
+#> 14685 1804611000          City of Guihulngan           074611000
+#> 14937 1804621000              City of Tanjay           074621000
+#> 15043 1806100000                    Siquijor           076100000
+#> 15184 1830200000             City of Bacolod           064501000
+#> 15247 1900700000                     Basilan           150700000
+#> 15248 1900702000             City of Lamitan           150702000
+#> 15470 1903600000               Lanao del Sur           153600000
+#> 15947 1903617000              City of Marawi           153617000
+#> 16675 1907000000                   Tawi-Tawi           157000000
+#> 16890 1908700000       Maguindanao del Norte           000000000
+#> 16922 1908703000            City of Cotabato           129804000
+#> 17162 1908800000         Maguindanao del Sur           000000000
+#> 17547 0200900000                     Batanes           020900000
+#> 17583 0201500000                     Cagayan           021500000
+#> 18383 0201529000             Tuguegarao City           021529000
+#> 18433 0203100000                     Isabela           023100000
+#> 18658 0203108000             City of Cauayan           023108000
+#> 18853 0203114000              City of Ilagan           023114000
+#> 19413 0203135000            City of Santiago           023135000
+#> 19526 0205000000               Nueva Vizcaya           025000000
+#> 19817 0205700000                     Quirino           025700000
+#> 19957 0300800000                      Bataan           030800000
+#> 19983 0300803000             City of Balanga           030803000
+#> 20207 0301400000                     Bulacan           031400000
+#> 20235 0301403000             City of Baliwag           031403000
+#> 20385 0301410000             City of Malolos           031410000
+#> 20454 0301412000          City of Meycauayan           031412000
+#> 20622 0301420000  City of San Jose Del Monte           031420000
+#> 20804 0304900000                 Nueva Ecija           034900000
+#> 20861 0304903000          City of Cabanatuan           034903000
+#> 21062 0304908000               City of Gapan           034908000
+#> 21292 0304917000       Science City of Muñoz           034917000
+#> 21352 0304919000             City of Palayan           034919000
+#> 21469 0304926000               San Jose City           034926000
+#> 21686 0305400000                    Pampanga           035400000
+#> 21898 0305409000              Mabalacat City           035409000
+#> 22097 0305416000        City of San Fernando           035416000
+#> 22213 0306900000                      Tarlac           036900000
+#> 22625 0306916000              City of Tarlac           036916000
+#> 22743 0307100000                    Zambales           037100000
+#> 22987 0307700000                      Aurora           037700000
+#> 23147 0330100000             City of Angeles           035401000
+#> 23181 0331400000            City of Olongapo           037107000
+#> 23200 0401000000                    Batangas           041000000
+#> 23306 0401005000               Batangas City           041005000
+#> 23453 0401007000              City of Calaca           041007000
+#> 23657 0401014000                City of Lipa           041014000
+#> 24107 0401028000          City of Sto. Tomas           041028000
+#> 24203 0401031000             City of Tanauan           041031000
+#> 24312 0402100000                      Cavite           042100000
+#> 24373 0402103000              City of Bacoor           042103000
+#> 24421 0402104000             City of Carmona           042104000
+#> 24436 0402105000              City of Cavite           042105000
+#> 24521 0402106000          City of Dasmariñas           042106000
+#> 24612 0402108000       City of General Trias           042108000
+#> 24646 0402109000                City of Imus           042109000
+#> 25009 0402119000            City of Tagaytay           042119000
+#> 25097 0402122000      City of Trece Martires           042122000
+#> 25139 0403400000                      Laguna           043400000
+#> 25172 0403403000               City of Biñan           043403000
+#> 25197 0403404000             City of Cabuyao           043404000
+#> 25216 0403405000             City of Calamba           043405000
+#> 25639 0403424000           City of San Pablo           043424000
+#> 25720 0403425000           City of San Pedro           043425000
+#> 25801 0403428000          City of Santa Rosa           043428000
+#> 25851 0405600000                      Quezon           045600000
+#> 26965 0405647000             City of Tayabas           045647000
+#> 27101 0405800000                       Rizal           045800000
+#> 27113 0405802000            City of Antipolo           045802000
+#> 27305 0431200000              City of Lucena           045624000
+#> 27340 0500500000                       Albay           050500000
+#> 27573 0500506000             City of Legazpi           050506000
+#> 27692 0500508000               City of Ligao           050508000
+#> 28005 0500517000              City of Tabaco           050517000
+#> 28079 0501600000             Camarines Norte           051600000
+#> 28374 0501700000               Camarines Sur           051700000
+#> 28789 0501716000               City of Iriga           051716000
+#> 29086 0501724000                City of Naga           051724000
+#> 29475 0502000000                 Catanduanes           052000000
+#> 29802 0504100000                     Masbate           054100000
+#> 30085 0504111000             City of Masbate           054111000
+#> 30374 0506200000                    Sorsogon           056200000
+#> 30866 0506216000            City of Sorsogon           056216000
+#> 30932 0600400000                       Aklan           060400000
+#> 31277 0600600000                     Antique           060600000
+#> 31886 0601900000                       Capiz           061900000
+#> 32237 0601914000               City of Roxas           061914000
+#> 32377 0603000000                      Iloilo           063000000
+#> 33609 0603035000               City of Passi           063035000
+#> 34142 0607900000                    Guimaras           067900000
+#> 34246 0631000000              City of Iloilo           063022000
+#> 34428 0701200000                       Bohol           071200000
+#> 35391 0701242000          City of Tagbilaran           071242000
+#> 35586 0702200000                        Cebu           072200000
+#> 35834 0702211000                City of Bogo           072211000
+#> 35896 0702214000              City of Carcar           072214000
+#> 36064 0702223000                  Danao City           072223000
+#> 36261 0702234000                City of Naga           072234000
+#> 36574 0702250000             City of Talisay           072250000
+#> 36597 0702251000              City of Toledo           072251000
+#> 36703 0730600000                City of Cebu           072217000
+#> 36784 0731100000           City of Lapu-Lapu           072226000
+#> 36815 0731300000             City of Mandaue           072230000
+#> 36844 0802600000               Eastern Samar           082600000
+#> 36896 0802604000            City of Borongan           082604000
+#> 37465 0803700000                       Leyte           083700000
+#> 37699 0803708000              City of Baybay           083708000
+#> 38575 0803738000                  Ormoc City           083738000
+#> 38986 0804800000              Northern Samar           084800000
+#> 39580 0806000000                       Samar           086000000
+#> 39657 0806003000            City of Calbayog           086003000
+#> 39857 0806005000          City of Catbalogan           086005000
+#> 40558 0806400000              Southern Leyte           086400000
+#> 40714 0806407000              City of Maasin           086407000
+#> 41078 0807800000                     Biliran           087800000
+#> 41219 0831600000            City of Tacloban           083747000
+#> 41359 0906600000                        Sulu           156600000
+#> 41789 0907200000         Zamboanga del Norte           097200000
+#> 41790 0907201000             City of Dapitan           097201000
+#> 41841 0907202000             City of Dipolog           097202000
+#> 42508 0907300000           Zamboanga del Sur           097300000
+#> 42895 0907322000            City of Pagadian           097322000
+#> 43217 0908300000           Zamboanga Sibugay           098300000
+#> 43623 0931700000           City of Zamboanga           097332000
+#> 43723 0990101000             City of Isabela           099701000
 #>       geographic_level          old_name city_class income_classification
-#> 2                 Prov              <NA>       <NA>                   1st
-#> 96                City              <NA>         CC                   3rd
-#> 238               City              <NA>         CC                   3rd
-#> 585               Prov              <NA>       <NA>                   1st
-#> 707               City              <NA>         CC                   1st
-#> 1348              City              <NA>         CC                   4th
-#> 1388              Prov              <NA>       <NA>                   1st
-#> 1793              City              <NA>         CC                   2nd
-#> 1985              Prov              <NA>       <NA>                   1st
-#> 2021              City              <NA>         CC                   3rd
-#> 2439              City              <NA>        ICC                   2nd
-#> 2888              City              <NA>         CC                   2nd
-#> 3318              City              <NA>         CC                   1st
-#> 3399              Prov              <NA>       <NA>                   4th
-#> 3435              Prov              <NA>       <NA>                   1st
-#> 4235              City              <NA>         CC                   2nd
-#> 4285              Prov              <NA>       <NA>                   1st
-#> 4510              City              <NA>         CC                   2nd
-#> 4705              City              <NA>         CC                   1st
-#> 5265              City              <NA>        ICC                   1st
-#> 5378              Prov              <NA>       <NA>                   1st
-#> 5669              Prov              <NA>       <NA>                   1st
-#> 5809              Prov              <NA>       <NA>                   1st
-#> 5835              City              <NA>         CC                   2nd
-#> 6059              Prov              <NA>       <NA>                   1st
-#> 6087              City              <NA>         CC                   3rd
-#> 6237              City              <NA>         CC                   1st
-#> 6306              City              <NA>         CC                   1st
-#> 6474              City              <NA>         CC                   1st
-#> 6656              Prov              <NA>       <NA>                   1st
-#> 6713              City              <NA>         CC                   1st
-#> 6914              City              <NA>         CC                   3rd
-#> 7144              City              <NA>         CC                   4th
-#> 7204              City              <NA>         CC                   4th
-#> 7321              City              <NA>         CC                   2nd
-#> 7538              Prov              <NA>       <NA>                   1st
-#> 7750              City              <NA>         CC                   1st
-#> 7949              City              <NA>         CC                   1st
-#> 8065              Prov              <NA>       <NA>                   1st
-#> 8477              City              <NA>         CC                   1st
-#> 8595              Prov              <NA>       <NA>                   1st
-#> 8839              Prov              <NA>       <NA>                   2nd
-#> 8999              City              <NA>        HUC                   1st
-#> 9033              City              <NA>        HUC                   1st
-#> 9052              Prov              <NA>       <NA>                   1st
-#> 9158              City              <NA>         CC                   1st
-#> 9305              City              <NA>         CC                   3rd
-#> 9509              City              <NA>         CC                   1st
-#> 9959              City              <NA>         CC                   1st
-#> 10055             City              <NA>         CC                   1st
-#> 10164             Prov              <NA>       <NA>                   1st
-#> 10225             City              <NA>         CC                   1st
-#> 10273             City              <NA>         CC                   2nd
-#> 10288             City              <NA>         CC                   4th
-#> 10373             City              <NA>         CC                   1st
-#> 10464             City              <NA>         CC                   1st
-#> 10498             City              <NA>         CC                   1st
-#> 10861             City              <NA>         CC                   1st
-#> 10949             City              <NA>         CC                   2nd
-#> 10991             Prov              <NA>       <NA>                   1st
-#> 11024             City              <NA>         CC                   1st
-#> 11049             City              <NA>         CC                   1st
-#> 11068             City              <NA>         CC                   1st
-#> 11491             City              <NA>         CC                   1st
-#> 11572             City              <NA>         CC                   1st
-#> 11653             City              <NA>         CC                   1st
-#> 11703             Prov              <NA>       <NA>                   1st
-#> 12817             City              <NA>         CC                   3rd
-#> 12953             Prov              <NA>       <NA>                   1st
-#> 12965             City              <NA>         CC                   1st
-#> 13157             City              <NA>        HUC                   1st
-#> 13192             Prov              <NA>       <NA>                   1st
-#> 13425             City              <NA>         CC                   1st
-#> 13544             City              <NA>         CC                   3rd
-#> 13857             City              <NA>         CC                   3rd
-#> 13931             Prov              <NA>       <NA>                   1st
-#> 14226             Prov              <NA>       <NA>                   1st
-#> 14641             City              <NA>         CC                   3rd
-#> 14938             City              <NA>        ICC                   1st
-#> 15327             Prov              <NA>       <NA>                   2nd
-#> 15654             Prov              <NA>       <NA>                   1st
-#> 15937             City              <NA>         CC                   3rd
-#> 16226             Prov              <NA>       <NA>                   1st
-#> 16718             City              <NA>         CC                   2nd
-#> 16784             Prov              <NA>       <NA>                   1st
-#> 17129             Prov              <NA>       <NA>                   1st
-#> 17738             Prov              <NA>       <NA>                   1st
-#> 18089             City              <NA>         CC                   2nd
-#> 18229             Prov              <NA>       <NA>                   1st
-#> 19461             City              <NA>         CC                   3rd
-#> 19994             Prov              <NA>       <NA>                   2nd
-#> 20098             City              <NA>        HUC                   1st
-#> 20280             Prov              <NA>       <NA>                   1st
-#> 21243             City              <NA>         CC                   2nd
-#> 21438             Prov              <NA>       <NA>                   1st
-#> 21686             City              <NA>         CC                   4th
-#> 21748             City              <NA>         CC                   3rd
-#> 21916             City              <NA>         CC                   2nd
-#> 22113             City              <NA>         CC                   3rd
-#> 22426             City              <NA>         CC                   1st
-#> 22449             City              <NA>         CC                   1st
-#> 22555             City              <NA>        HUC                   1st
-#> 22636             City              Opon        HUC                   1st
-#> 22667             City              <NA>        HUC                   1st
-#> 22696             Prov              <NA>       <NA>                   1st
-#> 22748             City              <NA>         CC                   2nd
-#> 23317             Prov              <NA>       <NA>                   1st
-#> 23551             City              <NA>         CC                   1st
-#> 24427             City              <NA>        ICC                   1st
-#> 24838             Prov              <NA>       <NA>                   1st
-#> 25432             Prov     Western Samar       <NA>                   1st
-#> 25509             City              <NA>         CC                   1st
-#> 25709             City              <NA>         CC                   3rd
-#> 26410             Prov              <NA>       <NA>                   1st
-#> 26566             City              <NA>         CC                   3rd
-#> 26930             Prov              <NA>       <NA>                   2nd
-#> 27071             City              <NA>        HUC                   1st
-#> 27211             Prov              <NA>       <NA>                   1st
-#> 27641             Prov              <NA>       <NA>                   1st
-#> 27642             City              <NA>         CC                   2nd
-#> 27693             City              <NA>         CC                   2nd
-#> 28360             Prov              <NA>       <NA>                   1st
-#> 28747             City              <NA>         CC                   1st
-#> 29069             Prov              <NA>       <NA>                   1st
-#> 29475             City              <NA>        HUC                   1st
-#> 29575             City              <NA>         CC                   3rd
-#> 29622             Prov              <NA>       <NA>                   1st
-#> 29840             City              <NA>         CC                   1st
-#> 30061             City              <NA>         CC                   1st
-#> 30109             Prov              <NA>       <NA>                   3rd
-#> 30173             Prov              <NA>       <NA>                   1st
-#> 30658             Prov              <NA>       <NA>                   1st
-#> 30866             City              <NA>         CC                   3rd
-#> 30914             City              <NA>         CC                   2nd
-#> 31064             City              <NA>         CC                   3rd
-#> 31166             Prov              <NA>       <NA>                   1st
-#> 31259             City              <NA>         CC                   4th
-#> 31275             City              <NA>         CC                   1st
-#> 31616             City              <NA>        HUC                   1st
-#> 31697             City              <NA>        HUC                   1st
-#> 31743             Prov              <NA>       <NA>                   1st
-#> 31822             City              <NA>         CC                   1st
-#> 31863             City              <NA>         CC                   2nd
-#> 31930             City              <NA>         CC                   1st
-#> 31978             Prov              <NA>       <NA>                   1st
-#> 32005             City              <NA>         CC                   1st
-#> 32221             Prov              <NA>       <NA>                   1st
-#> 32361             City              <NA>         CC                   1st
-#> 32416             Prov Compostela Valley       <NA>                   1st
-#> 32665             Prov              <NA>       <NA>                   2nd
-#> 32776             City              <NA>        HUC                   1st
-#> 32960             Prov    North Cotabato       <NA>                   1st
-#> 33019             City              <NA>         CC                   1st
-#> 33459             Prov              <NA>       <NA>                   1st
-#> 33483             City              <NA>         CC                   1st
-#> 33671             Prov              <NA>       <NA>                   1st
-#> 33891             City              <NA>         CC                   3rd
-#> 33933             Prov              <NA>       <NA>                   1st
-#> 34083             City         Dadiangas        HUC                   1st
-#> 34111             City              <NA>        HUC                   1st
-#> 34305             City              <NA>        HUC                   1st
-#> 34326             City              <NA>        HUC                   1st
-#> 34350             City              <NA>        HUC                   1st
-#> 34372             City              <NA>        HUC                   1st
-#> 34400             City              <NA>        HUC                   1st
-#> 35312             City              <NA>        HUC                   1st
-#> 35329             City              <NA>        HUC                   1st
-#> 35339             City              <NA>        HUC                   1st
-#> 35358             City              <NA>        HUC                   1st
-#> 35375             City              <NA>        HUC                   1st
-#> 35577             City              <NA>        HUC                   1st
-#> 35608             City              <NA>        HUC                   1st
-#> 35751             City              <NA>        HUC                   1st
-#> 35773             City              <NA>        HUC                   1st
-#> 35812             City              <NA>        HUC                   1st
-#> 35858             Prov              <NA>       <NA>                   1st
-#> 36189             Prov              <NA>       <NA>                   1st
-#> 36343             Prov              <NA>       <NA>                   2nd
-#> 36531             Prov              <NA>       <NA>                   2nd
-#> 36611             City              <NA>         CC                   1st
-#> 36693             Prov              <NA>       <NA>                   2nd
-#> 36848             Prov              <NA>       <NA>                   2nd
-#> 36989             City              <NA>        HUC                   1st
-#> 37120             Prov              <NA>       <NA>                   1st
-#> 37147             City              <NA>         CC                   3rd
-#> 37299             Prov              <NA>       <NA>                   1st
-#> 37300             City              <NA>         CC                   1st
-#> 37628             Prov              <NA>       <NA>                   1st
-#> 37905             City              <NA>         CC                   2nd
-#> 37985             Prov              <NA>       <NA>                   1st
-#> 38017             City              <NA>         CC                   2nd
-#> 38293             City              <NA>         CC                   3rd
-#> 38315             Prov              <NA>       <NA>                   2nd
-#> 38423             City              <NA>        HUC                   1st
-#> 38511             Prov              <NA>       <NA>                   2nd
-#> 38736             Prov              <NA>       <NA>                   1st
-#> 38912             Prov              <NA>       <NA>                   1st
-#> 39008             City              <NA>         CC                   2nd
-#> 39354             Prov              <NA>       <NA>                   1st
-#> 39745             Prov              <NA>       <NA>                   2nd
-#> 39982             City              <NA>        HUC                   1st
-#> 40050             Prov              <NA>       <NA>                   1st
-#> 40051             City              <NA>         CC                   1st
-#> 40093             City              <NA>         CC                   1st
-#> 40217             City              <NA>         CC                   3rd
-#> 40239             City              <NA>         CC                   2nd
-#> 40345             City              <NA>         CC                   1st
-#> 40378             City              <NA>         CC                   4th
-#> 40502             City              <NA>         CC                   2nd
-#> 40528             City              <NA>         CC                   1st
-#> 40558             City              <NA>         CC                   3rd
-#> 40575             City              <NA>         CC                   3rd
-#> 40593             City              <NA>         CC                   3rd
-#> 40648             City              <NA>         CC                   4th
-#> 40683             Prov              <NA>       <NA>                   1st
-#> 40741             City              <NA>         CC                   3rd
-#> 40788             City            Tulong         CC                   1st
-#> 40840             City              <NA>         CC                   4th
-#> 40877             City              <NA>         CC                   2nd
-#> 40908             City              <NA>         CC                   2nd
-#> 41160             City              <NA>         CC                   3rd
-#> 41266             Prov              <NA>       <NA>                   3rd
-#> 41407             City              <NA>        HUC                   1st
-#> 41470             Prov              <NA>       <NA>                   1st
-#> 41471             City              <NA>         CC                   3rd
-#> 41693             Prov              <NA>       <NA>                   1st
-#> 42170             City              <NA>         CC                   3rd
-#> 42898             Prov              <NA>       <NA>                   1st
-#> 43113             Prov              <NA>       <NA>                   4th
-#> 43145             City              <NA>        ICC                   1st
-#> 43385             Prov              <NA>       <NA>                   1st
+#> 3                 Prov              <NA>       <NA>                   1st
+#> 221               City              <NA>         CC                   1st
+#> 442               City              <NA>         CC                   1st
+#> 490               Prov              <NA>       <NA>                   3rd
+#> 554               Prov              <NA>       <NA>                   1st
+#> 1039              Prov              <NA>       <NA>                   1st
+#> 1247              City              <NA>         CC                   3rd
+#> 1295              City              <NA>         CC                   2nd
+#> 1445              City              <NA>         CC                   3rd
+#> 1547              Prov              <NA>       <NA>                   1st
+#> 1640              City              <NA>         CC                   4th
+#> 1656              City              <NA>         CC                   1st
+#> 1997              Prov              <NA>       <NA>                   1st
+#> 2091              City              <NA>         CC                   3rd
+#> 2233              City              <NA>         CC                   3rd
+#> 2580              Prov              <NA>       <NA>                   1st
+#> 2702              City              <NA>         CC                   1st
+#> 3343              City              <NA>         CC                   4th
+#> 3383              City              <NA>        HUC                   1st
+#> 3464              City              <NA>        HUC                   1st
+#> 3509              Prov              <NA>       <NA>                   1st
+#> 3914              City              <NA>         CC                   2nd
+#> 4106              Prov              <NA>       <NA>                   1st
+#> 4142              City              <NA>         CC                   3rd
+#> 4560              City              <NA>        ICC                   2nd
+#> 5009              City              <NA>         CC                   2nd
+#> 5439              City              <NA>         CC                   1st
+#> 5520              Prov              <NA>       <NA>                   1st
+#> 5599              City              <NA>         CC                   1st
+#> 5640              City              <NA>         CC                   2nd
+#> 5707              City              <NA>         CC                   1st
+#> 5755              Prov              <NA>       <NA>                   1st
+#> 5782              City              <NA>         CC                   1st
+#> 5998              Prov              <NA>       <NA>                   1st
+#> 6138              City              <NA>         CC                   1st
+#> 6193              Prov Compostela Valley       <NA>                   1st
+#> 6442              Prov              <NA>       <NA>                   2nd
+#> 6553              City              <NA>        HUC                   1st
+#> 6737              Prov    North Cotabato       <NA>                   1st
+#> 6796              City              <NA>         CC                   1st
+#> 7236              Prov              <NA>       <NA>                   1st
+#> 7260              City              <NA>         CC                   1st
+#> 7448              Prov              <NA>       <NA>                   1st
+#> 7668              City              <NA>         CC                   3rd
+#> 7710              Prov              <NA>       <NA>                   1st
+#> 7860              City         Dadiangas        HUC                   1st
+#> 7888              City              <NA>        HUC                   1st
+#> 8082              City              <NA>        HUC                   1st
+#> 8103              City              <NA>        HUC                   1st
+#> 8127              City              <NA>        HUC                   1st
+#> 8149              City              <NA>        HUC                   1st
+#> 8177              City              <NA>        HUC                   1st
+#> 9089              City              <NA>        HUC                   1st
+#> 9106              City              <NA>        HUC                   1st
+#> 9116              City              <NA>        HUC                   1st
+#> 9135              City              <NA>        HUC                   1st
+#> 9152              City              <NA>        HUC                   1st
+#> 9354              City              <NA>        HUC                   1st
+#> 9385              City              <NA>        HUC                   1st
+#> 9528              City              <NA>        HUC                   1st
+#> 9550              City              <NA>        HUC                   1st
+#> 9589              City              <NA>        HUC                   1st
+#> 9635              Prov              <NA>       <NA>                   1st
+#> 9966              Prov              <NA>       <NA>                   1st
+#> 10120             Prov              <NA>       <NA>                   2nd
+#> 10308             Prov              <NA>       <NA>                   2nd
+#> 10388             City              <NA>         CC                   1st
+#> 10470             Prov              <NA>       <NA>                   2nd
+#> 10625             Prov              <NA>       <NA>                   2nd
+#> 10766             City              <NA>        HUC                   1st
+#> 10897             Prov              <NA>       <NA>                   1st
+#> 10924             City              <NA>         CC                   3rd
+#> 11076             Prov              <NA>       <NA>                   1st
+#> 11077             City              <NA>         CC                   1st
+#> 11405             Prov              <NA>       <NA>                   1st
+#> 11682             City              <NA>         CC                   2nd
+#> 11762             Prov              <NA>       <NA>                   1st
+#> 11794             City              <NA>         CC                   2nd
+#> 12070             City              <NA>         CC                   3rd
+#> 12092             Prov              <NA>       <NA>                   2nd
+#> 12200             City              <NA>        HUC                   1st
+#> 12288             Prov              <NA>       <NA>                   2nd
+#> 12513             Prov              <NA>       <NA>                   1st
+#> 12689             Prov              <NA>       <NA>                   1st
+#> 12785             City              <NA>         CC                   2nd
+#> 13131             Prov              <NA>       <NA>                   1st
+#> 13522             Prov              <NA>       <NA>                   2nd
+#> 13759             City              <NA>        HUC                   1st
+#> 13827             Prov              <NA>       <NA>                   1st
+#> 13828             City              <NA>         CC                   1st
+#> 13870             City              <NA>         CC                   1st
+#> 13994             City              <NA>         CC                   3rd
+#> 14016             City              <NA>         CC                   2nd
+#> 14122             City              <NA>         CC                   1st
+#> 14155             City              <NA>         CC                   4th
+#> 14279             City              <NA>         CC                   2nd
+#> 14305             City              <NA>         CC                   1st
+#> 14335             City              <NA>         CC                   3rd
+#> 14352             City              <NA>         CC                   3rd
+#> 14370             City              <NA>         CC                   3rd
+#> 14425             City              <NA>         CC                   4th
+#> 14460             Prov              <NA>       <NA>                   1st
+#> 14518             City              <NA>         CC                   3rd
+#> 14565             City            Tulong         CC                   1st
+#> 14617             City              <NA>         CC                   4th
+#> 14654             City              <NA>         CC                   2nd
+#> 14685             City              <NA>         CC                   2nd
+#> 14937             City              <NA>         CC                   3rd
+#> 15043             Prov              <NA>       <NA>                   3rd
+#> 15184             City              <NA>        HUC                   1st
+#> 15247             Prov              <NA>       <NA>                   1st
+#> 15248             City              <NA>         CC                   3rd
+#> 15470             Prov              <NA>       <NA>                   1st
+#> 15947             City              <NA>         CC                   3rd
+#> 16675             Prov              <NA>       <NA>                   1st
+#> 16890             Prov              <NA>       <NA>                   4th
+#> 16922             City              <NA>        ICC                   1st
+#> 17162             Prov              <NA>       <NA>                   1st
+#> 17547             Prov              <NA>       <NA>                   4th
+#> 17583             Prov              <NA>       <NA>                   1st
+#> 18383             City              <NA>         CC                   2nd
+#> 18433             Prov              <NA>       <NA>                   1st
+#> 18658             City              <NA>         CC                   2nd
+#> 18853             City              <NA>         CC                   1st
+#> 19413             City              <NA>        ICC                   1st
+#> 19526             Prov              <NA>       <NA>                   1st
+#> 19817             Prov              <NA>       <NA>                   1st
+#> 19957             Prov              <NA>       <NA>                   1st
+#> 19983             City              <NA>         CC                   2nd
+#> 20207             Prov              <NA>       <NA>                   1st
+#> 20235             City              <NA>         CC                   3rd
+#> 20385             City              <NA>         CC                   1st
+#> 20454             City              <NA>         CC                   1st
+#> 20622             City              <NA>         CC                   1st
+#> 20804             Prov              <NA>       <NA>                   1st
+#> 20861             City              <NA>         CC                   1st
+#> 21062             City              <NA>         CC                   3rd
+#> 21292             City              <NA>         CC                   4th
+#> 21352             City              <NA>         CC                   4th
+#> 21469             City              <NA>         CC                   2nd
+#> 21686             Prov              <NA>       <NA>                   1st
+#> 21898             City              <NA>         CC                   1st
+#> 22097             City              <NA>         CC                   1st
+#> 22213             Prov              <NA>       <NA>                   1st
+#> 22625             City              <NA>         CC                   1st
+#> 22743             Prov              <NA>       <NA>                   1st
+#> 22987             Prov              <NA>       <NA>                   2nd
+#> 23147             City              <NA>        HUC                   1st
+#> 23181             City              <NA>        HUC                   1st
+#> 23200             Prov              <NA>       <NA>                   1st
+#> 23306             City              <NA>         CC                   1st
+#> 23453             City              <NA>         CC                   3rd
+#> 23657             City              <NA>         CC                   1st
+#> 24107             City              <NA>         CC                   1st
+#> 24203             City              <NA>         CC                   1st
+#> 24312             Prov              <NA>       <NA>                   1st
+#> 24373             City              <NA>         CC                   1st
+#> 24421             City              <NA>         CC                   2nd
+#> 24436             City              <NA>         CC                   4th
+#> 24521             City              <NA>         CC                   1st
+#> 24612             City              <NA>         CC                   1st
+#> 24646             City              <NA>         CC                   1st
+#> 25009             City              <NA>         CC                   1st
+#> 25097             City              <NA>         CC                   2nd
+#> 25139             Prov              <NA>       <NA>                   1st
+#> 25172             City              <NA>         CC                   1st
+#> 25197             City              <NA>         CC                   1st
+#> 25216             City              <NA>         CC                   1st
+#> 25639             City              <NA>         CC                   1st
+#> 25720             City              <NA>         CC                   1st
+#> 25801             City              <NA>         CC                   1st
+#> 25851             Prov              <NA>       <NA>                   1st
+#> 26965             City              <NA>         CC                   3rd
+#> 27101             Prov              <NA>       <NA>                   1st
+#> 27113             City              <NA>         CC                   1st
+#> 27305             City              <NA>        HUC                   1st
+#> 27340             Prov              <NA>       <NA>                   1st
+#> 27573             City              <NA>         CC                   1st
+#> 27692             City              <NA>         CC                   3rd
+#> 28005             City              <NA>         CC                   3rd
+#> 28079             Prov              <NA>       <NA>                   1st
+#> 28374             Prov              <NA>       <NA>                   1st
+#> 28789             City              <NA>         CC                   3rd
+#> 29086             City              <NA>        ICC                   1st
+#> 29475             Prov              <NA>       <NA>                   2nd
+#> 29802             Prov              <NA>       <NA>                   1st
+#> 30085             City              <NA>         CC                   3rd
+#> 30374             Prov              <NA>       <NA>                   1st
+#> 30866             City              <NA>         CC                   2nd
+#> 30932             Prov              <NA>       <NA>                   1st
+#> 31277             Prov              <NA>       <NA>                   1st
+#> 31886             Prov              <NA>       <NA>                   1st
+#> 32237             City              <NA>         CC                   2nd
+#> 32377             Prov              <NA>       <NA>                   1st
+#> 33609             City              <NA>         CC                   3rd
+#> 34142             Prov              <NA>       <NA>                   2nd
+#> 34246             City              <NA>        HUC                   1st
+#> 34428             Prov              <NA>       <NA>                   1st
+#> 35391             City              <NA>         CC                   2nd
+#> 35586             Prov              <NA>       <NA>                   1st
+#> 35834             City              <NA>         CC                   4th
+#> 35896             City              <NA>         CC                   3rd
+#> 36064             City              <NA>         CC                   2nd
+#> 36261             City              <NA>         CC                   3rd
+#> 36574             City              <NA>         CC                   1st
+#> 36597             City              <NA>         CC                   1st
+#> 36703             City              <NA>        HUC                   1st
+#> 36784             City              Opon        HUC                   1st
+#> 36815             City              <NA>        HUC                   1st
+#> 36844             Prov              <NA>       <NA>                   1st
+#> 36896             City              <NA>         CC                   2nd
+#> 37465             Prov              <NA>       <NA>                   1st
+#> 37699             City              <NA>         CC                   1st
+#> 38575             City              <NA>        ICC                   1st
+#> 38986             Prov              <NA>       <NA>                   1st
+#> 39580             Prov     Western Samar       <NA>                   1st
+#> 39657             City              <NA>         CC                   1st
+#> 39857             City              <NA>         CC                   3rd
+#> 40558             Prov              <NA>       <NA>                   1st
+#> 40714             City              <NA>         CC                   3rd
+#> 41078             Prov              <NA>       <NA>                   2nd
+#> 41219             City              <NA>        HUC                   1st
+#> 41359             Prov              <NA>       <NA>                   1st
+#> 41789             Prov              <NA>       <NA>                   1st
+#> 41790             City              <NA>         CC                   2nd
+#> 41841             City              <NA>         CC                   2nd
+#> 42508             Prov              <NA>       <NA>                   1st
+#> 42895             City              <NA>         CC                   1st
+#> 43217             Prov              <NA>       <NA>                   1st
+#> 43623             City              <NA>        HUC                   1st
+#> 43723             City              <NA>         CC                   3rd
 #>       urban_rural island_region
-#> 2            <NA>             L
-#> 96           <NA>             L
-#> 238          <NA>             L
-#> 585          <NA>             L
-#> 707          <NA>             L
-#> 1348         <NA>             L
-#> 1388         <NA>             L
-#> 1793         <NA>             L
-#> 1985         <NA>             L
-#> 2021         <NA>             L
-#> 2439         <NA>             L
-#> 2888         <NA>             L
-#> 3318         <NA>             L
-#> 3399         <NA>             L
-#> 3435         <NA>             L
-#> 4235         <NA>             L
-#> 4285         <NA>             L
-#> 4510         <NA>             L
-#> 4705         <NA>             L
-#> 5265         <NA>             L
-#> 5378         <NA>             L
-#> 5669         <NA>             L
-#> 5809         <NA>             L
-#> 5835         <NA>             L
-#> 6059         <NA>             L
-#> 6087         <NA>             L
-#> 6237         <NA>             L
-#> 6306         <NA>             L
-#> 6474         <NA>             L
-#> 6656         <NA>             L
-#> 6713         <NA>             L
-#> 6914         <NA>             L
-#> 7144         <NA>             L
-#> 7204         <NA>             L
-#> 7321         <NA>             L
-#> 7538         <NA>             L
-#> 7750         <NA>             L
-#> 7949         <NA>             L
-#> 8065         <NA>             L
-#> 8477         <NA>             L
-#> 8595         <NA>             L
-#> 8839         <NA>             L
-#> 8999         <NA>             L
-#> 9033         <NA>             L
-#> 9052         <NA>             L
-#> 9158         <NA>             L
-#> 9305         <NA>             L
-#> 9509         <NA>             L
-#> 9959         <NA>             L
-#> 10055        <NA>             L
-#> 10164        <NA>             L
-#> 10225        <NA>             L
-#> 10273        <NA>             L
-#> 10288        <NA>             L
-#> 10373        <NA>             L
-#> 10464        <NA>             L
-#> 10498        <NA>             L
-#> 10861        <NA>             L
-#> 10949        <NA>             L
-#> 10991        <NA>             L
-#> 11024        <NA>             L
-#> 11049        <NA>             L
-#> 11068        <NA>             L
-#> 11491        <NA>             L
-#> 11572        <NA>             L
-#> 11653        <NA>             L
-#> 11703        <NA>             L
-#> 12817        <NA>             L
-#> 12953        <NA>             L
-#> 12965        <NA>             L
-#> 13157        <NA>             L
-#> 13192        <NA>             L
-#> 13425        <NA>             L
-#> 13544        <NA>             L
-#> 13857        <NA>             L
-#> 13931        <NA>             L
-#> 14226        <NA>             L
-#> 14641        <NA>             L
-#> 14938        <NA>             L
-#> 15327        <NA>             L
-#> 15654        <NA>             L
-#> 15937        <NA>             L
-#> 16226        <NA>             L
-#> 16718        <NA>             L
-#> 16784        <NA>             V
-#> 17129        <NA>             V
-#> 17738        <NA>             V
-#> 18089        <NA>             V
-#> 18229        <NA>             V
-#> 19461        <NA>             V
-#> 19994        <NA>             V
-#> 20098        <NA>             V
-#> 20280        <NA>             V
-#> 21243        <NA>             V
-#> 21438        <NA>             V
-#> 21686        <NA>             V
-#> 21748        <NA>             V
-#> 21916        <NA>             V
-#> 22113        <NA>             V
-#> 22426        <NA>             V
-#> 22449        <NA>             V
-#> 22555        <NA>             V
-#> 22636        <NA>             V
-#> 22667        <NA>             V
-#> 22696        <NA>             V
-#> 22748        <NA>             V
-#> 23317        <NA>             V
-#> 23551        <NA>             V
-#> 24427        <NA>             V
-#> 24838        <NA>             V
-#> 25432        <NA>             V
-#> 25509        <NA>             V
-#> 25709        <NA>             V
-#> 26410        <NA>             V
-#> 26566        <NA>             V
-#> 26930        <NA>             V
-#> 27071        <NA>             V
-#> 27211        <NA>             M
-#> 27641        <NA>             M
-#> 27642        <NA>             M
-#> 27693        <NA>             M
-#> 28360        <NA>             M
-#> 28747        <NA>             M
-#> 29069        <NA>             M
-#> 29475        <NA>             M
-#> 29575        <NA>             M
-#> 29622        <NA>             M
-#> 29840        <NA>             M
-#> 30061        <NA>             M
-#> 30109        <NA>             M
-#> 30173        <NA>             M
-#> 30658        <NA>             M
-#> 30866        <NA>             M
-#> 30914        <NA>             M
-#> 31064        <NA>             M
-#> 31166        <NA>             M
-#> 31259        <NA>             M
-#> 31275        <NA>             M
-#> 31616        <NA>             M
-#> 31697        <NA>             M
-#> 31743        <NA>             M
-#> 31822        <NA>             M
-#> 31863        <NA>             M
-#> 31930        <NA>             M
-#> 31978        <NA>             M
-#> 32005        <NA>             M
-#> 32221        <NA>             M
-#> 32361        <NA>             M
-#> 32416        <NA>             M
-#> 32665        <NA>             M
-#> 32776        <NA>             M
-#> 32960        <NA>             M
-#> 33019        <NA>             M
-#> 33459        <NA>             M
-#> 33483        <NA>             M
-#> 33671        <NA>             M
-#> 33891        <NA>             M
-#> 33933        <NA>             M
-#> 34083        <NA>             M
-#> 34111        <NA>             L
-#> 34305        <NA>             L
-#> 34326        <NA>             L
-#> 34350        <NA>             L
-#> 34372        <NA>             L
-#> 34400        <NA>             L
-#> 35312        <NA>             L
-#> 35329        <NA>             L
-#> 35339        <NA>             L
-#> 35358        <NA>             L
-#> 35375        <NA>             L
-#> 35577        <NA>             L
-#> 35608        <NA>             L
-#> 35751        <NA>             L
-#> 35773        <NA>             L
-#> 35812        <NA>             L
-#> 35858        <NA>             L
-#> 36189        <NA>             L
-#> 36343        <NA>             L
-#> 36531        <NA>             L
-#> 36611        <NA>             L
-#> 36693        <NA>             L
-#> 36848        <NA>             L
-#> 36989        <NA>             L
-#> 37120        <NA>             M
-#> 37147        <NA>             M
-#> 37299        <NA>             M
-#> 37300        <NA>             M
-#> 37628        <NA>             M
-#> 37905        <NA>             M
-#> 37985        <NA>             M
-#> 38017        <NA>             M
-#> 38293        <NA>             M
-#> 38315        <NA>             M
-#> 38423        <NA>             M
-#> 38511        <NA>             L
-#> 38736        <NA>             L
-#> 38912        <NA>             L
-#> 39008        <NA>             L
-#> 39354        <NA>             L
-#> 39745        <NA>             L
-#> 39982        <NA>             L
-#> 40050        <NA>             V
-#> 40051        <NA>             V
-#> 40093        <NA>             V
-#> 40217        <NA>             V
-#> 40239        <NA>             V
-#> 40345        <NA>             V
-#> 40378        <NA>             V
-#> 40502        <NA>             V
-#> 40528        <NA>             V
+#> 3            <NA>             M
+#> 221          <NA>             M
+#> 442          <NA>             M
+#> 490          <NA>             M
+#> 554          <NA>             M
+#> 1039         <NA>             M
+#> 1247         <NA>             M
+#> 1295         <NA>             M
+#> 1445         <NA>             M
+#> 1547         <NA>             M
+#> 1640         <NA>             M
+#> 1656         <NA>             M
+#> 1997         <NA>             L
+#> 2091         <NA>             L
+#> 2233         <NA>             L
+#> 2580         <NA>             L
+#> 2702         <NA>             L
+#> 3343         <NA>             L
+#> 3383         <NA>             M
+#> 3464         <NA>             M
+#> 3509         <NA>             L
+#> 3914         <NA>             L
+#> 4106         <NA>             L
+#> 4142         <NA>             L
+#> 4560         <NA>             L
+#> 5009         <NA>             L
+#> 5439         <NA>             L
+#> 5520         <NA>             M
+#> 5599         <NA>             M
+#> 5640         <NA>             M
+#> 5707         <NA>             M
+#> 5755         <NA>             M
+#> 5782         <NA>             M
+#> 5998         <NA>             M
+#> 6138         <NA>             M
+#> 6193         <NA>             M
+#> 6442         <NA>             M
+#> 6553         <NA>             M
+#> 6737         <NA>             M
+#> 6796         <NA>             M
+#> 7236         <NA>             M
+#> 7260         <NA>             M
+#> 7448         <NA>             M
+#> 7668         <NA>             M
+#> 7710         <NA>             M
+#> 7860         <NA>             M
+#> 7888         <NA>             L
+#> 8082         <NA>             L
+#> 8103         <NA>             L
+#> 8127         <NA>             L
+#> 8149         <NA>             L
+#> 8177         <NA>             L
+#> 9089         <NA>             L
+#> 9106         <NA>             L
+#> 9116         <NA>             L
+#> 9135         <NA>             L
+#> 9152         <NA>             L
+#> 9354         <NA>             L
+#> 9385         <NA>             L
+#> 9528         <NA>             L
+#> 9550         <NA>             L
+#> 9589         <NA>             L
+#> 9635         <NA>             L
+#> 9966         <NA>             L
+#> 10120        <NA>             L
+#> 10308        <NA>             L
+#> 10388        <NA>             L
+#> 10470        <NA>             L
+#> 10625        <NA>             L
+#> 10766        <NA>             L
+#> 10897        <NA>             M
+#> 10924        <NA>             M
+#> 11076        <NA>             M
+#> 11077        <NA>             M
+#> 11405        <NA>             M
+#> 11682        <NA>             M
+#> 11762        <NA>             M
+#> 11794        <NA>             M
+#> 12070        <NA>             M
+#> 12092        <NA>             M
+#> 12200        <NA>             M
+#> 12288        <NA>             L
+#> 12513        <NA>             L
+#> 12689        <NA>             L
+#> 12785        <NA>             L
+#> 13131        <NA>             L
+#> 13522        <NA>             L
+#> 13759        <NA>             L
+#> 13827        <NA>             V
+#> 13828        <NA>             V
+#> 13870        <NA>             V
+#> 13994        <NA>             V
+#> 14016        <NA>             V
+#> 14122        <NA>             V
+#> 14155        <NA>             V
+#> 14279        <NA>             V
+#> 14305        <NA>             V
+#> 14335        <NA>             V
+#> 14352        <NA>             V
+#> 14370        <NA>             V
+#> 14425        <NA>             V
+#> 14460        <NA>             V
+#> 14518        <NA>             V
+#> 14565        <NA>             V
+#> 14617        <NA>             V
+#> 14654        <NA>             V
+#> 14685        <NA>             V
+#> 14937        <NA>             V
+#> 15043        <NA>             V
+#> 15184        <NA>             V
+#> 15247        <NA>             M
+#> 15248        <NA>             M
+#> 15470        <NA>             M
+#> 15947        <NA>             M
+#> 16675        <NA>             M
+#> 16890        <NA>             M
+#> 16922        <NA>             M
+#> 17162        <NA>             M
+#> 17547        <NA>             L
+#> 17583        <NA>             L
+#> 18383        <NA>             L
+#> 18433        <NA>             L
+#> 18658        <NA>             L
+#> 18853        <NA>             L
+#> 19413        <NA>             L
+#> 19526        <NA>             L
+#> 19817        <NA>             L
+#> 19957        <NA>             L
+#> 19983        <NA>             L
+#> 20207        <NA>             L
+#> 20235        <NA>             L
+#> 20385        <NA>             L
+#> 20454        <NA>             L
+#> 20622        <NA>             L
+#> 20804        <NA>             L
+#> 20861        <NA>             L
+#> 21062        <NA>             L
+#> 21292        <NA>             L
+#> 21352        <NA>             L
+#> 21469        <NA>             L
+#> 21686        <NA>             L
+#> 21898        <NA>             L
+#> 22097        <NA>             L
+#> 22213        <NA>             L
+#> 22625        <NA>             L
+#> 22743        <NA>             L
+#> 22987        <NA>             L
+#> 23147        <NA>             L
+#> 23181        <NA>             L
+#> 23200        <NA>             L
+#> 23306        <NA>             L
+#> 23453        <NA>             L
+#> 23657        <NA>             L
+#> 24107        <NA>             L
+#> 24203        <NA>             L
+#> 24312        <NA>             L
+#> 24373        <NA>             L
+#> 24421        <NA>             L
+#> 24436        <NA>             L
+#> 24521        <NA>             L
+#> 24612        <NA>             L
+#> 24646        <NA>             L
+#> 25009        <NA>             L
+#> 25097        <NA>             L
+#> 25139        <NA>             L
+#> 25172        <NA>             L
+#> 25197        <NA>             L
+#> 25216        <NA>             L
+#> 25639        <NA>             L
+#> 25720        <NA>             L
+#> 25801        <NA>             L
+#> 25851        <NA>             L
+#> 26965        <NA>             L
+#> 27101        <NA>             L
+#> 27113        <NA>             L
+#> 27305        <NA>             L
+#> 27340        <NA>             L
+#> 27573        <NA>             L
+#> 27692        <NA>             L
+#> 28005        <NA>             L
+#> 28079        <NA>             L
+#> 28374        <NA>             L
+#> 28789        <NA>             L
+#> 29086        <NA>             L
+#> 29475        <NA>             L
+#> 29802        <NA>             L
+#> 30085        <NA>             L
+#> 30374        <NA>             L
+#> 30866        <NA>             L
+#> 30932        <NA>             V
+#> 31277        <NA>             V
+#> 31886        <NA>             V
+#> 32237        <NA>             V
+#> 32377        <NA>             V
+#> 33609        <NA>             V
+#> 34142        <NA>             V
+#> 34246        <NA>             V
+#> 34428        <NA>             V
+#> 35391        <NA>             V
+#> 35586        <NA>             V
+#> 35834        <NA>             V
+#> 35896        <NA>             V
+#> 36064        <NA>             V
+#> 36261        <NA>             V
+#> 36574        <NA>             V
+#> 36597        <NA>             V
+#> 36703        <NA>             V
+#> 36784        <NA>             V
+#> 36815        <NA>             V
+#> 36844        <NA>             V
+#> 36896        <NA>             V
+#> 37465        <NA>             V
+#> 37699        <NA>             V
+#> 38575        <NA>             V
+#> 38986        <NA>             V
+#> 39580        <NA>             V
+#> 39657        <NA>             V
+#> 39857        <NA>             V
 #> 40558        <NA>             V
-#> 40575        <NA>             V
-#> 40593        <NA>             V
-#> 40648        <NA>             V
-#> 40683        <NA>             V
-#> 40741        <NA>             V
-#> 40788        <NA>             V
-#> 40840        <NA>             V
-#> 40877        <NA>             V
-#> 40908        <NA>             V
-#> 41160        <NA>             V
-#> 41266        <NA>             V
-#> 41407        <NA>             V
-#> 41470        <NA>             M
-#> 41471        <NA>             M
-#> 41693        <NA>             M
-#> 42170        <NA>             M
-#> 42898        <NA>             M
-#> 43113        <NA>             M
-#> 43145        <NA>             M
-#> 43385        <NA>             M
+#> 40714        <NA>             V
+#> 41078        <NA>             V
+#> 41219        <NA>             V
+#> 41359        <NA>             M
+#> 41789        <NA>             M
+#> 41790        <NA>             M
+#> 41841        <NA>             M
+#> 42508        <NA>             M
+#> 42895        <NA>             M
+#> 43217        <NA>             M
+#> 43623        <NA>             M
+#> 43723        <NA>             M
 get_psgc(geographic_level = "Reg", include_population_data = TRUE)
 #>        psgc_code                                               area_name
 #> 1     0100000000                                Region I (Ilocos Region)
-#> 3398  0200000000                              Region II (Cagayan Valley)
-#> 5808  0300000000                              Region III (Central Luzon)
-#> 9051  0400000000                                Region IV-A (CALABARZON)
-#> 13191 0500000000                                 Region V (Bicol Region)
-#> 16783 0600000000                             Region VI (Western Visayas)
-#> 20279 0700000000                            Region VII (Central Visayas)
-#> 22695 0800000000                           Region VIII (Eastern Visayas)
-#> 27210 0900000000                         Region IX (Zamboanga Peninsula)
-#> 29621 1000000000                            Region X (Northern Mindanao)
-#> 31742 1100000000                                Region XI (Davao Region)
-#> 32959 1200000000                               Region XII (SOCCSKSARGEN)
-#> 34110 1300000000                           National Capital Region (NCR)
-#> 35857 1400000000                  Cordillera Administrative Region (CAR)
-#> 37119 1600000000                                    Region XIII (Caraga)
-#> 38510 1700000000                                         MIMAROPA Region
-#> 40049 1800000000                              Negros Island Region (NIR)
-#> 41469 1900000000 Bangsamoro Autonomous Region In Muslim Mindanao (BARMM)
+#> 2     1000000000                            Region X (Northern Mindanao)
+#> 5519  1100000000                                Region XI (Davao Region)
+#> 6736  1200000000                               Region XII (SOCCSKSARGEN)
+#> 7887  1300000000                           National Capital Region (NCR)
+#> 9634  1400000000                  Cordillera Administrative Region (CAR)
+#> 10896 1600000000                                    Region XIII (Caraga)
+#> 12287 1700000000                                         MIMAROPA Region
+#> 13826 1800000000                              Negros Island Region (NIR)
+#> 15246 1900000000 Bangsamoro Autonomous Region In Muslim Mindanao (BARMM)
+#> 17546 0200000000                              Region II (Cagayan Valley)
+#> 19956 0300000000                              Region III (Central Luzon)
+#> 23199 0400000000                                Region IV-A (CALABARZON)
+#> 27339 0500000000                                 Region V (Bicol Region)
+#> 30931 0600000000                             Region VI (Western Visayas)
+#> 34427 0700000000                            Region VII (Central Visayas)
+#> 36843 0800000000                           Region VIII (Eastern Visayas)
+#> 41358 0900000000                         Region IX (Zamboanga Peninsula)
 #>       correspondence_code geographic_level old_name city_class
 #> 1               010000000              Reg     <NA>       <NA>
-#> 3398            020000000              Reg     <NA>       <NA>
-#> 5808            030000000              Reg     <NA>       <NA>
-#> 9051            040000000              Reg     <NA>       <NA>
-#> 13191           050000000              Reg     <NA>       <NA>
-#> 16783           060000000              Reg     <NA>       <NA>
-#> 20279           070000000              Reg     <NA>       <NA>
-#> 22695           080000000              Reg     <NA>       <NA>
-#> 27210           090000000              Reg     <NA>       <NA>
-#> 29621           100000000              Reg     <NA>       <NA>
-#> 31742           110000000              Reg     <NA>       <NA>
-#> 32959           120000000              Reg     <NA>       <NA>
-#> 34110           130000000              Reg     <NA>       <NA>
-#> 35857           140000000              Reg     <NA>       <NA>
-#> 37119           160000000              Reg     <NA>       <NA>
-#> 38510           170000000              Reg     <NA>       <NA>
-#> 40049                <NA>              Reg     <NA>       <NA>
-#> 41469           150000000              Reg     <NA>       <NA>
+#> 2               100000000              Reg     <NA>       <NA>
+#> 5519            110000000              Reg     <NA>       <NA>
+#> 6736            120000000              Reg     <NA>       <NA>
+#> 7887            130000000              Reg     <NA>       <NA>
+#> 9634            140000000              Reg     <NA>       <NA>
+#> 10896           160000000              Reg     <NA>       <NA>
+#> 12287           170000000              Reg     <NA>       <NA>
+#> 13826           000000000              Reg     <NA>       <NA>
+#> 15246           150000000              Reg     <NA>       <NA>
+#> 17546           020000000              Reg     <NA>       <NA>
+#> 19956           030000000              Reg     <NA>       <NA>
+#> 23199           040000000              Reg     <NA>       <NA>
+#> 27339           050000000              Reg     <NA>       <NA>
+#> 30931           060000000              Reg     <NA>       <NA>
+#> 34427           070000000              Reg     <NA>       <NA>
+#> 36843           080000000              Reg     <NA>       <NA>
+#> 41358           090000000              Reg     <NA>       <NA>
 #>       income_classification urban_rural island_region
 #> 1                      <NA>        <NA>             L
-#> 3398                   <NA>        <NA>             L
-#> 5808                   <NA>        <NA>             L
-#> 9051                   <NA>        <NA>             L
-#> 13191                  <NA>        <NA>             L
-#> 16783                  <NA>        <NA>             V
-#> 20279                  <NA>        <NA>             V
-#> 22695                  <NA>        <NA>             V
-#> 27210                  <NA>        <NA>             M
-#> 29621                  <NA>        <NA>             M
-#> 31742                  <NA>        <NA>             M
-#> 32959                  <NA>        <NA>             M
-#> 34110                  <NA>        <NA>             L
-#> 35857                  <NA>        <NA>             L
-#> 37119                  <NA>        <NA>             M
-#> 38510                  <NA>        <NA>             L
-#> 40049                  <NA>        <NA>             V
-#> 41469                  <NA>        <NA>             M
+#> 2                      <NA>        <NA>             M
+#> 5519                   <NA>        <NA>             M
+#> 6736                   <NA>        <NA>             M
+#> 7887                   <NA>        <NA>             L
+#> 9634                   <NA>        <NA>             L
+#> 10896                  <NA>        <NA>             M
+#> 12287                  <NA>        <NA>             L
+#> 13826                  <NA>        <NA>             V
+#> 15246                  <NA>        <NA>             M
+#> 17546                  <NA>        <NA>             L
+#> 19956                  <NA>        <NA>             L
+#> 23199                  <NA>        <NA>             L
+#> 27339                  <NA>        <NA>             L
+#> 30931                  <NA>        <NA>             V
+#> 34427                  <NA>        <NA>             V
+#> 36843                  <NA>        <NA>             V
+#> 41358                  <NA>        <NA>             M
 #>                                      population_data
-#> 1        5026128, 5301139, 5342453, 2015, 2020, 2024
-#> 3398     3451410, 3685744, 3777608, 2015, 2020, 2024
-#> 5808  11218177, 12422172, 12989074, 2015, 2020, 2024
-#> 9051  14414774, 16195042, 16933234, 2015, 2020, 2024
-#> 13191    5796989, 6082165, 6064426, 2015, 2020, 2024
-#> 16783    7536383, 7954723, 4861911, 2015, 2020, 2024
-#> 20279    7396898, 8081988, 6640875, 2015, 2020, 2024
-#> 22695    4440150, 4547150, 4625929, 2015, 2020, 2024
-#> 27210    3629783, 3875576, 5089934, 2015, 2020, 2024
-#> 29621    4689302, 5022768, 5178326, 2015, 2020, 2024
-#> 31742    4893318, 5243536, 5389422, 2015, 2020, 2024
-#> 32959    4545276, 4901486, 4462776, 2015, 2020, 2024
-#> 34110 12877253, 13484462, 14001751, 2015, 2020, 2024
-#> 35857    1722006, 1797660, 1808985, 2015, 2020, 2024
-#> 37119    2596709, 2804788, 2865196, 2015, 2020, 2024
-#> 38510    2963360, 3228558, 3245446, 2015, 2020, 2024
-#> 40049                                  4904944, 2024
-#> 41469    3781387, 4404288, 4545486, 2015, 2020, 2024
+#> 1                                                   
+#> 2        4689302, 5022768, 5178326, 2015, 2020, 2024
+#> 5519     4893318, 5243536, 5389422, 2015, 2020, 2024
+#> 6736     4545276, 4901486, 4462776, 2015, 2020, 2024
+#> 7887  12877253, 13484462, 14001751, 2015, 2020, 2024
+#> 9634     1722006, 1797660, 1808985, 2015, 2020, 2024
+#> 10896    2596709, 2804788, 2865196, 2015, 2020, 2024
+#> 12287    2963360, 3228558, 3245446, 2015, 2020, 2024
+#> 13826                                  4904944, 2024
+#> 15246    3781387, 4404288, 4545486, 2015, 2020, 2024
+#> 17546                                               
+#> 19956                                               
+#> 23199                                               
+#> 27339                                               
+#> 30931                                               
+#> 34427                                               
+#> 36843                                               
+#> 41358                                               
 ```

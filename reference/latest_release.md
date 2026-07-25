@@ -16,5 +16,5 @@ A single character string naming the latest available release.
 
 ``` r
 latest_release()
-#> [1] "Q1_2026"
+#> [1] "Q2_2026"
 ```

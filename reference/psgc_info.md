@@ -32,14 +32,17 @@ psgc_info("0100000000")
 #>    psgc_code                area_name correspondence_code geographic_level
 #> 1 0100000000 Region I (Ilocos Region)           010000000              Reg
 #>   old_name city_class income_classification urban_rural island_region release
-#> 1     <NA>       <NA>                  <NA>        <NA>             L Q1_2026
+#> 1     <NA>       <NA>                  <NA>        <NA>             L Q2_2026
 psgc_info(c("0100000000", "0102800000"))
-#>    psgc_code                area_name correspondence_code geographic_level
-#> 1 0100000000 Region I (Ilocos Region)           010000000              Reg
-#> 2 0102800000             Ilocos Norte           012800000             Prov
-#>   old_name city_class income_classification urban_rural island_region release
-#> 1     <NA>       <NA>                  <NA>        <NA>             L Q1_2026
-#> 2     <NA>       <NA>                   1st        <NA>             L Q1_2026
+#>       psgc_code                area_name correspondence_code geographic_level
+#> 1    0100000000 Region I (Ilocos Region)           010000000              Reg
+#> 1997 0102800000             Ilocos Norte           012800000             Prov
+#>      old_name city_class income_classification urban_rural island_region
+#> 1        <NA>       <NA>                  <NA>        <NA>             L
+#> 1997     <NA>       <NA>                   1st        <NA>             L
+#>      release
+#> 1    Q2_2026
+#> 1997 Q2_2026
 psgc_info("0100000000", release = "Q1_2023")
 #>    psgc_code                area_name correspondence_code geographic_level
 #> 1 0100000000 Region I (Ilocos Region)           010000000              Reg
