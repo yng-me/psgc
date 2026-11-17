@@ -7,7 +7,8 @@
 psgc_info(code, release = latest_release())
 }
 \arguments{
-\item{code}{A character vector of 10-digit PSGC codes.}
+\item{code}{A character vector of PSGC codes (10 digits; 9 for
+`"Q2_2021"`). Shorter codes are padded with trailing zeros.}
 
 \item{release}{A release name from [list_releases()]. Defaults to
 [latest_release()].}

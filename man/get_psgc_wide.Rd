@@ -14,7 +14,9 @@ get_psgc_wide(release = latest_release())
 A data frame with one row per barangay and the following columns, in
   order:
   \describe{
-    \item{`area_code`}{10-digit PSGC code of the barangay.}
+    \item{`area_code`}{PSGC code of the barangay. Codes in this and the
+      other `_code` columns are 10 digits, except in `"Q2_2021"`, which uses
+      the older 9-digit format.}
     \item{`region_code`}{10-digit PSGC code of the region.}
     \item{`province_code`}{10-digit PSGC code of the province (or of the
       HUC/ICC acting as province).}

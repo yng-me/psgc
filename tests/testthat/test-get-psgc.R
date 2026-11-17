@@ -97,6 +97,29 @@ test_that("include_population_data=TRUE does not expand rows", {
   expect_equal(nrow(result), nrow(base))
 })
 
+
+test_that("fixed cols with plus 1 if include_population_data=TRUE for all releases", {
+  
+  base_latest <- get_psgc()
+  result_latest <- get_psgc(include_population_data = TRUE)
+
+  mid <- as.integer(round(length(list_releases()) / 2))
+  base_mid   <- get_psgc(list_releases()[mid])
+  result_mid <- get_psgc(list_releases()[mid], include_population_data = TRUE)
+
+  base_first   <- get_psgc(list_releases()[1])
+  result_first <- get_psgc(list_releases()[1], include_population_data = TRUE)
+  
+  base_ncols <- c(ncol(base_latest), ncol(base_mid), ncol(base_first))
+  result_ncols <- c(ncol(result_latest), ncol(result_mid), ncol(result_first))
+
+  expect_equal(ncol(base_latest), 9)
+  expect_equal(ncol(result_latest), 10)
+  expect_true(sd(base_ncols) == 0)
+  expect_true(sd(result_ncols) == 0)
+  
+})
+
 test_that("include_population_data=TRUE respects geographic_level filter", {
   result <- get_psgc(geographic_level = "Reg", include_population_data = TRUE)
   expect_true(all(result$geographic_level == "Reg"))
@@ -113,3 +136,16 @@ test_that("population_data elements are data frames with population and year col
   expect_true(is.integer(first$population))
 })
 
+
+test_that("geographic_level aliases ignore case and surrounding spaces", {
+  expect_identical(get_psgc(geographic_level = " bArAnGaY "), get_psgc(geographic_level = "Bgy"))
+})
+
+test_that("geographic_level accepts Dist and SGU", {
+  expect_true(all(get_psgc("Q2_2021", geographic_level = "District")$geographic_level == "Dist"))
+  expect_gt(nrow(get_psgc("Q1_2023", geographic_level = "SGU")), 0)
+})
+
+test_that("no release has lost characters (U+FFFD) in area names", {
+  for (r in list_releases()) expect_false(any(grepl("�", get_psgc(r)$area_name)), info = r)
+})

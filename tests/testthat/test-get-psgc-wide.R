@@ -104,3 +104,12 @@ test_that("get_psgc_wide() result is sorted by region, province, city_mun, area_
   )
   expect_equal(seq_len(nrow(result)), expected_order)
 })
+
+test_that("get_psgc_wide() derives parents from 9-digit Q2_2021 codes", {
+  result <- get_psgc_wide("Q2_2021")
+  row <- result[result$area_code == "012801001", ]
+  expect_equal(row$region_code, "010000000")
+  expect_equal(row$province_code, "012800000")
+  expect_equal(row$city_mun_code, "012801000")
+  expect_false(anyNA(result$region))
+})

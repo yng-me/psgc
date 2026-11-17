@@ -19,7 +19,6 @@
 #'   `population`, `year`, plus optionally `area_name` and `geographic_level`.
 #'   In wide format: columns `psgc_code`, `population_<year>` per census year,
 #'   plus optionally `area_name` and `geographic_level`.
-#' @importFrom stats setNames
 #' @export
 #' @examples
 #' head(get_population())
@@ -28,8 +27,9 @@
 #' get_population(geographic_level = "Reg")
 #' get_population(geographic_level = "Region", wide = TRUE)
 #' get_population(geographic_level = "Reg", wide = TRUE, details = TRUE)
+#' 
 get_population <- function(release = latest_release(), details = FALSE, geographic_level = NULL, wide = FALSE) {
-  if (!release %in% .RELEASES) {
+  if (!release %in% .PSGC_RELEASES) {
     cli::cli_abort(
       "Unknown release {.val {release}}. Use {.fn list_releases} to see available releases."
     )
@@ -57,16 +57,13 @@ get_population <- function(release = latest_release(), details = FALSE, geograph
   if (wide) {
     years <- sort(unique(pop$year))
     year_cols <- paste0("population_", years)
-    wide_list <- lapply(split(pop, pop$psgc_code), function(rows) {
-      yr_pop <- setNames(
-        as.list(rows$population[match(years, rows$year)]),
-        year_cols
-      )
-      base <- rows[1L, setdiff(names(rows), c("population", "year")), drop = FALSE]
-      rownames(base) <- NULL
-      cbind(base, as.data.frame(yr_pop, stringsAsFactors = FALSE))
-    })
-    pop <- do.call(rbind, wide_list)
+    wide <- unique(pop[, setdiff(names(pop), c("population", "year")), drop = FALSE])
+    wide <- wide[order(wide$psgc_code), , drop = FALSE]
+    for (j in seq_along(years)) {
+      yr <- pop[pop$year == years[j], , drop = FALSE]
+      wide[[year_cols[j]]] <- yr$population[match(wide$psgc_code, yr$psgc_code)]
+    }
+    pop <- wide
     rownames(pop) <- NULL
     ordered_cols <- c(
       "psgc_code",
