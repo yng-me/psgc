@@ -102,3 +102,37 @@ test_that("map_psgc(changes_only=FALSE) is the default behaviour", {
     map_psgc(codes, from = "Q1_2023", to = "Q4_2023", changes_only = FALSE)
   )
 })
+
+test_that("map_psgc() links 9-digit Q2_2021 codes to Q1_2023", {
+  codes  <- get_psgc("Q2_2021", geographic_level = "Bgy")$psgc_code
+  result <- map_psgc(codes, from = "Q2_2021", to = "Q1_2023")
+  expect_lt(mean(result$mapping_type == "abolished"), 0.01)
+  expect_equal(map_psgc("012801001", to = "Q1_2023")$new_code, "0102801001")
+})
+
+test_that("map_psgc() maps Manila (Q2_2021) to its real code, not a placeholder", {
+  result <- map_psgc("133900000", to = "Q1_2023")
+  expect_equal(result$new_code, "1380600000")
+})
+
+test_that("map_psgc() returns one row per successor of a split code", {
+  # Fake crosswalk entry: Q1_2023 code splits into two Q4_2023 codes.
+  cw <- psgc_crosswalk
+  extra <- data.frame(from_release = "Q1_2023", to_release = "Q4_2023",
+                      old_code = "0100000000", new_code = "0100000001",
+                      mapping_type = "split", stringsAsFactors = FALSE)
+  cw$mapping_type[cw$from_release == "Q1_2023" & cw$old_code == "0100000000"] <- "split"
+  local_mocked_bindings(psgc_crosswalk = rbind(cw, extra))
+  result <- map_psgc(c("0100000000", "0102800000"), from = "Q1_2023", to = "Q4_2023")
+  expect_equal(result$old_code, c("0100000000", "0100000000", "0102800000"))
+  expect_setequal(result$new_code[1:2], c("0100000000", "0100000001"))
+  expect_equal(result$mapping_type[1:2], c("split", "split"))
+})
+
+test_that("map_psgc() errors on an unknown from release", {
+  expect_error(map_psgc("0100000000", from = "bogus"), "Unknown source release")
+})
+
+test_that("map_psgc() errors when a code is not in the given from release", {
+  expect_error(map_psgc("0102800000", from = "Q2_2021"), "not found")
+})

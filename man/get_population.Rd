@@ -45,4 +45,5 @@ get_population(details = TRUE)
 get_population(geographic_level = "Reg")
 get_population(geographic_level = "Region", wide = TRUE)
 get_population(geographic_level = "Reg", wide = TRUE, details = TRUE)
+
 }

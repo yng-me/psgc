@@ -1,7 +1,7 @@
 Package: psgc
 Type: Package
 Title: Philippine Standard Geographic Code
-Version: 0.1.2
+Version: 0.2.0
 Description: Provides access to the Philippine Standard Geographic Code (PSGC),
     an official classification system for geographic areas in the Philippines
     published by the Philippine Statistics Authority (PSA). Includes area names,
@@ -33,5 +33,5 @@ VignetteBuilder: knitr
 Config/testthat/edition: 3
 Depends: 
     R (>= 3.5)
-RoxygenNote: 7.3.3
 URL: https://yng-me.github.io/psgc/
+Config/roxygen2/version: 8.1.1

@@ -13,7 +13,9 @@
 #' @return A data frame with one row per barangay and the following columns, in
 #'   order:
 #'   \describe{
-#'     \item{`area_code`}{10-digit PSGC code of the barangay.}
+#'     \item{`area_code`}{PSGC code of the barangay. Codes in this and the
+#'       other `_code` columns are 10 digits, except in `"Q2_2021"`, which uses
+#'       the older 9-digit format.}
 #'     \item{`region_code`}{10-digit PSGC code of the region.}
 #'     \item{`province_code`}{10-digit PSGC code of the province (or of the
 #'       HUC/ICC acting as province).}
@@ -35,13 +37,8 @@
 #' head(get_psgc_wide())
 #' head(get_psgc_wide("Q1_2023"))
 get_psgc_wide <- function(release = latest_release()) {
-  
-  if (!release %in% .RELEASES) {
-    cli::cli_abort(
-      "Unknown release {.val {release}}. Use {.fn list_releases} to see available releases."
-    )
-  }
 
+  # get_psgc() validates `release`.
   brgys <- get_psgc(release = release, geographic_level = "brgy")
   brgys <- brgys[, c("psgc_code", "area_name", "urban_rural", "island_region")]
 
@@ -54,9 +51,16 @@ get_psgc_wide <- function(release = latest_release()) {
   # Structurally, province-level entries have zeros in digits 6–10 but NOT in
   # digits 3–10 (which would make them region entries).
   all_df <- psgc_releases[[release]]
+
+  # Codes are 10 digits (RR PPP MM BBB), except Q2_2021 with 9 (RR PP MM BBB).
+  n <- nchar(all_df$psgc_code[1])
+  prov_end <- n - 5L
+  mun_end  <- n - 3L
+  pad0 <- function(x) substr(paste0(x, strrep("0", n)), 1L, n)
+
   provs <- all_df[
-    substr(all_df$psgc_code, 6, 10) == "00000" &
-      substr(all_df$psgc_code, 3, 10) != "00000000",
+    substr(all_df$psgc_code, prov_end + 1L, n) == strrep("0", n - prov_end) &
+      substr(all_df$psgc_code, 3L, n) != strrep("0", n - 2L),
     c("psgc_code", "area_name")
   ]
 
@@ -65,10 +69,10 @@ get_psgc_wide <- function(release = latest_release()) {
   colnames(city_muns) <- c("city_mun_code",  "city_mun")
   colnames(brgys)     <- c("area_code", "barangay", "urban_rural", "island_region")
 
-  # Derive parent-level codes from each barangay's 10-digit code.
-  brgys$region_code   <- paste0(substr(brgys$area_code, 1, 2), "00000000")
-  brgys$province_code <- paste0(substr(brgys$area_code, 1, 5), "00000")
-  brgys$city_mun_code <- paste0(substr(brgys$area_code, 1, 7), "000")
+  # Derive parent-level codes from each barangay's code.
+  brgys$region_code   <- pad0(substr(brgys$area_code, 1L, 2L))
+  brgys$province_code <- pad0(substr(brgys$area_code, 1L, prov_end))
+  brgys$city_mun_code <- pad0(substr(brgys$area_code, 1L, mun_end))
 
   psgc_all <- merge(brgys,    city_muns, by = "city_mun_code",  all.x = TRUE)
   psgc_all <- merge(psgc_all, provs,     by = "province_code",  all.x = TRUE)
@@ -76,7 +80,7 @@ get_psgc_wide <- function(release = latest_release()) {
 
   # HUC barangays have no city/municipality layer — digits 6–7 of the area
   # code are "00", meaning the barangay sits directly under the HUC (province).
-  huc <- substr(psgc_all$area_code, 6, 7) == "00"
+  huc <- substr(psgc_all$area_code, prov_end + 1L, mun_end) == "00"
   psgc_all$city_mun[huc]      <- NA_character_
   psgc_all$city_mun_code[huc] <- NA_character_
 

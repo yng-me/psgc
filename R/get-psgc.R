@@ -24,8 +24,10 @@
 #' get_psgc(geographic_level = "city_mun")
 #' get_psgc(geographic_level = c("Prov", "City"))
 #' get_psgc(geographic_level = "Reg", include_population_data = TRUE)
+#' 
+
 get_psgc <- function(release = latest_release(), geographic_level = NULL, include_population_data = FALSE) {
-  if (!release %in% .RELEASES) {
+  if (!release %in% .PSGC_RELEASES) {
     cli::cli_abort(
       "Unknown release {.val {release}}. Use {.fn list_releases} to see available releases."
     )
@@ -37,8 +39,9 @@ get_psgc <- function(release = latest_release(), geographic_level = NULL, includ
   }
   if (include_population_data) {
     pop <- psgc_population[[release]]
-    pop_split <- split(pop[, c("population", "year")], pop$psgc_code)
     empty <- data.frame(population = integer(0), year = integer(0))
+    # A release without population still gets the column, so the shape is stable.
+    pop_split <- if (is.null(pop)) list() else split(pop[, c("population", "year")], pop$psgc_code)
     df$population_data <- lapply(df$psgc_code, function(code) {
       res <- pop_split[[code]]
       if (is.null(res)) empty else { rownames(res) <- NULL; res }

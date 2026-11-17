@@ -7,7 +7,8 @@
 map_psgc(code, from = "auto", to = latest_release(), changes_only = FALSE)
 }
 \arguments{
-\item{code}{A character vector of 10-digit PSGC codes.}
+\item{code}{A character vector of PSGC codes (10 digits; 9 for codes from
+`"Q2_2021"`).}
 
 \item{from}{Release the codes come from, or `"auto"` (default) to detect
 automatically using the earliest release that contains each code.}
@@ -21,8 +22,8 @@ remained unchanged across all hops are dropped. Defaults to `FALSE`.}
 \value{
 A data frame with columns `old_code`, `new_code` (`NA` for
   abolished codes), `mapping_type` (`"direct"`, `"renumbered"`, `"split"`,
-  `"merged"`, or `"abolished"`), `from_release`, and `to_release`. Split
-  codes produce multiple rows.
+  or `"abolished"`), `from_release`, and `to_release`. A split code
+  produces one row per successor.
 }
 \description{
 Map PSGC codes to a target release
@@ -30,6 +31,6 @@ Map PSGC codes to a target release
 \examples{
 map_psgc("0100000000")
 map_psgc(c("0100000000", "0102800000"), to = "Q4_2023")
-map_psgc(get_psgc(geographic_level = "Bgy")$psgc_code,
+map_psgc(get_psgc("Q1_2023", geographic_level = "Bgy")$psgc_code,
          from = "Q1_2023", to = "Q4_2023", changes_only = TRUE)
 }

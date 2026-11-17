@@ -1,17 +1,9 @@
-# Internal: find the earliest release that contains a given psgc_code.
-# Returns NA_character_ if not found in any release.
-.resolve_release <- function(code) {
-  for (rel in .RELEASES) {
-    if (code %in% psgc_releases[[rel]]$psgc_code) return(rel)
-  }
-  NA_character_
-}
-
-# Internal: validate and pad a code vector to 10 digits with trailing zeros.
-.pad_psgc_code <- function(code) {
+# Internal: validate and pad a code vector to `width` digits with trailing
+# zeros (10 for current releases, 9 for Q2_2021).
+.pad_psgc_code <- function(code, width = 10L) {
   nch <- nchar(code)
   too_short <- nch < 2L
-  too_long  <- nch > 10L
+  too_long  <- nch > width
   if (any(too_short)) {
     cli::cli_abort(
       c(
@@ -22,15 +14,16 @@
   }
   if (any(too_long)) {
     cli::cli_abort(
-      "PSGC code{?s} must not exceed 10 digits: {.val {code[too_long]}}."
+      "PSGC codes must not exceed {width} digits: {.val {code[too_long]}}."
     )
   }
-  ifelse(nch < 10L, paste0(code, strrep("0", 10L - nch)), code)
+  ifelse(nch < width, paste0(code, strrep("0", width - nch)), code)
 }
 
 #' Get metadata for one or more PSGC codes
 #'
-#' @param code A character vector of 10-digit PSGC codes.
+#' @param code A character vector of PSGC codes (10 digits; 9 for
+#'   `"Q2_2021"`). Shorter codes are padded with trailing zeros.
 #' @param release A release name from [list_releases()]. Defaults to
 #'   [latest_release()].
 #' @return A data frame with one row per code containing metadata columns
@@ -44,25 +37,24 @@
 psgc_info <- function(code, release = latest_release()) {
   code <- as.character(code)
 
-  if (!release %in% .RELEASES) {
+  if (!release %in% .PSGC_RELEASES) {
     cli::cli_abort(
       "Unknown release {.val {release}}. Use {.fn list_releases} to see available releases."
     )
   }
 
-  code <- .pad_psgc_code(code)
-
   df <- psgc_releases[[release]]
-  rows <- lapply(code, function(cd) {
-    row <- df[df$psgc_code == cd, , drop = FALSE]
-    if (nrow(row) == 0L) {
-      cli::cli_abort(
-        "Code {.val {cd}} not found in release {.val {release}}."
-      )
-    }
-    row$release <- release
-    row
-  })
+  code <- .pad_psgc_code(code, width = nchar(df$psgc_code[1]))
+  idx <- match(code, df$psgc_code)
+  if (anyNA(idx)) {
+    missing <- code[is.na(idx)]
+    cli::cli_abort(
+      "{cli::qty(missing)}Code{?s} not found in release {.val {release}}: {.val {missing}}."
+    )
+  }
 
-  do.call(rbind, rows)
+  out <- df[idx, , drop = FALSE]
+  out$release <- release
+  rownames(out) <- NULL
+  out
 }

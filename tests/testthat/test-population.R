@@ -93,3 +93,15 @@ test_that("get_population(details=TRUE, wide=TRUE) has correct column order (wid
     c("psgc_code", "area_name", "geographic_level", yr_cols)
   )
 })
+
+test_that("get_population() has no rows without a code in any release", {
+  for (r in list_releases()) expect_false(anyNA(get_population(r)$psgc_code), info = r)
+})
+
+test_that("get_population(wide=TRUE) matches the long format", {
+  long <- get_population(geographic_level = "Prov")
+  wide <- get_population(geographic_level = "Prov", wide = TRUE)
+  expect_equal(nrow(wide), length(unique(long$psgc_code)))
+  row <- long[long$psgc_code == wide$psgc_code[1] & long$year == 2020, ]
+  expect_equal(wide$population_2020[1], row$population)
+})

@@ -42,4 +42,5 @@ get_psgc(geographic_level = "Region")
 get_psgc(geographic_level = "city_mun")
 get_psgc(geographic_level = c("Prov", "City"))
 get_psgc(geographic_level = "Reg", include_population_data = TRUE)
+
 }

@@ -68,3 +68,16 @@ test_that("psgc_info() errors when code has fewer than 2 digits", {
 test_that("psgc_info() errors when code has more than 10 digits", {
   expect_error(psgc_info("01234567890"), class = "rlang_error")
 })
+
+test_that("psgc_info() pads to 9 digits for Q2_2021", {
+  expect_equal(psgc_info("0128", release = "Q2_2021")$psgc_code, "012800000")
+})
+
+test_that("psgc_info() lists every missing code in one error", {
+  expect_error(psgc_info(c("0100000000", "9900000000", "9800000000")), "9900000000.*9800000000")
+})
+
+test_that("psgc_info() keeps input order and duplicates", {
+  codes <- c("0102800000", "0100000000", "0102800000")
+  expect_equal(psgc_info(codes)$psgc_code, codes)
+})

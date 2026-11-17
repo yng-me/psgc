@@ -210,7 +210,6 @@ The `mapping_type` column tells you what happened to the code:
 | `direct` | Code is unchanged |
 | `renumbered` | Code was assigned a new number |
 | `split` | One area was divided into multiple areas |
-| `merged` | Multiple areas were merged into one |
 | `abolished` | Area no longer exists (`new_code` will be `NA`) |
 
 This is especially useful when joining PSGC-coded survey data from different
