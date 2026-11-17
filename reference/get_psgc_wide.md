@@ -29,7 +29,9 @@ order:
 
 - \`area_code\`:
 
-  10-digit PSGC code of the barangay.
+  PSGC code of the barangay. Codes in this and the other \`\_code\`
+  columns are 10 digits, except in \`"Q2_2021"\`, which uses the older
+  9-digit format.
 
 - \`region_code\`:
 

@@ -3,7 +3,7 @@
 `psgc` provides access to the **Philippine Standard Geographic Code
 (PSGC)** — the official classification system for geographic areas in
 the Philippines published by the **Philippine Statistics Authority
-(PSA)**. It bundles 13 releases (Q1 2023 – Q2 2026) and exposes them
+(PSA)**. It bundles 15 releases (Q2 2021 – Q3 2026) and exposes them
 through a small, consistent set of functions.
 
 ## Installation
@@ -25,6 +25,7 @@ pak::pak("yng-me/psgc")
 | [`list_releases()`](https://yng-me.github.io/psgc/reference/list_releases.md) | List all bundled PSA releases |
 | [`latest_release()`](https://yng-me.github.io/psgc/reference/latest_release.md) | Name of the most recent release |
 | [`get_psgc()`](https://yng-me.github.io/psgc/reference/get_psgc.md) | Full PSGC table, with optional level filter and population |
+| [`get_psgc_wide()`](https://yng-me.github.io/psgc/reference/get_psgc_wide.md) | One row per barangay, with its region, province and city/municipality as columns |
 | [`psgc_info()`](https://yng-me.github.io/psgc/reference/psgc_info.md) | Metadata for one or more PSGC codes |
 | [`get_population()`](https://yng-me.github.io/psgc/reference/get_population.md) | Census population figures (long or wide) |
 | [`map_psgc()`](https://yng-me.github.io/psgc/reference/map_psgc.md) | Trace codes forward across releases |
@@ -127,8 +128,7 @@ map_psgc("0100000000", to = "Q4_2023")
 ```
 
 `mapping_type` tells you what changed: `"direct"` (unchanged),
-`"renumbered"`, `"split"`, `"merged"`, or `"abolished"` (new code will
-be `NA`).
+`"renumbered"`, `"split"`, or `"abolished"` (new code will be `NA`).
 
 ## Geographic levels
 
@@ -147,9 +147,9 @@ be `NA`).
 ``` r
 
 list_releases()
-#>  [1] "Q1_2023"    "Q4_2023"    "April_2024" "Q2_2024"    "Q3_2024"
-#>  [6] "Q4_2024"    "Q1_2025"    "Q2_2025"    "July_2025"  "Q3_2025"
-#> [11] "Q4_2025"    "Q1_2026"    "Q2_2026"
+#>  [1] "Q2_2021"    "Q1_2023"    "Q4_2023"    "April_2024" "Q2_2024"
+#>  [6] "Q3_2024"    "Q4_2024"    "Q1_2025"    "Q2_2025"    "July_2025"
+#> [11] "Q3_2025"    "Q4_2025"    "Q1_2026"    "Q2_2026"    "Q3_2026"
 ```
 
 ## License

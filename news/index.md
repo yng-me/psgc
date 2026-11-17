@@ -1,5 +1,43 @@
 # Changelog
 
+## psgc 0.2.0
+
+### Bug fixes
+
+- Fixed some population data not showing in Q2_2026 due to incorrect
+  padding from the original source.
+- Removed the four Q1_2023 NCR district rows that shared the placeholder
+  code `0000000000`.
+- [`map_psgc()`](https://yng-me.github.io/psgc/reference/map_psgc.md)
+  now returns one row per successor for split codes, errors on an
+  unknown `from` release, and errors when a code is not in the given
+  `from` release (it used to report it as abolished). The never-produced
+  `"merged"` type was removed from the docs.
+- [`psgc_info()`](https://yng-me.github.io/psgc/reference/psgc_info.md)
+  and `get_population(wide = TRUE)` are much faster on large inputs;
+  [`psgc_info()`](https://yng-me.github.io/psgc/reference/psgc_info.md)
+  lists all missing codes in one error.
+- `geographic_level` now ignores case and surrounding spaces, and
+  accepts `"Dist"` and `"SGU"`.
+
+### New features
+
+- Added Q3_2026 version of PSGC, now the latest release.
+- Added Q2_2021 version of PSGC (first version available from the
+  source). It uses the older 9-digit code format;
+  [`map_psgc()`](https://yng-me.github.io/psgc/reference/map_psgc.md)
+  links it to Q1_2023 through `correspondence_code`, and
+  [`psgc_info()`](https://yng-me.github.io/psgc/reference/psgc_info.md)
+  and
+  [`get_psgc_wide()`](https://yng-me.github.io/psgc/reference/get_psgc_wide.md)
+  handle 9-digit codes.
+
+## psgc 0.1.2
+
+CRAN release: 2026-07-25
+
+- Added Q2_2026 version of PSGC
+
 ## psgc 0.1.1
 
 ### Bug fixes
