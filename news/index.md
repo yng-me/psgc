@@ -2,6 +2,8 @@
 
 ## psgc 0.2.0
 
+CRAN release: 2026-11-17
+
 ### Bug fixes
 
 - Fixed some population data not showing in Q2_2026 due to incorrect
